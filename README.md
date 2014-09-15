@@ -44,6 +44,17 @@ a maior herança de melhora e ampliação de acesso à informação, e os rumos
 deste vocabulário podem ser os mais diversos, com potenciais novas versões,
  formatações, amadurecimentos e usos.
 
+### Próximos passos
+
+* Consideração dos thesaurus e vocabulários controlados maiores, como o LCSH, o Vocabulário controlado do IPEA e o VCGE.
+* Possível implementação em SKOS.
+* Consideração dos vocabulários de comunidades dedicadas (dublin core, w3c, etc).
+* Orientação do prof. Fernando para condução do trabalho. Em resumo:
+- A formatação é esta?
+- Recomenda uma seleção de antemão destes termos?
+- Onde estão os termos de referência?
+- Como prefere conduzir o trabalho?
+
 ## Contato:
 
 Equipe do http://participa.br
