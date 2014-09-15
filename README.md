@@ -50,10 +50,10 @@ deste vocabulário podem ser os mais diversos, com potenciais novas versões,
 * Possível implementação em SKOS.
 * Consideração dos vocabulários de comunidades dedicadas (dublin core, w3c, etc).
 * Orientação do prof. Fernando para condução do trabalho. Em resumo:
-- A formatação é esta?
-- Recomenda uma seleção de antemão destes termos?
-- Onde estão os termos de referência?
-- Como prefere conduzir o trabalho?
+ * A formatação é esta?
+ * Recomenda uma seleção de antemão destes termos?
+ * Onde estão os termos de referência?
+ * Como prefere conduzir o trabalho?
 
 ## Contato:
 
