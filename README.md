@@ -2,29 +2,34 @@
 
 ## Fontes:
 
-* Lista do IPEA
-* PDF IPEA do email posterior
+* Lista do IPEA passada por email
 * Decreto PNPS
-* LCSH
 * Incidência no Participa.br
 * Comunidades Dublin Core / outras
 * OPA/OPS, que era o VCPS. Ver VCGE tb.
+* LCSH
+* .doc do IPEA, email posterior, com vocabulário controlado
+ 
 
 ## Formato:
 
 Repassado pelo Ricardo Poppi como exemplo para formatar vocabulário.
 
-### Versões:
+### Versões atuais:
 
-* Com todas as palavras de todos estes vocabulários
-* Com seleção que achei coesa, com critérios anotados das remoções
-* Separada por fonte (IPEA, LCSH, etc) via hierarquia ou prefixo, tudo
-* Com seleção que achei coesa e separada por fonte (IPEA, LCSH, etc), com critérios anotados das remoções
+* Com todas as palavras de todos estes vocabulários (vocabulario/vp-lista.xml)
+* Separada por fonte (IPEA, LCSH, etc) via hierarquia interna do vocabulário (vocabulario/vp-fonte.xml)
+
+### Versões planejadas:
+* Com seleção coesa, com critérios anotados para as remoções.
+* Fruto dos retornos da equipe do participa.br (este vocabulário está ainda germinando).
 
 ## Pastas e arquivos:
 
 * Na pasta fontes/, as fontes dos trabalhos.
-* Na pasta vocabulario/, as versões dos vocabulários.
+* Na pasta vocabulario/, as versões do vocabulario.
+* Na pasta bibliografia/, arquivos e documentos de importância imediata para o trabalho feito.
+* Na pasta scripts/ os scripts que fazem o xml ou outras representações do vocabulário.
 
 ## Descrição, estratégia e etapa:
 
@@ -34,12 +39,14 @@ para etiquetar documentos da biblioteca digital de participação social, sendo 
 
 A estratégia para realização do vocabulário é bastante dependente do uso inicial que dela terá,
 pois tanto a biblioteca quanto este vocabulário estão surgindo no momento desta escrita.
-Assim, foram levantadas algumas versões que combinam o repertório inicial levantado
-com classificação e filtragem iniciais.
+Assim, foram levantadas algumas versões que combinam o repertório inicial levantado de vocabulários
+com classificação (fonte) e filtragem (seleção) iniciais.
+Há também forte embasamento com o conhecimento aprofundado de alguns
+membros da equipe do participa.br e da SNAS.
 
 A etapa atual é de entrega deste vocabulário para a comunidade ligada à biblioteca digital de participação social.
 Os primeiros retornos sobre este levantamento ainda estão por vir.
-A comunidade de biblioteconomia é ciência da informação possui talvez
+A comunidade de biblioteconomia e ciência da informação possui provavelmente
 a maior herança de melhora e ampliação de acesso à informação, e os rumos
 deste vocabulário podem ser os mais diversos, com potenciais novas versões,
  formatações, amadurecimentos e usos.
