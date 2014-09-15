@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<node id="cnpq" label="Área do CNPq">
+		<isComposedBy>
+	  		<node id="1" label="Ciências Exatas e da Terra">
+				<isComposedBy>
+					<node id="101" label="Matemática">
+					</node>
+					<node id="102" label="Probabilidade e Estatística ">
+					</node>
+					<node id="103" label="Ciência da Computação">
+					</node>
+					<node id="104" label="Astronomia">
+					</node>
+					<node id="105" label="Física">
+					</node>
+					<node id="106" label="Química">
+					</node>
+					<node id="107" label="GeoCiências">
+					</node>
+					<node id="108" label="Oceanografia">
+					</node>
+				</isComposedBy>
+	  		</node>		
+	  		<node id="2" label="Ciências Biológicas">
+	  		</node>
+	  		<node id="3" label="Engenharias">
+	  		</node>
+	  		<node id="4" label="Ciências da Saúde">
+	  		</node>
+	  		<node id="5" label="Ciências Agrárias">
+	  		</node>
+	  		<node id="6" label="Ciências Sociais Aplicadas">
+				<isComposedBy>
+				<node id="601" label="Direito">
+				</node>
+				<node id="602" label="Administração">				
+				</node>
+				<node id="603" label="Economia">
+				</node>
+				<node id="604" label="Arquitetura e Urbanismo">
+				</node>
+				<node id="605" label="Planejamento Urbano e Regional">
+				</node>
+				<node id="606" label="Demografia">
+				</node>
+				<node id="607" label="Ciência da Informação">
+				</node>
+				<node id="608" label="Museologia"/>
+				<node id="609" label="Comunicação">
+				</node>
+				<node id="610" label="Serviço Social">
+				</node>
+				<node id="611" label="Economia Doméstica"/>
+				<node id="612" label="Desenho Industrial">
+				</node>
+				<node id="613"  abel="Turismo"/>	
+				</isComposedBy>
+			</node>
+	  		<node id="7" label="Ciências Humanas">
+	  		</node>
+	  		<node id="8" label="Linguística, Letras e Artes">
+	  		</node>
+	  		<node id="9" label="Outros">
+	  		</node>
+		</isComposedBy>
+	</node>
+	

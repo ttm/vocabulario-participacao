@@ -1,0 +1,11 @@
+participante
+ator social
+iniciador
+executor
+apoiador
+causa
+ação
+resultado
+solução
+problema
+tema
