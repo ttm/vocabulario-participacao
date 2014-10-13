@@ -30,6 +30,7 @@ Repassado pelo Ricardo Poppi como exemplo para formatar vocabulário.
 * Na pasta vocabulario/, as versões do vocabulario.
 * Na pasta bibliografia/, arquivos e documentos de importância imediata para o trabalho feito.
 * Na pasta scripts/ os scripts que fazem o xml ou outras representações do vocabulário.
+ * triplificaConferencias.py e triplificaConselhos.py triplificam os dados em fontes/base\_dados...ipea..ods
 
 ## Descrição, estratégia e etapa:
 
