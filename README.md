@@ -2,7 +2,7 @@
 
 ## Fontes:
 
-* Lista do IPEA passada por email
+* Lista de palavras-chave usadas nas publicacoes do IPEA passada por email pela Joana
 * Decreto PNPS
 * Incidência no Participa.br
 * Comunidades Dublin Core / outras
