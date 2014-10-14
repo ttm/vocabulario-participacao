@@ -295,6 +295,10 @@ de=obs.DeliberativeInstance
 lde=u"Instância deliberativa" # SKOS
 co=obs.AdvisoryInstance
 lco=u"Instância consultiva" # SKOS
+G(de,rdf.type,owl.Class)
+G(de,rdfs.label,L(lde,lang="pt"))
+G(co,rdf.type,owl.Class)
+G(co,rdfs.label,L(lco,lang="pt"))
 
 G(ti,rdf.type,owl.ObjectProperty)
 G(ti,rdfs.label,L(lti,lang="pt"))
@@ -310,7 +314,134 @@ A.add_edge(lcons,lde)
 e=A.get_edge(lcons,lde)
 e.attr["label"]=lti
 
+#####
 
+mi=obs.meetingsInterval
+lmi=u"meses entre reuniões"
+G(mi,rdf.type,owl.DatatypeProperty)
+G(mi,rdfs.label,L(lmi,lang="pt"))
+G(mi,rdfs.range,xsd.integer)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:integer"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lcons,COUNT)
+e=A.get_edge(lcons,COUNT); COUNT+=1
+e.attr["label"]=lmi
+
+#####
+
+es=obs.executiveSecretariat
+les=u"possui secretaria executiva"
+G(es,rdf.type,owl.DatatypeProperty)
+G(es,rdfs.label,L(les,lang="pt"))
+G(es,rdfs.range,xsd.boolean)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:boolean"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lcons,COUNT)
+e=A.get_edge(lcons,COUNT); COUNT+=1
+e.attr["label"]=les
+
+
+es=obs.commission
+les=u"trabalha com comissões"
+G(es,rdf.type,owl.DatatypeProperty)
+G(es,rdfs.label,L(les,lang="pt"))
+G(es,rdfs.range,xsd.boolean)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:boolean"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lcons,COUNT)
+e=A.get_edge(lcons,COUNT); COUNT+=1
+e.attr["label"]=les
+
+es=obs.conference
+les=u"realizou conferencias"
+G(es,rdf.type,owl.DatatypeProperty)
+G(es,rdfs.label,L(les,lang="pt"))
+G(es,rdfs.range,xsd.boolean)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:boolean"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lcons,COUNT)
+e=A.get_edge(lcons,COUNT); COUNT+=1
+e.attr["label"]=les
+
+es=obs.conferencesCount
+les=u"quantas conferencias"
+G(es,rdf.type,owl.DatatypeProperty)
+G(es,rdfs.label,L(les,lang="pt"))
+G(es,rdfs.range,xsd.integer)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:integer"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lcons,COUNT)
+e=A.get_edge(lcons,COUNT); COUNT+=1
+e.attr["label"]=les
+
+###########
+es=obs.linkedPolicy
+les=u"política vinculada"
+pu=obs.PublicPolicy
+lpu=u"Política pública"
+
+G(es,rdf.type,owl.ObjectProperty)
+G(es,rdfs.label,L(les,lang="pt"))
+G(es,rdfs.range,pu)
+G(pu,rdf.type,owl.Class)
+G(pu,rdfs.label,L(lpu,lang="pt"))
+
+sy=obs.NationalSystem
+lsy=u"Sistema nacional"
+G(sy,rdf.type,owl.Class)
+G(sy,rdfs.label,L(lsy,lang="pt"))
+G(sy,rdfs.subClassOf,pu)
+pl=obs.NationalPlan
+lpl=u"Política ou plano nacional"
+G(pl,rdf.type,owl.Class)
+G(pl,rdfs.label,L(lpl,lang="pt"))
+G(pl,rdfs.subClassOf,pu)
+st=obs.Statute
+lst=u"Estatuto"
+G(st,rdf.type,owl.Class)
+G(st,rdfs.label,L(lst,lang="pt"))
+G(st,rdfs.subClassOf,pu)
+
+# desenhar certinho
+A.add_node(lpu,style="filled")
+A.add_edge(lcons,lpu)
+e=A.get_edge(lcons,lpu)
+e.attr["label"]=les
+
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:string"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lpu,COUNT)
+e=A.get_edge(lpu,COUNT); COUNT+=1
+e.attr["label"]=u"nome"
+
+
+A.add_node(lsy,style="filled") ###
+A.add_edge(lsy,lpu)
+e=A.get_edge(lsy,lpu)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+A.add_node(lpl,style="filled") ###
+A.add_edge(lpl,lpu)
+e=A.get_edge(lpl,lpu)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+A.add_node(lst,style="filled") ###
+A.add_edge(lst,lpu)
+e=A.get_edge(lst,lpu)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
 
 
 

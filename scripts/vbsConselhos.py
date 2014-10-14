@@ -128,13 +128,13 @@ G(sp,skos.broader,ta)
 
 
 ######
-sp=obs.DeliberativeInstance
+sp=vbs.DeliberativeInstance
 lsp=u"Instância deliberativa" # SKOS
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
 G(sp,skos.broader,vbs.ParticipationMechanism)
 
-sp=obs.AdvisoryInstance
+sp=vbs.AdvisoryInstance
 lsp=u"Instância consultiva" # SKOS
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
