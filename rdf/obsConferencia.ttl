@@ -5,11 +5,54 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+obs:ChamberOfDeputies a owl:Class ;
+    rdfs:label "Câmara dos deputados"@pt ;
+    rdfs:subClassOf obs:publicAgency .
+
+obs:Commission a owl:Class ;
+    rdfs:label "Comissão"@pt ;
+    rdfs:subClassOf obs:publicAgency .
+
 obs:Conference a owl:Class ;
     rdfs:label "Conferência"@pt ;
     rdfs:comment "Conferências são processos nacionais de promoção do diálogo entre governo e sociedade"@pt ;
     rdfs:subClassOf obs:ParticipationMechanism .
 
+obs:Council a owl:Class ;
+    rdfs:label "Conselho"@pt ;
+    rdfs:subClassOf obs:publicAgency .
+
+obs:Forum a owl:Class ;
+    rdfs:label "Fórum"@pt ;
+    rdfs:subClassOf obs:publicAgency .
+
+obs:Ministry a owl:Class ;
+    rdfs:label "Ministério"@pt ;
+    rdfs:subClassOf obs:publicAgency .
+
+obs:Secretariat a owl:Class ;
+    rdfs:label "Secretaria"@pt ;
+    rdfs:subClassOf obs:publicAgency .
+
+obs:edition a owl:DatatypeProperty ;
+    rdfs:label "edição"@pt ;
+    rdfs:range xsd:integer .
+
+obs:name a owl:DatatypeProperty ;
+    rdfs:label "nome"@pt ;
+    rdfs:range xsd:string .
+
+obs:responsibleAgency a owl:ObjectProperty ;
+    rdfs:label "órgão responsável"@pt ;
+    rdfs:range obs:publicAgency .
+
+obs:year a owl:DatatypeProperty ;
+    rdfs:label "ano"@pt ;
+    rdfs:range xsd:gYear .
+
 obs:ParticipationMechanism a owl:Class ;
     rdfs:label "Mecanismo ou instância de participação social"@pt .
+
+obs:publicAgency a owl:Class ;
+    rdfs:label "Órgão público"@pt .
 

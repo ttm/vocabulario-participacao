@@ -39,6 +39,136 @@ e=A.get_edge(lconf,lpm)
 e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
 
+####
+nm=obs.name
+lnm=u"nome"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.string)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:string"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lconf,COUNT)
+e=A.get_edge(lconf,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+####
+
+nm=obs.edition
+lnm=u"edição"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.integer)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:integer"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lconf,COUNT)
+e=A.get_edge(lconf,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+####
+
+nm=obs.year
+lnm=u"ano"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.gYear)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:gYear"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lconf,COUNT)
+e=A.get_edge(lconf,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+#########
+ta=obs.responsibleAgency
+lta=u"órgão responsável"
+th=obs.publicAgency
+lth=u"Órgão público"
+G(ta,rdf.type,owl.ObjectProperty)
+G(ta,rdfs.label,L(lta,lang="pt"))
+G(ta,rdfs.range,th)
+G(th,rdf.type,owl.Class)
+G(th,rdfs.label,L(lth,lang="pt"))
+A.add_node(lth,style="filled")
+A.add_edge(lconf,lth)
+e=A.get_edge(lconf,lth)
+e.attr["label"]=lta
+
+sp=obs.Council
+lsp=u"Conselho" # SKOS TTM
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,th)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lth)
+e=A.get_edge(lsp,lth)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.Ministry
+lsp=u"Ministério" # entra no SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,th)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lth)
+e=A.get_edge(lsp,lth)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+
+sp=obs.Secretariat
+lsp=u"Secretaria" # entra no SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,th)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lth)
+e=A.get_edge(lsp,lth)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.ChamberOfDeputies
+lsp=u"Câmara dos deputados" # entra no SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,th)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lth)
+e=A.get_edge(lsp,lth)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.Commission
+lsp=u"Comissão" # entra no SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,th)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lth)
+e=A.get_edge(lsp,lth)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.Forum
+lsp=u"Fórum" # entra no SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,th)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lth)
+e=A.get_edge(lsp,lth)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+
+
+
+
 #####
 nome=("../figs/obsConferencia.png")
 A.draw(nome,prog="dot") # draw to png using circo
