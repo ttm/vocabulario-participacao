@@ -426,7 +426,6 @@ A.add_edge(lpu,COUNT)
 e=A.get_edge(lpu,COUNT); COUNT+=1
 e.attr["label"]=u"nome"
 
-
 A.add_node(lsy,style="filled") ###
 A.add_edge(lsy,lpu)
 e=A.get_edge(lsy,lpu)
@@ -442,6 +441,94 @@ A.add_edge(lst,lpu)
 e=A.get_edge(lst,lpu)
 e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
+
+##########
+# composicao dos conselhos
+
+co=obs.composition
+lco=u"composição"
+bo=obs.Body
+lbo=u"Corpo"
+G(co,rdf.type,owl.ObjectProperty)
+G(co,rdfs.label,L(lco,lang="pt"))
+G(co,rdfs.range,bo)
+G(bo,rdf.type,owl.Class)
+G(bo,rdfs.label,L(lbo,lang="pt"))
+A.add_node(lbo,style="filled")
+A.add_edge(lcons,lbo)
+e=A.get_edge(lcons,lbo)
+e.attr["label"]=lco
+
+#>>>>
+
+mc=obs.membersCount
+lmc=u"quantidade de membros"
+G(mc,rdf.type,owl.DatatypeProperty)
+G(mc,rdfs.label,L(lmc,lang="pt"))
+G(mc,rdfs.range,xsd.integer)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:integer"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lbo,COUNT)
+e=A.get_edge(lbo,COUNT); COUNT+=1
+e.attr["label"]=lmc
+
+
+mc=obs.governmentFraction
+lmc=u"fração do governo"
+G(mc,rdf.type,owl.DatatypeProperty)
+G(mc,rdfs.label,L(lmc,lang="pt"))
+G(mc,rdfs.range,xsd.double)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:double"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lbo,COUNT)
+e=A.get_edge(lbo,COUNT); COUNT+=1
+e.attr["label"]=lmc
+
+mc=obs.parity
+lmc=u"paridade"
+G(mc,rdf.type,owl.DatatypeProperty)
+G(mc,rdfs.label,L(lmc,lang="pt"))
+G(mc,rdfs.range,xsd.boolean)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:boolean"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lbo,COUNT)
+e=A.get_edge(lbo,COUNT); COUNT+=1
+e.attr["label"]=lmc
+
+mc=obs.limitedMandate
+lmc=u"limite de mandato"
+G(mc,rdf.type,owl.DatatypeProperty)
+G(mc,rdfs.label,L(lmc,lang="pt"))
+G(mc,rdfs.range,xsd.boolean)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:boolean"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lbo,COUNT)
+e=A.get_edge(lbo,COUNT); COUNT+=1
+e.attr["label"]=lmc
+
+mc=obs.civilSocietySelectionMethod
+lmc=u"método de escolha de membros da sociedade civil"
+G(mc,rdf.type,owl.DatatypeProperty)
+G(mc,rdfs.label,L(lmc,lang="pt"))
+G(mc,rdfs.range,xsd.string)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:string"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lbo,COUNT)
+e=A.get_edge(lbo,COUNT); COUNT+=1
+e.attr["label"]=lmc
+
+
+
 
 
 
