@@ -4,7 +4,7 @@ def G(S,P,O):
     g.add((S,P,O))
 L=r.Literal
 COUNT=1
-A=gv.AGraph(directed=True)
+A=gv.AGraph(directed=True,strict=False)
 
 obs = r.Namespace("http://purl.org/socialparticipation/obs/")
 rdf = r.namespace.RDF
@@ -208,6 +208,9 @@ lre=u"reformulação" # SKOS
 G(re,rdf.type,owl.ObjectProperty)
 G(re,rdfs.label,L(lre,lang="pt"))
 G(re,rdfs.range,ac)
+A.add_edge(lcons,lac)
+e=A.get_edge(lcons,lac)
+e.attr["label"]=lre
 ###########
 ta=obs.thematicArea
 lta=u"área temática"
@@ -218,33 +221,94 @@ G(ta,rdfs.label,L(lta,lang="pt"))
 G(ta,rdfs.range,th)
 G(th,rdf.type,owl.Class)
 G(th,rdfs.label,L(lth,lang="pt"))
+A.add_node(lth,style="filled")
+A.add_edge(lcons,lth)
+e=A.get_edge(lcons,lth)
+e.attr["label"]=lta
 
 
 sp=obs.SocialPolicies
 lsp=u"Políticas sociais"
 G(sp,rdf.type,owl.Class)
 G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.comment,L(u"assistência social, cultura, saúde, segurança alimentar e nutricional",lang="pt"))
 G(sp,rdfs.subClassOf,th)
-sp=obs.economicDevelopment ###
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lth)
+e=A.get_edge(lsp,lth)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.EconomicDevelopment ###
 lsp=u"Desenvolvimento econômico"
 G(sp,rdf.type,owl.Class)
 G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.comment,L(u"arranjos produtivos locais, assistência técnica e extensão rural, desenvolvimento regional e desenvolvimento rural sustentável e solidário",lang="pt"))
 G(sp,rdfs.subClassOf,th)
-sp=obs.guaranteeOfRights ###
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lth)
+e=A.get_edge(lsp,lth)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.GuaranteeOfRights ###
 lsp=u"Garantia de direitos"
 G(sp,rdf.type,owl.Class)
 G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.comment,L(u"criança e adolescente, educação, juventude, LGBT, mulheres e pessoa idosa",lang="pt"))
 G(sp,rdfs.subClassOf,th)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lth)
+e=A.get_edge(lsp,lth)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
 sp=obs.Infrastructure ###
 lsp=u"Infraestrutura"
 G(sp,rdf.type,owl.Class)
 G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.comment,L(u"cidades",lang="pt"))
 G(sp,rdfs.subClassOf,th)
-sp=obs.naturalResources ###
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lth)
+e=A.get_edge(lsp,lth)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.NaturalResources ###
 lsp=u"Recursos naturais"
 G(sp,rdf.type,owl.Class)
 G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.comment,L(u"meio ambiente",lang="pt"))
 G(sp,rdfs.subClassOf,th)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lth)
+e=A.get_edge(lsp,lth)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+##########
+
+ti=obs.type
+lti=u"tipo"
+de=obs.DeliberativeInstance
+lde=u"Instância deliberativa"
+co=obs.AdvisoryInstance
+lco=u"Instância consultiva"
+
+G(ti,rdf.type,owl.ObjectProperty)
+G(ti,rdfs.label,L(lti,lang="pt"))
+B=r.BNode()
+G(B, owl.unionOf,de)
+G(B, owl.unionOf,co)
+G(ca,rdfs.range,B)
+G(ca,rdfs.domain,obs.ParticipationMechanism)
+A.add_node(lde,style="filled")
+nd=A.get_node(lde)
+nd.attr["label"]=(u"<%s<br />%s>")%(lde,lco)
+A.add_edge(lcons,lde)
+e=A.get_edge(lcons,lde)
+e.attr["label"]=lti
 
 
 
