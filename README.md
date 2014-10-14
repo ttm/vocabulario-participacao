@@ -2,6 +2,7 @@
 
 ## Perguntas novas:
 * Para as URIs é fortemente recomendado usar nomes em ingles, para facilitar reuso mesmo. Tudo bem as URIs estarem com nomes em ingles? Ex: http://purl.org/socialparticipation/Council no lugar de http://purl.org/socialparticipation/Conselho
+* Querem que inclua no vocabulário o nome de cada conferência e conselho? Somente os nacionais? De órgãos federais, como ministérios?
 
 ## Fontes:
 
