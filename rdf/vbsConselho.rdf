@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Council">
+    <skos:altLabel xml:lang="pt">Conselho nacional de políticas públicas</skos:altLabel>
+    <skos:altLabel xml:lang="pt">Conselho de políticas públicas</skos:altLabel>
+    <skos:prefLabel xml:lang="pt">Conselho</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="pt">Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)</skos:definition>
+  </rdf:Description>
+</rdf:RDF>

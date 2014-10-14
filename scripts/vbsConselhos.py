@@ -31,15 +31,114 @@ G(pm,skos.altLabel,L("Mecanismo de participação social",lang="pt"))
 G(pm,skos.altLabel,L("Instância de participação social",lang="pt"))
 G(cons,skos.broader,pm)
 
-mn=obs.Ministry
+mn=vbs.Ministry
 lmn=u"Ministério" # entra no SKOS
 G(mn,rdf.type,skos.Concept)
 G(mn,skos.prefLabel,L(lmn,lang="pt"))
 
-sc=obs.Secretariat
+sc=vbs.Secretariat
 lsc=u"Secretaria" # entra no SKOS
 G(sc,rdf.type,skos.Concept)
 G(sc,skos.prefLabel,L(lsc,lang="pt"))
+G(sc,skos.broader,mn)
+
+####
+ac=vbs.Act
+lac=u"Ato institucional" # SKOS Ato Institucional
+G(ac,rdf.type,skos.Concept)
+G(ac,skos.prefLabel,L(lac,lang="pt"))
+
+####
+la=vbs.Law
+lla=u"Lei" # SKOS
+G(la,rdf.type,skos.Concept)
+G(la,skos.prefLabel,L(lla,lang="pt"))
+G(la,skos.broader,ac)
+
+oe=vbs.Ordinance
+loe=u"Portaria" # SKOS
+G(oe,rdf.type,skos.Concept)
+G(oe,skos.prefLabel,L(loe,lang="pt"))
+G(oe,skos.broader,ac)
+
+de=vbs.Decree
+lde=u"Decreto" # SKOS
+G(de,rdf.type,skos.Concept)
+G(de,skos.prefLabel,L(lde,lang="pt"))
+G(de,skos.broader,ac)
+
+bl=vbs.Bylaws
+lbl=u"Regimento interno" #SKOS
+G(bl,rdf.type,skos.Concept)
+G(bl,skos.prefLabel,L(lbl,lang="pt"))
+G(bl,skos.broader,ac)
+
+re=vbs.Resolution
+lre=u"Resolução" #SKOS
+G(re,rdf.type,skos.Concept)
+G(re,skos.prefLabel,L(lre,lang="pt"))
+G(re,skos.broader,ac)
+
+###
+re=vbs.reformulation # menor pq eh propriedade na obs
+lre=u"Reformulação" #SKOS
+G(re,rdf.type,skos.Concept)
+G(re,skos.prefLabel,L(lre,lang="pt"))
+
+### TTM
+ta=vbs.thematicArea
+lta=u"área temática" # SKOS
+G(ta,rdf.type,skos.Concept)
+G(ta,skos.prefLabel,L(lta,lang="pt"))
+
+sp=vbs.SocialPolicies
+lsp=u"Políticas sociais" # SKOS TTM
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.scopeNote,L(u"assistência social, cultura, saúde, segurança alimentar e nutricional",lang="pt"))
+G(sp,skos.broader,ta)
+
+sp=vbs.EconomicDevelopment ###
+lsp=u"Desenvolvimento econômico" # SKOS
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.scopeNote,L(u"arranjos produtivos locais, assistência técnica e extensão rural, desenvolvimento regional e desenvolvimento rural sustentável e solidário",lang="pt"))
+G(sp,skos.broader,ta)
+
+sp=vbs.GuaranteeOfRights ###
+lsp=u"Garantia de direitos" # SKOS
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.scopeNote,L(u"criança e adolescente, educação, juventude, LGBT, mulheres e pessoa idosa",lang="pt"))
+G(sp,skos.broader,ta)
+
+sp=vbs.Infrastructure ###
+lsp=u"Infraestrutura" # SKOS
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.scopeNote,L(u"cidades",lang="pt"))
+G(sp,skos.broader,ta)
+
+sp=vbs.NaturalResources ###
+lsp=u"Recursos naturais" # SKOS
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.scopeNote,L(u"Recursos naturais",lang="pt"))
+G(sp,skos.broader,ta)
+
+
+######
+sp=obs.DeliberativeInstance
+lsp=u"Instância deliberativa" # SKOS
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,vbs.ParticipationMechanism)
+
+sp=obs.AdvisoryInstance
+lsp=u"Instância consultiva" # SKOS
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,vbs.ParticipationMechanism)
 
 
 

@@ -104,11 +104,11 @@ A.add_edge(lcons,COUNT)
 e=A.get_edge(lcons,COUNT); COUNT+=1
 e.attr["label"]=lyc
 
-###########
+########### PPP
 ca=obs.creationAct
 lca=u"ato de criação"
 ac=obs.Act
-lac=u"Ato" # Talvez colocar no SKOS Ato Participativo ou Ato Institucional
+lac=u"Ato institucional" # SKOS Ato Institucional
 
 pu=obs.datePublished
 lpu=u"data de publicação"
@@ -213,7 +213,7 @@ e=A.get_edge(lcons,lac)
 e.attr["label"]=lre
 ###########
 ta=obs.thematicArea
-lta=u"área temática"
+lta=u"área temática" # SKOS
 th=obs.Theme
 lth=u"Tema"
 G(ta,rdf.type,owl.ObjectProperty)
@@ -228,7 +228,7 @@ e.attr["label"]=lta
 
 
 sp=obs.SocialPolicies
-lsp=u"Políticas sociais"
+lsp=u"Políticas sociais" # SKOS TTM
 G(sp,rdf.type,owl.Class)
 G(sp,rdfs.label,L(lsp,lang="pt"))
 G(sp,rdfs.comment,L(u"assistência social, cultura, saúde, segurança alimentar e nutricional",lang="pt"))
@@ -240,7 +240,7 @@ e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
 
 sp=obs.EconomicDevelopment ###
-lsp=u"Desenvolvimento econômico"
+lsp=u"Desenvolvimento econômico" # SKOS
 G(sp,rdf.type,owl.Class)
 G(sp,rdfs.label,L(lsp,lang="pt"))
 G(sp,rdfs.comment,L(u"arranjos produtivos locais, assistência técnica e extensão rural, desenvolvimento regional e desenvolvimento rural sustentável e solidário",lang="pt"))
@@ -252,7 +252,7 @@ e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
 
 sp=obs.GuaranteeOfRights ###
-lsp=u"Garantia de direitos"
+lsp=u"Garantia de direitos" # SKOS
 G(sp,rdf.type,owl.Class)
 G(sp,rdfs.label,L(lsp,lang="pt"))
 G(sp,rdfs.comment,L(u"criança e adolescente, educação, juventude, LGBT, mulheres e pessoa idosa",lang="pt"))
@@ -264,7 +264,7 @@ e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
 
 sp=obs.Infrastructure ###
-lsp=u"Infraestrutura"
+lsp=u"Infraestrutura" # SKOS
 G(sp,rdf.type,owl.Class)
 G(sp,rdfs.label,L(lsp,lang="pt"))
 G(sp,rdfs.comment,L(u"cidades",lang="pt"))
@@ -276,7 +276,7 @@ e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
 
 sp=obs.NaturalResources ###
-lsp=u"Recursos naturais"
+lsp=u"Recursos naturais" # SKOS
 G(sp,rdf.type,owl.Class)
 G(sp,rdfs.label,L(lsp,lang="pt"))
 G(sp,rdfs.comment,L(u"meio ambiente",lang="pt"))
@@ -292,9 +292,9 @@ e.attr["arrowsize"]=2
 ti=obs.type
 lti=u"tipo"
 de=obs.DeliberativeInstance
-lde=u"Instância deliberativa"
+lde=u"Instância deliberativa" # SKOS
 co=obs.AdvisoryInstance
-lco=u"Instância consultiva"
+lco=u"Instância consultiva" # SKOS
 
 G(ti,rdf.type,owl.ObjectProperty)
 G(ti,rdfs.label,L(lti,lang="pt"))
