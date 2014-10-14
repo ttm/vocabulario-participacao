@@ -359,7 +359,7 @@ e=A.get_edge(lcons,COUNT); COUNT+=1
 e.attr["label"]=les
 
 es=obs.conference
-les=u"realizou conferencias"
+les=u"realizou conferencias" # SKOS
 G(es,rdf.type,owl.DatatypeProperty)
 G(es,rdfs.label,L(les,lang="pt"))
 G(es,rdfs.range,xsd.boolean)
@@ -388,7 +388,7 @@ e.attr["label"]=les
 es=obs.linkedPolicy
 les=u"política vinculada"
 pu=obs.PublicPolicy
-lpu=u"Política pública"
+lpu=u"Política pública" # SKOS
 
 G(es,rdf.type,owl.ObjectProperty)
 G(es,rdfs.label,L(les,lang="pt"))
@@ -397,17 +397,17 @@ G(pu,rdf.type,owl.Class)
 G(pu,rdfs.label,L(lpu,lang="pt"))
 
 sy=obs.NationalSystem
-lsy=u"Sistema nacional"
+lsy=u"Sistema nacional" # SKOS
 G(sy,rdf.type,owl.Class)
 G(sy,rdfs.label,L(lsy,lang="pt"))
 G(sy,rdfs.subClassOf,pu)
 pl=obs.NationalPlan
-lpl=u"Política ou plano nacional"
+lpl=u"Política ou plano nacional" # SKOS
 G(pl,rdf.type,owl.Class)
 G(pl,rdfs.label,L(lpl,lang="pt"))
 G(pl,rdfs.subClassOf,pu)
 st=obs.Statute
-lst=u"Estatuto"
+lst=u"Estatuto" # SKOS
 G(st,rdf.type,owl.Class)
 G(st,rdfs.label,L(lst,lang="pt"))
 G(st,rdfs.subClassOf,pu)
@@ -529,7 +529,7 @@ e.attr["label"]=lmc
 
 
 mc=obs.presidencySelectionMethod
-lmc=u"método de escolha da presidência"
+lmc=u"método de escolha da presidência" # SKO
 G(mc,rdf.type,owl.DatatypeProperty)
 G(mc,rdfs.label,L(lmc,lang="pt"))
 G(mc,rdfs.range,xsd.string)

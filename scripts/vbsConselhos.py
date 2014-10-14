@@ -140,8 +140,67 @@ G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
 G(sp,skos.broader,vbs.ParticipationMechanism)
 
+####
+sp=vbs.ExecutiveSecretariat
+lsp=u"Secretaria executiva"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
 
+sp=vbs.Conference
+lsp=u"Conferencia"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,vbs.ParticipationMechanism)
+####
 
+pu=vbs.PublicPolicy
+lpu=u"Política pública" # SKOS
+G(pu,rdf.type,skos.Concept)
+G(pu,skos.prefLabel,L(lpu,lang="pt"))
+
+sp=vbs.NationalSystem
+lsp=u"Sistema nacional"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,pu)
+
+sp=vbs.NationalPlan
+lsp=u"Política ou plano nacional"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,pu)
+
+sp=vbs.Statute
+lsp=u"Estatuto"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,pu)
+
+####
+sp=vbs.parity
+lsp=u"paridade"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+
+mc=vbs.ParticipantSelectionMethod
+lmc=u"Método de seleção de participantes"
+G(mc,rdf.type,skos.Concept)
+G(mc,skos.prefLabel,L(lmc,lang="pt"))
+
+mc=vbs.agenda
+lmc=u"pauta"
+G(mc,rdf.type,skos.Concept)
+G(mc,skos.prefLabel,L(lmc,lang="pt"))
+
+mc=vbs.QualityVote
+lmc=u"Voto de qualidade"
+G(mc,rdf.type,skos.Concept)
+G(mc,skos.prefLabel,L(lmc,lang="pt"))
+
+mc=vbs.AdReferendum
+lmc=u"Decisões ad referendum"
+G(mc,rdf.type,skos.Concept)
+G(mc,skos.prefLabel,L(lmc,lang="pt"))
 
 f=open("../rdf/vbsConselho.rdf","wb")
 f.write(g.serialize())
