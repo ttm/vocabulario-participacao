@@ -1,0 +1,19 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vbs: <http://purl.org/socialparticipation/vbs/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vbs:Conference a skos:Concept ;
+    skos:altLabel "Conferência"@pt,
+        "Conferência nacional"@pt ;
+    skos:broader vbs:ParticipationMechanism ;
+    skos:definition "Processo de promoção do diálogo entre governo e sociedade, tipicamente convocados pelo Executivo"@pt ;
+    skos:prefLabel "Conferência"@pt .
+
+vbs:ParticipationMechanism a skos:Concept ;
+    skos:altLabel "Instância de participação social"@pt,
+        "Mecanismo de participação social"@pt ;
+    skos:prefLabel "Mecanismo ou instância de participação social"@pt .
+
