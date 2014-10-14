@@ -1,5 +1,8 @@
 # Vocabulário Controlado para Biblioteca Digital de Participação Social
 
+## Perguntas novas:
+* Para as URIs é fortemente recomendado usar nomes em ingles, para facilitar reuso mesmo. Tudo bem as URIs estarem com nomes em ingles? Ex: http://purl.org/socialparticipation/Council no lugar de http://purl.org/socialparticipation/Conselho
+
 ## Fontes:
 
 * Lista de palavras-chave usadas nas publicacoes do IPEA passada por email pela Joana
