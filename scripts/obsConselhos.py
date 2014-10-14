@@ -528,6 +528,97 @@ e=A.get_edge(lbo,COUNT); COUNT+=1
 e.attr["label"]=lmc
 
 
+mc=obs.presidencySelectionMethod
+lmc=u"método de escolha da presidência"
+G(mc,rdf.type,owl.DatatypeProperty)
+G(mc,rdfs.label,L(lmc,lang="pt"))
+G(mc,rdfs.range,xsd.string)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:string"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lbo,COUNT)
+e=A.get_edge(lbo,COUNT); COUNT+=1
+e.attr["label"]=lmc
+
+mc=obs.internalGovernanceBody
+lmc=u"órgão interno de governança"
+gb=obs.GovernanceBody
+lgb=u"Órgão de governança"
+G(mc,rdf.type,owl.ObjectProperty)
+G(mc,rdfs.label,L(lmc,lang="pt"))
+G(mc,rdfs.range,gb)
+G(gb,rdf.type,owl.Class)
+G(gb,rdfs.label,L(lgb,lang="pt"))
+
+A.add_node(lgb,style="filled")
+A.add_edge(lbo,lgb)
+e=A.get_edge(lbo,lgb)
+e.attr["label"]=lmc
+
+# name, metodo
+
+mc=obs.governanceBodySelectionMethod
+lmc=u"método de seleção de membros do órgão de governança"
+G(mc,rdf.type,owl.DatatypeProperty)
+G(mc,rdfs.label,L(lmc,lang="pt"))
+G(mc,rdfs.range,xsd.string)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:string"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lgb,COUNT)
+e=A.get_edge(lgb,COUNT); COUNT+=1
+e.attr["label"]=lmc
+
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:string"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lgb,COUNT)
+e=A.get_edge(lgb,COUNT); COUNT+=1
+e.attr["label"]="nome"
+
+#####
+
+mc=obs.agendaPreparation
+lmc=u"encarregado pela pauta"
+G(mc,rdf.type,owl.DatatypeProperty)
+G(mc,rdfs.label,L(lmc,lang="pt"))
+G(mc,rdfs.range,xsd.string)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:string"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lcons,COUNT)
+e=A.get_edge(lcons,COUNT); COUNT+=1
+e.attr["label"]=lmc
+
+mc=obs.presidentialQualityVote
+lmc=u"voto de qualidade do presidente"
+G(mc,rdf.type,owl.DatatypeProperty)
+G(mc,rdfs.label,L(lmc,lang="pt"))
+G(mc,rdfs.range,xsd.boolean)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:boolean"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lcons,COUNT)
+e=A.get_edge(lcons,COUNT); COUNT+=1
+e.attr["label"]=lmc
+
+mc=obs.adReferendumDecisions
+lmc=u"decisões ad referendum"
+G(mc,rdf.type,owl.DatatypeProperty)
+G(mc,rdfs.label,L(lmc,lang="pt"))
+G(mc,rdfs.range,xsd.boolean)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:boolean"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lcons,COUNT)
+e=A.get_edge(lcons,COUNT); COUNT+=1
+e.attr["label"]=lmc
 
 
 

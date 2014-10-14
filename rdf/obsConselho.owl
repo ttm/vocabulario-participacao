@@ -4,163 +4,196 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Resolution">
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Act"/>
-    <rdfs:label xml:lang="pt">Resolução</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/creationAct">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://purl.org/socialparticipation/obs/ParticipationMechanism"/>
-    <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/Act"/>
-    <rdfs:label xml:lang="pt">ato de criação</rdfs:label>
-    <rdfs:range rdf:nodeID="N8eee7130e6a94908889eec9e420aa685"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Infrastructure">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Theme"/>
-    <rdfs:label xml:lang="pt">Infraestrutura</rdfs:label>
-    <rdfs:comment xml:lang="pt">cidades</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/conference">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/presidencySelectionMethod">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="pt">realizou conferencias</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N8eee7130e6a94908889eec9e420aa685">
-    <owl:unionOf rdf:resource="http://purl.org/socialparticipation/obs/DeliberativeInstance"/>
-    <owl:unionOf rdf:resource="http://purl.org/socialparticipation/obs/AdvisoryInstance"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/AdvisoryInstance">
-    <rdfs:label xml:lang="pt">Instância consultiva</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/SocialPolicies">
-    <rdfs:label xml:lang="pt">Políticas sociais</rdfs:label>
-    <rdfs:comment xml:lang="pt">assistência social, cultura, saúde, segurança alimentar e nutricional</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Theme"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Theme">
-    <rdfs:label xml:lang="pt">Tema</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/acronym">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="pt">método de escolha da presidência</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label xml:lang="pt">sigla</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/governmentFraction">
-    <rdfs:label xml:lang="pt">fração do governo</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/presidentialQualityVote">
+    <rdfs:label xml:lang="pt">voto de qualidade do presidente</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/NaturalResources">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Recursos naturais</rdfs:label>
-    <rdfs:comment xml:lang="pt">meio ambiente</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Theme"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/reformulation">
-    <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/Act"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="pt">reformulação</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/parity">
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/adReferendumDecisions">
+    <rdfs:label xml:lang="pt">decisões ad referendum</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdfs:label xml:lang="pt">paridade</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/datePublished">
-    <rdfs:label xml:lang="pt">data de publicação</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Secretariat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Secretaria</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Statute">
+    <rdfs:label xml:lang="pt">Estatuto</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/PublicPolicy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/internalGovernanceBody">
+    <rdfs:label xml:lang="pt">órgão interno de governança</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/GovernanceBody"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/NationalSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/PublicPolicy"/>
+    <rdfs:label xml:lang="pt">Sistema nacional</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/name">
     <rdfs:label xml:lang="pt">Ano de criação</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="pt">nome</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
-    <rdfs:label xml:lang="pt">nome</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf0768dd5ce0d484180105142903ed221">
+    <owl:unionOf rdf:resource="http://purl.org/socialparticipation/obs/DeliberativeInstance"/>
+    <owl:unionOf rdf:resource="http://purl.org/socialparticipation/obs/AdvisoryInstance"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/SocialPolicies">
+    <rdfs:comment xml:lang="pt">assistência social, cultura, saúde, segurança alimentar e nutricional</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Theme"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Políticas sociais</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/NaturalResources">
+    <rdfs:comment xml:lang="pt">meio ambiente</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Theme"/>
+    <rdfs:label xml:lang="pt">Recursos naturais</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/numericReference">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="pt">referêcia numérica</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/creationAct">
+    <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/Act"/>
+    <rdfs:range rdf:nodeID="Nf0768dd5ce0d484180105142903ed221"/>
+    <rdfs:domain rdf:resource="http://purl.org/socialparticipation/obs/ParticipationMechanism"/>
+    <rdfs:label xml:lang="pt">ato de criação</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/ParticipationMechanism">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Mecanismo ou instância de participação social</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/civilSocietySelectionMethod">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="pt">método de escolha de membros da sociedade civil</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Ordinance">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Act"/>
     <rdfs:label xml:lang="pt">Portaria</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/linkedPolicy">
-    <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/PublicPolicy"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="pt">política vinculada</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/numericReference">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="pt">referêcia numérica</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/PublicPolicy">
-    <rdfs:label xml:lang="pt">Política pública</rdfs:label>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Decree">
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Act"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Decreto</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/conference">
+    <rdfs:label xml:lang="pt">realizou conferencias</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndff4da87d3ef4bf1943849c385cfa05f">
+    <owl:unionOf rdf:resource="http://purl.org/socialparticipation/obs/Secretariat"/>
+    <owl:unionOf rdf:resource="http://purl.org/socialparticipation/obs/Ministry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/agendaPreparation">
+    <rdfs:label xml:lang="pt">encarregado pela pauta</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Resolution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Act"/>
+    <rdfs:label xml:lang="pt">Resolução</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/datePublished">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:label xml:lang="pt">data de publicação</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council">
     <rdfs:label xml:lang="pt">Conselho</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/ParticipationMechanism"/>
-    <rdfs:comment xml:lang="pt">Conselho de políticas públicas</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="pt">Conselho de políticas públicas</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/meetingsInterval">
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/type">
+    <rdfs:label xml:lang="pt">tipo</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/linkedAgency">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:nodeID="Ndff4da87d3ef4bf1943849c385cfa05f"/>
+    <rdfs:label xml:lang="pt">órgão vinculado</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/yearCreated">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="pt">meses entre reuniões</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Infrastructure">
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Theme"/>
+    <rdfs:label xml:lang="pt">Infraestrutura</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="pt">cidades</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/linkedPolicy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="pt">política vinculada</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/PublicPolicy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Law">
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Act"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Lei</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/NationalPlan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Política ou plano nacional</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/PublicPolicy"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Bylaws">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="pt">Regimento interno</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Act"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/civilSocietySelectionMethod">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="pt">método de escolha de membros da sociedade civil</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Law">
-    <rdfs:label xml:lang="pt">Lei</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Act"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/composition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="pt">composição</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/Body"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/EconomicDevelopment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="pt">arranjos produtivos locais, assistência técnica e extensão rural, desenvolvimento regional e desenvolvimento rural sustentável e solidário</rdfs:comment>
     <rdfs:label xml:lang="pt">Desenvolvimento econômico</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Theme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Act">
+    <rdfs:label xml:lang="pt">Ato institucional</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Body">
-    <rdfs:label xml:lang="pt">Corpo</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/NationalPlan">
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/PublicPolicy"/>
-    <rdfs:label xml:lang="pt">Política ou plano nacional</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/membersCount">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="pt">quantidade de membros</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/thematicArea">
-    <rdfs:label xml:lang="pt">área temática</rdfs:label>
-    <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/Theme"/>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/reformulation">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="pt">reformulação</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/Act"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Decree">
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Act"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Decreto</rdfs:label>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/commission">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="pt">trabalha com comissões</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/ParticipationMechanism">
-    <rdfs:label xml:lang="pt">Mecanismo ou instância de participação social</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/governmentFraction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:label xml:lang="pt">fração do governo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/executiveSecretariat">
+    <rdfs:label xml:lang="pt">possui secretaria executiva</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/conferencesCount">
     <rdfs:label xml:lang="pt">quantas conferencias</rdfs:label>
@@ -171,68 +204,69 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="pt">Ministério</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/executiveSecretariat">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdfs:label xml:lang="pt">possui secretaria executiva</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/thematicArea">
+    <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/Theme"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="pt">área temática</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/DeliberativeInstance">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="pt">Instância deliberativa</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/commission">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="pt">trabalha com comissões</rdfs:label>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/AdvisoryInstance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Instância consultiva</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Theme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Tema</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/parity">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/linkedAgency">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="pt">órgão vinculado</rdfs:label>
-    <rdfs:range rdf:nodeID="Nc12e27310a34458082e847572396a059"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Statute">
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/PublicPolicy"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Estatuto</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/NationalSystem">
-    <rdfs:label xml:lang="pt">Sistema nacional</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/PublicPolicy"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/composition">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/Body"/>
-    <rdfs:label xml:lang="pt">composição</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/GuaranteeOfRights">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Garantia de direitos</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Theme"/>
-    <rdfs:comment xml:lang="pt">criança e adolescente, educação, juventude, LGBT, mulheres e pessoa idosa</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/yearCreated">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="pt">paridade</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/meetingsInterval">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="pt">meses entre reuniões</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/GovernanceBody">
+    <rdfs:label xml:lang="pt">Órgão de governança</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/membersCount">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="pt">quantidade de membros</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/limitedMandate">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:label xml:lang="pt">limite de mandato</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Secretariat">
-    <rdfs:label xml:lang="pt">Secretaria</rdfs:label>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/governanceBodySelectionMethod">
+    <rdfs:label xml:lang="pt">método de seleção de membros do órgão de governança</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/GuaranteeOfRights">
+    <rdfs:comment xml:lang="pt">criança e adolescente, educação, juventude, LGBT, mulheres e pessoa idosa</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Theme"/>
+    <rdfs:label xml:lang="pt">Garantia de direitos</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nc12e27310a34458082e847572396a059">
-    <owl:unionOf rdf:resource="http://purl.org/socialparticipation/obs/Ministry"/>
-    <owl:unionOf rdf:resource="http://purl.org/socialparticipation/obs/Secretariat"/>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/acronym">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="pt">sigla</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Act">
-    <rdfs:label xml:lang="pt">Ato institucional</rdfs:label>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Body">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Corpo</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/type">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="pt">tipo</rdfs:label>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/PublicPolicy">
+    <rdfs:label xml:lang="pt">Política pública</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>
