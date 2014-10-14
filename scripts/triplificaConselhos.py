@@ -28,7 +28,7 @@ for cc in body:
     G(uri,rdf.type,cons)
     G(uri,obs.abbreviation,L(cc[0])) # inversamente funcional e funcional
     G(uri,obs.name,L(cc[1])) # inversamente funcional e funcional
-    G(uri,obs.bond,L(cc[2])) # funcional
+    G(uri,obs.linkedAgency,L(cc[2])) # funcional
     G(uri,obs.yearCreated,L(cc[3],datatype=xsd.gYear)) # funcional
     G(uri,obs.creationAct,L(cc[4])) # inversamente funcional? e funcional TTM
     G(uri,obs.creationActType,L(cc[5])) # funcional, ["Lei","Portaria","Decreto"] itens para o qual vale criar classe
@@ -67,7 +67,7 @@ for cc in body:
     G(uri,obs.membersCount,L(int(cc[20]))) # funcional
     G(uri,obs.governmentMembersCount,L(int(cc[21]))) # funcional
     G(uri,obs.civilSocietyMembersCount,L(int(cc[22]))) # funcional
-    G(uri,obs.civilSocietySeletionMethod,L(cc[23])) # funcional
+    G(uri,obs.civilSocietySelectionMethod,L(cc[23])) # funcional
     if cc[24]=="Sim":
         G(uri,obs.limitedMandate,L(True)) # funcional
     else:
