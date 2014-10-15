@@ -11,10 +11,10 @@ obs:ChamberOfDeputies a owl:Class ;
 
 obs:Commission a owl:Class ;
     rdfs:label "Comissão"@pt,
-        "Componente da comissão de organização nacional"@pt .
+        "Comissão da organização nacional"@pt .
 
 obs:Committee a owl:Class ;
-    rdfs:label "Componente da comissão de organização nacional"@pt .
+    rdfs:label "Comissão da organização nacional"@pt .
 
 obs:Conference a owl:Class ;
     rdfs:label "Conferência"@pt ;
@@ -22,13 +22,13 @@ obs:Conference a owl:Class ;
     rdfs:subClassOf obs:ParticipationInstance .
 
 obs:Coordination a owl:Class ;
-    rdfs:label "Componente da comissão de organização nacional"@pt .
+    rdfs:label "Comissão da organização nacional"@pt .
 
 obs:Coordinator a owl:Class ;
-    rdfs:label "Componente da comissão de organização nacional"@pt .
+    rdfs:label "Comissão da organização nacional"@pt .
 
 obs:Counsel a owl:Class ;
-    rdfs:label "Componente da comissão de organização nacional"@pt .
+    rdfs:label "Comissão da organização nacional"@pt .
 
 obs:Decree a owl:Class ;
     rdfs:label "Decreto presidencial"@pt ;
@@ -58,7 +58,7 @@ obs:Goals a owl:Class ;
     rdfs:label "Objetivos"@pt .
 
 obs:Group a owl:Class ;
-    rdfs:label "Componente da comissão de organização nacional"@pt .
+    rdfs:label "Comissão da organização nacional"@pt .
 
 obs:GuaranteeOfRights a owl:Class ;
     rdfs:label "Garantia de direitos"@pt ;
@@ -86,11 +86,14 @@ obs:MunicipalConference a owl:Class ;
     rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
 
 obs:NA a owl:Class ;
-    rdfs:label "Componente da comissão de organização nacional"@pt .
+    rdfs:label "Comissão da organização nacional"@pt .
 
 obs:NationalConference a owl:Class ;
     rdfs:label "Conferência nacional"@pt ;
     rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
+
+obs:NationalOrganizationCommissionComponent a owl:Class ;
+    rdfs:label "Componente da comissão de organização nacional"@pt .
 
 obs:NaturalResources a owl:Class ;
     rdfs:label "Recursos naturais"@pt ;
@@ -109,7 +112,7 @@ obs:ParticipationMechanism a owl:Class ;
     rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
 
 obs:Presidency a owl:Class ;
-    rdfs:label "Componente da comissão de organização nacional"@pt .
+    rdfs:label "Comissão da organização nacional"@pt .
 
 obs:PublicAudience a owl:Class ;
     rdfs:label "Audiência pública"@pt .
@@ -118,7 +121,7 @@ obs:PublicConsultation a owl:Class ;
     rdfs:label "Consulta pública"@pt .
 
 obs:Rapporteur a owl:Class ;
-    rdfs:label "Componente da comissão de organização nacional"@pt .
+    rdfs:label "Comissão da organização nacional"@pt .
 
 obs:RegionalConference a owl:Class ;
     rdfs:label "Conferência regional"@pt ;
@@ -134,7 +137,7 @@ obs:Secretariat a owl:Class ;
     rdfs:subClassOf obs:publicAgency .
 
 obs:Secretary a owl:Class ;
-    rdfs:label "Componente da comissão de organização nacional"@pt .
+    rdfs:label "Comissão da organização nacional"@pt .
 
 obs:SocialPolicies a owl:Class ;
     rdfs:label "Políticas sociais"@pt ;
@@ -146,7 +149,7 @@ obs:StateConference a owl:Class ;
     rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
 
 obs:Subcommittee a owl:Class ;
-    rdfs:label "Componente da comissão de organização nacional"@pt .
+    rdfs:label "Comissão da organização nacional"@pt .
 
 obs:Theme a owl:Class ;
     rdfs:label "Tema"@pt .
@@ -164,7 +167,7 @@ obs:area a owl:ObjectProperty ;
 
 obs:commission a owl:ObjectProperty ;
     rdfs:label "commissão"@pt ;
-    rdfs:range obs:NationalOrganizationCommissionComponent .
+    rdfs:range obs:NationalOrganizationCommission .
 
 obs:composition a owl:ObjectProperty ;
     rdfs:label "composição"@pt ;
@@ -181,13 +184,37 @@ obs:datePublished a owl:DatatypeProperty ;
     rdfs:label "data de publicação"@pt ;
     rdfs:range xsd:dateTime .
 
+obs:deputy a owl:DatatypeProperty ;
+    rdfs:label "adjunta"@pt ;
+    rdfs:comment "A componente é adjunta"@pt ;
+    rdfs:range xsd:boolean .
+
 obs:edition a owl:DatatypeProperty ;
     rdfs:label "edição"@pt ;
     rdfs:range xsd:integer .
 
+obs:editorial a owl:DatatypeProperty ;
+    rdfs:label "editorial"@pt ;
+    rdfs:comment "A componente é editorial"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:entity a owl:ObjectProperty ;
+    rdfs:label "entidade"@pt ;
+    rdfs:range obs:Body .
+
 obs:evaluationPurpose a owl:DatatypeProperty ;
     rdfs:label "avaliação"@pt ;
     rdfs:comment "possui a conferência objetivo de avaliação?"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:executive a owl:DatatypeProperty ;
+    rdfs:label "executiva"@pt ;
+    rdfs:comment "A componente é executiva"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:general a owl:DatatypeProperty ;
+    rdfs:label "geral"@pt ;
+    rdfs:comment "A componente é geral"@pt ;
     rdfs:range xsd:boolean .
 
 obs:has a owl:ObjectProperty ;
@@ -229,25 +256,32 @@ obs:schedulingPurpose a owl:DatatypeProperty ;
     rdfs:comment "possui a conferência objetivo de agendamento?"@pt ;
     rdfs:range xsd:boolean .
 
+obs:special a owl:DatatypeProperty ;
+    rdfs:label "especial"@pt ;
+    rdfs:comment "A componente é especial"@pt ;
+    rdfs:range xsd:boolean .
+
 obs:thematicAxes a owl:DatatypeProperty ;
     rdfs:label "eixos temáticos"@pt,
         "período de realização"@pt ;
     rdfs:range xsd:duration,
         xsd:string .
 
+obs:working a owl:DatatypeProperty ;
+    rdfs:label "de trabalho"@pt ;
+    rdfs:comment "A componente é de trabalho"@pt ;
+    rdfs:range xsd:boolean .
+
 obs:year a owl:DatatypeProperty ;
     rdfs:label "ano"@pt ;
     rdfs:range xsd:gYear .
-
-obs:Body a owl:Class ;
-    rdfs:label "Corpo"@pt .
 
 obs:Council a owl:Class ;
     rdfs:label "Conselho"@pt ;
     rdfs:subClassOf obs:publicAgency .
 
-obs:NationalOrganizationCommissionComponent a owl:Class ;
-    rdfs:label "Componente da comissão de organização nacional"@pt .
+obs:NationalOrganizationCommission a owl:Class ;
+    rdfs:label "Comissão da organização nacional"@pt .
 
 obs:ParticipationInstance a owl:Class ;
     rdfs:label "Instância de participação social"@pt ;
@@ -256,6 +290,9 @@ obs:ParticipationInstance a owl:Class ;
 obs:Phase a owl:Class ;
     rdfs:label "Etapa"@pt ;
     rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
+
+obs:Body a owl:Class ;
+    rdfs:label "Corpo"@pt .
 
 obs:ParticipationInstanceOrMechanism a owl:Class ;
     rdfs:label "Instância ou mecanismo de participação social"@pt .

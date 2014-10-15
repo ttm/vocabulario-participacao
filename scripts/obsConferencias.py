@@ -701,8 +701,9 @@ e.attr["label"]=lco
 
 co_=obs.commission
 lco_=u"commissão"
-bo_=obs.NationalOrganizationCommissionComponent
-lbo_=u"Componente da comissão de organização nacional"
+
+bo_=obs.NationalOrganizationCommission
+lbo_=u"Comissão da organização nacional"
 G(co_,rdf.type,owl.ObjectProperty)
 G(co_,rdfs.label,L(lco_,lang="pt"))
 G(co_,rdfs.range,bo_)
@@ -714,6 +715,22 @@ e=A.get_edge(lbo,lbo_)
 e.attr["label"]=lco_
 
 
+co=obs.entity
+lco=u"entidade"
+bo__=obs.NationalOrganizationCommissionComponent
+lbo___=u"Componente da comissão de organização nacional"
+
+G(co,rdf.type,owl.ObjectProperty)
+G(co,rdfs.label,L(lco,lang="pt"))
+G(co,rdfs.range,bo)
+G(bo__,rdf.type,owl.Class)
+G(bo__,rdfs.label,L(lbo___,lang="pt"))
+A.add_node(lbo___,style="filled")
+A.add_edge(lbo_,lbo___)
+e=A.get_edge(lbo_,lbo___)
+e.attr["label"]=lco
+
+
 bb=[(obs.Committee,u"Comitê"),(obs.Group,u"Grupo"),(obs.Commission,u"Comissão"),(obs.Coordination,u"Coordenação"),(obs.Presidency,u"Presidência"),(obs.Subcommittee,u"Subcomitê"),(obs.Counsel,u"Assessoria"),(obs.Coordinator,u"Coordenador"),(obs.Secretary,u"Secretário"),(obs.Rapporteur,u"Relator"),(obs.NA,u"Nenhum se aplica")]
 jaTem=[obs.Commission]
 
@@ -723,10 +740,29 @@ for b in bb:
     G(bo_,rdf.type,owl.Class)
     G(bo_,rdfs.label,L(lbo_,lang="pt"))
     A.add_node(lbo__,style="filled")
-    A.add_edge(lbo__,lbo_)
-    e=A.get_edge(lbo__,lbo_)
+    A.add_edge(lbo__,lbo___)
+    e=A.get_edge(lbo__,lbo___)
     e.attr["arrowhead"]="empty"
     e.attr["arrowsize"]=2
+
+
+pp=[(obs.deputy,u"adjunta"),(obs.working,u"de trabalho"),(obs.general,u"geral"),(obs.special,u"especial"),(obs.executive,u"executiva"),(obs.editorial,u"editorial")]
+for pr in pp:
+    nm=pr[0]
+    lnm=pr[1]
+    #nm=obs.participationPurpose
+    #lnm=u"participação"
+    G(nm,rdf.type,owl.DatatypeProperty)
+    G(nm,rdfs.label,L(lnm,lang="pt"))
+    G(nm,rdfs.comment,L(u"A componente é %s"%(lnm,),lang="pt")) 
+    G(nm,rdfs.range,xsd.boolean)
+    A.add_node(COUNT,style="filled")
+    nd=A.get_node(COUNT)
+    nd.attr["label"]="xsd:boolean"
+    nd.attr['color']="#A2F3D1"
+    A.add_edge(lbo___,COUNT)
+    e=A.get_edge(lbo___,COUNT); COUNT+=1
+    e.attr["label"]=lnm
 
 
 
