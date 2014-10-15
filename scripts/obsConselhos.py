@@ -212,10 +212,10 @@ A.add_edge(lcons,lac)
 e=A.get_edge(lcons,lac)
 e.attr["label"]=lre
 ###########
-ta=obs.thematicArea
-lta=u"área temática" # SKOS
-th=obs.Theme
-lth=u"Tema"
+ta=obs.area
+lta=u"área" # SKOS
+th=obs.PolicyArea
+lth=u"Área Política"
 G(ta,rdf.type,owl.ObjectProperty)
 G(ta,rdfs.label,L(lta,lang="pt"))
 G(ta,rdfs.range,th)

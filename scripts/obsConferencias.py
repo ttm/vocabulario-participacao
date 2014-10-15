@@ -165,6 +165,172 @@ e=A.get_edge(lsp,lth)
 e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
 
+#### TTM
+ca=obs.convocation
+lca=u"Convocação"
+ac=obs.Act
+lac=u"Ato institucional" # SKOS Ato Institucional
+
+pu=obs.datePublished
+lpu=u"data de publicação"
+nr=obs.numericReference
+lnr=u"referêcia numérica"
+
+#la=obs.Law
+#lla=u"Lei" # SKOS
+oe=obs.Ordinance
+loe=u"Portaria" # SKOS
+de=obs.Decree
+lde=u"Decreto" # SKOS
+#bl=obs.Bylaws
+#lbl=u"Regimento interno" #SKOS
+re=obs.Resolution
+lre=u"Resolução" #SKOS
+
+G(ca,rdf.type,owl.ObjectProperty)
+G(ca,rdfs.label,L(lca,lang="pt"))
+G(ca,rdfs.range,ac)
+G(oe,rdfs.subClassOf,ac)
+G(de,rdfs.subClassOf,ac)
+G(re,rdfs.subClassOf,ac)
+
+G(ac,rdf.type,owl.Class)
+G(ac,rdfs.label,L(lac,lang="pt"))
+G(oe,rdf.type,owl.Class)
+G(oe,rdfs.label,L(loe,lang="pt"))
+G(de,rdf.type,owl.Class)
+G(de,rdfs.label,L(lde,lang="pt"))
+G(re,rdf.type,owl.Class)
+G(re,rdfs.label,L(lre,lang="pt"))
+
+G(pu,rdf.type,owl.DatatypeProperty)
+G(pu,rdfs.label,L(lpu,lang="pt"))
+G(pu,rdfs.range,xsd.dateTime)
+G(nr,rdf.type,owl.DatatypeProperty)
+G(nr,rdfs.label,L(lnr,lang="pt"))
+G(nr,rdfs.range,xsd.string)
+
+# desenhar isso
+A.add_node(lac,style="filled")
+A.add_edge(lconf,lac)
+e=A.get_edge(lconf,lac)
+e.attr["label"]=lca
+A.add_node(loe,style="filled") ###
+A.add_edge(loe,lac)
+e=A.get_edge(loe,lac)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+A.add_node(lde,style="filled") ###
+A.add_edge(lde,lac)
+e=A.get_edge(lde,lac)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+A.add_node(lre,style="filled") ###
+A.add_edge(lre,lac)
+e=A.get_edge(lre,lac)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:dateTime"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lac,COUNT)
+e=A.get_edge(lac,COUNT); COUNT+=1
+e.attr["label"]=lpu
+
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:string"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lac,COUNT)
+e=A.get_edge(lac,COUNT); COUNT+=1
+e.attr["label"]=lnr
+
+####
+#ta=obs.thematicArea
+#lta=u"área temática" # SKOS
+#th=obs.Theme
+#lth=u"Tema"
+ta=obs.area
+lta=u"área" # SKOS
+th=obs.PolicyArea
+lth=u"Área política"
+G(ta,rdf.type,owl.ObjectProperty)
+G(ta,rdfs.label,L(lta,lang="pt"))
+G(ta,rdfs.range,th)
+G(th,rdf.type,owl.Class)
+G(th,rdfs.label,L(lth,lang="pt"))
+A.add_node(lth,style="filled")
+A.add_edge(lconf,lth)
+e=A.get_edge(lconf,lth)
+e.attr["label"]=lta
+
+sp=obs.SocialPolicies
+lsp=u"Políticas sociais" # SKOS TTM
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.comment,L(u"assistência social, cultura, saúde, segurança alimentar e nutricional",lang="pt"))
+G(sp,rdfs.subClassOf,th)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lth)
+e=A.get_edge(lsp,lth)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.EconomicDevelopment ###
+lsp=u"Desenvolvimento econômico" # SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.comment,L(u"arranjos produtivos locais, assistência técnica e extensão rural, desenvolvimento regional e desenvolvimento rural sustentável e solidário",lang="pt"))
+G(sp,rdfs.subClassOf,th)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lth)
+e=A.get_edge(lsp,lth)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.GuaranteeOfRights ###
+lsp=u"Garantia de direitos" # SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.comment,L(u"criança e adolescente, educação, juventude, LGBT, mulheres e pessoa idosa",lang="pt"))
+G(sp,rdfs.subClassOf,th)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lth)
+e=A.get_edge(lsp,lth)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.Infrastructure ###
+lsp=u"Infraestrutura" # SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.comment,L(u"cidades",lang="pt"))
+G(sp,rdfs.subClassOf,th)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lth)
+e=A.get_edge(lsp,lth)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.NaturalResources ###
+lsp=u"Recursos naturais" # SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.comment,L(u"meio ambiente",lang="pt"))
+G(sp,rdfs.subClassOf,th)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lth)
+e=A.get_edge(lsp,lth)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+
+
+
+
+
 
 
 

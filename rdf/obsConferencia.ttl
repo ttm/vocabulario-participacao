@@ -22,17 +22,66 @@ obs:Council a owl:Class ;
     rdfs:label "Conselho"@pt ;
     rdfs:subClassOf obs:publicAgency .
 
+obs:Decree a owl:Class ;
+    rdfs:label "Decreto"@pt ;
+    rdfs:subClassOf obs:Act .
+
+obs:EconomicDevelopment a owl:Class ;
+    rdfs:label "Desenvolvimento econômico"@pt ;
+    rdfs:comment "arranjos produtivos locais, assistência técnica e extensão rural, desenvolvimento regional e desenvolvimento rural sustentável e solidário"@pt ;
+    rdfs:subClassOf obs:PolicyArea .
+
 obs:Forum a owl:Class ;
     rdfs:label "Fórum"@pt ;
     rdfs:subClassOf obs:publicAgency .
+
+obs:GuaranteeOfRights a owl:Class ;
+    rdfs:label "Garantia de direitos"@pt ;
+    rdfs:comment "criança e adolescente, educação, juventude, LGBT, mulheres e pessoa idosa"@pt ;
+    rdfs:subClassOf obs:PolicyArea .
+
+obs:Infrastructure a owl:Class ;
+    rdfs:label "Infraestrutura"@pt ;
+    rdfs:comment "cidades"@pt ;
+    rdfs:subClassOf obs:PolicyArea .
 
 obs:Ministry a owl:Class ;
     rdfs:label "Ministério"@pt ;
     rdfs:subClassOf obs:publicAgency .
 
+obs:NaturalResources a owl:Class ;
+    rdfs:label "Recursos naturais"@pt ;
+    rdfs:comment "meio ambiente"@pt ;
+    rdfs:subClassOf obs:PolicyArea .
+
+obs:Ordinance a owl:Class ;
+    rdfs:label "Portaria"@pt ;
+    rdfs:subClassOf obs:Act .
+
+obs:Resolution a owl:Class ;
+    rdfs:label "Resolução"@pt ;
+    rdfs:subClassOf obs:Act .
+
 obs:Secretariat a owl:Class ;
     rdfs:label "Secretaria"@pt ;
     rdfs:subClassOf obs:publicAgency .
+
+obs:SocialPolicies a owl:Class ;
+    rdfs:label "Políticas sociais"@pt ;
+    rdfs:comment "assistência social, cultura, saúde, segurança alimentar e nutricional"@pt ;
+    rdfs:subClassOf obs:PolicyArea .
+
+obs:area a owl:ObjectProperty ;
+    rdfs:label "área"@pt ;
+    rdfs:range obs:PolicyArea .
+
+obs:convocation a owl:ObjectProperty ;
+    rdfs:label "Convocação"@pt ;
+    rdfs:range obs:Act .
+
+obs:datePublished a owl:DatatypeProperty ;
+    rdfs:label "data de publicação"@pt ;
+    rdfs:range xsd:dateTime .
 
 obs:edition a owl:DatatypeProperty ;
     rdfs:label "edição"@pt ;
@@ -40,6 +89,10 @@ obs:edition a owl:DatatypeProperty ;
 
 obs:name a owl:DatatypeProperty ;
     rdfs:label "nome"@pt ;
+    rdfs:range xsd:string .
+
+obs:numericReference a owl:DatatypeProperty ;
+    rdfs:label "referêcia numérica"@pt ;
     rdfs:range xsd:string .
 
 obs:responsibleAgency a owl:ObjectProperty ;
@@ -52,6 +105,12 @@ obs:year a owl:DatatypeProperty ;
 
 obs:ParticipationMechanism a owl:Class ;
     rdfs:label "Mecanismo ou instância de participação social"@pt .
+
+obs:Act a owl:Class ;
+    rdfs:label "Ato institucional"@pt .
+
+obs:PolicyArea a owl:Class ;
+    rdfs:label "Área política"@pt .
 
 obs:publicAgency a owl:Class ;
     rdfs:label "Órgão público"@pt .

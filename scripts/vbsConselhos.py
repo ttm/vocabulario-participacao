@@ -86,8 +86,8 @@ G(re,rdf.type,skos.Concept)
 G(re,skos.prefLabel,L(lre,lang="pt"))
 
 ### TTM
-ta=vbs.thematicArea
-lta=u"área temática" # SKOS
+ta=vbs.PolicyArea
+lta=u"Área política" # SKOS
 G(ta,rdf.type,skos.Concept)
 G(ta,skos.prefLabel,L(lta,lang="pt"))
 
