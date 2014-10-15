@@ -112,6 +112,9 @@ obs:ParticipationMechanism a owl:Class ;
     rdfs:label "Mecanismo de participação social"@pt ;
     rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
 
+obs:Positions a owl:Class ;
+    rdfs:label "Vagas"@pt .
+
 obs:Presidency a owl:Class ;
     rdfs:label "Comissão da organização nacional"@pt .
 
@@ -120,6 +123,9 @@ obs:PublicAudience a owl:Class ;
 
 obs:PublicConsultation a owl:Class ;
     rdfs:label "Consulta pública"@pt .
+
+obs:Quotas a owl:Class ;
+    rdfs:label "Cotas"@pt .
 
 obs:Rapporteur a owl:Class ;
     rdfs:label "Comissão da organização nacional"@pt .
@@ -202,10 +208,18 @@ obs:datePublished a owl:DatatypeProperty ;
     rdfs:label "data de publicação"@pt ;
     rdfs:range xsd:dateTime .
 
+obs:delegates a owl:DatatypeProperty ;
+    rdfs:label "delegados"@pt ;
+    rdfs:range xsd:integer .
+
 obs:deputy a owl:DatatypeProperty ;
     rdfs:label "adjunta"@pt ;
     rdfs:comment "A componente é adjunta"@pt ;
     rdfs:range xsd:boolean .
+
+obs:description a owl:DatatypeProperty ;
+    rdfs:label "descrição"@pt ;
+    rdfs:range xsd:string .
 
 obs:edition a owl:DatatypeProperty ;
     rdfs:label "edição"@pt ;
@@ -219,6 +233,10 @@ obs:editorial a owl:DatatypeProperty ;
 obs:entity a owl:ObjectProperty ;
     rdfs:label "entidade"@pt ;
     rdfs:range obs:Body .
+
+obs:etnicGroup a owl:DatatypeProperty ;
+    rdfs:label "grupo étnico"@pt ;
+    rdfs:range xsd:integer .
 
 obs:evaluationPurpose a owl:DatatypeProperty ;
     rdfs:label "avaliação"@pt ;
@@ -239,9 +257,17 @@ obs:general a owl:DatatypeProperty ;
     rdfs:comment "A componente é geral"@pt ;
     rdfs:range xsd:boolean .
 
+obs:governmental a owl:DatatypeProperty ;
+    rdfs:label "governamentais"@pt ;
+    rdfs:range xsd:integer .
+
 obs:governmentalPositions a owl:DatatypeProperty ;
     rdfs:label "vagas governamentais"@pt ;
     rdfs:range xsd:integer .
+
+obs:guests a owl:DatatypeProperty ;
+    rdfs:label "convidados"@pt ;
+    rdfs:range xsd:boolean .
 
 obs:has a owl:ObjectProperty ;
     rdfs:label "possui"@pt .
@@ -258,6 +284,10 @@ obs:name a owl:DatatypeProperty ;
     rdfs:label "nome"@pt ;
     rdfs:range xsd:string .
 
+obs:nonGovernmental a owl:DatatypeProperty ;
+    rdfs:label "não governamentais"@pt ;
+    rdfs:range xsd:integer .
+
 obs:nonGovernmentalPositions a owl:DatatypeProperty ;
     rdfs:label "vagas não governamentais"@pt ;
     rdfs:range xsd:integer .
@@ -265,6 +295,10 @@ obs:nonGovernmentalPositions a owl:DatatypeProperty ;
 obs:numericReference a owl:DatatypeProperty ;
     rdfs:label "referêcia numérica"@pt ;
     rdfs:range xsd:string .
+
+obs:other a owl:ObjectProperty ;
+    rdfs:label "outro"@pt ;
+    rdfs:range obs:OtherGroup .
 
 obs:participationPurpose a owl:DatatypeProperty ;
     rdfs:label "participação"@pt ;
@@ -303,6 +337,13 @@ obs:propositionPurpose a owl:DatatypeProperty ;
     rdfs:comment "possui a conferência objetivo de proposição?"@pt ;
     rdfs:range xsd:boolean .
 
+obs:quantity a owl:DatatypeProperty ;
+    rdfs:label "quantidade"@pt ;
+    rdfs:range xsd:integer .
+
+obs:regiment a owl:ObjectProperty ;
+    rdfs:label "regimento"@pt .
+
 obs:responsibleAgency a owl:ObjectProperty ;
     rdfs:label "órgão responsável"@pt ;
     rdfs:range obs:publicAgency .
@@ -320,6 +361,10 @@ obs:special a owl:DatatypeProperty ;
 obs:thematicAxes a owl:DatatypeProperty ;
     rdfs:label "eixos temáticos"@pt ;
     rdfs:range xsd:string .
+
+obs:women a owl:DatatypeProperty ;
+    rdfs:label "mulheres"@pt ;
+    rdfs:range xsd:integer .
 
 obs:working a owl:DatatypeProperty ;
     rdfs:label "de trabalho"@pt ;
@@ -342,6 +387,9 @@ obs:InteractionDialogueForm a owl:Class ;
 
 obs:NationalOrganizationCommission a owl:Class ;
     rdfs:label "Comissão da organização nacional"@pt .
+
+obs:OtherGroup a owl:Class ;
+    rdfs:label "Outro Grupo"@pt .
 
 obs:ParticipationInstance a owl:Class ;
     rdfs:label "Instância de participação social"@pt ;

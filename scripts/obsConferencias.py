@@ -595,9 +595,6 @@ A.add_edge(lth,COUNT)
 e=A.get_edge(lth,COUNT); COUNT+=1
 e.attr["label"]=lnm
 
-
-
-
 th=obs.StateConference
 lth=u"Conferência estadual"
 G(th,rdf.type,owl.Class)
@@ -963,6 +960,166 @@ e.attr["label"]=lta
 
 #####
 # Colunas AQ e AR contempladas diretamente na classe NationalConference
+###
+# AS-AU
+co=obs.regiment
+lco=u"regimento"
+bo=obs.Positions
+lbo=u"Vagas"
+G(co,rdf.type,owl.ObjectProperty)
+G(co,rdfs.label,L(lco,lang="pt"))
+G(bo,rdf.type,owl.Class)
+G(bo,rdfs.label,L(lbo,lang="pt"))
+A.add_node(lbo,style="filled")
+A.add_edge(u"Corpo",lbo)
+e=A.get_edge(u"Corpo",lbo)
+e.attr["label"]=lco
+
+nm=obs.delegates
+lnm=u"delegados"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.integer)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:integer"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lbo,COUNT)
+e=A.get_edge(lbo,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+nm=obs.governmental
+lnm=u"governamentais"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.integer)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:integer"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lbo,COUNT)
+e=A.get_edge(lbo,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+nm=obs.nonGovernmental
+lnm=u"não governamentais"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.integer)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:integer"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lbo,COUNT)
+e=A.get_edge(lbo,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+nm=obs.guests
+lnm=u"convidados"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.boolean)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:boolean"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lbo,COUNT)
+e=A.get_edge(lbo,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+
+####
+
+ta=obs.other
+lta=u"outro" # SKOS
+th=obs.OtherGroup
+lth=u"Outro Grupo"
+G(ta,rdf.type,owl.ObjectProperty)
+G(ta,rdfs.label,L(lta,lang="pt"))
+G(th,rdf.type,owl.Class)
+G(th,rdfs.label,L(lth,lang="pt"))
+G(ta,rdfs.range,th)
+A.add_node(lth,style="filled")
+A.add_edge(lbo,lth)
+e=A.get_edge(lbo,lth)
+e.attr["label"]=lta
+lth_=lth
+
+
+nm=obs.quantity
+lnm=u"quantidade"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.integer)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:integer"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lth,COUNT)
+e=A.get_edge(lth,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+nm=obs.description
+lnm=u"descrição"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.string)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:string"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lth,COUNT)
+e=A.get_edge(lth,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+####
+# Cotas
+
+bo=obs.Quotas
+lbo=u"Cotas"
+G(bo,rdf.type,owl.Class)
+G(bo,rdfs.label,L(lbo,lang="pt"))
+A.add_node(lbo,style="filled")
+A.add_edge(u"Corpo",lbo)
+e=A.get_edge(u"Corpo",lbo)
+e.attr["label"]=lco
+
+A.add_edge(lbo,lth)
+e=A.get_edge(lbo,lth)
+e.attr["label"]=lta
+
+nm=obs.women
+lnm=u"mulheres"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.integer)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:integer"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lbo,COUNT)
+e=A.get_edge(lbo,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+nm=obs.etnicGroup
+lnm=u"grupo étnico"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.integer)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:integer"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lbo,COUNT)
+e=A.get_edge(lbo,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+####
+
+
+
+
+
 
 #####
 nome=("../figs/obsConferencia.png")
