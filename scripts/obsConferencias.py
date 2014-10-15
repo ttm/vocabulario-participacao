@@ -714,20 +714,19 @@ e=A.get_edge(lbo,lbo_)
 e.attr["label"]=lco_
 
 
-bb=[(obs.Committee,u"Comitê"),(obs.Group,u"Grupo"),(obs.Commission,u"Comissão"),(obs.Coordination,u"Coordenação")]
-jaTem=[obs.Commission,]
+bb=[(obs.Committee,u"Comitê"),(obs.Group,u"Grupo"),(obs.Commission,u"Comissão"),(obs.Coordination,u"Coordenação"),(obs.Presidency,u"Presidência"),(obs.Subcommittee,u"Subcomitê"),(obs.Counsel,u"Assessoria"),(obs.Coordinator,u"Coordenador"),(obs.Secretary,u"Secretário"),(obs.Rapporteur,u"Relator"),(obs.NA,u"Nenhum se aplica")]
+jaTem=[obs.Commission]
 
-bo_=obs.Committee
-lbo_=u"Comitê"
-G(co_,rdf.type,owl.ObjectProperty)
-G(co_,rdfs.label,L(lco_,lang="pt"))
-G(co_,rdfs.range,bo_)
-G(bo_,rdf.type,owl.Class)
-G(bo_,rdfs.label,L(lbo_,lang="pt"))
-A.add_node(lbo_,style="filled")
-A.add_edge(lbo,lbo_)
-e=A.get_edge(lbo,lbo_)
-e.attr["label"]=lco_
+for b in bb:
+    bo_=b[0]
+    lbo__=b[1]
+    G(bo_,rdf.type,owl.Class)
+    G(bo_,rdfs.label,L(lbo_,lang="pt"))
+    A.add_node(lbo__,style="filled")
+    A.add_edge(lbo__,lbo_)
+    e=A.get_edge(lbo__,lbo_)
+    e.attr["arrowhead"]="empty"
+    e.attr["arrowsize"]=2
 
 
 

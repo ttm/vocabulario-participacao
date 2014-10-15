@@ -10,12 +10,25 @@ obs:ChamberOfDeputies a owl:Class ;
     rdfs:subClassOf obs:publicAgency .
 
 obs:Commission a owl:Class ;
-    rdfs:label "Comissão"@pt .
+    rdfs:label "Comissão"@pt,
+        "Componente da comissão de organização nacional"@pt .
+
+obs:Committee a owl:Class ;
+    rdfs:label "Componente da comissão de organização nacional"@pt .
 
 obs:Conference a owl:Class ;
     rdfs:label "Conferência"@pt ;
     rdfs:comment "Conferências são processos nacionais de promoção do diálogo entre governo e sociedade"@pt ;
     rdfs:subClassOf obs:ParticipationInstance .
+
+obs:Coordination a owl:Class ;
+    rdfs:label "Componente da comissão de organização nacional"@pt .
+
+obs:Coordinator a owl:Class ;
+    rdfs:label "Componente da comissão de organização nacional"@pt .
+
+obs:Counsel a owl:Class ;
+    rdfs:label "Componente da comissão de organização nacional"@pt .
 
 obs:Decree a owl:Class ;
     rdfs:label "Decreto presidencial"@pt ;
@@ -44,6 +57,9 @@ obs:FreeConference a owl:Class ;
 obs:Goals a owl:Class ;
     rdfs:label "Objetivos"@pt .
 
+obs:Group a owl:Class ;
+    rdfs:label "Componente da comissão de organização nacional"@pt .
+
 obs:GuaranteeOfRights a owl:Class ;
     rdfs:label "Garantia de direitos"@pt ;
     rdfs:comment "criança e adolescente, educação, juventude, LGBT, mulheres e pessoa idosa"@pt ;
@@ -69,6 +85,9 @@ obs:MunicipalConference a owl:Class ;
     rdfs:label "Conferência municipal"@pt ;
     rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
 
+obs:NA a owl:Class ;
+    rdfs:label "Componente da comissão de organização nacional"@pt .
+
 obs:NationalConference a owl:Class ;
     rdfs:label "Conferência nacional"@pt ;
     rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
@@ -89,11 +108,17 @@ obs:ParticipationMechanism a owl:Class ;
     rdfs:label "Mecanismo de participação social"@pt ;
     rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
 
+obs:Presidency a owl:Class ;
+    rdfs:label "Componente da comissão de organização nacional"@pt .
+
 obs:PublicAudience a owl:Class ;
     rdfs:label "Audiência pública"@pt .
 
 obs:PublicConsultation a owl:Class ;
     rdfs:label "Consulta pública"@pt .
+
+obs:Rapporteur a owl:Class ;
+    rdfs:label "Componente da comissão de organização nacional"@pt .
 
 obs:RegionalConference a owl:Class ;
     rdfs:label "Conferência regional"@pt ;
@@ -108,6 +133,9 @@ obs:Secretariat a owl:Class ;
     rdfs:comment "Secretaria com status ministerial"@pt ;
     rdfs:subClassOf obs:publicAgency .
 
+obs:Secretary a owl:Class ;
+    rdfs:label "Componente da comissão de organização nacional"@pt .
+
 obs:SocialPolicies a owl:Class ;
     rdfs:label "Políticas sociais"@pt ;
     rdfs:comment "assistência social, cultura, saúde, segurança alimentar e nutricional"@pt ;
@@ -116,6 +144,9 @@ obs:SocialPolicies a owl:Class ;
 obs:StateConference a owl:Class ;
     rdfs:label "Conferência estadual"@pt ;
     rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
+
+obs:Subcommittee a owl:Class ;
+    rdfs:label "Componente da comissão de organização nacional"@pt .
 
 obs:Theme a owl:Class ;
     rdfs:label "Tema"@pt .
@@ -133,7 +164,7 @@ obs:area a owl:ObjectProperty ;
 
 obs:commission a owl:ObjectProperty ;
     rdfs:label "commissão"@pt ;
-    rdfs:range obs:NationalOrganizationCommission .
+    rdfs:range obs:NationalOrganizationCommissionComponent .
 
 obs:composition a owl:ObjectProperty ;
     rdfs:label "composição"@pt ;
@@ -215,8 +246,8 @@ obs:Council a owl:Class ;
     rdfs:label "Conselho"@pt ;
     rdfs:subClassOf obs:publicAgency .
 
-obs:NationalOrganizationCommission a owl:Class ;
-    rdfs:label "Comissão de organização nacional"@pt .
+obs:NationalOrganizationCommissionComponent a owl:Class ;
+    rdfs:label "Componente da comissão de organização nacional"@pt .
 
 obs:ParticipationInstance a owl:Class ;
     rdfs:label "Instância de participação social"@pt ;
