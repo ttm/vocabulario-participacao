@@ -3,175 +3,193 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/convocation">
-    <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/Act"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="pt">convocação</rdfs:label>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/datePublished">
+    <rdfs:label xml:lang="pt">data de publicação</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Resolution">
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Act"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Resolução de conselho</rdfs:label>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/phrase">
+    <rdfs:comment xml:lang="pt">frase de referência do tema da conferência</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="pt">frase de referência</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/PolicyArea">
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Área de política</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/ChamberOfDeputies">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Câmara dos deputados</rdfs:label>
+    <rdfs:label xml:lang="pt">Conselho</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/publicAgency"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/thematicAxes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <rdfs:label xml:lang="pt">período de realização</rdfs:label>
+    <rdfs:label xml:lang="pt">eixos temáticos</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/participationPurpose">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <rdfs:label xml:lang="pt">participação</rdfs:label>
     <rdfs:comment xml:lang="pt">possui a conferência objetivo de participação?</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Theme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Tema</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/SocialPolicies">
+    <rdfs:label xml:lang="pt">Políticas sociais</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/PolicyArea"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="pt">assistência social, cultura, saúde, segurança alimentar e nutricional</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/FreeConference">
+    <rdfs:label xml:lang="pt">Conferência livre</rdfs:label>
+    <rdfs:comment xml:lang="pt">Uma fase é um evento participativo, enquanto a conferência em si é o processo todo</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/responsibleAgency">
+    <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/publicAgency"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="pt">órgão responsável</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/EconomicDevelopment">
+    <rdfs:label xml:lang="pt">Desenvolvimento econômico</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/PolicyArea"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="pt">arranjos produtivos locais, assistência técnica e extensão rural, desenvolvimento regional e desenvolvimento rural sustentável e solidário</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/name">
+    <rdfs:label xml:lang="pt">nome</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/NationalConference">
+    <rdfs:label xml:lang="pt">Conferência nacional</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="pt">Uma fase é um evento participativo, enquanto a conferência em si é o processo todo</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Ordinance">
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Act"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Portaria ministerial ou interministerial</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/convocation">
+    <rdfs:label xml:lang="pt">convocação</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/Act"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/PublicAudience">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Audiência pública</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Resolution">
+    <rdfs:label xml:lang="pt">Resolução de conselho</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Act"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Conference">
+    <rdfs:comment xml:lang="pt">Conferências são processos nacionais de promoção do diálogo entre governo e sociedade</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Conferência</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/ParticipationInstance"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/VirtualParticipationEnvironment">
+    <rdfs:label xml:lang="pt">Ambente virtual de participação social</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Forum">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Fórum não governamental</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/publicAgency"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/publicAgency">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Órgão público</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/evaluationPurpose">
+    <rdfs:comment xml:lang="pt">possui a conferência objetivo de avaliação?</rdfs:comment>
+    <rdfs:label xml:lang="pt">avaliação</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/PublicAudience">
-    <rdfs:label xml:lang="pt">Audiência pública</rdfs:label>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/edition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="pt">edição</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Ministry">
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/publicAgency"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Ministério</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/DialogueTable">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Mesa de diálogo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Goals">
+    <rdfs:label xml:lang="pt">Objetivos</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Commission">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Comissão</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/propositionPurpose">
+    <rdfs:label xml:lang="pt">proposição</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="pt">possui a conferência objetivo de proposição?</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/numericReference">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:label xml:lang="pt">referêcia numérica</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/InterCouncilForum">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Fórum interconselhos</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/NationalConference">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Conferência nacional</rdfs:label>
-    <rdfs:comment xml:lang="pt">Uma fase é um evento participativo, enquanto a conferência em si é o processo todo</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/evaluationPurpose">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="pt">avaliação</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdfs:comment xml:lang="pt">possui a conferência objetivo de avaliação?</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/year">
-    <rdfs:label xml:lang="pt">ano</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Infrastructure">
-    <rdfs:comment xml:lang="pt">cidades</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/PolicyArea"/>
-    <rdfs:label xml:lang="pt">Infraestrutura</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/ParticipationMechanism">
-    <rdfs:label xml:lang="pt">Mecanismo de participação social</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/ParticipationInstanceOrMechanism"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/ExtraordinaryConference">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="pt">Uma fase é um evento participativo, enquanto a conferência em si é o processo todo</rdfs:comment>
-    <rdfs:label xml:lang="pt">Conferência extraordinária</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/has">
     <rdfs:label xml:lang="pt">possui</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Conference">
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/ParticipationInstance"/>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/VirtualConference">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="pt">Conferências são processos nacionais de promoção do diálogo entre governo e sociedade</rdfs:comment>
-    <rdfs:label xml:lang="pt">Conferência</rdfs:label>
+    <rdfs:label xml:lang="pt">Conferência virtual</rdfs:label>
+    <rdfs:comment xml:lang="pt">Uma fase é um evento participativo, enquanto a conferência em si é o processo todo</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Forum">
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/publicAgency"/>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Ombusdmen">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Fórum não governamental</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Act">
-    <rdfs:label xml:lang="pt">Ato normativo</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/phrase">
-    <rdfs:label xml:lang="pt">frase de referência</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:comment xml:lang="pt">frase de referência do tema da conferência</rdfs:comment>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council">
-    <rdfs:label xml:lang="pt">Conselho</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/publicAgency"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/EconomicDevelopment">
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/PolicyArea"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Desenvolvimento econômico</rdfs:label>
-    <rdfs:comment xml:lang="pt">arranjos produtivos locais, assistência técnica e extensão rural, desenvolvimento regional e desenvolvimento rural sustentável e solidário</rdfs:comment>
+    <rdfs:label xml:lang="pt">Ouvidoria</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/schedulingPurpose">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:label xml:lang="pt">agendamento</rdfs:label>
-    <rdfs:comment xml:lang="pt">possui a conferência objetivo de agendamento?</rdfs:comment>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="pt">possui a conferência objetivo de agendamento?</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/RegionalConference">
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Decree">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="pt">Uma fase é um evento participativo, enquanto a conferência em si é o processo todo</rdfs:comment>
-    <rdfs:label xml:lang="pt">Conferência regional</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/NaturalResources">
-    <rdfs:label xml:lang="pt">Recursos naturais</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/PolicyArea"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="pt">meio ambiente</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/datePublished">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="pt">data de publicação</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/publicAgency">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Órgão público</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/SocialPolicies">
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/PolicyArea"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="pt">assistência social, cultura, saúde, segurança alimentar e nutricional</rdfs:comment>
-    <rdfs:label xml:lang="pt">Políticas sociais</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Ministry">
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/publicAgency"/>
-    <rdfs:label xml:lang="pt">Ministério</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/IntercityConferente">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Conferência intermunicipal</rdfs:label>
-    <rdfs:comment xml:lang="pt">Uma fase é um evento participativo, enquanto a conferência em si é o processo todo</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/phase">
-    <rdfs:label xml:lang="pt">etapa</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/Phase"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Act"/>
+    <rdfs:label xml:lang="pt">Decreto presidencial</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Secretariat">
-    <rdfs:label xml:lang="pt">Secretaria</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/publicAgency"/>
     <rdfs:comment xml:lang="pt">Secretaria com status ministerial</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Secretaria</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/publicAgency"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/thematicAxes">
-    <rdfs:label xml:lang="pt">eixos temáticos</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="pt">período de realização</rdfs:label>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/area">
+    <rdfs:label xml:lang="pt">área</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/PolicyArea"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/PublicConsultation">
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Infrastructure">
+    <rdfs:label xml:lang="pt">Infraestrutura</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/PolicyArea"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Consulta pública</rdfs:label>
+    <rdfs:comment xml:lang="pt">cidades</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/ParticipationMechanism">
+    <rdfs:label xml:lang="pt">Mecanismo de participação social</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/ParticipationInstanceOrMechanism"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/GuaranteeOfRights">
     <rdfs:label xml:lang="pt">Garantia de direitos</rdfs:label>
@@ -179,102 +197,84 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="pt">criança e adolescente, educação, juventude, LGBT, mulheres e pessoa idosa</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Ordinance">
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Act"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Portaria ministerial ou interministerial</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Theme">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Tema</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/propositionPurpose">
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/year">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="pt">proposição</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdfs:comment xml:lang="pt">possui a conferência objetivo de proposição?</rdfs:comment>
+    <rdfs:label xml:lang="pt">ano</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/StateConference">
-    <rdfs:comment xml:lang="pt">Uma fase é um evento participativo, enquanto a conferência em si é o processo todo</rdfs:comment>
-    <rdfs:label xml:lang="pt">Conferência estadual</rdfs:label>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Phase">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Etapa</rdfs:label>
+    <rdfs:comment xml:lang="pt">Uma fase é um evento participativo, enquanto a conferência em si é o processo todo</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/edition">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-    <rdfs:label xml:lang="pt">edição</rdfs:label>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/NaturalResources">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Recursos naturais</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/PolicyArea"/>
+    <rdfs:comment xml:lang="pt">meio ambiente</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/VirtualConference">
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/IntercityConferente">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Conferência intermunicipal</rdfs:label>
+    <rdfs:comment xml:lang="pt">Uma fase é um evento participativo, enquanto a conferência em si é o processo todo</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/ParticipationInstance">
+    <rdfs:label xml:lang="pt">Instância de participação social</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/ParticipationInstanceOrMechanism"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/MunicipalConference">
+    <rdfs:label xml:lang="pt">Conferência municipal</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="pt">Uma fase é um evento participativo, enquanto a conferência em si é o processo todo</rdfs:comment>
-    <rdfs:label xml:lang="pt">Conferência virtual</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/area">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="pt">área</rdfs:label>
-    <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/PolicyArea"/>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/RegionalConference">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="pt">Uma fase é um evento participativo, enquanto a conferência em si é o processo todo</rdfs:comment>
+    <rdfs:label xml:lang="pt">Conferência regional</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/PublicConsultation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Consulta pública</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/ParticipationInstanceOrMechanism">
+    <rdfs:label xml:lang="pt">Instância ou mecanismo de participação social</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/conselho">
     <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
     <rdfs:label xml:lang="pt">conselho</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Commission">
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/PolicyArea">
+    <rdfs:label xml:lang="pt">Área de política</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Comissão</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/DialogueTable">
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/StateConference">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Mesa de diálogo</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/FreeConference">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Conferência livre</rdfs:label>
+    <rdfs:label xml:lang="pt">Conferência estadual</rdfs:label>
     <rdfs:comment xml:lang="pt">Uma fase é um evento participativo, enquanto a conferência em si é o processo todo</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Phase">
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/ChamberOfDeputies">
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/publicAgency"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="pt">Uma fase é um evento participativo, enquanto a conferência em si é o processo todo</rdfs:comment>
-    <rdfs:label xml:lang="pt">Etapa</rdfs:label>
+    <rdfs:label xml:lang="pt">Câmara dos deputados</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/VirtualParticipationEnvironment">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Ambente virtual de participação social</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Ombusdmen">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Ouvidoria</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/MunicipalConference">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="pt">Uma fase é um evento participativo, enquanto a conferência em si é o processo todo</rdfs:comment>
-    <rdfs:label xml:lang="pt">Conferência municipal</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/ParticipationInstance">
-    <rdfs:label xml:lang="pt">Instância de participação social</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/ParticipationInstanceOrMechanism"/>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/InterCouncilForum">
+    <rdfs:label xml:lang="pt">Fórum interconselhos</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Goals">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Objetivos</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Decree">
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Act"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Decreto presidencial</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/responsibleAgency">
-    <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/publicAgency"/>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/phase">
+    <rdfs:label xml:lang="pt">etapa</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="pt">órgão responsável</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/Phase"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/name">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label xml:lang="pt">nome</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/ParticipationInstanceOrMechanism">
-    <rdfs:label xml:lang="pt">Instância ou mecanismo de participação social</rdfs:label>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Act">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Ato normativo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/ExtraordinaryConference">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="pt">Uma fase é um evento participativo, enquanto a conferência em si é o processo todo</rdfs:comment>
+    <rdfs:label xml:lang="pt">Conferência extraordinária</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

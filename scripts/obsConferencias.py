@@ -22,6 +22,8 @@ g.namespace_manager.bind("owl", r.namespace.OWL)
 conf=obs.Conference # SKOS
 lconf=u"Conferência"
 A.add_node(lconf,style="filled")
+nd=A.get_node(lconf)
+nd.attr['color']="#A29999"
 
 G(conf,rdf.type,owl.Class)
 G(conf,rdfs.label,L(lconf,lang="pt"))
