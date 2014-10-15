@@ -27,8 +27,8 @@ G(conf,rdf.type,owl.Class)
 G(conf,rdfs.label,L(lconf,lang="pt"))
 G(conf,rdfs.comment,L(u"Conferências são processos nacionais de promoção do diálogo entre governo e sociedade",lang="pt"))
 
-pm=obs.ParticipationMechanism # SKOS
-lpm=u"Mecanismo ou instância de participação social"
+pm=obs.ParticipationInstance # SKOS
+lpm=u"Mecanismo ou instância"
 A.add_node(lpm,style="filled")
 
 G(pm,rdf.type,owl.Class)
