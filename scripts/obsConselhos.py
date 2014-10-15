@@ -108,7 +108,7 @@ e.attr["label"]=lyc
 ca=obs.creationAct
 lca=u"ato de criação"
 ac=obs.Act
-lac=u"Ato institucional" # SKOS Ato Institucional
+lac=u"Ato normativo" # SKOS Ato Institucional
 
 pu=obs.datePublished
 lpu=u"data de publicação"

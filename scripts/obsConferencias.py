@@ -39,6 +39,125 @@ e=A.get_edge(lconf,lpm)
 e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
 
+
+####
+# define mecanismo de part
+pm_=obs.ParticipationMechanism # SKOS
+lpm_=u"Mecanismo de participação social"
+A.add_node(lpm_,style="filled")
+G(pm_,rdf.type,owl.Class)
+G(pm_,rdfs.label,L(lpm_,lang="pt"))
+
+pm__=obs.ParticipationInstanceOrMechanism # SKOS
+lpm__=u"Instância ou mecanismo de participação social"
+A.add_node(lpm__,style="filled")
+G(pm__,rdf.type,owl.Class)
+G(pm__,rdfs.label,L(lpm__,lang="pt"))
+
+G(pm_,rdfs.subClassOf,pm__)
+A.add_edge(lpm_,lpm__)
+e=A.get_edge(lpm_,lpm__)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+G(pm,rdfs.subClassOf,pm__)
+A.add_edge(lpm,lpm__)
+e=A.get_edge(lpm,lpm__)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+# coloca conselho como subclasse de inst de part soc
+sp=obs.Council
+lsp=u"Conselho" # SKOS TTM
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lpm)
+e=A.get_edge(lsp,lpm)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.Ombusdmen
+lsp=u"Ouvidoria" # SKOS TTM
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lpm)
+e=A.get_edge(lsp,lpm)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.Commission
+lsp=u"Comissão" # SKOS TTM
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lpm)
+e=A.get_edge(lsp,lpm)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+# Mecanismos
+sp=obs.DialogueTable
+lsp=u"Mesa de diálogo" # SKOS TTM
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lpm_)
+e=A.get_edge(lsp,lpm_)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.InterCouncilForum
+lsp=u"Fórum interconselhos" # SKOS TTM
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lpm_)
+e=A.get_edge(lsp,lpm_)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.PublicAudience
+lsp=u"Audiência pública" # SKOS TTM
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lpm_)
+e=A.get_edge(lsp,lpm_)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.PublicConsultation
+lsp=u"Consulta pública" # SKOS TTM
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lpm_)
+e=A.get_edge(lsp,lpm_)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.VirtualParticipationEnvironment
+lsp=u"Ambente virtual de participação social" # SKOS TTM
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lpm_)
+e=A.get_edge(lsp,lpm_)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+
+
+
+
+
+
+
+
+# define demais classes para as instancias e mecanismos de part soc
+
+
 ####
 nm=obs.name
 lnm=u"nome"
@@ -100,10 +219,7 @@ e.attr["label"]=lta
 
 sp=obs.Council
 lsp=u"Conselho" # SKOS TTM
-G(sp,rdf.type,owl.Class)
-G(sp,rdfs.label,L(lsp,lang="pt"))
 G(sp,rdfs.subClassOf,th)
-A.add_node(lsp,style="filled") ###
 A.add_edge(lsp,lth)
 e=A.get_edge(lsp,lth)
 e.attr["arrowhead"]="empty"

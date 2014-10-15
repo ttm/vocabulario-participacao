@@ -9,6 +9,9 @@ obs:ChamberOfDeputies a owl:Class ;
     rdfs:label "Câmara dos deputados"@pt ;
     rdfs:subClassOf obs:publicAgency .
 
+obs:Commission a owl:Class ;
+    rdfs:label "Comissão"@pt .
+
 obs:Conference a owl:Class ;
     rdfs:label "Conferência"@pt ;
     rdfs:comment "Conferências são processos nacionais de promoção do diálogo entre governo e sociedade"@pt ;
@@ -17,6 +20,9 @@ obs:Conference a owl:Class ;
 obs:Decree a owl:Class ;
     rdfs:label "Decreto presidencial"@pt ;
     rdfs:subClassOf obs:Act .
+
+obs:DialogueTable a owl:Class ;
+    rdfs:label "Mesa de diálogo"@pt .
 
 obs:EconomicDevelopment a owl:Class ;
     rdfs:label "Desenvolvimento econômico"@pt ;
@@ -48,6 +54,9 @@ obs:Infrastructure a owl:Class ;
     rdfs:comment "cidades"@pt ;
     rdfs:subClassOf obs:PolicyArea .
 
+obs:InterCouncilForum a owl:Class ;
+    rdfs:label "Fórum interconselhos"@pt .
+
 obs:IntercityConferente a owl:Class ;
     rdfs:label "Conferência intermunicipal"@pt ;
     rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
@@ -69,9 +78,22 @@ obs:NaturalResources a owl:Class ;
     rdfs:comment "meio ambiente"@pt ;
     rdfs:subClassOf obs:PolicyArea .
 
+obs:Ombusdmen a owl:Class ;
+    rdfs:label "Ouvidoria"@pt .
+
 obs:Ordinance a owl:Class ;
     rdfs:label "Portaria ministerial ou interministerial"@pt ;
     rdfs:subClassOf obs:Act .
+
+obs:ParticipationMechanism a owl:Class ;
+    rdfs:label "Mecanismo de participação social"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
+
+obs:PublicAudience a owl:Class ;
+    rdfs:label "Audiência pública"@pt .
+
+obs:PublicConsultation a owl:Class ;
+    rdfs:label "Consulta pública"@pt .
 
 obs:RegionalConference a owl:Class ;
     rdfs:label "Conferência regional"@pt ;
@@ -101,6 +123,9 @@ obs:Theme a owl:Class ;
 obs:VirtualConference a owl:Class ;
     rdfs:label "Conferência virtual"@pt ;
     rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
+
+obs:VirtualParticipationEnvironment a owl:Class ;
+    rdfs:label "Ambente virtual de participação social"@pt .
 
 obs:area a owl:ObjectProperty ;
     rdfs:label "área"@pt ;
@@ -180,11 +205,15 @@ obs:Council a owl:Class ;
     rdfs:subClassOf obs:publicAgency .
 
 obs:ParticipationInstance a owl:Class ;
-    rdfs:label "Instância de participação social"@pt .
+    rdfs:label "Instância de participação social"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
 
 obs:Phase a owl:Class ;
     rdfs:label "Etapa"@pt ;
     rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
+
+obs:ParticipationInstanceOrMechanism a owl:Class ;
+    rdfs:label "Instância ou mecanismo de participação social"@pt .
 
 obs:Act a owl:Class ;
     rdfs:label "Ato normativo"@pt .

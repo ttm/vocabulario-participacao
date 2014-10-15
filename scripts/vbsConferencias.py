@@ -34,6 +34,7 @@ G(conf,skos.prefLabel,L(u"Conferência",lang="pt"))
 G(conf,skos.altLabel,L(u"Conferência nacional",lang="pt"))
 G(conf,skos.altLabel,L(u"Conferência de políticas públicas",lang="pt"))
 G(conf,skos.definition,L(u"Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo",lang="pt")) # Melhorar TTM
+G(conf,skos.definition,L(u"Instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas",lang="pt")) # Melhorar TTM
 
 pm=vbs.ParticipationMechanism
 G(pm,rdf.type,skos.Concept)
