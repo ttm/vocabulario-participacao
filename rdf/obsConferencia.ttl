@@ -23,7 +23,7 @@ obs:Council a owl:Class ;
     rdfs:subClassOf obs:publicAgency .
 
 obs:Decree a owl:Class ;
-    rdfs:label "Decreto"@pt ;
+    rdfs:label "Decreto presidencial"@pt ;
     rdfs:subClassOf obs:Act .
 
 obs:EconomicDevelopment a owl:Class ;
@@ -55,11 +55,11 @@ obs:NaturalResources a owl:Class ;
     rdfs:subClassOf obs:PolicyArea .
 
 obs:Ordinance a owl:Class ;
-    rdfs:label "Portaria"@pt ;
+    rdfs:label "Portaria ministerial ou interministerial"@pt ;
     rdfs:subClassOf obs:Act .
 
 obs:Resolution a owl:Class ;
-    rdfs:label "Resolução"@pt ;
+    rdfs:label "Resolução de conselho"@pt ;
     rdfs:subClassOf obs:Act .
 
 obs:Secretariat a owl:Class ;
@@ -107,10 +107,10 @@ obs:ParticipationMechanism a owl:Class ;
     rdfs:label "Mecanismo ou instância de participação social"@pt .
 
 obs:Act a owl:Class ;
-    rdfs:label "Ato institucional"@pt .
+    rdfs:label "Ato normativo"@pt .
 
 obs:PolicyArea a owl:Class ;
-    rdfs:label "Área política"@pt .
+    rdfs:label "Área de política"@pt .
 
 obs:publicAgency a owl:Class ;
     rdfs:label "Órgão público"@pt .

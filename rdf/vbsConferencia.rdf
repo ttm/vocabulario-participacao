@@ -4,17 +4,17 @@
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
   <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Conference">
+    <skos:altLabel xml:lang="pt">Conferência nacional</skos:altLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/ParticipationMechanism"/>
     <skos:altLabel xml:lang="pt">Conferência</skos:altLabel>
-    <skos:definition xml:lang="pt">Processo de promoção do diálogo entre governo e sociedade, tipicamente convocados pelo Executivo</skos:definition>
-    <skos:altLabel xml:lang="pt">Conferência nacional</skos:altLabel>
     <skos:prefLabel xml:lang="pt">Conferência</skos:prefLabel>
+    <skos:definition xml:lang="pt">Processo de promoção do diálogo entre governo e sociedade, tipicamente convocados pelo Executivo</skos:definition>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ParticipationMechanism">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:altLabel xml:lang="pt">Instância de participação social</skos:altLabel>
     <skos:prefLabel xml:lang="pt">Mecanismo ou instância de participação social</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:altLabel xml:lang="pt">Mecanismo de participação social</skos:altLabel>
+    <skos:altLabel xml:lang="pt">Instância de participação social</skos:altLabel>
   </rdf:Description>
 </rdf:RDF>

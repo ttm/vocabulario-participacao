@@ -169,7 +169,7 @@ e.attr["arrowsize"]=2
 ca=obs.convocation
 lca=u"Convocação"
 ac=obs.Act
-lac=u"Ato institucional" # SKOS Ato Institucional
+lac=u"Ato normativo" # SKOS Ato Institucional
 
 pu=obs.datePublished
 lpu=u"data de publicação"
@@ -179,13 +179,13 @@ lnr=u"referêcia numérica"
 #la=obs.Law
 #lla=u"Lei" # SKOS
 oe=obs.Ordinance
-loe=u"Portaria" # SKOS
+loe=u"Portaria ministerial ou interministerial" # SKOS
 de=obs.Decree
-lde=u"Decreto" # SKOS
+lde=u"Decreto presidencial" # SKOS
 #bl=obs.Bylaws
 #lbl=u"Regimento interno" #SKOS
 re=obs.Resolution
-lre=u"Resolução" #SKOS
+lre=u"Resolução de conselho" #SKOS
 
 G(ca,rdf.type,owl.ObjectProperty)
 G(ca,rdfs.label,L(lca,lang="pt"))
@@ -255,7 +255,7 @@ e.attr["label"]=lnr
 ta=obs.area
 lta=u"área" # SKOS
 th=obs.PolicyArea
-lth=u"Área política"
+lth=u"Área de política"
 G(ta,rdf.type,owl.ObjectProperty)
 G(ta,rdfs.label,L(lta,lang="pt"))
 G(ta,rdfs.range,th)
