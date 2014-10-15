@@ -131,6 +131,14 @@ obs:area a owl:ObjectProperty ;
     rdfs:label "área"@pt ;
     rdfs:range obs:PolicyArea .
 
+obs:commission a owl:ObjectProperty ;
+    rdfs:label "commissão"@pt ;
+    rdfs:range obs:NationalOrganizationCommission .
+
+obs:composition a owl:ObjectProperty ;
+    rdfs:label "composição"@pt ;
+    rdfs:range obs:Body .
+
 obs:conselho rdfs:label "conselho"@pt ;
     rdfs:range obs:Council .
 
@@ -200,9 +208,15 @@ obs:year a owl:DatatypeProperty ;
     rdfs:label "ano"@pt ;
     rdfs:range xsd:gYear .
 
+obs:Body a owl:Class ;
+    rdfs:label "Corpo"@pt .
+
 obs:Council a owl:Class ;
     rdfs:label "Conselho"@pt ;
     rdfs:subClassOf obs:publicAgency .
+
+obs:NationalOrganizationCommission a owl:Class ;
+    rdfs:label "Comissão de organização nacional"@pt .
 
 obs:ParticipationInstance a owl:Class ;
     rdfs:label "Instância de participação social"@pt ;

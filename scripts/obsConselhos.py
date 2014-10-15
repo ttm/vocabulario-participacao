@@ -78,7 +78,6 @@ e=A.get_edge(lsp,lpm)
 e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
 
-
 sp=obs.Ombusdmen
 lsp=u"Ouvidoria" # SKOS TTM
 G(sp,rdf.type,owl.Class)

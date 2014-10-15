@@ -41,7 +41,6 @@ e=A.get_edge(lconf,lpm)
 e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
 
-
 ####
 # define mecanismo de part
 pm_=obs.ParticipationMechanism # SKOS
@@ -683,6 +682,55 @@ nd.attr['color']="#A2F3D1"
 A.add_edge(u"Conselho",COUNT)
 e=A.get_edge(u"Conselho",COUNT); COUNT+=1
 e.attr["label"]=lnm
+
+##########
+
+co=obs.composition
+lco=u"composição"
+bo=obs.Body
+lbo=u"Corpo"
+G(co,rdf.type,owl.ObjectProperty)
+G(co,rdfs.label,L(lco,lang="pt"))
+G(co,rdfs.range,bo)
+G(bo,rdf.type,owl.Class)
+G(bo,rdfs.label,L(lbo,lang="pt"))
+A.add_node(lbo,style="filled")
+A.add_edge(lconf,lbo)
+e=A.get_edge(lconf,lbo)
+e.attr["label"]=lco
+
+co_=obs.commission
+lco_=u"commissão"
+bo_=obs.NationalOrganizationCommissionComponent
+lbo_=u"Componente da comissão de organização nacional"
+G(co_,rdf.type,owl.ObjectProperty)
+G(co_,rdfs.label,L(lco_,lang="pt"))
+G(co_,rdfs.range,bo_)
+G(bo_,rdf.type,owl.Class)
+G(bo_,rdfs.label,L(lbo_,lang="pt"))
+A.add_node(lbo_,style="filled")
+A.add_edge(lbo,lbo_)
+e=A.get_edge(lbo,lbo_)
+e.attr["label"]=lco_
+
+
+bb=[(obs.Committee,u"Comitê"),(obs.Group,u"Grupo"),(obs.Commission,u"Comissão"),(obs.Coordination,u"Coordenação")]
+jaTem=[obs.Commission,]
+
+bo_=obs.Committee
+lbo_=u"Comitê"
+G(co_,rdf.type,owl.ObjectProperty)
+G(co_,rdfs.label,L(lco_,lang="pt"))
+G(co_,rdfs.range,bo_)
+G(bo_,rdf.type,owl.Class)
+G(bo_,rdfs.label,L(lbo_,lang="pt"))
+A.add_node(lbo_,style="filled")
+A.add_edge(lbo,lbo_)
+e=A.get_edge(lbo,lbo_)
+e.attr["label"]=lco_
+
+
+
 
 
 
