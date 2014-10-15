@@ -77,6 +77,9 @@ re=vbs.Resolution
 lre=u"Resolução" #SKOS
 G(re,rdf.type,skos.Concept)
 G(re,skos.prefLabel,L(lre,lang="pt"))
+G(re,skos.altLabel,L(u"Deliberação",lang="pt"))
+G(re,skos.altLabel,L(u"Tese",lang="pt"))
+G(re,skos.altLabel,L(u"Diretriz",lang="pt"))
 G(re,skos.broader,ac)
 
 ###

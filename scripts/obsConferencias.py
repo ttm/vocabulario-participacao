@@ -28,7 +28,7 @@ G(conf,rdfs.label,L(lconf,lang="pt"))
 G(conf,rdfs.comment,L(u"Conferências são processos nacionais de promoção do diálogo entre governo e sociedade",lang="pt"))
 
 pm=obs.ParticipationInstance # SKOS
-lpm=u"Mecanismo ou instância"
+lpm=u"Instância de participação social"
 A.add_node(lpm,style="filled")
 
 G(pm,rdf.type,owl.Class)
@@ -125,6 +125,7 @@ sp=obs.Secretariat
 lsp=u"Secretaria" # entra no SKOS
 G(sp,rdf.type,owl.Class)
 G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.comment,L(u"Secretaria com status ministerial",lang="pt"))
 G(sp,rdfs.subClassOf,th)
 A.add_node(lsp,style="filled") ###
 A.add_edge(lsp,lth)
@@ -143,19 +144,8 @@ e=A.get_edge(lsp,lth)
 e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
 
-sp=obs.Commission
-lsp=u"Comissão" # entra no SKOS
-G(sp,rdf.type,owl.Class)
-G(sp,rdfs.label,L(lsp,lang="pt"))
-G(sp,rdfs.subClassOf,th)
-A.add_node(lsp,style="filled") ###
-A.add_edge(lsp,lth)
-e=A.get_edge(lsp,lth)
-e.attr["arrowhead"]="empty"
-e.attr["arrowsize"]=2
-
 sp=obs.Forum
-lsp=u"Fórum" # entra no SKOS
+lsp=u"Fórum não governamental" # entra no SKOS
 G(sp,rdf.type,owl.Class)
 G(sp,rdfs.label,L(lsp,lang="pt"))
 G(sp,rdfs.subClassOf,th)

@@ -6,11 +6,19 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 vbs:Conference a skos:Concept ;
-    skos:altLabel "Conferência"@pt,
+    skos:altLabel "Conferência de políticas públicas"@pt,
         "Conferência nacional"@pt ;
     skos:broader vbs:ParticipationMechanism ;
-    skos:definition "Processo de promoção do diálogo entre governo e sociedade, tipicamente convocados pelo Executivo"@pt ;
+    skos:definition "Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo"@pt ;
     skos:prefLabel "Conferência"@pt .
+
+vbs:Resolution a skos:Concept ;
+    skos:altLabel "Decisão"@pt,
+        "Deliberação"@pt,
+        "Diretriz"@pt,
+        "Proposta"@pt,
+        "Tese"@pt ;
+    skos:prefLabel "Resolução"@pt .
 
 vbs:ParticipationMechanism a skos:Concept ;
     skos:altLabel "Instância de participação social"@pt,

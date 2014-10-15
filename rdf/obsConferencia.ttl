@@ -9,10 +9,6 @@ obs:ChamberOfDeputies a owl:Class ;
     rdfs:label "Câmara dos deputados"@pt ;
     rdfs:subClassOf obs:publicAgency .
 
-obs:Commission a owl:Class ;
-    rdfs:label "Comissão"@pt ;
-    rdfs:subClassOf obs:publicAgency .
-
 obs:Conference a owl:Class ;
     rdfs:label "Conferência"@pt ;
     rdfs:comment "Conferências são processos nacionais de promoção do diálogo entre governo e sociedade"@pt ;
@@ -32,7 +28,7 @@ obs:EconomicDevelopment a owl:Class ;
     rdfs:subClassOf obs:PolicyArea .
 
 obs:Forum a owl:Class ;
-    rdfs:label "Fórum"@pt ;
+    rdfs:label "Fórum não governamental"@pt ;
     rdfs:subClassOf obs:publicAgency .
 
 obs:GuaranteeOfRights a owl:Class ;
@@ -64,6 +60,7 @@ obs:Resolution a owl:Class ;
 
 obs:Secretariat a owl:Class ;
     rdfs:label "Secretaria"@pt ;
+    rdfs:comment "Secretaria com status ministerial"@pt ;
     rdfs:subClassOf obs:publicAgency .
 
 obs:SocialPolicies a owl:Class ;
@@ -104,7 +101,7 @@ obs:year a owl:DatatypeProperty ;
     rdfs:range xsd:gYear .
 
 obs:ParticipationInstance a owl:Class ;
-    rdfs:label "Mecanismo ou instância"@pt .
+    rdfs:label "Instância de participação social"@pt .
 
 obs:Act a owl:Class ;
     rdfs:label "Ato normativo"@pt .
