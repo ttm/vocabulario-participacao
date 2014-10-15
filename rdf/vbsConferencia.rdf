@@ -4,26 +4,26 @@
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
   <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Conference">
-    <skos:altLabel xml:lang="pt">Conferência nacional</skos:altLabel>
-    <skos:definition xml:lang="pt">Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo</skos:definition>
     <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/ParticipationMechanism"/>
-    <skos:altLabel xml:lang="pt">Conferência de políticas públicas</skos:altLabel>
+    <skos:definition xml:lang="pt">Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:altLabel xml:lang="pt">Conferência nacional</skos:altLabel>
     <skos:prefLabel xml:lang="pt">Conferência</skos:prefLabel>
+    <skos:altLabel xml:lang="pt">Conferência de políticas públicas</skos:altLabel>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Resolution">
-    <skos:altLabel xml:lang="pt">Decisão</skos:altLabel>
-    <skos:altLabel xml:lang="pt">Proposta</skos:altLabel>
-    <skos:altLabel xml:lang="pt">Deliberação</skos:altLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:altLabel xml:lang="pt">Diretriz</skos:altLabel>
     <skos:altLabel xml:lang="pt">Tese</skos:altLabel>
     <skos:prefLabel xml:lang="pt">Resolução</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:altLabel xml:lang="pt">Deliberação</skos:altLabel>
+    <skos:altLabel xml:lang="pt">Proposta</skos:altLabel>
+    <skos:altLabel xml:lang="pt">Decisão</skos:altLabel>
+    <skos:altLabel xml:lang="pt">Diretriz</skos:altLabel>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ParticipationMechanism">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:altLabel xml:lang="pt">Instância de participação social</skos:altLabel>
-    <skos:prefLabel xml:lang="pt">Mecanismo ou instância de participação social</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:altLabel xml:lang="pt">Mecanismo de participação social</skos:altLabel>
+    <skos:prefLabel xml:lang="pt">Mecanismo ou instância de participação social</skos:prefLabel>
   </rdf:Description>
 </rdf:RDF>

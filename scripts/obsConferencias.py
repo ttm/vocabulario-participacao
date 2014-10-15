@@ -157,7 +157,7 @@ e.attr["arrowsize"]=2
 
 #### TTM
 ca=obs.convocation
-lca=u"Convocação"
+lca=u"convocação"
 ac=obs.Act
 lac=u"Ato normativo" # SKOS Ato Institucional
 
@@ -316,10 +316,255 @@ e=A.get_edge(lsp,lth)
 e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
 
+################
+ta=obs.has
+lta=u"possui" # SKOS
+th=obs.Goals
+lth=u"Objetivos"
+G(ta,rdf.type,owl.ObjectProperty)
+G(ta,rdfs.label,L(lta,lang="pt"))
+G(th,rdf.type,owl.Class)
+G(th,rdfs.label,L(lth,lang="pt"))
+A.add_node(lth,style="filled")
+A.add_edge(lconf,lth)
+e=A.get_edge(lconf,lth)
+e.attr["label"]=lta
+
+nm=obs.schedulingPurpose
+lnm=u"agendamento"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.comment,L(u"possui a conferência objetivo de agendamento?",lang="pt"))
+G(nm,rdfs.range,xsd.boolean)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:boolean"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lth,COUNT)
+e=A.get_edge(lth,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+nm=obs.evaluationPurpose
+lnm=u"avaliação"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.comment,L(u"possui a conferência objetivo de avaliação?",lang="pt"))
+G(nm,rdfs.range,xsd.boolean)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:boolean"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lth,COUNT)
+e=A.get_edge(lth,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+nm=obs.participationPurpose
+lnm=u"participação"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.comment,L(u"possui a conferência objetivo de participação?",lang="pt"))
+G(nm,rdfs.range,xsd.boolean)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:boolean"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lth,COUNT)
+e=A.get_edge(lth,COUNT); COUNT+=1
+e.attr["label"]=lnm
 
 
+nm=obs.propositionPurpose
+lnm=u"proposição"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.comment,L(u"possui a conferência objetivo de proposição?",lang="pt"))
+G(nm,rdfs.range,xsd.boolean)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:boolean"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lth,COUNT)
+e=A.get_edge(lth,COUNT); COUNT+=1
+e.attr["label"]=lnm
+####
+
+th=obs.Theme
+lth=u"Tema"
+G(th,rdf.type,owl.Class)
+G(th,rdfs.label,L(lth,lang="pt"))
+A.add_node(lth,style="filled")
+A.add_edge(lconf,lth)
+e=A.get_edge(lconf,lth)
+e.attr["label"]=lta
+
+nm=obs.phrase
+lnm=u"frase de referência"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.comment,L(u"frase de referência do tema da conferência",lang="pt"))
+G(nm,rdfs.range,xsd.string)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:string"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lth,COUNT)
+e=A.get_edge(lth,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+nm=obs.thematicAxes
+lnm=u"eixos temáticos"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.string)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:string"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lth,COUNT)
+e=A.get_edge(lth,COUNT); COUNT+=1
+e.attr["label"]=lnm
+####
+
+ta=obs.phase
+lta=u"etapa" # SKOS
+th=obs.Phase
+lth=u"Etapa"
+G(ta,rdf.type,owl.ObjectProperty)
+G(ta,rdfs.label,L(lta,lang="pt"))
+G(th,rdf.type,owl.Class)
+G(th,rdfs.label,L(lth,lang="pt"))
+G(th,rdfs.comment,L(u"Uma fase é um evento participativo, enquanto a conferência em si é o processo todo",lang="pt"))
+G(ta,rdfs.range,th)
+A.add_node(lth,style="filled")
+A.add_edge(lconf,lth)
+e=A.get_edge(lconf,lth)
+e.attr["label"]=lta
+lth_=lth
+
+th=obs.NationalConference
+lth=u"Conferência nacional"
+G(th,rdf.type,owl.Class)
+G(th,rdfs.label,L(lth,lang="pt"))
+G(th,rdfs.comment,L(u"Uma fase é um evento participativo, enquanto a conferência em si é o processo todo",lang="pt"))
+A.add_node(lth,style="filled")
+A.add_edge(lth,lth_)
+e=A.get_edge(lth,lth_)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+th=obs.StateConference
+lth=u"Conferência estadual"
+G(th,rdf.type,owl.Class)
+G(th,rdfs.label,L(lth,lang="pt"))
+G(th,rdfs.comment,L(u"Uma fase é um evento participativo, enquanto a conferência em si é o processo todo",lang="pt"))
+A.add_node(lth,style="filled")
+A.add_edge(lth,lth_)
+e=A.get_edge(lth,lth_)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+th=obs.RegionalConference
+lth=u"Conferência regional"
+G(th,rdf.type,owl.Class)
+G(th,rdfs.label,L(lth,lang="pt"))
+G(th,rdfs.comment,L(u"Uma fase é um evento participativo, enquanto a conferência em si é o processo todo",lang="pt"))
+A.add_node(lth,style="filled")
+A.add_edge(lth,lth_)
+e=A.get_edge(lth,lth_)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+th=obs.IntercityConferente
+lth=u"Conferência intermunicipal"
+G(th,rdf.type,owl.Class)
+G(th,rdfs.label,L(lth,lang="pt"))
+G(th,rdfs.comment,L(u"Uma fase é um evento participativo, enquanto a conferência em si é o processo todo",lang="pt"))
+A.add_node(lth,style="filled")
+A.add_edge(lth,lth_)
+e=A.get_edge(lth,lth_)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+th=obs.MunicipalConference
+lth=u"Conferência municipal"
+G(th,rdf.type,owl.Class)
+G(th,rdfs.label,L(lth,lang="pt"))
+G(th,rdfs.comment,L(u"Uma fase é um evento participativo, enquanto a conferência em si é o processo todo",lang="pt"))
+A.add_node(lth,style="filled")
+A.add_edge(lth,lth_)
+e=A.get_edge(lth,lth_)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+th=obs.VirtualConference
+lth=u"Conferência virtual"
+G(th,rdf.type,owl.Class)
+G(th,rdfs.label,L(lth,lang="pt"))
+G(th,rdfs.comment,L(u"Uma fase é um evento participativo, enquanto a conferência em si é o processo todo",lang="pt"))
+A.add_node(lth,style="filled")
+A.add_edge(lth,lth_)
+e=A.get_edge(lth,lth_)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+th=obs.FreeConference
+lth=u"Conferência livre"
+G(th,rdf.type,owl.Class)
+G(th,rdfs.label,L(lth,lang="pt"))
+G(th,rdfs.comment,L(u"Uma fase é um evento participativo, enquanto a conferência em si é o processo todo",lang="pt"))
+A.add_node(lth,style="filled")
+A.add_edge(lth,lth_)
+e=A.get_edge(lth,lth_)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
 
 
+th=obs.ExtraordinaryConference
+lth=u"Conferência extraordinária"
+G(th,rdf.type,owl.Class)
+G(th,rdfs.label,L(lth,lang="pt"))
+G(th,rdfs.comment,L(u"Uma fase é um evento participativo, enquanto a conferência em si é o processo todo",lang="pt"))
+A.add_node(lth,style="filled")
+A.add_edge(lth,lth_)
+e=A.get_edge(lth,lth_)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+###
+mm=obs.realizationPeriod
+lnm=u"período de realização"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.duration) # usar "P%sM",datatype=xsd.duration 
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:duration"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lconf,COUNT)
+e=A.get_edge(lconf,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+###
+ta=obs.conselho
+lta=u"conselho"
+G(ta,rdfs.label,L(lta,lang="pt"))
+G(ta,rdfs.range,obs.Council)
+A.add_edge(lconf,u"Conselho")
+e=A.get_edge(lconf,u"Conselho")
+e.attr["label"]=lta
+
+nm=obs.name
+lnm=u"nome"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.string)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:string"
+nd.attr['color']="#A2F3D1"
+A.add_edge(u"Conselho",COUNT)
+e=A.get_edge(u"Conselho",COUNT); COUNT+=1
+e.attr["label"]=lnm
 
 
 

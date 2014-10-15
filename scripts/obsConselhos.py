@@ -215,7 +215,7 @@ e.attr["label"]=lre
 ta=obs.area
 lta=u"área" # SKOS
 th=obs.PolicyArea
-lth=u"Área Política"
+lth=u"Área de política"
 G(ta,rdf.type,owl.ObjectProperty)
 G(ta,rdfs.label,L(lta,lang="pt"))
 G(ta,rdfs.range,th)

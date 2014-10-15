@@ -53,9 +53,6 @@ G(re,skos.altLabel,L(u"Proposta",lang="pt"))
 G(re,skos.altLabel,L(u"Diretriz",lang="pt"))
 #G(re,skos.definition,L(u"",lang="pt")) # Melhorar TTM
 
-
-
-
 f=open("../rdf/vbsConferencia.rdf","wb")
 f.write(g.serialize())
 f.close()

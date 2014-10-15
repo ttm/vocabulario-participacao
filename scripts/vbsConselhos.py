@@ -90,9 +90,10 @@ G(re,skos.prefLabel,L(lre,lang="pt"))
 
 ### TTM
 ta=vbs.PolicyArea
-lta=u"Área política" # SKOS
+lta=u"Área de política" # SKOS
 G(ta,rdf.type,skos.Concept)
 G(ta,skos.prefLabel,L(lta,lang="pt"))
+G(ta,skos.altLabel,L(u"Área política",lang="pt"))
 
 sp=vbs.SocialPolicies
 lsp=u"Políticas sociais" # SKOS TTM
