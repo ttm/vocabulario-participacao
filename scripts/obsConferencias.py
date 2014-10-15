@@ -669,20 +669,6 @@ G(ta,rdfs.range,obs.Council)
 A.add_edge(lconf,u"Conselho")
 e=A.get_edge(lconf,u"Conselho")
 e.attr["label"]=lta
-
-nm=obs.name
-lnm=u"nome"
-G(nm,rdf.type,owl.DatatypeProperty)
-G(nm,rdfs.label,L(lnm,lang="pt"))
-G(nm,rdfs.range,xsd.string)
-A.add_node(COUNT,style="filled")
-nd=A.get_node(COUNT)
-nd.attr["label"]="xsd:string"
-nd.attr['color']="#A2F3D1"
-A.add_edge(u"Conselho",COUNT)
-e=A.get_edge(u"Conselho",COUNT); COUNT+=1
-e.attr["label"]=lnm
-
 ##########
 
 co=obs.composition
