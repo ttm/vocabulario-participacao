@@ -77,6 +77,10 @@ obs:IntercityConferente a owl:Class ;
     rdfs:label "Conferência intermunicipal"@pt ;
     rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
 
+obs:Lecture a owl:Class ;
+    rdfs:label "Palestra"@pt ;
+    rdfs:subClassOf obs:ParticipativeMoment .
+
 obs:Ministry a owl:Class ;
     rdfs:label "Ministério"@pt ;
     rdfs:subClassOf obs:publicAgency .
@@ -84,9 +88,6 @@ obs:Ministry a owl:Class ;
 obs:MunicipalConference a owl:Class ;
     rdfs:label "Conferência municipal"@pt ;
     rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
-
-obs:NA a owl:Class ;
-    rdfs:label "Comissão da organização nacional"@pt .
 
 obs:NationalConference a owl:Class ;
     rdfs:label "Conferência nacional"@pt ;
@@ -151,6 +152,11 @@ obs:StateConference a owl:Class ;
 obs:Subcommittee a owl:Class ;
     rdfs:label "Comissão da organização nacional"@pt .
 
+obs:ThematicPlenary a owl:Class ;
+    rdfs:label "Plenária intermediária"@pt,
+        "Plenária temática"@pt ;
+    rdfs:subClassOf obs:Plenary .
+
 obs:Theme a owl:Class ;
     rdfs:label "Tema"@pt .
 
@@ -160,6 +166,14 @@ obs:VirtualConference a owl:Class ;
 
 obs:VirtualParticipationEnvironment a owl:Class ;
     rdfs:label "Ambente virtual de participação social"@pt .
+
+obs:WorkGroup a owl:Class ;
+    rdfs:label "Grupo de trabalho"@pt ;
+    rdfs:subClassOf obs:ParticipativeMoment .
+
+obs:Workshop a owl:Class ;
+    rdfs:label "Oficina"@pt ;
+    rdfs:subClassOf obs:ParticipativeMoment .
 
 obs:area a owl:ObjectProperty ;
     rdfs:label "área"@pt ;
@@ -179,6 +193,10 @@ obs:conselho rdfs:label "conselho"@pt ;
 obs:convocation a owl:ObjectProperty ;
     rdfs:label "convocação"@pt ;
     rdfs:range obs:Act .
+
+obs:councilPositions a owl:DatatypeProperty ;
+    rdfs:label "vagas para membros do conselho"@pt ;
+    rdfs:range xsd:integer .
 
 obs:datePublished a owl:DatatypeProperty ;
     rdfs:label "data de publicação"@pt ;
@@ -212,17 +230,37 @@ obs:executive a owl:DatatypeProperty ;
     rdfs:comment "A componente é executiva"@pt ;
     rdfs:range xsd:boolean .
 
+obs:form a owl:ObjectProperty ;
+    rdfs:label "forma"@pt ;
+    rdfs:range obs:InteractionDialogueForm .
+
 obs:general a owl:DatatypeProperty ;
     rdfs:label "geral"@pt ;
     rdfs:comment "A componente é geral"@pt ;
     rdfs:range xsd:boolean .
 
+obs:governmentalPositions a owl:DatatypeProperty ;
+    rdfs:label "vagas governamentais"@pt ;
+    rdfs:range xsd:integer .
+
 obs:has a owl:ObjectProperty ;
     rdfs:label "possui"@pt .
+
+obs:incorporates a owl:ObjectProperty ;
+    rdfs:label "incorpora"@pt ;
+    rdfs:range obs:ParticipativeMoment .
+
+obs:methodology a owl:ObjectProperty ;
+    rdfs:label "metodologia"@pt ;
+    rdfs:range obs:ConferenceMethodology .
 
 obs:name a owl:DatatypeProperty ;
     rdfs:label "nome"@pt ;
     rdfs:range xsd:string .
+
+obs:nonGovernmentalPositions a owl:DatatypeProperty ;
+    rdfs:label "vagas não governamentais"@pt ;
+    rdfs:range xsd:integer .
 
 obs:numericReference a owl:DatatypeProperty ;
     rdfs:label "referêcia numérica"@pt ;
@@ -241,6 +279,24 @@ obs:phrase a owl:DatatypeProperty ;
     rdfs:label "frase de referência"@pt ;
     rdfs:comment "frase de referência do tema da conferência"@pt ;
     rdfs:range xsd:string .
+
+obs:predicts a owl:ObjectProperty ;
+    rdfs:label "prevê"@pt ;
+    rdfs:range obs:ParticipativeMoment .
+
+obs:proposalsFormulation a owl:DatatypeProperty ;
+    rdfs:label "formulação de propostas"@pt,
+        "período de realização"@pt ;
+    rdfs:range xsd:boolean,
+        xsd:duration .
+
+obs:proposalsLimit a owl:DatatypeProperty ;
+    rdfs:label "limite de propostas"@pt ;
+    rdfs:range xsd:integer .
+
+obs:proposalsPriorization a owl:DatatypeProperty ;
+    rdfs:label "priorização de propostas"@pt ;
+    rdfs:range xsd:boolean .
 
 obs:propositionPurpose a owl:DatatypeProperty ;
     rdfs:label "proposição"@pt ;
@@ -262,10 +318,8 @@ obs:special a owl:DatatypeProperty ;
     rdfs:range xsd:boolean .
 
 obs:thematicAxes a owl:DatatypeProperty ;
-    rdfs:label "eixos temáticos"@pt,
-        "período de realização"@pt ;
-    rdfs:range xsd:duration,
-        xsd:string .
+    rdfs:label "eixos temáticos"@pt ;
+    rdfs:range xsd:string .
 
 obs:working a owl:DatatypeProperty ;
     rdfs:label "de trabalho"@pt ;
@@ -276,9 +330,15 @@ obs:year a owl:DatatypeProperty ;
     rdfs:label "ano"@pt ;
     rdfs:range xsd:gYear .
 
+obs:ConferenceMethodology a owl:Class ;
+    rdfs:label "Metodologia de conferência"@pt .
+
 obs:Council a owl:Class ;
     rdfs:label "Conselho"@pt ;
     rdfs:subClassOf obs:publicAgency .
+
+obs:InteractionDialogueForm a owl:Class ;
+    rdfs:label "Forma de interação e diálogo"@pt .
 
 obs:NationalOrganizationCommission a owl:Class ;
     rdfs:label "Comissão da organização nacional"@pt .
@@ -291,6 +351,10 @@ obs:Phase a owl:Class ;
     rdfs:label "Etapa"@pt ;
     rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
 
+obs:Plenary a owl:Class ;
+    rdfs:label "Plenária"@pt ;
+    rdfs:subClassOf obs:ParticipativeMoment .
+
 obs:Body a owl:Class ;
     rdfs:label "Corpo"@pt .
 
@@ -299,6 +363,9 @@ obs:ParticipationInstanceOrMechanism a owl:Class ;
 
 obs:Act a owl:Class ;
     rdfs:label "Ato normativo"@pt .
+
+obs:ParticipativeMoment a owl:Class ;
+    rdfs:label "Momento participativo"@pt .
 
 obs:PolicyArea a owl:Class ;
     rdfs:label "Área de política"@pt .

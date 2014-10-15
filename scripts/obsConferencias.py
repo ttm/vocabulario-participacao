@@ -569,6 +569,35 @@ e=A.get_edge(lth,lth_)
 e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
 
+nm=obs.proposalsPriorization
+lnm=u"priorização de propostas"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.boolean)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:boolean"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lth,COUNT)
+e=A.get_edge(lth,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+nm=obs.proposalsFormulation
+lnm=u"formulação de propostas"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.boolean)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:boolean"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lth,COUNT)
+e=A.get_edge(lth,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+
+
+
 th=obs.StateConference
 lth=u"Conferência estadual"
 G(th,rdf.type,owl.Class)
@@ -687,7 +716,6 @@ e.attr["label"]=lco
 
 co_=obs.commission
 lco_=u"commissão"
-
 bo_=obs.NationalOrganizationCommission
 lbo_=u"Comissão da organização nacional"
 G(co_,rdf.type,owl.ObjectProperty)
@@ -717,7 +745,7 @@ e=A.get_edge(lbo_,lbo___)
 e.attr["label"]=lco
 
 
-bb=[(obs.Committee,u"Comitê"),(obs.Group,u"Grupo"),(obs.Commission,u"Comissão"),(obs.Coordination,u"Coordenação"),(obs.Presidency,u"Presidência"),(obs.Subcommittee,u"Subcomitê"),(obs.Counsel,u"Assessoria"),(obs.Coordinator,u"Coordenador"),(obs.Secretary,u"Secretário"),(obs.Rapporteur,u"Relator"),(obs.NA,u"Nenhum se aplica")]
+bb=[(obs.Committee,u"Comitê"),(obs.Group,u"Grupo"),(obs.Commission,u"Comissão"),(obs.Coordination,u"Coordenação"),(obs.Presidency,u"Presidência"),(obs.Subcommittee,u"Subcomitê"),(obs.Counsel,u"Assessoria"),(obs.Coordinator,u"Coordenador"),(obs.Secretary,u"Secretário"),(obs.Rapporteur,u"Relator")]
 jaTem=[obs.Commission]
 
 for b in bb:
@@ -751,11 +779,190 @@ for pr in pp:
     e.attr["label"]=lnm
 
 
+nm=obs.nonGovernmentalPositions
+lnm=u"vagas não governamentais"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.integer)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:integer"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lbo_,COUNT)
+e=A.get_edge(lbo_,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+nm=obs.governmentalPositions
+lnm=u"vagas governamentais"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.integer)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:integer"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lbo_,COUNT)
+e=A.get_edge(lbo_,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+nm=obs.councilPositions
+lnm=u"vagas para membros do conselho"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.integer)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:integer"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lbo_,COUNT)
+e=A.get_edge(lbo_,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+####
+# Colunas AD-AH, fazendo pelo diagrama cacoo
+co_=obs.methodology
+lco_=u"metodologia"
+bo_=obs.ConferenceMethodology
+lbo_=u"Metodologia de conferência"
+G(co_,rdf.type,owl.ObjectProperty)
+G(co_,rdfs.label,L(lco_,lang="pt"))
+G(co_,rdfs.range,bo_)
+G(bo_,rdf.type,owl.Class)
+G(bo_,rdfs.label,L(lbo_,lang="pt"))
+A.add_node(lbo_,style="filled")
+A.add_edge(lconf,lbo_)
+e=A.get_edge(lconf,lbo_)
+e.attr["label"]=lco_
+
+lbo__=lbo_
+
+co_=obs.form
+lco_=u"forma"
+bo_=obs.InteractionDialogueForm
+lbo_=u"Forma de interação e diálogo"
+G(co_,rdf.type,owl.ObjectProperty)
+G(co_,rdfs.label,L(lco_,lang="pt"))
+G(co_,rdfs.range,bo_)
+G(bo_,rdf.type,owl.Class)
+G(bo_,rdfs.label,L(lbo_,lang="pt"))
+A.add_node(lbo_,style="filled")
+A.add_edge(lbo__,lbo_)
+e=A.get_edge(lbo__,lbo_)
+e.attr["label"]=lco_
+
+lbo___=lbo_
+
+co_=obs.predicts
+lco_=u"prevê"
+bo_=obs.ParticipativeMoment
+lbo_=u"Momento participativo"
+G(co_,rdf.type,owl.ObjectProperty)
+G(co_,rdfs.label,L(lco_,lang="pt"))
+G(co_,rdfs.range,bo_)
+G(bo_,rdf.type,owl.Class)
+G(bo_,rdfs.label,L(lbo_,lang="pt"))
+A.add_node(lbo_,style="filled")
+A.add_edge(lbo__,lbo_)
+e=A.get_edge(lbo__,lbo_)
+e.attr["label"]=lco_
+
+bo____=bo_
+lbo____=lbo_
+
+co_=obs.incorporates
+lco_=u"incorpora"
+G(co_,rdf.type,owl.ObjectProperty)
+G(co_,rdfs.label,L(lco_,lang="pt"))
+G(co_,rdfs.range,bo_)
+G(bo_,rdf.type,owl.Class)
+G(bo_,rdfs.label,L(lbo_,lang="pt"))
+A.add_node(lbo_,style="filled")
+A.add_edge(lbo___,lbo_)
+e=A.get_edge(lbo___,lbo_)
+e.attr["label"]=lco_
+
+## Momentos
+
+pm=obs.WorkGroup # SKOS
+lpm=u"Grupo de trabalho"
+A.add_node(lpm,style="filled")
+G(pm,rdf.type,owl.Class)
+G(pm,rdfs.label,L(lpm,lang="pt"))
+G(pm,rdfs.subClassOf,bo____)
+A.add_edge(lpm,lbo____)
+e=A.get_edge(lpm,lbo____)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+pm=obs.Lecture # SKOS
+lpm=u"Palestra"
+A.add_node(lpm,style="filled")
+G(pm,rdf.type,owl.Class)
+G(pm,rdfs.label,L(lpm,lang="pt"))
+G(pm,rdfs.subClassOf,bo____)
+A.add_edge(lpm,lbo____)
+e=A.get_edge(lpm,lbo____)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+pm=obs.Workshop # SKOS
+lpm=u"Oficina"
+A.add_node(lpm,style="filled")
+G(pm,rdf.type,owl.Class)
+G(pm,rdfs.label,L(lpm,lang="pt"))
+G(pm,rdfs.subClassOf,bo____)
+A.add_edge(lpm,lbo____)
+e=A.get_edge(lpm,lbo____)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+pm=obs.Plenary # SKOS
+lpm=u"Plenária"
+A.add_node(lpm,style="filled")
+G(pm,rdf.type,owl.Class)
+G(pm,rdfs.label,L(lpm,lang="pt"))
+G(pm,rdfs.subClassOf,bo____)
+A.add_edge(lpm,lbo____)
+e=A.get_edge(lpm,lbo____)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+pmF=pm
+lpmF=lpm
+
+pm=obs.ThematicPlenary # SKOS
+lpm=u"Plenária temática"
+lpm_=u"Plenária intermediária"
+A.add_node(lpm,style="filled")
+G(pm,rdf.type,owl.Class)
+G(pm,rdfs.label,L(lpm,lang="pt"))
+G(pm,rdfs.label,L(lpm_,lang="pt"))
+G(pm,rdfs.subClassOf,pmF)
+A.add_edge(lpm,lpmF)
+e=A.get_edge(lpm,lpmF)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
 
 
+####
 
+lth=u"Etapa"
+ta=obs.proposalsLimit
+lta=u"limite de propostas" # SKOS
 
+G(ta,rdf.type,owl.DatatypeProperty)
+G(ta,rdfs.label,L(lta,lang="pt"))
+G(ta,rdfs.range,xsd.integer)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]=u"xsd:integer"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lth,COUNT)
+e=A.get_edge(lth,COUNT); COUNT+=1
+e.attr["label"]=lta
 
+#####
+# Colunas AQ e AR contempladas diretamente na classe NationalConference
 
 #####
 nome=("../figs/obsConferencia.png")
