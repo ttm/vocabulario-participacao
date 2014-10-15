@@ -16,7 +16,7 @@ obs:Commission a owl:Class ;
 obs:Conference a owl:Class ;
     rdfs:label "Conferência"@pt ;
     rdfs:comment "Conferências são processos nacionais de promoção do diálogo entre governo e sociedade"@pt ;
-    rdfs:subClassOf obs:ParticipationMechanism .
+    rdfs:subClassOf obs:ParticipationInstance .
 
 obs:Council a owl:Class ;
     rdfs:label "Conselho"@pt ;
@@ -103,8 +103,8 @@ obs:year a owl:DatatypeProperty ;
     rdfs:label "ano"@pt ;
     rdfs:range xsd:gYear .
 
-obs:ParticipationMechanism a owl:Class ;
-    rdfs:label "Mecanismo ou instância de participação social"@pt .
+obs:ParticipationInstance a owl:Class ;
+    rdfs:label "Mecanismo ou instância"@pt .
 
 obs:Act a owl:Class ;
     rdfs:label "Ato normativo"@pt .
