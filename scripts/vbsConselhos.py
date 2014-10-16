@@ -102,6 +102,7 @@ lta=u"Área de política" # SKOS
 G(ta,rdf.type,skos.Concept)
 G(ta,skos.prefLabel,L(lta,lang="pt"))
 G(ta,skos.altLabel,L(u"Área política",lang="pt"))
+G(ta,skos.altLabel,L(u"Área temática",lang="pt"))
 
 sp=vbs.SocialPolicies
 lsp=u"Políticas sociais" # SKOS TTM
@@ -144,13 +145,26 @@ sp=vbs.DeliberativeInstance
 lsp=u"Instância deliberativa" # SKOS
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
-G(sp,skos.broader,vbs.ParticipationMechanism)
+G(sp,skos.broader,vbs.ParticipationInstance)
 
 sp=vbs.AdvisoryInstance
 lsp=u"Instância consultiva" # SKOS
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,vbs.ParticipationInstance)
+######
+sp=vbs.DeliberativeMechanism
+lsp=u"Mecanismo deliberativo" # SKOS
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
 G(sp,skos.broader,vbs.ParticipationMechanism)
+
+sp=vbs.AdvisoryMechanism
+lsp=u"Mecanismo consultivo" # SKOS
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,vbs.ParticipationMechanism)
+
 
 ####
 sp=vbs.ExecutiveSecretariat
@@ -164,7 +178,8 @@ G(conf,skos.prefLabel,L(u"Conferência",lang="pt"))
 G(conf,skos.altLabel,L(u"Conferência nacional",lang="pt"))
 G(conf,skos.altLabel,L(u"Conferência de políticas públicas",lang="pt"))
 G(conf,skos.definition,L(u"Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo",lang="pt")) # Melhorar TTM
-G(conf,skos.definition,L(u"Instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas",lang="pt")) # Melhorar TTM
+G(conf,skos.definition,L(u"Instância colegiada de temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas",lang="pt")) # Melhorar TTM
+G(conf,skos.broader,vbs.ParticipationInstance)
 
 
 ####
@@ -214,7 +229,7 @@ G(mc,rdf.type,skos.Concept)
 G(mc,skos.prefLabel,L(lmc,lang="pt"))
 
 mc=vbs.AdReferendum
-lmc=u"Decisões ad referendum"
+lmc=u"Decisão ad referendum"
 G(mc,rdf.type,skos.Concept)
 G(mc,skos.prefLabel,L(lmc,lang="pt"))
 

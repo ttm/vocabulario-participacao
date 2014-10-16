@@ -1,0 +1,53 @@
+|--> Área de política
+ forma alternativa: Área política
+ forma alternativa: Área temática
+   |--> Desenvolvimento econômico
+    nota de escopo: arranjos produtivos locais, assistência técnica e extensão rural, desenvolvimento regional e desenvolvimento rural sustentável e solidário
+   |--> Garantia de direitos
+    nota de escopo: criança e adolescente, educação, juventude, LGBT, mulheres e pessoa idosa
+   |--> Infraestrutura
+    nota de escopo: cidades
+   |--> Políticas sociais
+    nota de escopo: assistência social, cultura, saúde, segurança alimentar e nutricional
+   |--> Recursos naturais
+    nota de escopo: Recursos naturais
+|--> Ato normativo
+   |--> Decreto
+   |--> Lei
+   |--> Portaria
+   |--> Regimento interno
+   |--> Resolução
+    forma alternativa: Diretriz
+    forma alternativa: Decisão
+    forma alternativa: Tese
+    forma alternativa: Deliberação
+    forma alternativa: Proposta
+|--> Decisão ad referendum
+|--> Instância de participação social
+ termo relacionado: http://purl.org/socialparticipation/vbs/ParticipationMechanism
+   |--> Conferência
+    forma alternativa: Conferência nacional
+    forma alternativa: Conferência de políticas públicas
+    definição: Instância colegiada de temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas
+    definição: Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo
+   |--> Conselho
+    forma alternativa: Conselho nacional de políticas públicas
+    forma alternativa: Conselho de políticas públicas
+    definição: Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)
+   |--> Instância consultiva
+   |--> Instância deliberativa
+|--> Mecanismo de participação social
+   |--> Mecanismo consultivo
+   |--> Mecanismo deliberativo
+|--> Ministério
+   |--> Secretaria
+|--> Método de seleção de participantes
+|--> paridade
+|--> pauta
+|--> Política pública
+   |--> Estatuto
+   |--> Política ou plano nacional
+   |--> Sistema nacional
+|--> Reformulação
+|--> Secretaria executiva
+|--> Voto de qualidade
