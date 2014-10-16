@@ -613,21 +613,6 @@ A.add_edge(lth,COUNT)
 e=A.get_edge(lth,COUNT); COUNT+=1
 e.attr["label"]=lnm
 
-
-nm=obs.cities
-lnm=u"municípios"
-G(nm,rdf.type,owl.DatatypeProperty)
-G(nm,rdfs.label,L(lnm,lang="pt"))
-G(nm,rdfs.comment,L(u"número de municípios envolvidos na etapa",lang="pt"))
-G(nm,rdfs.range,xsd.integer)
-A.add_node(COUNT,style="filled")
-nd=A.get_node(COUNT)
-nd.attr["label"]="xsd:integer"
-nd.attr['color']="#A2F3D1"
-A.add_edge(lth,COUNT)
-e=A.get_edge(lth,COUNT); COUNT+=1
-e.attr["label"]=lnm
-
 nm=obs.women
 lnm=u"mulheres"
 G(nm,rdf.type,owl.DatatypeProperty)
@@ -640,7 +625,7 @@ nd.attr["label"]="xsd:integer"
 nd.attr['color']="#A2F3D1"
 A.add_edge(lth,COUNT)
 e=A.get_edge(lth,COUNT); COUNT+=1
-e.attr["label"]=lth
+e.attr["label"]=lnm
 
 nm=obs.proposals
 lnm=u"propostas aprovadas"
@@ -654,8 +639,7 @@ nd.attr["label"]="xsd:integer"
 nd.attr['color']="#A2F3D1"
 A.add_edge(lth,COUNT)
 e=A.get_edge(lth,COUNT); COUNT+=1
-e.attr["label"]=lth
-
+e.attr["label"]=lnm
 
 nm=obs.delegateFocus
 lnm=u"delegados referência para observação de gênero"
@@ -669,8 +653,7 @@ nd.attr["label"]="xsd:boolean"
 nd.attr['color']="#A2F3D1"
 A.add_edge(lth,COUNT)
 e=A.get_edge(lth,COUNT); COUNT+=1
-e.attr["label"]=lth
-
+e.attr["label"]=lnm
 
 th=obs.NationalConference
 lth=u"Conferência nacional"
