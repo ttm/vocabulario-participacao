@@ -190,6 +190,38 @@ e.attr["label"]=lnm
 
 ####
 
+nm=obs.participants
+lnm=u"participantes"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.integer)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:integer"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lconf,COUNT)
+e=A.get_edge(lconf,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+####
+
+nm=obs.unidentified
+lnm=u"não identificados"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.comment,L(u"participantes não identificados",lang="pt"))
+G(nm,rdfs.range,xsd.integer)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:integer"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lconf,COUNT)
+e=A.get_edge(lconf,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+
+####
+
 nm=obs.year
 lnm=u"ano"
 G(nm,rdf.type,owl.DatatypeProperty)
@@ -542,10 +574,10 @@ e=A.get_edge(lth,COUNT); COUNT+=1
 e.attr["label"]=lnm
 ####
 
-ta=obs.phase
+ta=obs.step
 lta=u"etapa" # SKOS
-th=obs.Phase
-lth=u"Etapa"
+th=obs.ConferenceStep
+lth=u"Etapa de conferência"
 G(ta,rdf.type,owl.ObjectProperty)
 G(ta,rdfs.label,L(lta,lang="pt"))
 G(th,rdf.type,owl.Class)
@@ -557,6 +589,88 @@ A.add_edge(lconf,lth)
 e=A.get_edge(lconf,lth)
 e.attr["label"]=lta
 lth_=lth
+
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:integer"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lth,COUNT)
+e=A.get_edge(lth,COUNT); COUNT+=1
+e.attr["label"]=u"participantes"
+
+
+nm=obs.cities
+lnm=u"municípios"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.comment,L(u"número de municípios envolvidos na etapa",lang="pt"))
+G(nm,rdfs.range,xsd.integer)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:integer"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lth,COUNT)
+e=A.get_edge(lth,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+
+nm=obs.cities
+lnm=u"municípios"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.comment,L(u"número de municípios envolvidos na etapa",lang="pt"))
+G(nm,rdfs.range,xsd.integer)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:integer"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lth,COUNT)
+e=A.get_edge(lth,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+nm=obs.women
+lnm=u"mulheres"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.comment,L(u"número de mulheres participantes ou reservado para mulheres",lang="pt"))
+G(nm,rdfs.range,xsd.integer)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:integer"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lth,COUNT)
+e=A.get_edge(lth,COUNT); COUNT+=1
+e.attr["label"]=lth
+
+nm=obs.proposals
+lnm=u"propostas aprovadas"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.comment,L(u"número de propostas aprovadas na etapa",lang="pt"))
+G(nm,rdfs.range,xsd.integer)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:integer"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lth,COUNT)
+e=A.get_edge(lth,COUNT); COUNT+=1
+e.attr["label"]=lth
+
+
+nm=obs.delegateFocus
+lnm=u"delegados referência para observação de gênero"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.comment,L(u"Para a contabilização da incidência de gênero dentre os participantes, se somente os delegados foram considerados, o objeto é True",lang="pt"))
+G(nm,rdfs.range,xsd.boolen)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:boolean"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lth,COUNT)
+e=A.get_edge(lth,COUNT); COUNT+=1
+e.attr["label"]=lth
+
 
 th=obs.NationalConference
 lth=u"Conferência nacional"
@@ -699,8 +813,8 @@ e.attr["label"]=lta
 
 co=obs.composition
 lco=u"composição"
-bo=obs.Body
-lbo=u"Corpo"
+bo=obs.ManagementBody
+lbo=u"Corpo gestor"
 G(co,rdf.type,owl.ObjectProperty)
 G(co,rdfs.label,L(lco,lang="pt"))
 G(co,rdfs.range,bo)
@@ -971,8 +1085,8 @@ G(co,rdfs.label,L(lco,lang="pt"))
 G(bo,rdf.type,owl.Class)
 G(bo,rdfs.label,L(lbo,lang="pt"))
 A.add_node(lbo,style="filled")
-A.add_edge(u"Corpo",lbo)
-e=A.get_edge(u"Corpo",lbo)
+A.add_edge(u"Corpo gestor",lbo)
+e=A.get_edge(u"Corpo gestor",lbo)
 e.attr["label"]=lco
 
 nm=obs.delegates
@@ -1080,19 +1194,15 @@ lbo=u"Cotas"
 G(bo,rdf.type,owl.Class)
 G(bo,rdfs.label,L(lbo,lang="pt"))
 A.add_node(lbo,style="filled")
-A.add_edge(u"Corpo",lbo)
-e=A.get_edge(u"Corpo",lbo)
+A.add_edge(u"Corpo gestor",lbo)
+e=A.get_edge(u"Corpo gestor",lbo)
 e.attr["label"]=lco
 
 A.add_edge(lbo,lth)
 e=A.get_edge(lbo,lth)
 e.attr["label"]=lta
 
-nm=obs.women
 lnm=u"mulheres"
-G(nm,rdf.type,owl.DatatypeProperty)
-G(nm,rdfs.label,L(lnm,lang="pt"))
-G(nm,rdfs.range,xsd.integer)
 A.add_node(COUNT,style="filled")
 nd=A.get_node(COUNT)
 nd.attr["label"]="xsd:integer"

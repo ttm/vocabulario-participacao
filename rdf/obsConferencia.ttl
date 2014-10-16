@@ -185,13 +185,18 @@ obs:area a owl:ObjectProperty ;
     rdfs:label "área"@pt ;
     rdfs:range obs:PolicyArea .
 
+obs:cities a owl:DatatypeProperty ;
+    rdfs:label "municípios"@pt ;
+    rdfs:comment "número de municípios envolvidos na etapa"@pt ;
+    rdfs:range xsd:integer .
+
 obs:commission a owl:ObjectProperty ;
     rdfs:label "commissão"@pt ;
     rdfs:range obs:NationalOrganizationCommission .
 
 obs:composition a owl:ObjectProperty ;
     rdfs:label "composição"@pt ;
-    rdfs:range obs:Body .
+    rdfs:range obs:ManagementBody .
 
 obs:conselho rdfs:label "conselho"@pt ;
     rdfs:range obs:Council .
@@ -207,6 +212,11 @@ obs:councilPositions a owl:DatatypeProperty ;
 obs:datePublished a owl:DatatypeProperty ;
     rdfs:label "data de publicação"@pt ;
     rdfs:range xsd:dateTime .
+
+obs:delegateFocus a owl:DatatypeProperty ;
+    rdfs:label "delegados referência para observação de gênero"@pt ;
+    rdfs:comment "Para a contabilização da incidência de gênero dentre os participantes, se somente os delegados foram considerados, o objeto é True"@pt ;
+    rdfs:range xsd:boolen .
 
 obs:delegates a owl:DatatypeProperty ;
     rdfs:label "delegados"@pt ;
@@ -232,7 +242,7 @@ obs:editorial a owl:DatatypeProperty ;
 
 obs:entity a owl:ObjectProperty ;
     rdfs:label "entidade"@pt ;
-    rdfs:range obs:Body .
+    rdfs:range obs:ManagementBody .
 
 obs:etnicGroup a owl:DatatypeProperty ;
     rdfs:label "grupo étnico"@pt ;
@@ -300,14 +310,14 @@ obs:other a owl:ObjectProperty ;
     rdfs:label "outro"@pt ;
     rdfs:range obs:OtherGroup .
 
+obs:participants a owl:DatatypeProperty ;
+    rdfs:label "participantes"@pt ;
+    rdfs:range xsd:integer .
+
 obs:participationPurpose a owl:DatatypeProperty ;
     rdfs:label "participação"@pt ;
     rdfs:comment "possui a conferência objetivo de participação?"@pt ;
     rdfs:range xsd:boolean .
-
-obs:phase a owl:ObjectProperty ;
-    rdfs:label "etapa"@pt ;
-    rdfs:range obs:Phase .
 
 obs:phrase a owl:DatatypeProperty ;
     rdfs:label "frase de referência"@pt ;
@@ -317,6 +327,11 @@ obs:phrase a owl:DatatypeProperty ;
 obs:predicts a owl:ObjectProperty ;
     rdfs:label "prevê"@pt ;
     rdfs:range obs:ParticipativeMoment .
+
+obs:proposals a owl:DatatypeProperty ;
+    rdfs:label "propostas aprovadas"@pt ;
+    rdfs:comment "número de propostas aprovadas na etapa"@pt ;
+    rdfs:range xsd:integer .
 
 obs:proposalsFormulation a owl:DatatypeProperty ;
     rdfs:label "formulação de propostas"@pt,
@@ -358,12 +373,22 @@ obs:special a owl:DatatypeProperty ;
     rdfs:comment "A componente é especial"@pt ;
     rdfs:range xsd:boolean .
 
+obs:step a owl:ObjectProperty ;
+    rdfs:label "etapa"@pt ;
+    rdfs:range obs:ConferenceStep .
+
 obs:thematicAxes a owl:DatatypeProperty ;
     rdfs:label "eixos temáticos"@pt ;
     rdfs:range xsd:string .
 
+obs:unidentified a owl:DatatypeProperty ;
+    rdfs:label "não identificados"@pt ;
+    rdfs:comment "participantes não identificados"@pt ;
+    rdfs:range xsd:integer .
+
 obs:women a owl:DatatypeProperty ;
     rdfs:label "mulheres"@pt ;
+    rdfs:comment "número de mulheres participantes ou reservado para mulheres"@pt ;
     rdfs:range xsd:integer .
 
 obs:working a owl:DatatypeProperty ;
@@ -377,6 +402,10 @@ obs:year a owl:DatatypeProperty ;
 
 obs:ConferenceMethodology a owl:Class ;
     rdfs:label "Metodologia de conferência"@pt .
+
+obs:ConferenceStep a owl:Class ;
+    rdfs:label "Etapa de conferência"@pt ;
+    rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
 
 obs:Council a owl:Class ;
     rdfs:label "Conselho"@pt ;
@@ -395,16 +424,12 @@ obs:ParticipationInstance a owl:Class ;
     rdfs:label "Instância de participação social"@pt ;
     rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
 
-obs:Phase a owl:Class ;
-    rdfs:label "Etapa"@pt ;
-    rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
-
 obs:Plenary a owl:Class ;
     rdfs:label "Plenária"@pt ;
     rdfs:subClassOf obs:ParticipativeMoment .
 
-obs:Body a owl:Class ;
-    rdfs:label "Corpo"@pt .
+obs:ManagementBody a owl:Class ;
+    rdfs:label "Corpo gestor"@pt .
 
 obs:ParticipationInstanceOrMechanism a owl:Class ;
     rdfs:label "Instância ou mecanismo de participação social"@pt .
