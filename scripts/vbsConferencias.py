@@ -99,10 +99,11 @@ G(sp,skos.broader,pm_)
 
 ########
 
-sp=vbs.edition
-lsp=u"edição de conferência"
+sp=vbs.ConferenceEdition
+lsp=u"Edição de conferência"
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,vbs.Conference)
 
 sp=vbs.Participant
 lsp=u"Participante"
@@ -120,32 +121,46 @@ mn=vbs.Ministry
 lmn=u"Ministério" # entra no SKOS
 G(mn,rdf.type,skos.Concept)
 G(mn,skos.prefLabel,L(lmn,lang="pt"))
+G(mn,skos.broader,sp)
 
 sc=vbs.Secretariat
 lsc=u"Secretaria" # entra no SKOS
 G(sc,rdf.type,skos.Concept)
 G(sc,skos.prefLabel,L(lsc,lang="pt"))
 G(sc,skos.broader,mn)
+sc_=sc
 
+sc=vbs.MinisterialSecretariat
+lsc=u"Secretaria com status de ministério" # entra no SKOS
+G(sc,rdf.type,skos.Concept)
+G(sc,skos.prefLabel,L(lsc,lang="pt"))
+G(sc,skos.broader,sc_)
+
+
+sp_=sp
 sp=vbs.ChamberOfDeputies
 lsp=u"Câmara dos deputados" # entra no SKOS
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,sp_)
 
 sp=vbs.NonGovernmentalForum
 lsp=u"Fórum não governamental" # entra no SKOS
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,sp_)
 
 sp=vbs.Forum
 lsp=u"Fórum" # entra no SKOS
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,sp_)
 
 sp=vbs.ConferenceConvocation
 lsp=u"Convocação de conferência" # entra no SKOS
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,vbs.Conference)
 
 ac=vbs.Act
 lac=u"Ato normativo" # SKOS Ato Institucional
@@ -165,8 +180,8 @@ G(oe,skos.prefLabel,L(loe,lang="pt"))
 G(oe,skos.scopeNote,L(u"Portaria emitida por um ou mais ministérios",lang="pt"))
 G(oe,skos.broader,ac)
 
-re=vbs.CouncilResolution
-lre=u"Resolução de conselho" #SKOS
+re=vbs.Resolution
+lre=u"Resolução" #SKOS
 G(re,rdf.type,skos.Concept)
 G(re,skos.prefLabel,L(lre,lang="pt"))
 G(re,skos.altLabel,L(u"Deliberação",lang="pt"))
@@ -175,6 +190,7 @@ G(re,skos.altLabel,L(u"Decisão",lang="pt"))
 G(re,skos.altLabel,L(u"Proposta",lang="pt"))
 G(re,skos.altLabel,L(u"Diretriz",lang="pt"))
 #G(re,skos.definition,L(u"",lang="pt")) # Melhorar TTM
+G(re,skos.broader,vbs.Act)
 
 ###############
 ta=vbs.PolicyArea
@@ -224,13 +240,12 @@ sp=vbs.Theme ###
 lsp=u"Tema" # SKOS
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
-G(sp,skos.broader,ta)
 
 sp=vbs.thematicAxes
 lsp=u"eixos temáticos"
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
-G(sp,skos.broader,ta)
+G(sp,skos.broader,sp)
 
 sp=vbs.ConferenceStep
 lsp=u"Etapa de conferência"
@@ -238,7 +253,7 @@ G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
 sn=u"Uma etapa é um evento participativo e também é chamada de conferência, enquanto 'a' conferência é o processo todo"
 G(sp,skos.scopeNote,L(sn,lang="pt"))
-G(sp,skos.broader,ta)
+G(sp,skos.broader,vbs.Conference)
 
 sp=vbs.Municipality
 lsp=u"Município"
@@ -268,11 +283,6 @@ lsp=u"Delegado"
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
 
-sp=vbs.StateConference
-lsp=u"Conferência estadual"
-G(sp,rdf.type,skos.Concept)
-G(sp,skos.prefLabel,L(lsp,lang="pt"))
-
 sp=vbs.priorization
 lsp=u"priorização"
 G(sp,rdf.type,skos.Concept)
@@ -294,45 +304,45 @@ G(sp,skos.broader,vbs.ConferenceStep)
 
 th=vbs.RegionalConference
 lth=u"Conferência regional"
+G(th,rdf.type,skos.Concept)
+G(th,skos.prefLabel,L(lth,lang="pt"))
+G(th,skos.scopeNote,L(sn,lang="pt"))
+G(th,skos.broader,vbs.ConferenceStep)
+
+
+sp=vbs.IntercityConferente
+lsp=u"Conferência intermunicipal"
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
 G(sp,skos.scopeNote,L(sn,lang="pt"))
 G(sp,skos.broader,vbs.ConferenceStep)
 
 
-th=vbs.IntercityConferente
-lth=u"Conferência intermunicipal"
+sp=vbs.MunicipalConference
+lsp=u"Conferência municipal"
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
 G(sp,skos.scopeNote,L(sn,lang="pt"))
 G(sp,skos.broader,vbs.ConferenceStep)
 
 
-th=vbs.MunicipalConference
-lth=u"Conferência municipal"
+sp=vbs.VirtualConference
+lsp=u"Conferência virtual"
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
 G(sp,skos.scopeNote,L(sn,lang="pt"))
 G(sp,skos.broader,vbs.ConferenceStep)
 
 
-th=vbs.VirtualConference
-lth=u"Conferência virtual"
+sp=vbs.FreeConference
+lsp=u"Conferência livre"
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
 G(sp,skos.scopeNote,L(sn,lang="pt"))
 G(sp,skos.broader,vbs.ConferenceStep)
 
-
-th=vbs.FreeConference
-lth=u"Conferência livre"
-G(sp,rdf.type,skos.Concept)
-G(sp,skos.prefLabel,L(lsp,lang="pt"))
-G(sp,skos.scopeNote,L(sn,lang="pt"))
-G(sp,skos.broader,vbs.ConferenceStep)
-
-th=vbs.ExtraordinaryConference
-lth=u"Conferência extraordinária"
+sp=vbs.ExtraordinaryConference
+lsp=u"Conferência extraordinária"
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
 G(sp,skos.scopeNote,L(sn,lang="pt"))
@@ -362,7 +372,7 @@ for b in bb:
     lsp=b[1]
     G(sp,rdf.type,skos.Concept)
     G(sp,skos.prefLabel,L(lsp,lang="pt"))
-    G(sp,skos.broader,sp)
+    G(sp,skos.broader,sp_)
 
 
 #######
@@ -372,17 +382,25 @@ G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
 G(sp,skos.scopeLabel,L(u"vaga em algum grupo, como na comissão de organização nacional de conferências.",lang="pt"))
 
+sp=vbs.GroupQualifier
+lsp=u"qualificador de grupo" # SKOS TTM
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+sp_=sp
+
 pp=[(vbs.deputy,u"adjunto"),(vbs.working,u"de trabalho"),(vbs.general,u"geral"),(vbs.special,u"especial"),(vbs.executive,u"executivo"),(vbs.editorial,u"editorial")]
 for pr in pp:
     sp=pr[0]
     lsp=pr[1]
     G(sp,rdf.type,skos.Concept)
     G(sp,skos.prefLabel,L(lsp,lang="pt"))
+    G(sp,skos.broader,sp_)
 
 sp=vbs.ConferenceMethodology
 lsp=u"Metodologia de conferência"
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,vbs.Conference)
 
 sp=vbs.ParticipativeMoment
 lsp=u"Momento participativo"
@@ -399,25 +417,25 @@ pm=vbs.Lecture # SKOS
 lpm=u"Palestra"
 G(pm,rdf.type,skos.Concept)
 G(pm,skos.prefLabel,L(lpm,lang="pt"))
-G(sp,skos.broader,vbs.ParticipativeMoment)
+G(pm,skos.broader,vbs.ParticipativeMoment)
 
 pm=vbs.Workshop # SKOS
 lpm=u"Oficina"
 G(pm,rdf.type,skos.Concept)
 G(pm,skos.prefLabel,L(lpm,lang="pt"))
-G(sp,skos.broader,vbs.ParticipativeMoment)
+G(pm,skos.broader,vbs.ParticipativeMoment)
 
 pm=vbs.Plenary # SKOS
 lpm=u"Plenária"
 G(pm,rdf.type,skos.Concept)
 G(pm,skos.prefLabel,L(lpm,lang="pt"))
-G(sp,skos.broader,vbs.ParticipativeMoment)
+G(pm,skos.broader,vbs.ParticipativeMoment)
 
 pm=vbs.ThematicPlenary # SKOS
 lpm=u"Plenária temática"
 G(pm,rdf.type,skos.Concept)
 G(pm,skos.prefLabel,L(lpm,lang="pt"))
-G(sp,skos.broader,vbs.ParticipativeMoment)
+G(pm,skos.broader,vbs.ParticipativeMoment)
 ##########
 
 

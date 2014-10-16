@@ -10,34 +10,41 @@ vbs:ApprovedProposal a skos:Concept ;
     skos:prefLabel "Proposta aprovada"@pt .
 
 vbs:ChamberOfDeputies a skos:Concept ;
+    skos:broader vbs:PublicAgency ;
     skos:prefLabel "Câmara dos deputados"@pt .
 
-vbs:Conference a skos:Concept ;
-    skos:altLabel "Conferência de políticas públicas"@pt,
-        "Conferência nacional"@pt ;
-    skos:broader vbs:ParticipationInstance ;
-    skos:definition "Instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas"@pt,
-        "Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo"@pt ;
-    skos:prefLabel "Conferência"@pt .
+vbs:Commission a skos:Concept ;
+    skos:broader vbs:ConferenceNationalOrganization,
+        vbs:ParticipationInstance ;
+    skos:prefLabel "Comissão"@pt .
+
+vbs:Committee a skos:Concept ;
+    skos:broader vbs:ConferenceNationalOrganization ;
+    skos:prefLabel "Comitê"@pt .
 
 vbs:ConferenceConvocation a skos:Concept ;
+    skos:broader vbs:Conference ;
     skos:prefLabel "Convocação de conferência"@pt .
 
+vbs:ConferenceEdition a skos:Concept ;
+    skos:broader vbs:Conference ;
+    skos:prefLabel "Edição de conferência"@pt .
+
 vbs:ConferenceMethodology a skos:Concept ;
+    skos:broader vbs:Conference ;
     skos:prefLabel "Metodologia de conferência"@pt .
 
-vbs:ConferenceNationalOrganization a skos:Concept ;
-    skos:prefLabel "Organização nacional de conferência"@pt ;
-    skos:related vbs:ConferenceManagementBody,
-        vbs:Council .
+vbs:Coordination a skos:Concept ;
+    skos:broader vbs:ConferenceNationalOrganization ;
+    skos:prefLabel "Coordenação"@pt .
 
-vbs:CouncilResolution a skos:Concept ;
-    skos:altLabel "Decisão"@pt,
-        "Deliberação"@pt,
-        "Diretriz"@pt,
-        "Proposta"@pt,
-        "Tese"@pt ;
-    skos:prefLabel "Resolução de conselho"@pt .
+vbs:Coordinator a skos:Concept ;
+    skos:broader vbs:ConferenceNationalOrganization ;
+    skos:prefLabel "Coordenador"@pt .
+
+vbs:Counsel a skos:Concept ;
+    skos:broader vbs:ConferenceNationalOrganization ;
+    skos:prefLabel "Assessoria"@pt .
 
 vbs:Delegate a skos:Concept ;
     skos:prefLabel "Delegado"@pt .
@@ -51,8 +58,19 @@ vbs:EconomicDevelopment a skos:Concept ;
     skos:prefLabel "Desenvolvimento econômico"@pt ;
     skos:scopeNote "arranjos produtivos locais, assistência técnica e extensão rural, desenvolvimento regional e desenvolvimento rural sustentável e solidário"@pt .
 
+vbs:ExtraordinaryConference a skos:Concept ;
+    skos:broader vbs:ConferenceStep ;
+    skos:prefLabel "Conferência extraordinária"@pt ;
+    skos:scopeNote "Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo"@pt .
+
 vbs:Forum a skos:Concept ;
+    skos:broader vbs:PublicAgency ;
     skos:prefLabel "Fórum"@pt .
+
+vbs:FreeConference a skos:Concept ;
+    skos:broader vbs:ConferenceStep ;
+    skos:prefLabel "Conferência livre"@pt ;
+    skos:scopeNote "Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo"@pt .
 
 vbs:Government a skos:Concept ;
     skos:prefLabel "Governo"@pt .
@@ -71,13 +89,28 @@ vbs:InterCouncilForum a skos:Concept ;
     skos:broader vbs:ParticipationMechanism ;
     skos:prefLabel "Fórum interconselhos"@pt .
 
+vbs:IntercityConferente a skos:Concept ;
+    skos:broader vbs:ConferenceStep ;
+    skos:prefLabel "Conferência intermunicipal"@pt ;
+    skos:scopeNote "Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo"@pt .
+
 vbs:Lecture a skos:Concept ;
+    skos:broader vbs:ParticipativeMoment ;
     skos:prefLabel "Palestra"@pt .
 
 vbs:MinisterialOrdinance a skos:Concept ;
     skos:broader vbs:Act ;
     skos:prefLabel "Portaria ministerial"@pt ;
     skos:scopeNote "Portaria emitida por um ou mais ministérios"@pt .
+
+vbs:MinisterialSecretariat a skos:Concept ;
+    skos:broader vbs:Secretariat ;
+    skos:prefLabel "Secretaria com status de ministério"@pt .
+
+vbs:MunicipalConference a skos:Concept ;
+    skos:broader vbs:ConferenceStep ;
+    skos:prefLabel "Conferência municipal"@pt ;
+    skos:scopeNote "Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo"@pt .
 
 vbs:Municipality a skos:Concept ;
     skos:prefLabel "Município"@pt .
@@ -88,6 +121,7 @@ vbs:NaturalResources a skos:Concept ;
     skos:scopeNote "Recursos naturais"@pt .
 
 vbs:NonGovernmentalForum a skos:Concept ;
+    skos:broader vbs:PublicAgency ;
     skos:prefLabel "Fórum não governamental"@pt .
 
 vbs:Ombusdmen a skos:Concept ;
@@ -98,7 +132,12 @@ vbs:Participant a skos:Concept ;
     skos:prefLabel "Participante"@pt .
 
 vbs:Plenary a skos:Concept ;
+    skos:broader vbs:ParticipativeMoment ;
     skos:prefLabel "Plenária"@pt .
+
+vbs:Presidency a skos:Concept ;
+    skos:broader vbs:ConferenceNationalOrganization ;
+    skos:prefLabel "Presidência"@pt .
 
 vbs:PresidentialDecree a skos:Concept ;
     skos:broader vbs:Act ;
@@ -116,9 +155,27 @@ vbs:Quota a skos:Concept ;
     skos:prefLabel "Cota"@pt ;
     skos:related vbs:Position .
 
-vbs:Secretariat a skos:Concept ;
-    skos:broader vbs:Ministry ;
-    skos:prefLabel "Secretaria"@pt .
+vbs:Rapporteur a skos:Concept ;
+    skos:broader vbs:ConferenceNationalOrganization ;
+    skos:prefLabel "Relator"@pt .
+
+vbs:RegionalConference a skos:Concept ;
+    skos:broader vbs:ConferenceStep ;
+    skos:prefLabel "Conferência regional"@pt ;
+    skos:scopeNote "Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo"@pt .
+
+vbs:Resolution a skos:Concept ;
+    skos:altLabel "Decisão"@pt,
+        "Deliberação"@pt,
+        "Diretriz"@pt,
+        "Proposta"@pt,
+        "Tese"@pt ;
+    skos:broader vbs:Act ;
+    skos:prefLabel "Resolução"@pt .
+
+vbs:Secretary a skos:Concept ;
+    skos:broader vbs:ConferenceNationalOrganization ;
+    skos:prefLabel "Secretário"@pt .
 
 vbs:SocialPolicies a skos:Concept ;
     skos:broader vbs:PolicyArea ;
@@ -130,12 +187,21 @@ vbs:StateConference a skos:Concept ;
     skos:prefLabel "Conferência estadual"@pt ;
     skos:scopeNote "Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo"@pt .
 
+vbs:Subcommittee a skos:Concept ;
+    skos:broader vbs:ConferenceNationalOrganization ;
+    skos:prefLabel "Subcomitê"@pt .
+
 vbs:ThematicPlenary a skos:Concept ;
+    skos:broader vbs:ParticipativeMoment ;
     skos:prefLabel "Plenária temática"@pt .
 
 vbs:Theme a skos:Concept ;
-    skos:broader vbs:PolicyArea ;
     skos:prefLabel "Tema"@pt .
+
+vbs:VirtualConference a skos:Concept ;
+    skos:broader vbs:ConferenceStep ;
+    skos:prefLabel "Conferência virtual"@pt ;
+    skos:scopeNote "Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo"@pt .
 
 vbs:VirtualParticipationEnvironment a skos:Concept ;
     skos:broader vbs:ParticipationMechanism ;
@@ -149,15 +215,15 @@ vbs:WorkGroup a skos:Concept ;
     skos:prefLabel "Grupo de trabalho"@pt .
 
 vbs:Workshop a skos:Concept ;
+    skos:broader vbs:ParticipativeMoment ;
     skos:prefLabel "Oficina"@pt .
 
 vbs:deputy a skos:Concept ;
+    skos:broader vbs:GroupQualifier ;
     skos:prefLabel "adjunto"@pt .
 
-vbs:edition a skos:Concept ;
-    skos:prefLabel "edição de conferência"@pt .
-
 vbs:editorial a skos:Concept ;
+    skos:broader vbs:GroupQualifier ;
     skos:prefLabel "editorial"@pt .
 
 vbs:etnicGroup a skos:Concept ;
@@ -165,12 +231,14 @@ vbs:etnicGroup a skos:Concept ;
     skos:related vbs:Position .
 
 vbs:executive a skos:Concept ;
+    skos:broader vbs:GroupQualifier ;
     skos:prefLabel "executivo"@pt .
 
 vbs:formulation a skos:Concept ;
     skos:prefLabel "formulação"@pt .
 
 vbs:general a skos:Concept ;
+    skos:broader vbs:GroupQualifier ;
     skos:prefLabel "geral"@pt .
 
 vbs:priorization a skos:Concept ;
@@ -180,39 +248,15 @@ vbs:regiment a skos:Concept ;
     skos:prefLabel "regimento"@pt .
 
 vbs:special a skos:Concept ;
+    skos:broader vbs:GroupQualifier ;
     skos:prefLabel "especial"@pt .
 
-vbs:thematicAxes a skos:Concept ;
-    skos:broader vbs:PolicyArea ;
-    skos:prefLabel "eixos temáticos"@pt .
-
 vbs:working a skos:Concept ;
+    skos:broader vbs:GroupQualifier ;
     skos:prefLabel "de trabalho"@pt .
-
-vbs:Commission a skos:Concept ;
-    skos:broader vbs:Commission,
-        vbs:ParticipationInstance ;
-    skos:prefLabel "Comissão"@pt .
-
-vbs:Committee a skos:Concept ;
-    skos:broader vbs:Committee ;
-    skos:prefLabel "Comitê"@pt .
 
 vbs:ConferenceManagementBody a skos:Concept ;
     skos:prefLabel "Corpo gestor de conferência"@pt .
-
-vbs:ConferenceStep a skos:Concept ;
-    skos:broader vbs:PolicyArea ;
-    skos:prefLabel "Etapa de conferência"@pt ;
-    skos:scopeNote "Uma etapa é um evento participativo e também é chamada de conferência, enquanto 'a' conferência é o processo todo"@pt .
-
-vbs:Coordination a skos:Concept ;
-    skos:broader vbs:Coordination ;
-    skos:prefLabel "Coordenação"@pt .
-
-vbs:Coordinator a skos:Concept ;
-    skos:broader vbs:Coordinator ;
-    skos:prefLabel "Coordenador"@pt .
 
 vbs:Council a skos:Concept ;
     skos:altLabel "Conselho de políticas públicas"@pt,
@@ -222,53 +266,63 @@ vbs:Council a skos:Concept ;
     skos:definition "Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)"@pt ;
     skos:prefLabel "Conselho"@pt .
 
-vbs:Counsel a skos:Concept ;
-    skos:broader vbs:Counsel ;
-    skos:prefLabel "Assessoria"@pt .
-
 vbs:Ministry a skos:Concept ;
+    skos:broader vbs:PublicAgency ;
     skos:prefLabel "Ministério"@pt .
-
-vbs:ParticipativeMoment a skos:Concept ;
-    skos:prefLabel "Momento participativo"@pt .
-
-vbs:Presidency a skos:Concept ;
-    skos:broader vbs:Presidency ;
-    skos:prefLabel "Presidência"@pt .
 
 vbs:Proposal a skos:Concept ;
     skos:prefLabel "Proposta"@pt .
 
-vbs:PublicAgency a skos:Concept ;
-    skos:prefLabel "Órgão público"@pt .
+vbs:Secretariat a skos:Concept ;
+    skos:broader vbs:Ministry ;
+    skos:prefLabel "Secretaria"@pt .
 
-vbs:Rapporteur a skos:Concept ;
-    skos:broader vbs:Rapporteur ;
-    skos:prefLabel "Relator"@pt .
-
-vbs:Secretary a skos:Concept ;
-    skos:broader vbs:Secretary ;
-    skos:prefLabel "Secretário"@pt .
-
-vbs:Subcommittee a skos:Concept ;
-    skos:broader vbs:Subcommittee ;
-    skos:prefLabel "Subcomitê"@pt .
-
-vbs:Act a skos:Concept ;
-    skos:prefLabel "Ato normativo"@pt .
+vbs:thematicAxes a skos:Concept ;
+    skos:broader vbs:thematicAxes ;
+    skos:prefLabel "eixos temáticos"@pt .
 
 vbs:Position a skos:Concept ;
     skos:prefLabel "Vaga"@pt ;
     skos:scopeLabel "vaga em algum grupo, como na comissão de organização nacional de conferências."@pt .
 
+vbs:Act a skos:Concept ;
+    skos:prefLabel "Ato normativo"@pt .
+
+vbs:Conference a skos:Concept ;
+    skos:altLabel "Conferência de políticas públicas"@pt,
+        "Conferência nacional"@pt ;
+    skos:broader vbs:ParticipationInstance ;
+    skos:definition "Instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas"@pt,
+        "Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo"@pt ;
+    skos:prefLabel "Conferência"@pt .
+
 vbs:ParticipationInstance a skos:Concept ;
     skos:prefLabel "Instância de participação social"@pt ;
     skos:related vbs:ParticipationMechanism .
 
-vbs:ParticipationMechanism a skos:Concept ;
-    skos:prefLabel "Mecanismo de participação social"@pt .
+vbs:ParticipativeMoment a skos:Concept ;
+    skos:prefLabel "Momento participativo"@pt .
 
 vbs:PolicyArea a skos:Concept ;
     skos:altLabel "Área política"@pt ;
     skos:prefLabel "Área de política"@pt .
+
+vbs:PublicAgency a skos:Concept ;
+    skos:prefLabel "Órgão público"@pt .
+
+vbs:GroupQualifier a skos:Concept ;
+    skos:prefLabel "qualificador de grupo"@pt .
+
+vbs:ParticipationMechanism a skos:Concept ;
+    skos:prefLabel "Mecanismo de participação social"@pt .
+
+vbs:ConferenceStep a skos:Concept ;
+    skos:broader vbs:Conference ;
+    skos:prefLabel "Etapa de conferência"@pt ;
+    skos:scopeNote "Uma etapa é um evento participativo e também é chamada de conferência, enquanto 'a' conferência é o processo todo"@pt .
+
+vbs:ConferenceNationalOrganization a skos:Concept ;
+    skos:prefLabel "Organização nacional de conferência"@pt ;
+    skos:related vbs:ConferenceManagementBody,
+        vbs:Council .
 
