@@ -1,77 +1,77 @@
-Órgão público
-Audiência pública
-priorização
-Coordenação
-Oficina
-Ministério
-Proposta
-Metodologia de conferência
-Câmara dos deputados
-Comitê
-qualificador de grupo
-Secretaria
-Ato normativo
-Área de política
-Proposta aprovada
-Edição de conferência
-Conferência livre
-Fórum interconselhos
-Conferência regional
-Presidência
-Conselho
-Etapa de conferência
-formulação
-Mecanismo de participação social
-Infraestrutura
-regimento
-Assessoria
-eixos temáticos
-de trabalho
-Comissão
-Ambente virtual de participação social
-Participante
-Relator
-Portaria ministerial
-Conferência intermunicipal
-Fórum não governamental
-Mesa de diálogo
-Ouvidoria
-Delegado
-Cota
-Momento participativo
-executivo
-Coordenador
-Convocação de conferência
-Subcomitê
-Conferência
-Conferência extraordinária
-editorial
-Plenária temática
-Plenária
-Mulher
-grupo étnico
-Consulta pública
-Organização nacional de conferência
-Conferência estadual
-Palestra
-Conferência municipal
-Secretário
-Políticas sociais
-Grupo de trabalho
 adjunto
-Município
-Garantia de direitos
-Desenvolvimento econômico
-Decreto presidencial
-Secretaria com status de ministério
-Recursos naturais
-especial
+Ambente virtual de participação social
+Área de política
+Assessoria
+Ato normativo
+Audiência pública
+Comissão
+Comitê
+Conferência
+Conferência estadual
+Conferência extraordinária
+Conferência intermunicipal
+Conferência livre
+Conferência municipal
+Conferência regional
 Conferência virtual
-Vaga
+Conselho
+Consulta pública
+Convocação de conferência
+Coordenador
+Coordenação
 Corpo gestor de conferência
+Cota
+Câmara dos deputados
+de trabalho
+Decreto presidencial
+Delegado
+Desenvolvimento econômico
+editorial
+Edição de conferência
+eixos temáticos
+especial
+Etapa de conferência
+executivo
+formulação
 Fórum
-Tema
-Instância de participação social
-Resolução
+Fórum interconselhos
+Fórum não governamental
+Garantia de direitos
 geral
 Governo
+Grupo de trabalho
+grupo étnico
+Infraestrutura
+Instância de participação social
+Mecanismo de participação social
+Mesa de diálogo
+Metodologia de conferência
+Ministério
+Momento participativo
+Mulher
+Município
+Oficina
+Organização nacional de conferência
+Órgão público
+Ouvidoria
+Palestra
+Participante
+Plenária
+Plenária temática
+Políticas sociais
+Portaria ministerial
+Presidência
+priorização
+Proposta
+Proposta aprovada
+qualificador de grupo
+Recursos naturais
+regimento
+Relator
+Resolução
+Secretaria
+Secretaria com status de ministério
+Secretário
+Subcomitê
+Tema
+Vaga

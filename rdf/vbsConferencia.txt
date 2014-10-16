@@ -16,25 +16,26 @@
    |--> Portaria ministerial
     nota de escopo: Portaria emitida por um ou mais ministérios
    |--> Resolução
-    forma alternativa: Diretriz
     forma alternativa: Tese
     forma alternativa: Deliberação
+    forma alternativa: Diretriz
     forma alternativa: Decisão
     forma alternativa: Proposta
 |--> Corpo gestor de conferência
 |--> Cota
- termo relacionado: http://purl.org/socialparticipation/vbs/Position
+ termo relacionado: Vaga
 |--> Delegado
 |--> formulação
 |--> Governo
 |--> grupo étnico
- termo relacionado: http://purl.org/socialparticipation/vbs/Position
+ termo relacionado: Cota
+ termo relacionado: Vaga
 |--> Instância de participação social
- termo relacionado: http://purl.org/socialparticipation/vbs/ParticipationMechanism
+ termo relacionado: Mecanismo de participação social
    |--> Comissão
    |--> Conferência
-    forma alternativa: Conferência de políticas públicas
     forma alternativa: Conferência nacional
+    forma alternativa: Conferência de políticas públicas
     definição: Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo
     definição: Instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas
      |--> Convocação de conferência
@@ -76,8 +77,8 @@
 |--> Mulher
 |--> Município
 |--> Organização nacional de conferência
- termo relacionado: http://purl.org/socialparticipation/vbs/Council
- termo relacionado: http://purl.org/socialparticipation/vbs/ConferenceManagementBody
+ termo relacionado: Conselho
+ termo relacionado: Corpo gestor de conferência
    |--> Assessoria
    |--> Comissão
    |--> Comitê

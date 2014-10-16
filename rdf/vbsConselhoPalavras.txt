@@ -1,33 +1,33 @@
-Decreto
-Infraestrutura
-Reformulação
-pauta
-Conferência
-Voto de qualidade
-Mecanismo deliberativo
-Instância consultiva
-Decisão ad referendum
-Estatuto
-Desenvolvimento econômico
-Lei
-Instância deliberativa
-Políticas sociais
-Resolução
-Garantia de direitos
-Instância de participação social
-Método de seleção de participantes
-Secretaria executiva
-paridade
-Sistema nacional
-Regimento interno
-Política ou plano nacional
-Recursos naturais
 Área de política
-Mecanismo de participação social
-Portaria
-Mecanismo consultivo
 Ato normativo
-Política pública
-Secretaria
-Ministério
+Conferência
 Conselho
+Decisão ad referendum
+Decreto
+Desenvolvimento econômico
+Estatuto
+Garantia de direitos
+Infraestrutura
+Instância consultiva
+Instância de participação social
+Instância deliberativa
+Lei
+Mecanismo consultivo
+Mecanismo de participação social
+Mecanismo deliberativo
+Ministério
+Método de seleção de participantes
+paridade
+pauta
+Política ou plano nacional
+Política pública
+Políticas sociais
+Portaria
+Recursos naturais
+Reformulação
+Regimento interno
+Resolução
+Secretaria
+Secretaria executiva
+Sistema nacional
+Voto de qualidade

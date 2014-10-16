@@ -1,110 +1,111 @@
-Órgão público
-Audiência pública
-priorização
-Coordenação
-Oficina
-Ministério
-Proposta
-Metodologia de conferência
-Câmara dos deputados
-Comitê
-qualificador de grupo
-Secretaria
-Ato normativo
+adjunto
+Ambente virtual de participação social
 Área de política
  forma alternativa: Área política
  forma alternativa: Área temática
-Proposta aprovada
-Edição de conferência
+Assessoria
+Ato normativo
+Audiência pública
+Comissão
+Comitê
+Conferência
+ forma alternativa: Conferência nacional
+ forma alternativa: Conferência de políticas públicas
+ definição: Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo
+ definição: Instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas
+Conferência estadual
+ nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
+Conferência extraordinária
+ nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
+Conferência intermunicipal
+ nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
 Conferência livre
  nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
-Fórum interconselhos
+Conferência municipal
+ nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
 Conferência regional
  nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
-Presidência
+Conferência virtual
+ nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
 Conselho
  forma alternativa: Conselho de políticas públicas
  forma alternativa: Conselho nacional de políticas públicas
  definição: Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)
-Etapa de conferência
- nota de escopo: Uma etapa é um evento participativo e também é chamada de conferência, enquanto 'a' conferência é o processo todo
-formulação
-Mecanismo de participação social
-Infraestrutura
- nota de escopo: cidades
-regimento
-Assessoria
-eixos temáticos
-de trabalho
-Comissão
-Ambente virtual de participação social
-Participante
-Relator
-Portaria ministerial
- nota de escopo: Portaria emitida por um ou mais ministérios
-Conferência intermunicipal
- nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
-Fórum não governamental
-Mesa de diálogo
-Ouvidoria
-Delegado
-Cota
- termo relacionado: http://purl.org/socialparticipation/vbs/Position
-Momento participativo
-executivo
-Coordenador
-Convocação de conferência
-Subcomitê
-Conferência
- forma alternativa: Conferência de políticas públicas
- forma alternativa: Conferência nacional
- definição: Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo
- definição: Instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas
-Conferência extraordinária
- nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
-editorial
-Plenária temática
-Plenária
-Mulher
-grupo étnico
- termo relacionado: http://purl.org/socialparticipation/vbs/Position
 Consulta pública
-Organização nacional de conferência
- termo relacionado: http://purl.org/socialparticipation/vbs/Council
- termo relacionado: http://purl.org/socialparticipation/vbs/ConferenceManagementBody
-Conferência estadual
- nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
-Palestra
-Conferência municipal
- nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
-Secretário
-Políticas sociais
- nota de escopo: assistência social, cultura, saúde, segurança alimentar e nutricional
-Grupo de trabalho
-adjunto
-Município
-Garantia de direitos
- nota de escopo: criança e adolescente, educação, juventude, LGBT, mulheres e pessoa idosa
+Convocação de conferência
+Coordenador
+Coordenação
+Corpo gestor de conferência
+Cota
+ termo relacionado: Vaga
+Câmara dos deputados
+de trabalho
+Decreto presidencial
+Delegado
 Desenvolvimento econômico
  nota de escopo: arranjos produtivos locais, assistência técnica e extensão rural, desenvolvimento regional e desenvolvimento rural sustentável e solidário
-Decreto presidencial
-Secretaria com status de ministério
-Recursos naturais
- nota de escopo: Recursos naturais
+editorial
+Edição de conferência
+eixos temáticos
 especial
-Conferência virtual
- nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
-Vaga
-Corpo gestor de conferência
+Etapa de conferência
+ nota de escopo: Uma etapa é um evento participativo e também é chamada de conferência, enquanto 'a' conferência é o processo todo
+executivo
+formulação
 Fórum
-Tema
-Instância de participação social
- termo relacionado: http://purl.org/socialparticipation/vbs/ParticipationMechanism
-Resolução
- forma alternativa: Diretriz
- forma alternativa: Tese
- forma alternativa: Deliberação
- forma alternativa: Decisão
- forma alternativa: Proposta
+Fórum interconselhos
+Fórum não governamental
+Garantia de direitos
+ nota de escopo: criança e adolescente, educação, juventude, LGBT, mulheres e pessoa idosa
 geral
 Governo
+Grupo de trabalho
+grupo étnico
+ termo relacionado: Cota
+ termo relacionado: Vaga
+Infraestrutura
+ nota de escopo: cidades
+Instância de participação social
+ termo relacionado: Mecanismo de participação social
+Mecanismo de participação social
+Mesa de diálogo
+Metodologia de conferência
+Ministério
+Momento participativo
+Mulher
+Município
+Oficina
+Organização nacional de conferência
+ termo relacionado: Conselho
+ termo relacionado: Corpo gestor de conferência
+Órgão público
+Ouvidoria
+Palestra
+Participante
+Plenária
+Plenária temática
+Políticas sociais
+ nota de escopo: assistência social, cultura, saúde, segurança alimentar e nutricional
+Portaria ministerial
+ nota de escopo: Portaria emitida por um ou mais ministérios
+Presidência
+priorização
+Proposta
+Proposta aprovada
+qualificador de grupo
+Recursos naturais
+ nota de escopo: Recursos naturais
+regimento
+Relator
+Resolução
+ forma alternativa: Tese
+ forma alternativa: Deliberação
+ forma alternativa: Diretriz
+ forma alternativa: Decisão
+ forma alternativa: Proposta
+Secretaria
+Secretaria com status de ministério
+Secretário
+Subcomitê
+Tema
+Vaga

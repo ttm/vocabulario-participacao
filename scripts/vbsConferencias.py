@@ -461,6 +461,7 @@ lsp=u"grupo étnico"
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
 G(sp,skos.related,vbs.Position)
+G(sp,skos.related,vbs.Quota)
 
 
 

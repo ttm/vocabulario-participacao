@@ -151,10 +151,6 @@ vbs:PublicConsultation a skos:Concept ;
     skos:broader vbs:ParticipationMechanism ;
     skos:prefLabel "Consulta pública"@pt .
 
-vbs:Quota a skos:Concept ;
-    skos:prefLabel "Cota"@pt ;
-    skos:related vbs:Position .
-
 vbs:Rapporteur a skos:Concept ;
     skos:broader vbs:ConferenceNationalOrganization ;
     skos:prefLabel "Relator"@pt .
@@ -228,7 +224,8 @@ vbs:editorial a skos:Concept ;
 
 vbs:etnicGroup a skos:Concept ;
     skos:prefLabel "grupo étnico"@pt ;
-    skos:related vbs:Position .
+    skos:related vbs:Position,
+        vbs:Quota .
 
 vbs:executive a skos:Concept ;
     skos:broader vbs:GroupQualifier ;
@@ -272,6 +269,10 @@ vbs:Ministry a skos:Concept ;
 
 vbs:Proposal a skos:Concept ;
     skos:prefLabel "Proposta"@pt .
+
+vbs:Quota a skos:Concept ;
+    skos:prefLabel "Cota"@pt ;
+    skos:related vbs:Position .
 
 vbs:Secretariat a skos:Concept ;
     skos:broader vbs:Ministry ;

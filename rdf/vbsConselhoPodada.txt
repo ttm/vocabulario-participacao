@@ -1,53 +1,53 @@
-Decreto
-Infraestrutura
- nota de escopo: cidades
-Reformulação
-pauta
-Conferência
- forma alternativa: Conferência nacional
- forma alternativa: Conferência de políticas públicas
- definição: Instância colegiada de temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas
- definição: Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo
-Voto de qualidade
-Mecanismo deliberativo
-Instância consultiva
-Decisão ad referendum
-Estatuto
-Desenvolvimento econômico
- nota de escopo: arranjos produtivos locais, assistência técnica e extensão rural, desenvolvimento regional e desenvolvimento rural sustentável e solidário
-Lei
-Instância deliberativa
-Políticas sociais
- nota de escopo: assistência social, cultura, saúde, segurança alimentar e nutricional
-Resolução
- forma alternativa: Diretriz
- forma alternativa: Decisão
- forma alternativa: Tese
- forma alternativa: Deliberação
- forma alternativa: Proposta
-Garantia de direitos
- nota de escopo: criança e adolescente, educação, juventude, LGBT, mulheres e pessoa idosa
-Instância de participação social
- termo relacionado: http://purl.org/socialparticipation/vbs/ParticipationMechanism
-Método de seleção de participantes
-Secretaria executiva
-paridade
-Sistema nacional
-Regimento interno
-Política ou plano nacional
-Recursos naturais
- nota de escopo: Recursos naturais
 Área de política
  forma alternativa: Área política
  forma alternativa: Área temática
-Mecanismo de participação social
-Portaria
-Mecanismo consultivo
 Ato normativo
-Política pública
-Secretaria
-Ministério
+Conferência
+ forma alternativa: Conferência de políticas públicas
+ forma alternativa: Conferência nacional
+ definição: Instância colegiada de temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas
+ definição: Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo
 Conselho
- forma alternativa: Conselho nacional de políticas públicas
  forma alternativa: Conselho de políticas públicas
+ forma alternativa: Conselho nacional de políticas públicas
  definição: Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)
+Decisão ad referendum
+Decreto
+Desenvolvimento econômico
+ nota de escopo: arranjos produtivos locais, assistência técnica e extensão rural, desenvolvimento regional e desenvolvimento rural sustentável e solidário
+Estatuto
+Garantia de direitos
+ nota de escopo: criança e adolescente, educação, juventude, LGBT, mulheres e pessoa idosa
+Infraestrutura
+ nota de escopo: cidades
+Instância consultiva
+Instância de participação social
+ termo relacionado: http://purl.org/socialparticipation/vbs/ParticipationMechanism
+Instância deliberativa
+Lei
+Mecanismo consultivo
+Mecanismo de participação social
+Mecanismo deliberativo
+Ministério
+Método de seleção de participantes
+paridade
+pauta
+Política ou plano nacional
+Política pública
+Políticas sociais
+ nota de escopo: assistência social, cultura, saúde, segurança alimentar e nutricional
+Portaria
+Recursos naturais
+ nota de escopo: Recursos naturais
+Reformulação
+Regimento interno
+Resolução
+ forma alternativa: Tese
+ forma alternativa: Decisão
+ forma alternativa: Diretriz
+ forma alternativa: Deliberação
+ forma alternativa: Proposta
+Secretaria
+Secretaria executiva
+Sistema nacional
+Voto de qualidade
