@@ -1,0 +1,114 @@
+|--> Área de política
+ forma alternativa: Área temática
+ forma alternativa: Área política
+   |--> Desenvolvimento econômico
+    nota de escopo: arranjos produtivos locais, assistência técnica e extensão rural, desenvolvimento regional e desenvolvimento rural sustentável e solidário
+   |--> Garantia de direitos
+    nota de escopo: criança e adolescente, educação, juventude, LGBT, mulheres e pessoa idosa
+   |--> Infraestrutura
+    nota de escopo: cidades
+   |--> Políticas sociais
+    nota de escopo: assistência social, cultura, saúde, segurança alimentar e nutricional
+   |--> Recursos naturais
+    nota de escopo: Recursos naturais
+|--> Ato normativo
+   |--> Decreto presidencial
+   |--> Portaria ministerial
+    nota de escopo: Portaria emitida por um ou mais ministérios
+   |--> Resolução
+    forma alternativa: Proposta
+    forma alternativa: Diretriz
+    forma alternativa: Tese
+    forma alternativa: Decisão
+    forma alternativa: Deliberação
+|--> Corpo gestor de conferência
+|--> Cota
+ termo relacionado: http://purl.org/socialparticipation/vbs/Position
+|--> Delegado
+|--> formulação
+|--> Governo
+|--> grupo étnico
+ termo relacionado: http://purl.org/socialparticipation/vbs/Position
+|--> Instância de participação social
+ termo relacionado: http://purl.org/socialparticipation/vbs/ParticipationMechanism
+   |--> Comissão
+   |--> Conferência
+    forma alternativa: Conferência nacional
+    forma alternativa: Conferência de políticas públicas
+    definição: Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo
+    definição: Instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas
+     |--> Convocação de conferência
+     |--> Edição de conferência
+     |--> Etapa de conferência
+       nota de escopo: Uma etapa é um evento participativo e também é chamada de conferência, enquanto 'a' conferência é o processo todo
+         |--> Conferência estadual
+          nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
+         |--> Conferência extraordinária
+          nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
+         |--> Conferência intermunicipal
+          nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
+         |--> Conferência livre
+          nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
+         |--> Conferência municipal
+          nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
+         |--> Conferência regional
+          nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
+         |--> Conferência virtual
+          nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
+     |--> Metodologia de conferência
+   |--> Conselho
+    forma alternativa: Conselho nacional de políticas públicas
+    forma alternativa: Conselho de políticas públicas
+    definição: Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)
+   |--> Ouvidoria
+|--> Mecanismo de participação social
+   |--> Ambente virtual de participação social
+   |--> Audiência pública
+   |--> Consulta pública
+   |--> Fórum interconselhos
+   |--> Mesa de diálogo
+|--> Momento participativo
+   |--> Grupo de trabalho
+   |--> Oficina
+   |--> Palestra
+   |--> Plenária
+   |--> Plenária temática
+|--> Mulher
+|--> Município
+|--> Organização nacional de conferência
+ termo relacionado: http://purl.org/socialparticipation/vbs/Council
+ termo relacionado: http://purl.org/socialparticipation/vbs/ConferenceManagementBody
+   |--> Assessoria
+   |--> Comissão
+   |--> Comitê
+   |--> Coordenador
+   |--> Coordenação
+   |--> Presidência
+   |--> Relator
+   |--> Secretário
+   |--> Subcomitê
+|--> Órgão público
+   |--> Conselho
+    forma alternativa: Conselho nacional de políticas públicas
+    forma alternativa: Conselho de políticas públicas
+    definição: Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)
+   |--> Câmara dos deputados
+   |--> Fórum
+   |--> Fórum não governamental
+   |--> Ministério
+     |--> Secretaria
+         |--> Secretaria com status de ministério
+|--> Participante
+|--> priorização
+|--> Proposta
+   |--> Proposta aprovada
+|--> qualificador de grupo
+   |--> adjunto
+   |--> de trabalho
+   |--> editorial
+   |--> especial
+   |--> executivo
+   |--> geral
+|--> regimento
+|--> Tema
+|--> Vaga

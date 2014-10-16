@@ -304,7 +304,8 @@ vbs:ParticipativeMoment a skos:Concept ;
     skos:prefLabel "Momento participativo"@pt .
 
 vbs:PolicyArea a skos:Concept ;
-    skos:altLabel "Área política"@pt ;
+    skos:altLabel "Área política"@pt,
+        "Área temática"@pt ;
     skos:prefLabel "Área de política"@pt .
 
 vbs:PublicAgency a skos:Concept ;

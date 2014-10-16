@@ -37,26 +37,134 @@ conceitosPai=[rr[0] for rr in res]
 
 cp=sorted(conceitosPai,key=lambda s: s.replace(u"á",u"a").replace(u"Á",u"a").replace(u"Ó",u"o").replace(u"ó",u"o").encode("utf8").lower())
 
+import sys
+f=open("../rdf/vbsConferencia.txt", "wb")
+foobar=sys.stdout
+sys.stdout = f
+
 for cc in cp:
-    print cc
+    print (u"|--> %s"%(cc,)).encode("utf8")
+
+    q="SELECT ?al WHERE {?s a skos:Concept. ?s skos:prefLabel '%s'@pt .  ?s skos:altLabel ?al . }"%(cc,)
+    res=g.query(PREFIX+q)
+    pls=[rr[0] for rr in res]
+    for pl in pls:
+        print (u" forma alternativa: %s"%(pl,)).encode("utf8")
+    q="SELECT ?de WHERE {?s a skos:Concept. ?s skos:prefLabel '%s'@pt .  ?s skos:definition ?de . }"%(cc,)
+    res=g.query(PREFIX+q)
+    pls=[rr[0] for rr in res]
+    for pl in pls:
+        print (u" definição: %s"%(pl,)).encode("utf8")
+    q="SELECT ?de WHERE {?s a skos:Concept. ?s skos:prefLabel '%s'@pt .  ?s skos:scopeNote ?de . }"%(cc,)
+    res=g.query(PREFIX+q)
+    pls=[rr[0] for rr in res]
+    for pl in pls:
+        print (u" nota de escopo: %s"%(pl,)).encode("utf8")
+
+    q="SELECT ?de WHERE {?s a skos:Concept. ?s skos:prefLabel '%s'@pt .  ?s skos:related ?de . }"%(cc,)
+    res=g.query(PREFIX+q)
+    pls=[rr[0] for rr in res]
+    for pl in pls:
+        print (u" termo relacionado: %s"%(pl,)).encode("utf8")
+
+
     q=("SELECT ?l WHERE {?s a skos:Concept. ?s skos:prefLabel ?l .  ?s skos:broader ?cc . ?cc skos:prefLabel '%s'@pt  }"%(cc,))
     res=g.query(PREFIX+q)
     conceitos_=[rr[0] for rr in res]
     cp2=sorted(conceitos_,key=lambda s: s.replace(u"á",u"a").replace(u"Á",u"a").replace(u"Ó",u"o").replace(u"ó",u"o").encode("utf8").lower())
     for cc2 in cp2:
-        print "   |--> %s"%(cc2,)
+        print ("   |--> %s"%(cc2,)).encode("utf8")
+
+        q="SELECT ?al WHERE {?s a skos:Concept. ?s skos:prefLabel '%s'@pt .  ?s skos:altLabel ?al . }"%(cc2,)
+        res=g.query(PREFIX+q)
+        pls=[rr[0] for rr in res]
+        for pl in pls:
+            print (u"    forma alternativa: %s"%(pl,)).encode("utf8")
+        q="SELECT ?de WHERE {?s a skos:Concept. ?s skos:prefLabel '%s'@pt .  ?s skos:definition ?de . }"%(cc2,)
+        res=g.query(PREFIX+q)
+        pls=[rr[0] for rr in res]
+        for pl in pls:
+            print (u"    definição: %s"%(pl,)).encode("utf8")
+        q="SELECT ?de WHERE {?s a skos:Concept. ?s skos:prefLabel '%s'@pt .  ?s skos:scopeNote ?de . }"%(cc2,)
+        res=g.query(PREFIX+q)
+        pls=[rr[0] for rr in res]
+        for pl in pls:
+            print (u"    nota de escopo: %s"%(pl,)).encode("utf8")
+
+        q="SELECT ?de WHERE {?s a skos:Concept. ?s skos:prefLabel '%s'@pt .  ?s skos:related ?s2 . ?s2 skos:prefLabel ?de . }"%(cc2,)
+        res=g.query(PREFIX+q)
+        pls=[rr[0] for rr in res]
+        for pl in pls:
+            print (u"    termo relacionado: %s"%(pl,)).encode("utf8")
+
+
+
+
         q=("SELECT ?l WHERE {?s a skos:Concept. ?s skos:prefLabel ?l .  ?s skos:broader ?cc . ?cc skos:prefLabel '%s'@pt  }"%(cc2,))
         res=g.query(PREFIX+q)
         conceitos__=[rr[0] for rr in res]
         cp3=sorted(conceitos__,key=lambda s: s.replace(u"á",u"a").replace(u"Á",u"a").replace(u"Ó",u"o").replace(u"ó",u"o").encode("utf8").lower())
         for cc3 in cp3:
-            print "     |--> %s"%(cc3,)
+            print ("     |--> %s"%(cc3,)).encode("utf8")
+
+
+            q="SELECT ?al WHERE {?s a skos:Concept. ?s skos:prefLabel '%s'@pt .  ?s skos:altLabel ?al . }"%(cc3,)
+            res=g.query(PREFIX+q)
+            pls=[rr[0] for rr in res]
+            for pl in pls:
+                print (u"       forma alternativa: %s"%(pl,)).encode("utf8")
+            q="SELECT ?de WHERE {?s a skos:Concept. ?s skos:prefLabel '%s'@pt .  ?s skos:definition ?de . }"%(cc3,)
+            res=g.query(PREFIX+q)
+            pls=[rr[0] for rr in res]
+            for pl in pls:
+                print (u"       definição: %s"%(pl,)).encode("utf8")
+            q="SELECT ?de WHERE {?s a skos:Concept. ?s skos:prefLabel '%s'@pt .  ?s skos:scopeNote ?de . }"%(cc3,)
+            res=g.query(PREFIX+q)
+            pls=[rr[0] for rr in res]
+            for pl in pls:
+                print (u"       nota de escopo: %s"%(pl,)).encode("utf8")
+
+            q="SELECT ?de WHERE {?s a skos:Concept. ?s skos:prefLabel '%s'@pt .  ?s skos:related ?s2 . ?s2 skos:prefLabel ?de . }"%(cc3,)
+            res=g.query(PREFIX+q)
+            pls=[rr[0] for rr in res]
+            for pl in pls:
+                print (u"       termo relacionado: %s"%(pl,)).encode("utf8")
+
+
             q=("SELECT ?l WHERE {?s a skos:Concept. ?s skos:prefLabel ?l .  ?s skos:broader ?cc . ?cc skos:prefLabel '%s'@pt  }"%(cc3,))
             res=g.query(PREFIX+q)
             conceitos___=[rr[0] for rr in res]
             cp4=sorted(conceitos___,key=lambda s: s.replace(u"á",u"a").replace(u"Á",u"a").replace(u"Ó",u"o").replace(u"ó",u"o").encode("utf8").lower())
             for cc4 in cp4:
-                print "         |--> %s"%(cc4,)
+                print ("         |--> %s"%(cc4,)).encode("utf8")
+
+
+                q="SELECT ?al WHERE {?s a skos:Concept. ?s skos:prefLabel '%s'@pt .  ?s skos:altLabel ?al . }"%(cc4,)
+                res=g.query(PREFIX+q)
+                pls=[rr[0] for rr in res]
+                for pl in pls:
+                    print (u"          forma alternativa: %s"%(pl,)).encode("utf8")
+                q="SELECT ?de WHERE {?s a skos:Concept. ?s skos:prefLabel '%s'@pt .  ?s skos:definition ?de . }"%(cc4,)
+                res=g.query(PREFIX+q)
+                pls=[rr[0] for rr in res]
+                for pl in pls:
+                    print (u"          definição: %s"%(pl,)).encode("utf8")
+                q="SELECT ?de WHERE {?s a skos:Concept. ?s skos:prefLabel '%s'@pt .  ?s skos:scopeNote ?de . }"%(cc4,)
+                res=g.query(PREFIX+q)
+                pls=[rr[0] for rr in res]
+                for pl in pls:
+                    print (u"          nota de escopo: %s"%(pl,)).encode("utf8")
+
+                q="SELECT ?de WHERE {?s a skos:Concept. ?s skos:prefLabel '%s'@pt .  ?s skos:related ?s2 . ?s2 skos:prefLabel ?de . }"%(cc4,)
+                res=g.query(PREFIX+q)
+                pls=[rr[0] for rr in res]
+                for pl in pls:
+                    print (u"          termo relacionado: %s"%(pl,)).encode("utf8")
+
+
+
+
+
                 q=("SELECT ?l WHERE {?s a skos:Concept. ?s skos:prefLabel ?l .  ?s skos:broader ?cc . ?cc skos:prefLabel '%s'@pt  }"%(cc4,))
                 res=g.query(PREFIX+q)
                 conceitos____=[rr[0] for rr in res]
@@ -64,4 +172,7 @@ for cc in cp:
                 for cc5 in cp5:
                     print "+++++++++++++++++++++1 "
                     print "            |--> %s"%(cc5,)
+f.close()
 
+sys.stdout=foobar
+print "oioi"

@@ -198,6 +198,7 @@ lta=u"Área de política" # SKOS
 G(ta,rdf.type,skos.Concept)
 G(ta,skos.prefLabel,L(lta,lang="pt"))
 G(ta,skos.altLabel,L(u"Área política",lang="pt"))
+G(ta,skos.altLabel,L(u"Área temática",lang="pt"))
 
 sp=vbs.SocialPolicies
 lsp=u"Políticas sociais" # SKOS TTM
