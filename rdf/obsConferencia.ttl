@@ -7,11 +7,12 @@
 
 obs:ChamberOfDeputies a owl:Class ;
     rdfs:label "Câmara dos deputados"@pt ;
-    rdfs:subClassOf obs:publicAgency .
+    rdfs:subClassOf obs:PublicAgency .
 
 obs:Commission a owl:Class ;
     rdfs:label "Comissão"@pt,
-        "Comissão da organização nacional"@pt .
+        "Comissão da organização nacional"@pt ;
+    rdfs:subClassOf obs:ParticipationInstance .
 
 obs:Committee a owl:Class ;
     rdfs:label "Comissão da organização nacional"@pt .
@@ -35,7 +36,8 @@ obs:Decree a owl:Class ;
     rdfs:subClassOf obs:Act .
 
 obs:DialogueTable a owl:Class ;
-    rdfs:label "Mesa de diálogo"@pt .
+    rdfs:label "Mesa de diálogo"@pt ;
+    rdfs:subClassOf obs:ParticipationMechanism .
 
 obs:EconomicDevelopment a owl:Class ;
     rdfs:label "Desenvolvimento econômico"@pt ;
@@ -44,11 +46,7 @@ obs:EconomicDevelopment a owl:Class ;
 
 obs:ExtraordinaryConference a owl:Class ;
     rdfs:label "Conferência extraordinária"@pt ;
-    rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
-
-obs:Forum a owl:Class ;
-    rdfs:label "Fórum não governamental"@pt ;
-    rdfs:subClassOf obs:publicAgency .
+    rdfs:comment "Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo"@pt .
 
 obs:FreeConference a owl:Class ;
     rdfs:label "Conferência livre"@pt ;
@@ -71,7 +69,8 @@ obs:Infrastructure a owl:Class ;
     rdfs:subClassOf obs:PolicyArea .
 
 obs:InterCouncilForum a owl:Class ;
-    rdfs:label "Fórum interconselhos"@pt .
+    rdfs:label "Fórum interconselhos"@pt ;
+    rdfs:subClassOf obs:ParticipationMechanism .
 
 obs:IntercityConferente a owl:Class ;
     rdfs:label "Conferência intermunicipal"@pt ;
@@ -83,7 +82,7 @@ obs:Lecture a owl:Class ;
 
 obs:Ministry a owl:Class ;
     rdfs:label "Ministério"@pt ;
-    rdfs:subClassOf obs:publicAgency .
+    rdfs:subClassOf obs:PublicAgency .
 
 obs:MunicipalConference a owl:Class ;
     rdfs:label "Conferência municipal"@pt ;
@@ -101,16 +100,17 @@ obs:NaturalResources a owl:Class ;
     rdfs:comment "meio ambiente"@pt ;
     rdfs:subClassOf obs:PolicyArea .
 
+obs:NonGovernmentalForum a owl:Class ;
+    rdfs:label "Fórum não governamental"@pt ;
+    rdfs:subClassOf obs:PublicAgency .
+
 obs:Ombusdmen a owl:Class ;
-    rdfs:label "Ouvidoria"@pt .
+    rdfs:label "Ouvidoria"@pt ;
+    rdfs:subClassOf obs:ParticipationInstance .
 
 obs:Ordinance a owl:Class ;
     rdfs:label "Portaria ministerial ou interministerial"@pt ;
     rdfs:subClassOf obs:Act .
-
-obs:ParticipationMechanism a owl:Class ;
-    rdfs:label "Mecanismo de participação social"@pt ;
-    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
 
 obs:Positions a owl:Class ;
     rdfs:label "Vagas"@pt .
@@ -119,10 +119,12 @@ obs:Presidency a owl:Class ;
     rdfs:label "Comissão da organização nacional"@pt .
 
 obs:PublicAudience a owl:Class ;
-    rdfs:label "Audiência pública"@pt .
+    rdfs:label "Audiência pública"@pt ;
+    rdfs:subClassOf obs:ParticipationMechanism .
 
 obs:PublicConsultation a owl:Class ;
-    rdfs:label "Consulta pública"@pt .
+    rdfs:label "Consulta pública"@pt ;
+    rdfs:subClassOf obs:ParticipationMechanism .
 
 obs:Quotas a owl:Class ;
     rdfs:label "Cotas"@pt .
@@ -141,7 +143,7 @@ obs:Resolution a owl:Class ;
 obs:Secretariat a owl:Class ;
     rdfs:label "Secretaria"@pt ;
     rdfs:comment "Secretaria com status ministerial"@pt ;
-    rdfs:subClassOf obs:publicAgency .
+    rdfs:subClassOf obs:PublicAgency .
 
 obs:Secretary a owl:Class ;
     rdfs:label "Comissão da organização nacional"@pt .
@@ -171,7 +173,8 @@ obs:VirtualConference a owl:Class ;
     rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
 
 obs:VirtualParticipationEnvironment a owl:Class ;
-    rdfs:label "Ambente virtual de participação social"@pt .
+    rdfs:label "Ambente virtual de participação social"@pt ;
+    rdfs:subClassOf obs:ParticipationMechanism .
 
 obs:WorkGroup a owl:Class ;
     rdfs:label "Grupo de trabalho"@pt ;
@@ -184,11 +187,6 @@ obs:Workshop a owl:Class ;
 obs:area a owl:ObjectProperty ;
     rdfs:label "área"@pt ;
     rdfs:range obs:PolicyArea .
-
-obs:cities a owl:DatatypeProperty ;
-    rdfs:label "municípios"@pt ;
-    rdfs:comment "número de municípios envolvidos na etapa"@pt ;
-    rdfs:range xsd:integer .
 
 obs:commission a owl:ObjectProperty ;
     rdfs:label "commissão"@pt ;
@@ -290,6 +288,11 @@ obs:methodology a owl:ObjectProperty ;
     rdfs:label "metodologia"@pt ;
     rdfs:range obs:ConferenceMethodology .
 
+obs:municipalities a owl:DatatypeProperty ;
+    rdfs:label "municípios"@pt ;
+    rdfs:comment "número de municípios envolvidos na etapa"@pt ;
+    rdfs:range xsd:integer .
+
 obs:name a owl:DatatypeProperty ;
     rdfs:label "nome"@pt ;
     rdfs:range xsd:string .
@@ -361,7 +364,7 @@ obs:regiment a owl:ObjectProperty ;
 
 obs:responsibleAgency a owl:ObjectProperty ;
     rdfs:label "órgão responsável"@pt ;
-    rdfs:range obs:publicAgency .
+    rdfs:range obs:PublicAgency .
 
 obs:schedulingPurpose a owl:DatatypeProperty ;
     rdfs:label "agendamento"@pt ;
@@ -405,11 +408,12 @@ obs:ConferenceMethodology a owl:Class ;
 
 obs:ConferenceStep a owl:Class ;
     rdfs:label "Etapa de conferência"@pt ;
-    rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
+    rdfs:comment "Uma etapa é um evento participativo e também é chamada de conferência, enquanto 'a' conferência é o processo todo"@pt .
 
 obs:Council a owl:Class ;
     rdfs:label "Conselho"@pt ;
-    rdfs:subClassOf obs:publicAgency .
+    rdfs:subClassOf obs:ParticipationInstance,
+        obs:PublicAgency .
 
 obs:InteractionDialogueForm a owl:Class ;
     rdfs:label "Forma de interação e diálogo"@pt .
@@ -419,10 +423,6 @@ obs:NationalOrganizationCommission a owl:Class ;
 
 obs:OtherGroup a owl:Class ;
     rdfs:label "Outro Grupo"@pt .
-
-obs:ParticipationInstance a owl:Class ;
-    rdfs:label "Instância de participação social"@pt ;
-    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
 
 obs:Plenary a owl:Class ;
     rdfs:label "Plenária"@pt ;
@@ -437,12 +437,20 @@ obs:ParticipationInstanceOrMechanism a owl:Class ;
 obs:Act a owl:Class ;
     rdfs:label "Ato normativo"@pt .
 
+obs:ParticipationInstance a owl:Class ;
+    rdfs:label "Instância de participação social"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
+
+obs:ParticipationMechanism a owl:Class ;
+    rdfs:label "Mecanismo de participação social"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
+
 obs:ParticipativeMoment a owl:Class ;
     rdfs:label "Momento participativo"@pt .
 
 obs:PolicyArea a owl:Class ;
     rdfs:label "Área de política"@pt .
 
-obs:publicAgency a owl:Class ;
+obs:PublicAgency a owl:Class ;
     rdfs:label "Órgão público"@pt .
 

@@ -26,10 +26,15 @@ G(cons,skos.definition,L(u"Espaços públicos vinculados a órgãos do Poder Exe
 
 pm=vbs.ParticipationMechanism
 G(pm,rdf.type,skos.Concept)
-G(pm,skos.prefLabel,L("Mecanismo ou instância de participação social",lang="pt"))
-G(pm,skos.altLabel,L("Mecanismo de participação social",lang="pt"))
-G(pm,skos.altLabel,L("Instância de participação social",lang="pt"))
+G(pm,skos.prefLabel,L("Mecanismo de participação social",lang="pt"))
+pm_=pm
+
+pm=vbs.ParticipationInstance
+G(pm,rdf.type,skos.Concept)
+G(pm,skos.prefLabel,L("Instância de participação social",lang="pt"))
 G(cons,skos.broader,pm)
+G(pm,skos.related,pm_)
+
 
 mn=vbs.Ministry
 lmn=u"Ministério" # entra no SKOS
@@ -44,7 +49,7 @@ G(sc,skos.broader,mn)
 
 ####
 ac=vbs.Act
-lac=u"Ato institucional" # SKOS Ato Institucional
+lac=u"Ato normativo" # SKOS Ato Institucional
 G(ac,rdf.type,skos.Concept)
 G(ac,skos.prefLabel,L(lac,lang="pt"))
 
@@ -80,6 +85,9 @@ G(re,skos.prefLabel,L(lre,lang="pt"))
 G(re,skos.altLabel,L(u"Deliberação",lang="pt"))
 G(re,skos.altLabel,L(u"Tese",lang="pt"))
 G(re,skos.altLabel,L(u"Diretriz",lang="pt"))
+G(re,skos.altLabel,L(u"Decisão",lang="pt"))
+G(re,skos.altLabel,L(u"Proposta",lang="pt"))
+
 G(re,skos.broader,ac)
 
 ###
@@ -150,11 +158,15 @@ lsp=u"Secretaria executiva"
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
 
-sp=vbs.Conference
-lsp=u"Conferencia"
-G(sp,rdf.type,skos.Concept)
-G(sp,skos.prefLabel,L(lsp,lang="pt"))
-G(sp,skos.broader,vbs.ParticipationMechanism)
+conf=vbs.Conference
+G(conf,rdf.type,skos.Concept)
+G(conf,skos.prefLabel,L(u"Conferência",lang="pt"))
+G(conf,skos.altLabel,L(u"Conferência nacional",lang="pt"))
+G(conf,skos.altLabel,L(u"Conferência de políticas públicas",lang="pt"))
+G(conf,skos.definition,L(u"Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo",lang="pt")) # Melhorar TTM
+G(conf,skos.definition,L(u"Instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas",lang="pt")) # Melhorar TTM
+
+
 ####
 
 pu=vbs.PublicPolicy

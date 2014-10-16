@@ -4,6 +4,8 @@
 * Para as URIs é fortemente recomendado usar nomes em ingles, para facilitar reuso mesmo. Tudo bem as URIs estarem com nomes em ingles? Ex: http://purl.org/socialparticipation/Council no lugar de http://purl.org/socialparticipation/Conselho
 * Querem que inclua no vocabulário o nome de cada conferência e conselho? Somente os nacionais? De órgãos federais, como ministérios?
 * Correto assumir que conferências são os processos e as etapas dela são os eventos? Uma conferência é, em essência, uma trilha participativa? 
+* Algum nome para um conceito que junta mecanismos e instancias participativas? "elaborações participativas"? "entidades participativas"?
+* Ambente virtual de participação social é mecanismo participativo, certo? É também instância participativa?
 
 ## Fontes:
 

@@ -71,6 +71,7 @@ sp=obs.Council
 lsp=u"Conselho" # SKOS TTM
 G(sp,rdf.type,owl.Class)
 G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,obs.ParticipationInstance)
 A.add_node(lsp,style="filled") ###
 A.add_edge(lsp,lpm)
 e=A.get_edge(lsp,lpm)
@@ -81,6 +82,7 @@ sp=obs.Ombusdmen
 lsp=u"Ouvidoria" # SKOS TTM
 G(sp,rdf.type,owl.Class)
 G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,obs.ParticipationInstance)
 A.add_node(lsp,style="filled") ###
 A.add_edge(lsp,lpm)
 e=A.get_edge(lsp,lpm)
@@ -91,6 +93,7 @@ sp=obs.Commission
 lsp=u"Comissão" # SKOS TTM
 G(sp,rdf.type,owl.Class)
 G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,obs.ParticipationInstance)
 A.add_node(lsp,style="filled") ###
 A.add_edge(lsp,lpm)
 e=A.get_edge(lsp,lpm)
@@ -102,6 +105,7 @@ sp=obs.DialogueTable
 lsp=u"Mesa de diálogo" # SKOS TTM
 G(sp,rdf.type,owl.Class)
 G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,obs.ParticipationMechanism)
 A.add_node(lsp,style="filled") ###
 A.add_edge(lsp,lpm_)
 e=A.get_edge(lsp,lpm_)
@@ -112,6 +116,7 @@ sp=obs.InterCouncilForum
 lsp=u"Fórum interconselhos" # SKOS TTM
 G(sp,rdf.type,owl.Class)
 G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,obs.ParticipationMechanism)
 A.add_node(lsp,style="filled") ###
 A.add_edge(lsp,lpm_)
 e=A.get_edge(lsp,lpm_)
@@ -122,6 +127,7 @@ sp=obs.PublicAudience
 lsp=u"Audiência pública" # SKOS TTM
 G(sp,rdf.type,owl.Class)
 G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,obs.ParticipationMechanism)
 A.add_node(lsp,style="filled") ###
 A.add_edge(lsp,lpm_)
 e=A.get_edge(lsp,lpm_)
@@ -132,6 +138,7 @@ sp=obs.PublicConsultation
 lsp=u"Consulta pública" # SKOS TTM
 G(sp,rdf.type,owl.Class)
 G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,obs.ParticipationMechanism)
 A.add_node(lsp,style="filled") ###
 A.add_edge(lsp,lpm_)
 e=A.get_edge(lsp,lpm_)
@@ -142,6 +149,7 @@ sp=obs.VirtualParticipationEnvironment
 lsp=u"Ambente virtual de participação social" # SKOS TTM
 G(sp,rdf.type,owl.Class)
 G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,obs.ParticipationMechanism)
 A.add_node(lsp,style="filled") ###
 A.add_edge(lsp,lpm_)
 e=A.get_edge(lsp,lpm_)
@@ -238,7 +246,7 @@ e.attr["label"]=lnm
 #########
 ta=obs.responsibleAgency
 lta=u"órgão responsável"
-th=obs.publicAgency
+th=obs.PublicAgency
 lth=u"Órgão público"
 G(ta,rdf.type,owl.ObjectProperty)
 G(ta,rdfs.label,L(lta,lang="pt"))
@@ -293,7 +301,7 @@ e=A.get_edge(lsp,lth)
 e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
 
-sp=obs.Forum
+sp=obs.NonGovernmentalForum
 lsp=u"Fórum não governamental" # entra no SKOS
 G(sp,rdf.type,owl.Class)
 G(sp,rdfs.label,L(lsp,lang="pt"))
@@ -582,7 +590,7 @@ G(ta,rdf.type,owl.ObjectProperty)
 G(ta,rdfs.label,L(lta,lang="pt"))
 G(th,rdf.type,owl.Class)
 G(th,rdfs.label,L(lth,lang="pt"))
-G(th,rdfs.comment,L(u"Uma fase é um evento participativo, enquanto a conferência em si é o processo todo",lang="pt"))
+G(th,rdfs.comment,L(u"Uma etapa é um evento participativo e também é chamada de conferência, enquanto 'a' conferência é o processo todo",lang="pt"))
 G(ta,rdfs.range,th)
 A.add_node(lth,style="filled")
 A.add_edge(lconf,lth)
@@ -599,7 +607,7 @@ e=A.get_edge(lth,COUNT); COUNT+=1
 e.attr["label"]=u"participantes"
 
 
-nm=obs.cities
+nm=obs.municipalities
 lnm=u"municípios"
 G(nm,rdf.type,owl.DatatypeProperty)
 G(nm,rdfs.label,L(lnm,lang="pt"))
@@ -763,7 +771,7 @@ th=obs.ExtraordinaryConference
 lth=u"Conferência extraordinária"
 G(th,rdf.type,owl.Class)
 G(th,rdfs.label,L(lth,lang="pt"))
-G(th,rdfs.comment,L(u"Uma fase é um evento participativo, enquanto a conferência em si é o processo todo",lang="pt"))
+G(th,rdfs.comment,L(u"Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo",lang="pt"))
 A.add_node(lth,style="filled")
 A.add_edge(lth,lth_)
 e=A.get_edge(lth,lth_)
@@ -1221,6 +1229,7 @@ nome=("../figs/obsConferencia2.png")
 A.draw(nome,prog="circo") # draw to png using circo
 nome=("../figs/obsConferencia3.png")
 A.draw(nome,prog="fdp") # draw to png using circo
+A.write("../rdf/obsConferencia.dot")
 
 f=open("../rdf/obsConferencia.owl","wb")
 f.write(g.serialize())
