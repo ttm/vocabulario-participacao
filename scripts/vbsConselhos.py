@@ -22,7 +22,10 @@ G(cons,rdf.type,skos.Concept)
 G(cons,skos.prefLabel,L(u"Conselho",lang="pt"))
 G(cons,skos.altLabel,L(u"Conselho de políticas públicas",lang="pt"))
 G(cons,skos.altLabel,L(u"Conselho nacional de políticas públicas",lang="pt"))
+G(cons,skos.altLabel,L(u"Conselho gestor",lang="pt"))
 G(cons,skos.definition,L(u"Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)",lang="pt"))
+G(cons,skos.scopeNote,L(u"Espaço participativo com a finalidade de incidir nas políticas públicas de determinado tema, nos quais é prevista certa permanência no tempo, composto por representantes do poder público e da sociedade civil, esta podendo ser dividida em diferentes segmentos.",lang="pt"))
+G(cons,skos.scopeNote,L(u"espaço contínuo de participação social",lang="pt"))
 
 pm=vbs.ParticipationMechanism
 G(pm,rdf.type,skos.Concept)
@@ -31,7 +34,11 @@ pm_=pm
 
 pm=vbs.ParticipationInstance
 G(pm,rdf.type,skos.Concept)
-G(pm,skos.prefLabel,L("Instância de participação social",lang="pt"))
+G(pm,skos.prefLabel,L(u"Instância de participação social",lang="pt"))
+G(pm,skos.altLabel,L(u"Instância participativa",lang="pt"))
+G(pm,skos.altLabel,L(u"Espaço participativo",lang="pt"))
+G(pm,skos.altLabel,L(u"Espaço de participação social",lang="pt"))
+G(pm,skos.altLabel,L(u"Instituição participativa",lang="pt"))
 G(cons,skos.broader,pm)
 G(pm,skos.related,pm_)
 
@@ -226,11 +233,15 @@ G(mc,skos.prefLabel,L(lmc,lang="pt"))
 mc=vbs.QualityVote
 lmc=u"Voto de qualidade"
 G(mc,rdf.type,skos.Concept)
+G(cons,skos.definition,L(u"voto de desempate de votação",lang="pt"))
+G(cons,skos.altLabel,L(u"voto de desempate",lang="pt"))
+G(cons,skos.altLabel,L(u"voto de minerva",lang="pt"))
 G(mc,skos.prefLabel,L(lmc,lang="pt"))
 
 mc=vbs.AdReferendum
 lmc=u"Decisão ad referendum"
 G(mc,rdf.type,skos.Concept)
+G(cons,skos.definition,L(u"decisão a ser referenciada pelo grupo legitimado posteriormente",lang="pt"))
 G(mc,skos.prefLabel,L(lmc,lang="pt"))
 
 f=open("../rdf/vbsConselho.rdf","wb")
