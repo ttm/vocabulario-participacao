@@ -194,10 +194,10 @@ G(sc,rdfs.label,L(lsc,lang="pt"))
 
 G(la,rdf.type,owl.ObjectProperty)
 G(la,rdfs.label,L(lla,lang="pt"))
-B=r.BNode()
-G(B, owl.unionOf, mn)
-G(B, owl.unionOf, sc)
-G(la,rdfs.range,B)
+#B=r.BNode()
+#G(B, owl.unionOf, mn)
+#G(B, owl.unionOf, sc)
+#G(la,rdfs.range,B)
 A.add_node(lmn,style="filled")
 nd=A.get_node(lmn)
 #nd.attr["label"]=u"%s<br />%s"%(lmn,lsc)
@@ -222,7 +222,7 @@ e.attr["label"]=lyc
 ########### PPP
 ca=obs.creationAct
 lca=u"ato de criação"
-ac=obs.Act
+ac=obs.NormativeAct
 lac=u"Ato normativo" # SKOS Ato Institucional
 
 pu=obs.datePublished
@@ -522,22 +522,27 @@ G(es,rdfs.range,pu)
 G(pu,rdf.type,owl.Class)
 G(pu,rdfs.label,L(lpu,lang="pt"))
 
+
+
 sy=obs.NationalSystem
 lsy=u"Sistema nacional" # SKOS
 G(sy,rdf.type,owl.Class)
 G(sy,rdfs.label,L(lsy,lang="pt"))
 G(sy,rdfs.subClassOf,pu)
+
 pl=obs.NationalPlan
 lpl=u"Plano nacional" # SKOS
 G(pl,rdf.type,owl.Class)
 G(pl,rdfs.label,L(lpl,lang="pt"))
 G(pl,rdfs.comment,L(u"revisar com equipe para verificar se pode ser feita a retirada do termo 'política' (já feita, era Política ou plano nacional)",lang="pt"))
 G(pl,rdfs.subClassOf,pu)
-st=obs.Statute
-lst=u"Estatuto" # SKOS
-G(st,rdf.type,owl.Class)
-G(st,rdfs.label,L(lst,lang="pt"))
-G(st,rdfs.subClassOf,pu)
+
+pr=obs.Program
+lpr=u"Programa" # SKOS
+G(pl,rdf.type,owl.Class)
+G(pl,rdfs.label,L(lpl,lang="pt"))
+G(pl,rdfs.subClassOf,pu)
+
 
 # desenhar certinho
 A.add_node(lpu,style="filled")
@@ -553,21 +558,51 @@ A.add_edge(lpu,COUNT)
 e=A.get_edge(lpu,COUNT); COUNT+=1
 e.attr["label"]=u"nome"
 
+it=obs.integrates
+lit=u"integra"
+G(it,rdf.type,owl.ObjectProperty)
+G(it,rdfs.label,L(lit,lang="pt"))
+
 A.add_node(lsy,style="filled") ###
-A.add_edge(lsy,lpu)
+A.add_edge(  lsy,lpu) # sistema
 e=A.get_edge(lsy,lpu)
-e.attr["arrowhead"]="empty"
-e.attr["arrowsize"]=2
+e.attr["label"]=lit
 A.add_node(lpl,style="filled") ###
-A.add_edge(lpl,lpu)
+A.add_edge(  lpl,lpu) # plano
 e=A.get_edge(lpl,lpu)
-e.attr["arrowhead"]="empty"
-e.attr["arrowsize"]=2
+e.attr["label"]=lit
+
+A.add_node(lpr,style="filled") ###
+A.add_edge(lpr,lpu) # programa
+e=A.get_edge(lpr,lpu)
+e.attr["label"]=lit
+
+
+
+st=obs.Statute
+lst=u"Estatuto" # SKOS
+G(st,rdf.type,owl.Class)
+G(st,rdfs.label,L(lst,lang="pt"))
+G(st,rdfs.subClassOf,obs.NormativeAct)
 A.add_node(lst,style="filled") ###
-A.add_edge(lst,lpu)
-e=A.get_edge(lst,lpu)
+A.add_edge(  lst, u"Ato normativo")
+e=A.get_edge(lst, u"Ato normativo")
 e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
+
+
+ca=obs.establishes
+lca=u"institui"
+G(ca,rdf.type,owl.ObjectProperty)
+G(ca,rdfs.label,L(lca,lang="pt"))
+G(ca,rdfs.range,obs.PublicPolicy)
+
+A.add_edge(  u"Ato normativo",u"Política pública")
+e=A.get_edge(u"Ato normativo",u"Política pública")
+e.attr["label"]=lca
+
+
+
 
 ##########
 # composicao dos conselhos
@@ -849,6 +884,27 @@ nd.attr['color']="#A2F3D1"
 A.add_edge(lcons,COUNT)
 e=A.get_edge(lcons,COUNT); COUNT+=1
 e.attr["label"]=lmc
+
+lapoi=u"Órgão de apoio administrativo" # SKOS TTM
+lpu=u"Política pública" # SKOS
+lla=u"órgão vinculado"
+A.add_edge(lapoi,lpu)
+e=A.get_edge(lapoi,lpu)
+e.attr["label"]=lla
+
+auta=obs.Autarchy
+lauta=u"Autarquia" # SKOS
+fou=obs.Foundation
+lfou=u"Fundação" # SKOS
+
+A.add_node(lauta,style="filled")
+A.add_node(lfou,style="filled")
+A.add_edge(  lauta,lpu)
+e=A.get_edge(lauta,lpu)
+e.attr["label"]=lla
+A.add_edge(lfou,lpu)
+e=A.get_edge(lfou,lpu)
+e.attr["label"]=lla
 
 
 
