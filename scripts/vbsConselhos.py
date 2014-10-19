@@ -83,6 +83,7 @@ bl=vbs.Bylaws
 lbl=u"Regimento interno" #SKOS
 G(bl,rdf.type,skos.Concept)
 G(bl,skos.prefLabel,L(lbl,lang="pt"))
+G(bl,skos.altLabel,L(u"Estatuto",lang="pt"))
 G(bl,skos.broader,ac)
 
 re=vbs.Resolution
@@ -212,6 +213,9 @@ sp=vbs.Statute
 lsp=u"Estatuto"
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.definition,L(u"Conjunto de normas do ordenamento jurídico brasileiro usualmente instituído por lei.",lang="pt"))
+G(sp,skos.scopeNote,L(u"Estatuto que instaura política pública",lang="pt"))
+G(sp,skos.scopeNote,L(u"Não é estatuto sinônimo de regimento interno",lang="pt"))
 G(sp,skos.broader,pu)
 
 ####
@@ -219,6 +223,7 @@ sp=vbs.parity
 lsp=u"paridade"
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.scopeNote,L(u"paridade é um conceito local, podendo por exemplo, ser considerada proporção igual de membros do governo e da sociedade ou alguma equivalência semelhante se desconsiderado algum grupo especial",lang="pt"))
 
 mc=vbs.ParticipantSelectionMethod
 lmc=u"Método de seleção de participantes"
@@ -243,6 +248,15 @@ lmc=u"Decisão ad referendum"
 G(mc,rdf.type,skos.Concept)
 G(cons,skos.definition,L(u"decisão a ser referenciada pelo grupo legitimado posteriormente",lang="pt"))
 G(mc,skos.prefLabel,L(lmc,lang="pt"))
+
+mc=vbs.renewal
+lmc=u"Recondução de mandato"
+G(mc,rdf.type,skos.Concept)
+G(mc,skos.prefLabel,L(lmc,lang="pt"))
+G(mc,skos.scopeNote,L(u"Quando há 'limite de mandato', há limite para recondução.",lang="pt"))
+G(mc,skos.scopeNote,L(u"Este conceito foi trazido do campo dos conselhos, pode ser aplicável em outros contextos.",lang="pt"))
+
+
 
 f=open("../rdf/vbsConselho.rdf","wb")
 f.write(g.serialize())

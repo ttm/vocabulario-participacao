@@ -517,9 +517,10 @@ G(sy,rdf.type,owl.Class)
 G(sy,rdfs.label,L(lsy,lang="pt"))
 G(sy,rdfs.subClassOf,pu)
 pl=obs.NationalPlan
-lpl=u"Política ou plano nacional" # SKOS
+lpl=u"Plano nacional" # SKOS
 G(pl,rdf.type,owl.Class)
 G(pl,rdfs.label,L(lpl,lang="pt"))
+G(pl,rdfs.comment,L(u"revisar com equipe para verificar se pode ser feita a retirada do termo 'política' (já feita, era Política ou plano nacional)",lang="pt"))
 G(pl,rdfs.subClassOf,pu)
 st=obs.Statute
 lst=u"Estatuto" # SKOS
@@ -658,13 +659,14 @@ e.attr["label"]=lmc
 
 mc=obs.internalGovernanceBody
 lmc=u"órgão interno de governança"
-gb=obs.GovernanceBody
+gb=obs.GovernanceAgency
 lgb=u"Órgão de governança"
 G(mc,rdf.type,owl.ObjectProperty)
 G(mc,rdfs.label,L(lmc,lang="pt"))
 G(mc,rdfs.range,gb)
 G(gb,rdf.type,owl.Class)
 G(gb,rdfs.label,L(lgb,lang="pt"))
+lgb_=lgb
 
 A.add_node(lgb,style="filled")
 A.add_edge(lbo,lgb)
@@ -698,6 +700,67 @@ e.attr["label"]="nome"
 
 mc=obs.agendaPreparation
 lmc=u"encarregado pela pauta"
+
+th=obs.PublicAgency
+lth=u"Órgão público"
+
+G(mc,rdf.type,owl.ObjectProperty)
+G(mc,rdfs.label,L(lmc,lang="pt"))
+G(th,rdf.type,owl.Class)
+G(th,rdfs.label,L(lth,lang="pt"))
+G(mc,rdfs.range,th)
+A.add_node(lth,style="filled")
+A.add_edge(lcons,lth)
+e=A.get_edge(lcons,lth)
+e.attr["label"]=lmc
+
+#sp=obs.GovernanceAgency
+#lsp=u"Órgão de governança" # SKOS TTM
+#G(sp,rdf.type,owl.Class)
+#G(sp,rdfs.label,L(lsp,lang="pt"))
+#G(sp,rdfs.subClassOf,th)
+#A.add_node(lsp,style="filled") ###
+A.add_edge(lgb_,lth)
+e=A.get_edge(lgb_,lth)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.AdministrativeSupportAgency
+lsp=u"Órgão de apoio administrativo" # SKOS TTM
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,th)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lth)
+e=A.get_edge(lsp,lth)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+lsp_=lsp
+
+sp=obs.Presidency
+lsp=u"Presidência" # SKOS TTM
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,th)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lsp_)
+e=A.get_edge(lsp,lsp_)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.ExecutiveOffice
+lsp=u"Secretaria executiva" # SKOS TTM
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,th)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lsp_)
+e=A.get_edge(lsp,lsp_)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+mc=obs.telephone
+lmc=u"telefone"
 G(mc,rdf.type,owl.DatatypeProperty)
 G(mc,rdfs.label,L(lmc,lang="pt"))
 G(mc,rdfs.range,xsd.string)
@@ -705,9 +768,13 @@ A.add_node(COUNT,style="filled")
 nd=A.get_node(COUNT)
 nd.attr["label"]="xsd:string"
 nd.attr['color']="#A2F3D1"
-A.add_edge(lcons,COUNT)
-e=A.get_edge(lcons,COUNT); COUNT+=1
+A.add_edge(  lsp,COUNT)
+e=A.get_edge(lsp,COUNT); COUNT+=1
 e.attr["label"]=lmc
+
+
+
+
 
 mc=obs.presidentialQualityVote
 lmc=u"voto de qualidade do presidente"
