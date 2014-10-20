@@ -16,11 +16,11 @@
    |--> Portaria ministerial
     nota de escopo: Portaria emitida por um ou mais ministérios
    |--> Resolução
+    forma alternativa: Decisão
+    forma alternativa: Deliberação
     forma alternativa: Proposta
     forma alternativa: Tese
-    forma alternativa: Deliberação
     forma alternativa: Diretriz
-    forma alternativa: Decisão
 |--> Corpo gestor de conferência
 |--> Cota
  termo relacionado: Vaga
@@ -28,16 +28,16 @@
 |--> formulação
 |--> Governo
 |--> grupo étnico
- termo relacionado: Vaga
  termo relacionado: Cota
+ termo relacionado: Vaga
 |--> Instância de participação social
  termo relacionado: Mecanismo de participação social
    |--> Comissão
    |--> Conferência
-    forma alternativa: Conferência nacional
     forma alternativa: Conferência de políticas públicas
-    definição: Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo
+    forma alternativa: Conferência nacional
     definição: Instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas
+    definição: Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo
      |--> Convocação de conferência
      |--> Edição de conferência
      |--> Etapa de conferência
@@ -58,8 +58,8 @@
           nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
      |--> Metodologia de conferência
    |--> Conselho
-    forma alternativa: Conselho de políticas públicas
     forma alternativa: Conselho nacional de políticas públicas
+    forma alternativa: Conselho de políticas públicas
     definição: Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)
    |--> Ouvidoria
 |--> Mecanismo de participação social
@@ -90,8 +90,8 @@
    |--> Subcomitê
 |--> Órgão público
    |--> Conselho
-    forma alternativa: Conselho de políticas públicas
     forma alternativa: Conselho nacional de políticas públicas
+    forma alternativa: Conselho de políticas públicas
     definição: Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)
    |--> Câmara dos deputados
    |--> Fórum
