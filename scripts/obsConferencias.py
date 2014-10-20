@@ -779,14 +779,27 @@ e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
 
 ###
-mm=obs.realizationPeriod
-lnm=u"período de realização"
+mm=obs.startDate
+lnm=u"início"
 G(nm,rdf.type,owl.DatatypeProperty)
 G(nm,rdfs.label,L(lnm,lang="pt"))
-G(nm,rdfs.range,xsd.duration) # usar "P%sM",datatype=xsd.duration 
+G(nm,rdfs.range,xsd.dateTime) # usar "P%sM",datatype=xsd.duration 
 A.add_node(COUNT,style="filled")
 nd=A.get_node(COUNT)
-nd.attr["label"]="xsd:duration"
+nd.attr["label"]="xsd:dateTime"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lconf,COUNT)
+e=A.get_edge(lconf,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+mm=obs.endDate
+lnm=u"término"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.dateTime) # usar "P%sM",datatype=xsd.duration 
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:dateTime"
 nd.attr['color']="#A2F3D1"
 A.add_edge(lconf,COUNT)
 e=A.get_edge(lconf,COUNT); COUNT+=1
@@ -1048,7 +1061,7 @@ e.attr["arrowsize"]=2
 
 ####
 
-lth=u"Etapa"
+lth=u"Etapa de conferência"
 ta=obs.proposalsLimit
 lta=u"limite de propostas" # SKOS
 

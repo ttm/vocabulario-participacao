@@ -140,7 +140,7 @@ e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
 
 sp=obs.VirtualParticipationEnvironment
-lsp=u"Ambente virtual de participação social" # SKOS TTM
+lsp=u"Ambiente virtual de participação social" # SKOS TTM
 G(sp,rdf.type,owl.Class)
 G(sp,rdfs.label,L(lsp,lang="pt"))
 A.add_node(lsp,style="filled") ###
@@ -577,8 +577,6 @@ A.add_edge(lpr,lpu) # programa
 e=A.get_edge(lpr,lpu)
 e.attr["label"]=lit
 
-
-
 st=obs.Statute
 lst=u"Estatuto" # SKOS
 G(st,rdf.type,owl.Class)
@@ -590,7 +588,6 @@ e=A.get_edge(lst, u"Ato normativo")
 e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
 
-
 ca=obs.establishes
 lca=u"institui"
 G(ca,rdf.type,owl.ObjectProperty)
@@ -601,12 +598,8 @@ A.add_edge(  u"Ato normativo",u"Política pública")
 e=A.get_edge(u"Ato normativo",u"Política pública")
 e.attr["label"]=lca
 
-
-
-
 ##########
 # composicao dos conselhos
-
 co=obs.composition
 lco=u"composição"
 bo=obs.Body
@@ -885,9 +878,14 @@ A.add_edge(lcons,COUNT)
 e=A.get_edge(lcons,COUNT); COUNT+=1
 e.attr["label"]=lmc
 
-lapoi=u"Órgão de apoio administrativo" # SKOS TTM
+#lapoi=u"Órgão de apoio administrativo" # SKOS TTM
+apoi=obs.AdministrativePublicAgency
+lapoi=u"Órgão da administração pública" # SKOS TTM
+G(apoi,rdf.type,owl.Class)
+G(apoi,rdfs.label,L(lapoi,lang="pt"))
 lpu=u"Política pública" # SKOS
 lla=u"órgão vinculado"
+A.add_node(lapoi,style="filled")
 A.add_edge(lapoi,lpu)
 e=A.get_edge(lapoi,lpu)
 e.attr["label"]=lla
@@ -899,15 +897,32 @@ lfou=u"Fundação" # SKOS
 
 A.add_node(lauta,style="filled")
 A.add_node(lfou,style="filled")
-A.add_edge(  lauta,lpu)
-e=A.get_edge(lauta,lpu)
-e.attr["label"]=lla
-A.add_edge(lfou,lpu)
-e=A.get_edge(lfou,lpu)
-e.attr["label"]=lla
+#A.add_edge(  lauta,lpu)
+#e=A.get_edge(lauta,lpu)
+A.add_edge(  lauta,lapoi)
+e=A.get_edge(lauta,lapoi)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+#A.add_edge(lfou,lpu)
+#e=A.get_edge(lfou,lpu)
+A.add_edge(lfou  ,lapoi)
+e=A.get_edge(lfou,lapoi)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+
+lmn=u"Ministério" # entra no SKOS
+lsc=u"Secretaria" # entra no SKOS
+lll=(u"<%s<br />%s>")%(lmn,lsc)
+A.add_edge(  lmn  ,lapoi)
+e=A.get_edge(lmn,lapoi)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
 
 
 
+nome=("../figs/obsConselhoExp.png")
+A.draw(prog="dot") # draw to png using circo
 
 nome=("../figs/obsConselho.png")
 A.draw(nome,prog="dot") # draw to png using circo

@@ -223,7 +223,7 @@ sp=vbs.parity
 lsp=u"paridade"
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
-G(sp,skos.scopeNote,L(u"paridade é um conceito local, podendo por exemplo, ser considerada proporção igual de membros do governo e da sociedade ou alguma equivalência semelhante se desconsiderado algum grupo especial",lang="pt"))
+G(sp,skos.scopeNote,L(u"paridade é um conceito local, podendo por exemplo, ser considerada proporção igual de membros do governo e da sociedade ou proporção igual entre dois segmentos ou setores que são considerados prioritários pelo Conselho",lang="pt"))
 
 mc=vbs.ParticipantSelectionMethod
 lmc=u"Método de seleção de participantes"

@@ -338,9 +338,10 @@ obs:proposals a owl:DatatypeProperty ;
 
 obs:proposalsFormulation a owl:DatatypeProperty ;
     rdfs:label "formulação de propostas"@pt,
-        "período de realização"@pt ;
+        "início"@pt,
+        "término"@pt ;
     rdfs:range xsd:boolean,
-        xsd:duration .
+        xsd:dateTime .
 
 obs:proposalsLimit a owl:DatatypeProperty ;
     rdfs:label "limite de propostas"@pt ;

@@ -9,8 +9,8 @@ Audiência pública
 Comissão
 Comitê
 Conferência
- forma alternativa: Conferência de políticas públicas
  forma alternativa: Conferência nacional
+ forma alternativa: Conferência de políticas públicas
  definição: Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo
  definição: Instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas
 Conferência estadual
@@ -98,11 +98,11 @@ Recursos naturais
 regimento
 Relator
 Resolução
- forma alternativa: Diretriz
- forma alternativa: Decisão
- forma alternativa: Deliberação
  forma alternativa: Proposta
  forma alternativa: Tese
+ forma alternativa: Deliberação
+ forma alternativa: Diretriz
+ forma alternativa: Decisão
 Secretaria
 Secretaria com status de ministério
 Secretário
