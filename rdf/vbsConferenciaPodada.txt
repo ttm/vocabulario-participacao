@@ -28,8 +28,8 @@ Conferência regional
 Conferência virtual
  nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
 Conselho
- forma alternativa: Conselho nacional de políticas públicas
  forma alternativa: Conselho de políticas públicas
+ forma alternativa: Conselho nacional de políticas públicas
  definição: Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)
 Consulta pública
 Convocação de conferência
@@ -61,8 +61,8 @@ geral
 Governo
 Grupo de trabalho
 grupo étnico
- termo relacionado: Cota
  termo relacionado: Vaga
+ termo relacionado: Cota
 Infraestrutura
  nota de escopo: cidades
 Instância de participação social
@@ -76,8 +76,8 @@ Mulher
 Município
 Oficina
 Organização nacional de conferência
- termo relacionado: Conselho
  termo relacionado: Corpo gestor de conferência
+ termo relacionado: Conselho
 Órgão público
 Ouvidoria
 Palestra
@@ -99,10 +99,10 @@ regimento
 Relator
 Resolução
  forma alternativa: Decisão
- forma alternativa: Deliberação
- forma alternativa: Proposta
  forma alternativa: Tese
  forma alternativa: Diretriz
+ forma alternativa: Deliberação
+ forma alternativa: Proposta
 Secretaria
 Secretaria com status de ministério
 Secretário

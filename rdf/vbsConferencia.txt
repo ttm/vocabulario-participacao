@@ -17,10 +17,10 @@
     nota de escopo: Portaria emitida por um ou mais ministérios
    |--> Resolução
     forma alternativa: Decisão
-    forma alternativa: Deliberação
-    forma alternativa: Proposta
     forma alternativa: Tese
     forma alternativa: Diretriz
+    forma alternativa: Deliberação
+    forma alternativa: Proposta
 |--> Corpo gestor de conferência
 |--> Cota
  termo relacionado: Vaga
@@ -28,8 +28,8 @@
 |--> formulação
 |--> Governo
 |--> grupo étnico
- termo relacionado: Cota
  termo relacionado: Vaga
+ termo relacionado: Cota
 |--> Instância de participação social
  termo relacionado: Mecanismo de participação social
    |--> Comissão
@@ -58,8 +58,8 @@
           nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
      |--> Metodologia de conferência
    |--> Conselho
-    forma alternativa: Conselho nacional de políticas públicas
     forma alternativa: Conselho de políticas públicas
+    forma alternativa: Conselho nacional de políticas públicas
     definição: Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)
    |--> Ouvidoria
 |--> Mecanismo de participação social
@@ -77,8 +77,8 @@
 |--> Mulher
 |--> Município
 |--> Organização nacional de conferência
- termo relacionado: Conselho
  termo relacionado: Corpo gestor de conferência
+ termo relacionado: Conselho
    |--> Assessoria
    |--> Comissão
    |--> Comitê
@@ -90,8 +90,8 @@
    |--> Subcomitê
 |--> Órgão público
    |--> Conselho
-    forma alternativa: Conselho nacional de políticas públicas
     forma alternativa: Conselho de políticas públicas
+    forma alternativa: Conselho nacional de políticas públicas
     definição: Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)
    |--> Câmara dos deputados
    |--> Fórum

@@ -1,0 +1,63 @@
+@prefix obs: <http://purl.org/socialparticipation/obs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+obs:Foundation a owl:Class ;
+    rdfs:label "Fundação"@pt ;
+    rdfs:subClassOf obs:IndirectPublicAdministrationAgency .
+
+obs:Hospital a owl:Class ;
+    rdfs:label "Hospital"@pt ;
+    rdfs:subClassOf obs:PublicAgency .
+
+obs:Ministry a owl:Class ;
+    rdfs:label "Ministério"@pt ;
+    rdfs:subClassOf obs:PublicAdministrationAgency .
+
+obs:OmbudsmanAgency a owl:Class ;
+    rdfs:label "Ouvidoria"@pt ;
+    rdfs:comment "Ouvidoria federal"@pt .
+
+obs:University a owl:Class ;
+    rdfs:label "Universidade"@pt ;
+    rdfs:subClassOf obs:PublicAgency .
+
+obs:accountable a owl:ObjectProperty ;
+    rdfs:label "responsável"@pt ;
+    rdfs:range obs:Ombudsman .
+
+obs:agency a owl:ObjectProperty ;
+    rdfs:label "órgão"@pt ;
+    rdfs:range obs:PublicAgency .
+
+obs:ativa a owl:DatatypeProperty ;
+    rdfs:label "ativa"@pt ;
+    rdfs:comment "ouvidoria é ativa?"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:location a owl:DatatypeProperty ;
+    rdfs:label "localização"@pt ;
+    rdfs:comment "órgão e localização do ouvidor dentro do órgão em que trabalha"@pt ;
+    rdfs:range xsd:string .
+
+obs:name a owl:DatatypeProperty ;
+    rdfs:label "nome"@pt ;
+    rdfs:range xsd:string .
+
+obs:IndirectPublicAdministrationAgency a owl:Class ;
+    rdfs:label "Órgão da administração pública indireta"@pt ;
+    rdfs:subClassOf obs:PublicAgency .
+
+obs:Ombudsman a owl:Class ;
+    rdfs:label "Ouvidor"@pt .
+
+obs:PublicAdministrationAgency a owl:Class ;
+    rdfs:label "Órgão da administração pública"@pt ;
+    rdfs:subClassOf obs:PublicAgency .
+
+obs:PublicAgency a owl:Class ;
+    rdfs:label "Órgão público"@pt .
+
