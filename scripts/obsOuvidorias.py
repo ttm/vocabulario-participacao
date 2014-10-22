@@ -70,6 +70,21 @@ A.add_edge(lOuvidor,COUNT)
 e=A.get_edge(lOuvidor,COUNT); COUNT+=1
 e.attr["label"]=lnome
 
+nome=obs.telephone
+lnome=u"telefone"
+G(nome,rdf.type,owl.DatatypeProperty)
+G(nome,rdfs.label,L(lnome,lang="pt"))
+G(nome,rdfs.range,xsd.string)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:string"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lOuvidor,COUNT)
+e=A.get_edge(lOuvidor,COUNT); COUNT+=1
+e.attr["label"]=lnome
+
+
+
 local=obs.location
 llocal=u"localização"
 G(local,rdf.type,owl.DatatypeProperty)
@@ -97,6 +112,12 @@ A.add_node(lOrgaoPub,style="filled")
 A.add_edge(louv,lOrgaoPub)
 e=A.get_edge(louv,lOrgaoPub)
 e.attr["label"]=lorgao
+
+A.add_edge(u"Ouvidor",lOrgaoPub)
+e=A.get_edge(u"Ouvidor",lOrgaoPub)
+e.attr["label"]=lorgao
+
+
 
 sp=obs.PublicAdministrationAgency
 lsp=u"Órgão da administração pública" # entra no SKOS
@@ -173,6 +194,285 @@ e=A.get_edge(lsp,lsp__)
 e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
 
+
+sj=obs.shouldJoin
+lsj=u"integrará" # SKOS
+Ou=obs.OmbudsmanNationalSystem
+lOu=u"Sistema Federal de Ouvidorias"
+G(sj,rdf.type,owl.ObjectProperty)
+G(sj,rdfs.label,L(lsj,lang="pt"))
+G(Ou,rdf.type,owl.Class)
+G(Ou,rdfs.label,L(lOu,lang="pt"))
+G(sj,rdfs.range,Ou)
+A.add_node(lOu,style="filled")
+A.add_edge(louv,lOu)
+e=A.get_edge(louv,lOu)
+e.attr["label"]=lsj
+
+sp=obs.SAC
+lsp=u"SAC (Sistema de Atendimento ao Cidadão)" # entra no SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(ouv,rdfs.subClassOf,sp)
+A.add_node(lsp,style="filled") ###
+A.add_edge(louv,lsp)
+e=A.get_edge(louv,lsp)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sj=obs.articulates
+lsj=u"articula" # SKOS
+Ou=obs.OGU
+lOu=u"OGU (Ouvidoria Geral da União)"
+G(sj,rdf.type,owl.ObjectProperty)
+G(sj,rdfs.label,L(lsj,lang="pt"))
+G(Ou,rdf.type,owl.Class)
+G(Ou,rdfs.label,L(lOu,lang="pt"))
+G(sj,rdfs.range,ouv)
+A.add_node(lOu,style="filled")
+A.add_edge(lOu,louv)
+e=A.get_edge(lOu,louv)
+e.attr["label"]=lsj
+
+
+sj=obs.delivers
+lsj=u"entrega" # SKOS
+Ou=obs.Report
+lOu=u"Relatório"
+G(sj,rdf.type,owl.ObjectProperty)
+G(sj,rdfs.label,L(lsj,lang="pt"))
+G(Ou,rdf.type,owl.Class)
+G(Ou,rdfs.label,L(lOu,lang="pt"))
+G(sj,rdfs.range,ouv)
+A.add_node(lOu,style="filled")
+A.add_edge(louv,lOu)
+e=A.get_edge(louv,lOu)
+e.attr["label"]=lsj
+lOu_=lOu
+
+
+nm=obs.periodicity
+lnm=u"peridodicidade"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.integer)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:integer"
+nd.attr['color']="#A2F3D1"
+A.add_edge(  lOu,COUNT)
+e=A.get_edge(lOu,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+
+sj=obs.guides
+lsj=u"orienta" # SKOS
+Ou=obs.Control
+lOu=u"Controle"
+G(sj,rdf.type,owl.ObjectProperty)
+G(sj,rdfs.label,L(lsj,lang="pt"))
+G(Ou,rdf.type,owl.Class)
+G(Ou,rdfs.label,L(lOu,lang="pt"))
+G(sj,rdfs.range,ouv)
+A.add_node(lOu,style="filled")
+A.add_edge(lOu_,lOu)
+e=A.get_edge(lOu_,lOu)
+e.attr["label"]=lsj
+
+sp=obs.InternalControl
+lsp=u"Controle interno" # entra no SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,Ou)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lOu)
+e=A.get_edge(lsp,lOu)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+
+sp=obs.ExternalControl
+lsp=u"Controle externo" # entra no SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,Ou)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lOu)
+e=A.get_edge(lsp,lOu)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sj=obs.dialogues
+lsj=u"dialoga" # SKOS
+pm__=obs.ParticipationInstanceOrMechanism # SKOS
+lpm__=u"Instância ou mecanismo de participação social"
+G(sj,rdf.type,owl.ObjectProperty)
+G(sj,rdfs.label,L(lsj,lang="pt"))
+G(sj,rdfs.range,pm__)
+G(pm__,rdf.type,owl.Class)
+G(pm__,rdfs.label,L(lpm__,lang="pt"))
+A.add_node(lpm__,style="filled")
+A.add_edge(louv,lpm__)
+e=A.get_edge(louv,lpm__)
+e.attr["label"]=lsj
+
+sj=obs.incorporates
+lsj=u"incorpora" # SKOS
+pm__=obs.LAI# SKOS
+lpm__=u"LAI (Lei de Acesso à Informação)" # SKOS
+G(sj,rdf.type,owl.ObjectProperty)
+G(sj,rdfs.label,L(lsj,lang="pt"))
+G(sj,rdfs.range,pm__)
+G(pm__,rdf.type,owl.Class)
+G(pm__,rdfs.label,L(lpm__,lang="pt"))
+A.add_node(lpm__,style="filled")
+A.add_edge(louv,lpm__)
+e=A.get_edge(louv,lpm__)
+e.attr["label"]=lsj
+
+
+sj=obs.receives
+lsj=u"recebe" # SKOS
+pm__=obs.Manifestation # SKOS
+lpm__=u"Manifestação" # SKOS
+G(sj,rdf.type,owl.ObjectProperty)
+G(sj,rdfs.label,L(lsj,lang="pt"))
+G(sj,rdfs.range,pm__)
+G(pm__,rdf.type,owl.Class)
+G(pm__,rdfs.label,L(lpm__,lang="pt"))
+A.add_node(lpm__,style="filled")
+A.add_edge(louv,lpm__)
+e=A.get_edge(louv,lpm__)
+e.attr["label"]=lsj
+
+sp=obs.Request
+lsp=u"Solicitação" # entra no SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,pm__)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lpm__)
+e=A.get_edge(lsp,lpm__)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.Complaint
+lsp=u"Reclamação" # entra no SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,pm__)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lpm__)
+e=A.get_edge(lsp,lpm__)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.Compliment
+lsp=u"Elogio" # entra no SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,pm__)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lpm__)
+e=A.get_edge(lsp,lpm__)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.Suggestion
+lsp=u"Sugestão" # entra no SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,pm__)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lpm__)
+e=A.get_edge(lsp,lpm__)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.Denunciation
+lsp=u"Denúncia" # entra no SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,pm__)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lpm__)
+e=A.get_edge(lsp,lpm__)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+nm=obs.identityReservation
+lnm=u"reserva de identidade"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.boolean)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:boolean"
+nd.attr['color']="#A2F3D1"
+A.add_edge(  lpm__,COUNT)
+e=A.get_edge(lpm__,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+nm=obs.anonymous
+lnm=u"anônima"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.boolean)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:boolean"
+nd.attr['color']="#A2F3D1"
+A.add_edge(  lpm__,COUNT)
+e=A.get_edge(lpm__,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+# 
+sj=obs.qualifies
+lsj=u"qualifica" # SKOS
+Ou=obs.FormationActivity
+lOu=u"Atividade de formação"
+G(sj,rdf.type,owl.ObjectProperty)
+G(sj,rdfs.label,L(lsj,lang="pt"))
+G(Ou,rdf.type,owl.Class)
+G(Ou,rdfs.label,L(lOu,lang="pt"))
+G(sj,rdfs.domain,Ou)
+A.add_node(lOu,style="filled")
+A.add_edge(lOu,louv)
+e=A.get_edge(lOu,louv)
+e.attr["label"]=lsj
+
+sp=obs.Lecture
+lsp=u"Palestra" # entra no SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,Ou)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp  ,lOu)
+e=A.get_edge(lsp,lOu)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.Course
+lsp=u"Curso" # entra no SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,Ou)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp  ,lOu)
+e=A.get_edge(lsp,lOu)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.Seminar
+lsp=u"Seminário" # entra no SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,Ou)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp  ,lOu)
+e=A.get_edge(lsp,lOu)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
 
 
 
