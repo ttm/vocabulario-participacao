@@ -29,7 +29,7 @@ G(ouv,rdf.type,owl.Class)
 G(ouv,rdfs.label,L(louv,lang="pt"))
 G(ouv,rdfs.comment,L(u"Ouvidoria federal",lang="pt"))
 
-ativa=obs.ativa
+ativa=obs.ativa # SKOS
 lativa=u"ativa"
 G(ativa,rdf.type,owl.DatatypeProperty)
 G(ativa,rdfs.label,L(lativa,lang="pt"))
@@ -44,7 +44,7 @@ e=A.get_edge(louv,COUNT); COUNT+=1
 e.attr["label"]=lativa
 
 responsavel=obs.accountable
-lresponsavel=u"responsável" # SKOS
+lresponsavel=u"responsável"
 Ouvidor=obs.Ombudsman
 lOuvidor=u"Ouvidor"
 G(responsavel,rdf.type,owl.ObjectProperty)
@@ -100,9 +100,9 @@ e=A.get_edge(lOuvidor,COUNT); COUNT+=1
 e.attr["label"]=llocal
 
 orgao=obs.agency
-lorgao=u"órgão" # SKOS
+lorgao=u"órgão"
 OrgaoPub=obs.PublicAgency
-lOrgaoPub=u"Órgão público"
+lOrgaoPub=u"Órgão público" # SKOS
 G(orgao,rdf.type,owl.ObjectProperty)
 G(orgao,rdfs.label,L(lorgao,lang="pt"))
 G(OrgaoPub,rdf.type,owl.Class)
@@ -414,7 +414,7 @@ e=A.get_edge(lpm__,COUNT); COUNT+=1
 e.attr["label"]=lnm
 
 nm=obs.anonymous
-lnm=u"anônima"
+lnm=u"anônima" # SKOS
 G(nm,rdf.type,owl.DatatypeProperty)
 G(nm,rdfs.label,L(lnm,lang="pt"))
 G(nm,rdfs.range,xsd.boolean)
