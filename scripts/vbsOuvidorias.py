@@ -58,22 +58,22 @@ G(ouv,skos.prefLabel,L(louv,lang="pt"))
 ouv_=ouv
 
 
-sp=vbs.PublicAdministrationAgency
-lsp=u"Órgão da administração pública" # entra no SKOS
+ouv=vbs.PublicAdministrationAgency
+louv=u"Órgão da administração pública" # entra no SKOS
 G(ouv,rdf.type,skos.Concept)
 G(ouv,skos.prefLabel,L(louv,lang="pt"))
 G(ouv,skos.broader,ouv_)
 
 
-sp=vbs.IndirectPublicAdministrationAgency
-lsp=u"Órgão da administração pública indireta" # entra no SKOS
+ouv=vbs.IndirectPublicAdministrationAgency
+louv=u"Órgão da administração pública indireta" # entra no SKOS
 G(ouv,rdf.type,skos.Concept)
 G(ouv,skos.prefLabel,L(louv,lang="pt"))
 G(ouv,skos.broader,ouv_)
 
 
 ouv=vbs.OmbudsmanNationalSystem
-lou=u"Sistema Federal de Ouvidorias"
+louv=u"Sistema Federal de Ouvidorias"
 G(ouv,rdf.type,skos.Concept)
 G(ouv,skos.prefLabel,L(louv,lang="pt"))
 G(vbs.OmbudsmanAgency,skos.broader,ouv)

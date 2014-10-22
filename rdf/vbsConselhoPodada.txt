@@ -3,18 +3,18 @@
  forma alternativa: Área política
 Ato normativo
 Conferência
- forma alternativa: Conferência de políticas públicas
  forma alternativa: Conferência nacional
- definição: Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo
+ forma alternativa: Conferência de políticas públicas
  definição: Instância colegiada de temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas
+ definição: Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo
 Conselho
+ forma alternativa: voto de minerva
+ forma alternativa: Conselho de políticas públicas
  forma alternativa: Conselho gestor
  forma alternativa: voto de desempate
- forma alternativa: Conselho de políticas públicas
  forma alternativa: Conselho nacional de políticas públicas
- forma alternativa: voto de minerva
- definição: Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)
  definição: voto de desempate de votação
+ definição: Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)
  definição: decisão a ser referenciada pelo grupo legitimado posteriormente
  nota de escopo: Espaço participativo com a finalidade de incidir nas políticas públicas de determinado tema, nos quais é prevista certa permanência no tempo, composto por representantes do poder público e da sociedade civil, esta podendo ser dividida em diferentes segmentos.
  nota de escopo: espaço contínuo de participação social
@@ -32,10 +32,10 @@ Infraestrutura
  nota de escopo: cidades
 Instância consultiva
 Instância de participação social
- forma alternativa: Instituição participativa
+ forma alternativa: Espaço participativo
  forma alternativa: Espaço de participação social
  forma alternativa: Instância participativa
- forma alternativa: Espaço participativo
+ forma alternativa: Instituição participativa
  termo relacionado: Mecanismo de participação social
 Instância deliberativa
 Lei
@@ -53,19 +53,19 @@ Políticas sociais
  nota de escopo: assistência social, cultura, saúde, segurança alimentar e nutricional
 Portaria
 Recondução de mandato
- nota de escopo: Este conceito foi trazido do campo dos conselhos, pode ser aplicável em outros contextos.
  nota de escopo: Quando há 'limite de mandato', há limite para recondução.
+ nota de escopo: Este conceito foi trazido do campo dos conselhos, pode ser aplicável em outros contextos.
 Recursos naturais
  nota de escopo: Recursos naturais
 Reformulação
 Regimento interno
  forma alternativa: Estatuto
 Resolução
- forma alternativa: Proposta
  forma alternativa: Diretriz
- forma alternativa: Tese
- forma alternativa: Deliberação
  forma alternativa: Decisão
+ forma alternativa: Tese
+ forma alternativa: Proposta
+ forma alternativa: Deliberação
 Secretaria
 Secretaria executiva
 Sistema nacional

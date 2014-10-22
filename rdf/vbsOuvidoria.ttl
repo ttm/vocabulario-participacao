@@ -27,6 +27,10 @@ vbs:ExternalControl a skos:Concept ;
 vbs:IdentityReservation a skos:Concept ;
     skos:prefLabel "Reserva de identidade"@pt .
 
+vbs:IndirectPublicAdministrationAgency a skos:Concept ;
+    skos:broader vbs:PublicAgency ;
+    skos:prefLabel "Órgão da administração pública indireta"@pt .
+
 vbs:InternalControl a skos:Concept ;
     skos:broader vbs:Control ;
     skos:prefLabel "Controle interno"@pt .
@@ -42,6 +46,10 @@ vbs:PassiveOmbudsmanAgency a skos:Concept ;
     skos:broader vbs:OmbudsmanAgency ;
     skos:prefLabel "Ouvidoria passiva"@pt ;
     skos:related vbs:ActiveOmbudsmanAgency .
+
+vbs:PublicAdministrationAgency a skos:Concept ;
+    skos:broader vbs:PublicAgency ;
+    skos:prefLabel "Órgão da administração pública"@pt .
 
 vbs:Request a skos:Concept ;
     skos:broader vbs:Manifestation ;
@@ -59,20 +67,19 @@ vbs:OGU a skos:Concept ;
     skos:prefLabel "OGU (Ouvidoria Geral da União)"@pt .
 
 vbs:OmbudsmanNationalSystem a skos:Concept ;
-    skos:prefLabel "Órgão público"@pt .
+    skos:prefLabel "Sistema Federal de Ouvidorias"@pt .
 
 vbs:ParticipationInstanceOrMechanism a skos:Concept ;
     skos:prefLabel "Instância ou mecanismo de participação social"@pt .
-
-vbs:PublicAgency a skos:Concept ;
-    skos:broader vbs:PublicAgency ;
-    skos:prefLabel "Órgão público"@pt .
 
 vbs:SAC a skos:Concept ;
     skos:prefLabel "SAC (Sistema de Atendimento ao Cidadão)"@pt .
 
 vbs:Control a skos:Concept ;
     skos:prefLabel "Controle"@pt .
+
+vbs:PublicAgency a skos:Concept ;
+    skos:prefLabel "Órgão público"@pt .
 
 vbs:OmbudsmanAgency a skos:Concept ;
     skos:altLabel "Ouvidoria federal"@pt,

@@ -1,18 +1,18 @@
 adjunto
 Ambente virtual de participação social
 Área de política
- forma alternativa: Área política
  forma alternativa: Área temática
+ forma alternativa: Área política
 Assessoria
 Ato normativo
 Audiência pública
 Comissão
 Comitê
 Conferência
- forma alternativa: Conferência de políticas públicas
  forma alternativa: Conferência nacional
- definição: Instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas
+ forma alternativa: Conferência de políticas públicas
  definição: Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo
+ definição: Instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas
 Conferência estadual
  nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
 Conferência extraordinária
@@ -61,8 +61,8 @@ geral
 Governo
 Grupo de trabalho
 grupo étnico
- termo relacionado: Vaga
  termo relacionado: Cota
+ termo relacionado: Vaga
 Infraestrutura
  nota de escopo: cidades
 Instância de participação social
@@ -98,11 +98,11 @@ Recursos naturais
 regimento
 Relator
 Resolução
- forma alternativa: Decisão
- forma alternativa: Tese
- forma alternativa: Diretriz
  forma alternativa: Deliberação
+ forma alternativa: Tese
  forma alternativa: Proposta
+ forma alternativa: Decisão
+ forma alternativa: Diretriz
 Secretaria
 Secretaria com status de ministério
 Secretário

@@ -1,0 +1,53 @@
+|--> Controle
+   |--> Controle externo
+   |--> Controle interno
+|--> Instância ou mecanismo de participação social
+   |--> Ouvidoria
+    forma alternativa: Ouvidoria pública federal
+    forma alternativa: Ouvidoria federal
+    forma alternativa: Ouvidoria pública
+    definição: instância de controle e participação social responsável pelo tratamento das reclamações, solicitações, denúncias, sugestões e elogios relativos às políticas e aos serviços públicos, prestados sob qualquer forma ou regime, com vistas ao aprimoramento da gestão pública
+     |--> Ouvidoria ativa
+     |--> Ouvidoria passiva
+       termo relacionado: Ouvidoria ativa
+|--> LAI (Lei de Acesso à Informação)
+|--> Manifestação
+   |--> Denúncia
+   |--> Elogio
+   |--> Reclamação
+   |--> Solicitação
+   |--> Sugestão
+|--> Manifestação anônima
+|--> OGU (Ouvidoria Geral da União)
+   |--> Ouvidoria
+    forma alternativa: Ouvidoria pública federal
+    forma alternativa: Ouvidoria federal
+    forma alternativa: Ouvidoria pública
+    definição: instância de controle e participação social responsável pelo tratamento das reclamações, solicitações, denúncias, sugestões e elogios relativos às políticas e aos serviços públicos, prestados sob qualquer forma ou regime, com vistas ao aprimoramento da gestão pública
+     |--> Ouvidoria ativa
+     |--> Ouvidoria passiva
+       termo relacionado: Ouvidoria ativa
+|--> Órgão público
+   |--> Órgão da administração pública
+   |--> Órgão da administração pública indireta
+|--> Ouvidor
+ termo relacionado: Ouvidoria
+|--> Reserva de identidade
+|--> SAC (Sistema de Atendimento ao Cidadão)
+   |--> Ouvidoria
+    forma alternativa: Ouvidoria pública federal
+    forma alternativa: Ouvidoria federal
+    forma alternativa: Ouvidoria pública
+    definição: instância de controle e participação social responsável pelo tratamento das reclamações, solicitações, denúncias, sugestões e elogios relativos às políticas e aos serviços públicos, prestados sob qualquer forma ou regime, com vistas ao aprimoramento da gestão pública
+     |--> Ouvidoria ativa
+     |--> Ouvidoria passiva
+       termo relacionado: Ouvidoria ativa
+|--> Sistema Federal de Ouvidorias
+   |--> Ouvidoria
+    forma alternativa: Ouvidoria pública federal
+    forma alternativa: Ouvidoria federal
+    forma alternativa: Ouvidoria pública
+    definição: instância de controle e participação social responsável pelo tratamento das reclamações, solicitações, denúncias, sugestões e elogios relativos às políticas e aos serviços públicos, prestados sob qualquer forma ou regime, com vistas ao aprimoramento da gestão pública
+     |--> Ouvidoria ativa
+     |--> Ouvidoria passiva
+       termo relacionado: Ouvidoria ativa
