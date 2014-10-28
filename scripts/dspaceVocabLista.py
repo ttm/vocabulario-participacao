@@ -57,7 +57,7 @@ for palavra in conceitos:
     conta_id+=1
     # Para deixar em caixa alta somente as palavras mais
     # significativas, conforme modelo recebido
-    palavra_=" ".join(w.capitalize() if w not in ["ad","dos","ou","de","e","da","do","na","no","ao",u"à"] else w for w in palavra.split()).replace("Sac","SAC").replace("(sistema","(Sistema").replace("Lai","LAI").replace("(lei","(Lei").replace("Ogu","OGU").replace("(ouvidoria","(Ouvidoria")
+    palavra_=" ".join(w.capitalize() if w not in ["com","ad","dos","ou","de","e","da","do","na","no","ao",u"à"] else w for w in palavra.split()).replace("Sac","SAC").replace("(sistema","(Sistema").replace("Lai","LAI").replace("(lei","(Lei").replace("Ogu","OGU").replace("(ouvidoria","(Ouvidoria")
     #termo.set("label",palavra_.decode("utf-8"))
     #termo.set("label",palavra_.encode("utf-8"))
     termo.set("label",palavra_)

@@ -109,7 +109,7 @@
     <node id="106" label="Resolução"/>
     <node id="107" label="SAC (Sistema de Atendimento ao Cidadão)"/>
     <node id="108" label="Secretaria"/>
-    <node id="109" label="Secretaria Com Status de Ministério"/>
+    <node id="109" label="Secretaria com Status de Ministério"/>
     <node id="110" label="Secretaria Executiva"/>
     <node id="111" label="Secretário"/>
     <node id="112" label="Sistema Federal de Ouvidorias"/>
