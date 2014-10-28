@@ -201,7 +201,7 @@ vbs:VirtualConference a skos:Concept ;
 
 vbs:VirtualParticipationEnvironment a skos:Concept ;
     skos:broader vbs:ParticipationMechanism ;
-    skos:prefLabel "Ambente virtual de participação social"@pt .
+    skos:prefLabel "Ambiente virtual de participação social"@pt .
 
 vbs:Woman a skos:Concept ;
     skos:prefLabel "Mulher"@pt .

@@ -92,7 +92,7 @@ G(sp,skos.prefLabel,L(lsp,lang="pt"))
 G(sp,skos.broader,pm_)
 
 sp=vbs.VirtualParticipationEnvironment
-lsp=u"Ambente virtual de participação social" # SKOS TTM
+lsp=u"Ambiente virtual de participação social" # SKOS TTM
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
 G(sp,skos.broader,pm_)

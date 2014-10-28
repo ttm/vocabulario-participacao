@@ -2,7 +2,7 @@
 <node id="vocab_part" label="Vocabulário Controlado para Biblioteca de Participação Social">
   <isComposedBy>
     <node id="1" label="Adjunto"/>
-    <node id="2" label="Ambente Virtual de Participação Social"/>
+    <node id="2" label="Ambiente Virtual de Participação Social"/>
     <node id="3" label="Área de Política"/>
     <node id="4" label="Assessoria"/>
     <node id="5" label="Ato Normativo"/>
@@ -46,7 +46,7 @@
     <node id="43" label="Formulação"/>
     <node id="44" label="Fórum"/>
     <node id="45" label="Fórum Interconselhos"/>
-    <node id="46" label="Fórum Não Governamental"/>
+    <node id="46" label="Fórum não Governamental"/>
     <node id="47" label="Garantia de Direitos"/>
     <node id="48" label="Geral"/>
     <node id="49" label="Governo"/>
