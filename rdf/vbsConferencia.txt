@@ -1,6 +1,6 @@
 |--> Área de política
- forma alternativa: Área temática
  forma alternativa: Área política
+ forma alternativa: Área temática
    |--> Desenvolvimento econômico
     nota de escopo: arranjos produtivos locais, assistência técnica e extensão rural, desenvolvimento regional e desenvolvimento rural sustentável e solidário
    |--> Garantia de direitos
@@ -16,11 +16,11 @@
    |--> Portaria ministerial
     nota de escopo: Portaria emitida por um ou mais ministérios
    |--> Resolução
-    forma alternativa: Deliberação
-    forma alternativa: Tese
-    forma alternativa: Proposta
-    forma alternativa: Decisão
     forma alternativa: Diretriz
+    forma alternativa: Tese
+    forma alternativa: Deliberação
+    forma alternativa: Decisão
+    forma alternativa: Proposta
 |--> Corpo gestor de conferência
 |--> Cota
  termo relacionado: Vaga
@@ -28,8 +28,8 @@
 |--> formulação
 |--> Governo
 |--> grupo étnico
- termo relacionado: Cota
  termo relacionado: Vaga
+ termo relacionado: Cota
 |--> Instância de participação social
  termo relacionado: Mecanismo de participação social
    |--> Comissão
@@ -63,7 +63,7 @@
     definição: Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)
    |--> Ouvidoria
 |--> Mecanismo de participação social
-   |--> Ambente virtual de participação social
+   |--> Ambiente virtual de participação social
    |--> Audiência pública
    |--> Consulta pública
    |--> Fórum interconselhos
@@ -77,8 +77,8 @@
 |--> Mulher
 |--> Município
 |--> Organização nacional de conferência
- termo relacionado: Corpo gestor de conferência
  termo relacionado: Conselho
+ termo relacionado: Corpo gestor de conferência
    |--> Assessoria
    |--> Comissão
    |--> Comitê

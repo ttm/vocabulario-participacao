@@ -1,8 +1,8 @@
 adjunto
-Ambente virtual de participação social
+Ambiente virtual de participação social
 Área de política
- forma alternativa: Área temática
  forma alternativa: Área política
+ forma alternativa: Área temática
 Assessoria
 Ato normativo
 Audiência pública
@@ -61,8 +61,8 @@ geral
 Governo
 Grupo de trabalho
 grupo étnico
- termo relacionado: Cota
  termo relacionado: Vaga
+ termo relacionado: Cota
 Infraestrutura
  nota de escopo: cidades
 Instância de participação social
@@ -76,8 +76,8 @@ Mulher
 Município
 Oficina
 Organização nacional de conferência
- termo relacionado: Corpo gestor de conferência
  termo relacionado: Conselho
+ termo relacionado: Corpo gestor de conferência
 Órgão público
 Ouvidoria
 Palestra
@@ -98,11 +98,11 @@ Recursos naturais
 regimento
 Relator
 Resolução
- forma alternativa: Deliberação
- forma alternativa: Tese
- forma alternativa: Proposta
- forma alternativa: Decisão
  forma alternativa: Diretriz
+ forma alternativa: Tese
+ forma alternativa: Deliberação
+ forma alternativa: Decisão
+ forma alternativa: Proposta
 Secretaria
 Secretaria com status de ministério
 Secretário

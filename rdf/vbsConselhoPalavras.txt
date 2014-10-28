@@ -1,5 +1,7 @@
 Área de política
+assunto
 Ato normativo
+Comissão interna
 Conferência
 Conselho
 Decisão ad referendum
@@ -7,6 +9,7 @@ Decreto
 Desenvolvimento econômico
 Estatuto
 Garantia de direitos
+Grupo de trabalho
 Infraestrutura
 Instância consultiva
 Instância de participação social
@@ -15,14 +18,18 @@ Lei
 Mecanismo consultivo
 Mecanismo de participação social
 Mecanismo deliberativo
+membro
 Ministério
 Método de seleção de participantes
+objetivo
 paridade
+Participante
 pauta
 Política ou plano nacional
 Política pública
 Políticas sociais
 Portaria
+presidência
 Recondução de mandato
 Recursos naturais
 Reformulação
@@ -31,4 +38,5 @@ Resolução
 Secretaria
 Secretaria executiva
 Sistema nacional
+tema
 Voto de qualidade

@@ -687,6 +687,8 @@ mc=obs.presidencySelectionMethod
 lmc=u"método de escolha da presidência" # SKO
 G(mc,rdf.type,owl.DatatypeProperty)
 G(mc,rdfs.label,L(lmc,lang="pt"))
+G(mc,rdfs.comment,L(u"Pode ser o ministro, algum cargo ministerial ou um participante escolhido via votação ou processo similar.",lang="pt"))
+G(mc,rdfs.comment,L(u"O presidente em si é observado pelo objeto da tripla obs:Body obs:presidency <objeto>.",lang="pt"))
 G(mc,rdfs.range,xsd.string)
 A.add_node(COUNT,style="filled")
 nd=A.get_node(COUNT)
@@ -992,8 +994,124 @@ A.add_edge(lsp,COUNT)
 e=A.get_edge(lsp,COUNT); COUNT+=1
 e.attr["label"]=lyc
 
+####
+## Grupo de Trabalho, no modelo da comissão interna
+
+sp=obs.WorkGroup
+lsp=u"Grupo de trabalho" # SKOS TTM
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,th)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lth)
+e=A.get_edge(lsp,lth)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+# co=obs.has # REPETIDA
+lco=u"possui"
+A.add_edge(lcons,lsp)
+e=A.get_edge(lcons,lsp)
+e.attr["label"]=lco
+
+#nm=obs.name # REPETIDA
+lnm=u"nome"
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:string"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lsp,COUNT)
+e=A.get_edge(lsp,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+nm=obs.topic
+lnm=u"assunto"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.string)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:string"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lsp,COUNT)
+e=A.get_edge(lsp,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+nm=obs.goal
+lnm=u"objetivo"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.string)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:string"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lsp,COUNT)
+e=A.get_edge(lsp,COUNT); COUNT+=1
+e.attr["label"]=lnm
 
 
+
+#mc=obs.member
+lmc=u"membro"
+#gb=obs.Participant
+lgb=u"Participante"
+#G(mc,rdf.type,owl.ObjectProperty)
+#G(mc,rdfs.label,L(lmc,lang="pt"))
+#G(mc,rdfs.range,gb)
+#G(gb,rdf.type,owl.Class)
+#G(gb,rdfs.label,L(lgb,lang="pt"))
+
+#A.add_node(lgb,style="filled")
+lsp=u"Grupo de trabalho" # SKOS TTM
+A.add_edge(lsp,lgb)
+e=A.get_edge(lsp,lgb)
+e.attr["label"]=lmc
+
+#yc=obs.created
+lyc=u"criação"
+#G(yc,rdf.type,owl.DatatypeProperty)
+#G(nm,rdfs.label,L(lyc,lang="pt"))
+#G(nm,rdfs.range,xsd.dateTime)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:dateTime"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lsp,COUNT)
+e=A.get_edge(lsp,COUNT); COUNT+=1
+e.attr["label"]=lyc
+
+# acaba grupo de trabalho
+####
+## Acréscimos de participante ao corpo:
+lbo=u"Corpo"
+#mc=obs.member
+lmc=u"membro"
+gb=obs.Participant
+lgb=u"Participante"
+#G(mc,rdf.type,owl.ObjectProperty)
+#G(mc,rdfs.label,L(lmc,lang="pt"))
+#G(mc,rdfs.range,gb)
+#G(gb,rdf.type,owl.Class)
+#G(gb,rdfs.label,L(lgb,lang="pt"))
+A.add_edge(lbo,lgb)
+e=A.get_edge(lbo,lgb)
+e.attr["label"]=lmc
+
+
+mc=obs.presidency
+lmc=u"presidência"
+G(mc,rdf.type,owl.ObjectProperty)
+G(mc,rdfs.label,L(lmc,lang="pt"))
+G(mc,rdfs.comment,L(u"O método de escolha do presidente é observado pelo <objeto> da tripla obs:Body obs:presidencySelectionMethod <objeto>",lang="pt"))
+G(mc,rdfs.range,gb)
+A.add_edge(lbo,lgb)
+e=A.get_edge(lbo,lgb)
+e.attr["label"]=lmc
+
+
+
+## e de presidência ao corpo
 
 nome=("../figs/obsConselhoExp.png")
 A.draw(prog="dot") # draw to png using circo

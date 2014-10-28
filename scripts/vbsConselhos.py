@@ -256,7 +256,53 @@ G(mc,skos.prefLabel,L(lmc,lang="pt"))
 G(mc,skos.scopeNote,L(u"Quando há 'limite de mandato', há limite para recondução.",lang="pt"))
 G(mc,skos.scopeNote,L(u"Este conceito foi trazido do campo dos conselhos, pode ser aplicável em outros contextos.",lang="pt"))
 
+#### 28-10-2014, TTM
 
+sp=vbs.InternalCommission
+lsp=u"Comissão interna" # SKOS TTM
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.scopeNote,L(u"Comissão interna de conselho",lang="pt"))
+
+sp=vbs.theme
+lsp=u"tema"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+sp__=sp
+
+sp=vbs.Participant
+lsp=u"Participante"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+sp_=sp
+
+sp=vbs.member
+lsp=u"membro"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.related,L(sp_,lang="pt"))
+
+sp=vbs.WorkGroup
+lsp=u"Grupo de trabalho" # SKOS TTM
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+
+sp=vbs.topic
+lsp=u"assunto"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,vbs.theme)
+
+sp=vbs.goal
+lsp=u"objetivo"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+
+sp=vbs.presidency
+lsp=u"presidência"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.scopeNote,L(u"presidência de conselho.",lang="pt"))
 
 f=open("../rdf/vbsConselho.rdf","wb")
 f.write(g.serialize())
