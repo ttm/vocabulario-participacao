@@ -802,7 +802,6 @@ co=obs.has
 lco=u"possui"
 G(co,rdf.type,owl.ObjectProperty)
 G(co,rdfs.label,L(lco,lang="pt"))
-G(co,rdfs.range,sp)
 
 A.add_edge(lcons,lsp)
 e=A.get_edge(lcons,lsp)
@@ -918,6 +917,81 @@ A.add_edge(  lmn  ,lapoi)
 e=A.get_edge(lmn,lapoi)
 e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
+
+#### 28-10-2014, TTM
+
+th=obs.PublicAgency
+lth=u"Órgão público"
+
+sp=obs.InternalCommission
+lsp=u"Comissão interna" # SKOS TTM
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,th)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lth)
+e=A.get_edge(lsp,lth)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+# co=obs.has # REPETIDA
+lco=u"possui"
+A.add_edge(lcons,lsp)
+e=A.get_edge(lcons,lsp)
+e.attr["label"]=lco
+
+#nm=obs.name # REPETIDA
+lnm=u"nome"
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:string"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lsp,COUNT)
+e=A.get_edge(lsp,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+nm=obs.theme
+lnm=u"tema"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.string)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:string"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lsp,COUNT)
+e=A.get_edge(lsp,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+mc=obs.member
+lmc=u"membro"
+gb=obs.Participant
+lgb=u"Participante"
+G(mc,rdf.type,owl.ObjectProperty)
+G(mc,rdfs.label,L(lmc,lang="pt"))
+G(mc,rdfs.range,gb)
+G(gb,rdf.type,owl.Class)
+G(gb,rdfs.label,L(lgb,lang="pt"))
+
+A.add_node(lgb,style="filled")
+lsp=u"Comissão interna" # SKOS TTM
+A.add_edge(lsp,lgb)
+e=A.get_edge(lsp,lgb)
+e.attr["label"]=lmc
+
+yc=obs.created
+lyc=u"criação"
+G(yc,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lyc,lang="pt"))
+G(nm,rdfs.range,xsd.dateTime)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:dateTime"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lsp,COUNT)
+e=A.get_edge(lsp,COUNT); COUNT+=1
+e.attr["label"]=lyc
+
 
 
 
