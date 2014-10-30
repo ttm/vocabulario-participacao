@@ -247,6 +247,32 @@ e=A.get_edge(lpm,lpm_)
 e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
 
+ta=obs.composes
+lta=u"compõe" # SKOS
+th=obs.GeneralDescription
+lth=u"Descrição geral"
+G(ta,rdf.type,owl.ObjectProperty)
+G(ta,rdfs.label,L(lta,lang="pt"))
+G(th,rdf.type,owl.Class)
+G(th,rdfs.label,L(lth,lang="pt"))
+A.add_node(lth,style="filled")
+A.add_edge(lth,lpm)
+e=A.get_edge(lth,lpm)
+e.attr["label"]=lta
+
+lth=u"Carta"
+A.add_edge(lth,lpm)
+e=A.get_edge(lth,lpm)
+e.attr["label"]=lta
+
+lth=u"Resolução"
+A.add_edge(lth,lpm)
+e=A.get_edge(lth,lpm)
+e.attr["label"]=lta
+
+
+
+
 
 pm=obs.ProposalsNotebook # SKOS
 lpm=u"Caderno de propostas"
@@ -307,7 +333,7 @@ e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
 
 pm=obs.Regulation # SKOS
-lpm=u"Regulação"
+lpm=u"Regulamento"
 G(pm,rdf.type,owl.Class)
 G(pm,rdfs.label,L(lpm,lang="pt"))
 G(pm,rdfs.subClassOf,th)
@@ -316,6 +342,22 @@ A.add_edge(lpm,lth)
 e=A.get_edge(lpm,lth)
 e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
+
+ta=obs.step
+lta=u"etapa" # SKOS
+th=obs.ConferenceStep
+lth=u"Etapa de conferência"
+G(ta,rdf.type,owl.ObjectProperty)
+G(ta,rdfs.label,L(lta,lang="pt"))
+G(th,rdf.type,owl.Class)
+G(th,rdfs.label,L(lth,lang="pt"))
+G(ta,rdfs.range,th)
+A.add_node(lth,style="filled")
+A.add_edge(lpm,lth)
+e=A.get_edge(lpm,lth)
+e.attr["label"]=lta
+
+
 
 pm=obs.NormativeAct# SKOS
 lpm=u"Ato normativo"
@@ -338,5 +380,111 @@ A.add_edge(lpm,lth)
 e=A.get_edge(lpm,lth)
 e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
+
+
+ta=obs.triggersElaboration
+lta=u"provoca elaboração" # SKOS
+G(ta,rdf.type,owl.ObjectProperty)
+G(ta,rdfs.label,L(lta,lang="pt"))
+
+lpm_=u"Ato normativo"
+
+
+pm=obs.DialogueTextualBase# SKOS
+lpm=u"Texto base para diálogo"
+G(pm,rdf.type,owl.Class)
+G(pm,rdfs.label,L(lpm,lang="pt"))
+G(pm,rdfs.subClassOf,th)
+A.add_node(lpm,style="filled")
+A.add_edge(lpm,lth)
+e=A.get_edge(lpm,lth)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+A.add_edge(lpm_,lpm)
+e=A.get_edge(lpm_,lpm)
+e.attr["label"]=lta
+
+pm=obs.InvitationLetter # SKOS
+lpm=u"Carta convite"
+G(pm,rdf.type,owl.Class)
+G(pm,rdfs.label,L(lpm,lang="pt"))
+G(pm,rdfs.subClassOf,th)
+A.add_node(lpm,style="filled")
+A.add_edge(lpm,lth)
+e=A.get_edge(lpm,lth)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+A.add_edge(lpm_,lpm)
+e=A.get_edge(lpm_,lpm)
+e.attr["label"]=lta
+
+ta=obs.sets
+lta=u"estabelece" # SKOS
+th=obs.Theme
+lth=u"Tema"
+G(ta,rdf.type,owl.ObjectProperty)
+G(ta,rdfs.label,L(lta,lang="pt"))
+G(ta,rdfs.range,th)
+G(th,rdf.type,owl.Class)
+G(th,rdfs.label,L(lth,lang="pt"))
+A.add_node(lth,style="filled")
+A.add_edge(lpm_,lth)
+e=A.get_edge(lpm_,lth)
+e.attr["label"]=lta
+
+nm=obs.name
+lnm=u"nome"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.string)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:string"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lth,COUNT)
+e=A.get_edge(lth,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+nm=obs.description
+lnm=u"descrição"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.string)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:string"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lth,COUNT)
+e=A.get_edge(lth,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+
+
+nm=obs.thematicAxes
+lnm=u"eixos temáticos"
+G(nm,rdf.type,owl.DatatypeProperty)
+G(nm,rdfs.label,L(lnm,lang="pt"))
+G(nm,rdfs.range,xsd.string)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:string"
+nd.attr['color']="#A2F3D1"
+A.add_edge(lth,COUNT)
+e=A.get_edge(lth,COUNT); COUNT+=1
+e.attr["label"]=lnm
+
+ta=obs.feeds
+lta=u"alimenta" # SKOS
+G(ta,rdf.type,owl.ObjectProperty)
+G(ta,rdfs.label,L(lta,lang="pt"))
+G(ta,rdfs.range,obs.Conference)
+
+lpm=u"Relatório de monitoramento"
+lpm_=u"Conferência"
+A.add_edge(lpm,lpm_)
+e=A.get_edge(lpm,lpm_)
+e.attr["label"]=lta
+
 
 
