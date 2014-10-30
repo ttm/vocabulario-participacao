@@ -270,6 +270,11 @@ A.add_edge(lth,lpm)
 e=A.get_edge(lth,lpm)
 e.attr["label"]=lta
 
+lth=u"Moção"
+A.add_edge(lth,lpm)
+e=A.get_edge(lth,lpm)
+e.attr["label"]=lta
+
 
 
 
@@ -298,6 +303,16 @@ A.add_node(lth,style="filled")
 A.add_edge(lconf,lth)
 e=A.get_edge(lconf,lth)
 e.attr["label"]=lta
+
+pm=obs.DocumentaryResult# SKOS
+lpm=u"Resultado documental"
+
+G(pm,rdfs.subClassOf,th)
+A.add_edge(lpm,lth)
+e=A.get_edge(lpm,lth)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
 
 pm=obs.Regiment # SKOS
 lpm=u"Regimento"
@@ -343,19 +358,19 @@ e=A.get_edge(lpm,lth)
 e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
 
-ta=obs.step
-lta=u"etapa" # SKOS
-th=obs.ConferenceStep
-lth=u"Etapa de conferência"
-G(ta,rdf.type,owl.ObjectProperty)
-G(ta,rdfs.label,L(lta,lang="pt"))
-G(th,rdf.type,owl.Class)
-G(th,rdfs.label,L(lth,lang="pt"))
-G(ta,rdfs.range,th)
-A.add_node(lth,style="filled")
-A.add_edge(lpm,lth)
-e=A.get_edge(lpm,lth)
-e.attr["label"]=lta
+tafoo=obs.step
+ltafoo=u"etapa" # SKOS
+thfoo=obs.ConferenceStep
+lthfoo=u"Etapa de conferência"
+G(tafoo,rdf.type,owl.ObjectProperty)
+G(tafoo,rdfs.label,L(ltafoo,lang="pt"))
+G(thfoo,rdf.type,owl.Class)
+G(thfoo,rdfs.label,L(lthfoo,lang="pt"))
+G(tafoo,rdfs.range,thfoo)
+A.add_node(lthfoo,style="filled")
+A.add_edge(lpm,lthfoo)
+e=A.get_edge(lpm,lthfoo)
+e.attr["label"]=ltafoo
 
 
 
@@ -486,5 +501,18 @@ A.add_edge(lpm,lpm_)
 e=A.get_edge(lpm,lpm_)
 e.attr["label"]=lta
 
+nome=("../figs/obsConferenciaDocsRes.png")
+A.draw(nome,prog="dot") # draw to png using circo
+nome=("../figs/obsConferenciaDocsRes2.png")
+A.draw(nome,prog="circo") # draw to png using circo
+nome=("../figs/obsConferenciaDocsRes3.png")
+A.draw(nome,prog="fdp") # draw to png using circo
+A.write("../rdf/obsConferenciaDocsRes.dot")
 
+f=open("../rdf/obsConferenciaDocsRes.owl","wb")
+f.write(g.serialize())
+f.close()
+f=open("../rdf/obsConferenciaDocsRes.ttl","wb")
+f.write(g.serialize(format="turtle"))
+f.close()
 
