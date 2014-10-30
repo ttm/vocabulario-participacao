@@ -1,2 +1,123 @@
-<?xml version='1.0' encoding='utf-8'?>
-<node id="vocab_part" label="Vocabulário Controlado para Biblioteca de Participação Social"><isComposedBy><node id="1" label="Adjunto" /><node id="2" label="Ambiente Virtual de Participação Social" /><node id="3" label="Área de Política" /><node id="4" label="Assessoria" /><node id="5" label="Assunto" /><node id="6" label="Ato Normativo" /><node id="7" label="Ato Normativo" /><node id="8" label="Audiência Pública" /><node id="9" label="Caderno de Propostas" /><node id="10" label="Capacitação de Participante" /><node id="11" label="Capacitação de Sociedade Externa" /><node id="12" label="Carta" /><node id="13" label="Carta Convite" /><node id="14" label="Comissão" /><node id="15" label="Comissão Interna" /><node id="16" label="Comitê" /><node id="17" label="Conferência" /><node id="18" label="Conferência Estadual" /><node id="19" label="Conferência Extraordinária" /><node id="20" label="Conferência Intermunicipal" /><node id="21" label="Conferência Livre" /><node id="22" label="Conferência Municipal" /><node id="23" label="Conferência Regional" /><node id="24" label="Conferência Virtual" /><node id="25" label="Conselho" /><node id="26" label="Consulta Pública" /><node id="27" label="Convocação de Conferência" /><node id="28" label="Coordenador" /><node id="29" label="Coordenação" /><node id="30" label="Corpo Gestor de Conferência" /><node id="31" label="Cota" /><node id="32" label="Cultura Participativa" /><node id="33" label="Câmara dos Deputados" /><node id="34" label="de Trabalho" /><node id="35" label="Decisão ad Referendum" /><node id="36" label="Decreto" /><node id="37" label="Decreto Presidencial" /><node id="38" label="Delegado" /><node id="39" label="Desenvolvimento Econômico" /><node id="40" label="Editorial" /><node id="41" label="Edição de Conferência" /><node id="42" label="Eixos Temáticos" /><node id="43" label="Especial" /><node id="44" label="Estatuto" /><node id="45" label="Etapa de Conferência" /><node id="46" label="Executivo" /><node id="47" label="Formulação" /><node id="48" label="Fórum" /><node id="49" label="Fórum Interconselhos" /><node id="50" label="Fórum não Governamental" /><node id="51" label="Garantia de Direitos" /><node id="52" label="Geral" /><node id="53" label="Governo" /><node id="54" label="Grupo de Trabalho" /><node id="55" label="Grupo Étnico" /><node id="56" label="Infraestrutura" /><node id="57" label="Instância Consultiva" /><node id="58" label="Instância de Participação Social" /><node id="59" label="Instância Deliberativa" /><node id="60" label="Lei" /><node id="61" label="Manual" /><node id="62" label="Mecanismo Consultivo" /><node id="63" label="Mecanismo de Participação Social" /><node id="64" label="Mecanismo Deliberativo" /><node id="65" label="Membro" /><node id="66" label="Mesa de Diálogo" /><node id="67" label="Metodologia de Conferência" /><node id="68" label="Ministério" /><node id="69" label="Momento Participativo" /><node id="70" label="Moção" /><node id="71" label="Mulher" /><node id="72" label="Município" /><node id="73" label="Método de Seleção de Participantes" /><node id="74" label="Objetivo" /><node id="75" label="Oficina" /><node id="76" label="Organização Nacional de Conferência" /><node id="77" label="Órgão Público" /><node id="78" label="Ouvidoria" /><node id="79" label="Palestra" /><node id="80" label="Paridade" /><node id="81" label="Participante" /><node id="82" label="Pauta" /><node id="83" label="Plano Nacional" /><node id="84" label="Plenária" /><node id="85" label="Plenária Temática" /><node id="86" label="Política ou Plano Nacional" /><node id="87" label="Política Pública" /><node id="88" label="Políticas Sociais" /><node id="89" label="Portaria" /><node id="90" label="Portaria Ministerial" /><node id="91" label="Presidência" /><node id="92" label="Presidência" /><node id="93" label="Priorização" /><node id="94" label="Proposta" /><node id="95" label="Proposta Aprovada" /><node id="96" label="Qualificador de Grupo" /><node id="97" label="Recondução de Mandato" /><node id="98" label="Recursos Naturais" /><node id="99" label="Reformulação" /><node id="100" label="Regimento" /><node id="101" label="Regimento" /><node id="102" label="Regimento Interno" /><node id="103" label="Regulamento" /><node id="104" label="Relator" /><node id="105" label="Relatório de Monitoramento" /><node id="106" label="Resolução" /><node id="107" label="Secretaria" /><node id="108" label="Secretaria com Status de Ministério" /><node id="109" label="Secretaria Executiva" /><node id="110" label="Secretário" /><node id="111" label="Sistema Nacional" /><node id="112" label="Socialização Política" /><node id="113" label="Subcomitê" /><node id="114" label="Tema" /><node id="115" label="Tema" /><node id="116" label="Texto Base Para Diálogo" /><node id="117" label="Vaga" /><node id="118" label="Voto de Qualidade" /></isComposedBy></node>
+<?xml version="1.0" encoding="utf-8"?>
+<node id="vocab_part" label="Vocabulário Controlado para Biblioteca de Participação Social">
+  <isComposedBy>
+    <node id="1" label="Adjunto"/>
+    <node id="2" label="Ambiente Virtual de Participação Social"/>
+    <node id="3" label="Área de Política"/>
+    <node id="4" label="Assessoria"/>
+    <node id="5" label="Assunto"/>
+    <node id="6" label="Ato Normativo"/>
+    <node id="7" label="Ato Normativo"/>
+    <node id="8" label="Audiência Pública"/>
+    <node id="9" label="Caderno de Propostas"/>
+    <node id="10" label="Capacitação de Participante"/>
+    <node id="11" label="Capacitação de Sociedade Externa"/>
+    <node id="12" label="Carta"/>
+    <node id="13" label="Carta Convite"/>
+    <node id="14" label="Comissão"/>
+    <node id="15" label="Comissão Interna"/>
+    <node id="16" label="Comitê"/>
+    <node id="17" label="Conferência"/>
+    <node id="18" label="Conferência Estadual"/>
+    <node id="19" label="Conferência Extraordinária"/>
+    <node id="20" label="Conferência Intermunicipal"/>
+    <node id="21" label="Conferência Livre"/>
+    <node id="22" label="Conferência Municipal"/>
+    <node id="23" label="Conferência Regional"/>
+    <node id="24" label="Conferência Virtual"/>
+    <node id="25" label="Conselho"/>
+    <node id="26" label="Consulta Pública"/>
+    <node id="27" label="Convocação de Conferência"/>
+    <node id="28" label="Coordenador"/>
+    <node id="29" label="Coordenação"/>
+    <node id="30" label="Corpo Gestor de Conferência"/>
+    <node id="31" label="Cota"/>
+    <node id="32" label="Cultura Participativa"/>
+    <node id="33" label="Câmara dos Deputados"/>
+    <node id="34" label="de Trabalho"/>
+    <node id="35" label="Decisão ad Referendum"/>
+    <node id="36" label="Decreto"/>
+    <node id="37" label="Decreto Presidencial"/>
+    <node id="38" label="Delegado"/>
+    <node id="39" label="Desenvolvimento Econômico"/>
+    <node id="40" label="Editorial"/>
+    <node id="41" label="Edição de Conferência"/>
+    <node id="42" label="Eixos Temáticos"/>
+    <node id="43" label="Especial"/>
+    <node id="44" label="Estatuto"/>
+    <node id="45" label="Etapa de Conferência"/>
+    <node id="46" label="Executivo"/>
+    <node id="47" label="Formulação"/>
+    <node id="48" label="Fórum"/>
+    <node id="49" label="Fórum Interconselhos"/>
+    <node id="50" label="Fórum não Governamental"/>
+    <node id="51" label="Garantia de Direitos"/>
+    <node id="52" label="Geral"/>
+    <node id="53" label="Governo"/>
+    <node id="54" label="Grupo de Trabalho"/>
+    <node id="55" label="Grupo Étnico"/>
+    <node id="56" label="Infraestrutura"/>
+    <node id="57" label="Instância Consultiva"/>
+    <node id="58" label="Instância de Participação Social"/>
+    <node id="59" label="Instância Deliberativa"/>
+    <node id="60" label="Lei"/>
+    <node id="61" label="Manual"/>
+    <node id="62" label="Mecanismo Consultivo"/>
+    <node id="63" label="Mecanismo de Participação Social"/>
+    <node id="64" label="Mecanismo Deliberativo"/>
+    <node id="65" label="Membro"/>
+    <node id="66" label="Mesa de Diálogo"/>
+    <node id="67" label="Metodologia de Conferência"/>
+    <node id="68" label="Ministério"/>
+    <node id="69" label="Momento Participativo"/>
+    <node id="70" label="Moção"/>
+    <node id="71" label="Mulher"/>
+    <node id="72" label="Município"/>
+    <node id="73" label="Método de Seleção de Participantes"/>
+    <node id="74" label="Objetivo"/>
+    <node id="75" label="Oficina"/>
+    <node id="76" label="Organização Nacional de Conferência"/>
+    <node id="77" label="Órgão Público"/>
+    <node id="78" label="Ouvidoria"/>
+    <node id="79" label="Palestra"/>
+    <node id="80" label="Paridade"/>
+    <node id="81" label="Participante"/>
+    <node id="82" label="Pauta"/>
+    <node id="83" label="Plano Nacional"/>
+    <node id="84" label="Plenária"/>
+    <node id="85" label="Plenária Temática"/>
+    <node id="86" label="Política ou Plano Nacional"/>
+    <node id="87" label="Política Pública"/>
+    <node id="88" label="Políticas Sociais"/>
+    <node id="89" label="Portaria"/>
+    <node id="90" label="Portaria Ministerial"/>
+    <node id="91" label="Presidência"/>
+    <node id="92" label="Presidência"/>
+    <node id="93" label="Priorização"/>
+    <node id="94" label="Proposta"/>
+    <node id="95" label="Proposta Aprovada"/>
+    <node id="96" label="Qualificador de Grupo"/>
+    <node id="97" label="Recondução de Mandato"/>
+    <node id="98" label="Recursos Naturais"/>
+    <node id="99" label="Reformulação"/>
+    <node id="100" label="Regimento"/>
+    <node id="101" label="Regimento"/>
+    <node id="102" label="Regimento Interno"/>
+    <node id="103" label="Regulamento"/>
+    <node id="104" label="Relator"/>
+    <node id="105" label="Relatório de Monitoramento"/>
+    <node id="106" label="Resolução"/>
+    <node id="107" label="Secretaria"/>
+    <node id="108" label="Secretaria com Status de Ministério"/>
+    <node id="109" label="Secretaria Executiva"/>
+    <node id="110" label="Secretário"/>
+    <node id="111" label="Sistema Nacional"/>
+    <node id="112" label="Socialização Política"/>
+    <node id="113" label="Subcomitê"/>
+    <node id="114" label="Tema"/>
+    <node id="115" label="Tema"/>
+    <node id="116" label="Texto Base Para Diálogo"/>
+    <node id="117" label="Vaga"/>
+    <node id="118" label="Voto de Qualidade"/>
+  </isComposedBy>
+</node>
