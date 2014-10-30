@@ -15,6 +15,7 @@ xsd = r.namespace.XSD
 store="../rdf/vbsConferencia.rdf"
 store2="../rdf/vbsConselho.rdf"
 store3="../rdf/vbsOuvidoria.rdf"
+store3="../rdf/vbsConferenciaDocsRes.rdf"
 g = r.Graph()
 g.load(store)
 g.load(store2)

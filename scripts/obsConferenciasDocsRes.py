@@ -476,18 +476,18 @@ e.attr["label"]=lnm
 
 
 
-nm=obs.thematicAxes
-lnm=u"eixos temáticos"
-G(nm,rdf.type,owl.DatatypeProperty)
-G(nm,rdfs.label,L(lnm,lang="pt"))
-G(nm,rdfs.range,xsd.string)
-A.add_node(COUNT,style="filled")
-nd=A.get_node(COUNT)
-nd.attr["label"]="xsd:string"
-nd.attr['color']="#A2F3D1"
-A.add_edge(lth,COUNT)
-e=A.get_edge(lth,COUNT); COUNT+=1
-e.attr["label"]=lnm
+#nm=obs.thematicAxes
+#lnm=u"eixos temáticos"
+#G(nm,rdf.type,owl.DatatypeProperty)
+#G(nm,rdfs.label,L(lnm,lang="pt"))
+#G(nm,rdfs.range,xsd.string)
+#A.add_node(COUNT,style="filled")
+#nd=A.get_node(COUNT)
+#nd.attr["label"]="xsd:string"
+#nd.attr['color']="#A2F3D1"
+#A.add_edge(lth,COUNT)
+#e=A.get_edge(lth,COUNT); COUNT+=1
+#e.attr["label"]=lnm
 
 ta=obs.feeds
 lta=u"alimenta" # SKOS
