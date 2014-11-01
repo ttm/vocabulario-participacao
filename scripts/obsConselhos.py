@@ -1125,3 +1125,6 @@ A.draw(nome,prog="fdp") # draw to png using circo
 f=open("../rdf/obsConselho.owl","wb")
 f.write(g.serialize())
 f.close()
+f=open("../rdf/obsConselho.ttl","wb")
+f.write(g.serialize(format="turtle"))
+f.close()

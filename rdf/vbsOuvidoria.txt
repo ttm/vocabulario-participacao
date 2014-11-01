@@ -3,9 +3,9 @@
    |--> Controle interno
 |--> Instância ou mecanismo de participação social
    |--> Ouvidoria
-    forma alternativa: Ouvidoria pública federal
     forma alternativa: Ouvidoria federal
     forma alternativa: Ouvidoria pública
+    forma alternativa: Ouvidoria pública federal
     definição: instância de controle e participação social responsável pelo tratamento das reclamações, solicitações, denúncias, sugestões e elogios relativos às políticas e aos serviços públicos, prestados sob qualquer forma ou regime, com vistas ao aprimoramento da gestão pública
      |--> Ouvidoria ativa
      |--> Ouvidoria passiva
@@ -20,9 +20,9 @@
 |--> Manifestação anônima
 |--> OGU (Ouvidoria Geral da União)
    |--> Ouvidoria
-    forma alternativa: Ouvidoria pública federal
     forma alternativa: Ouvidoria federal
     forma alternativa: Ouvidoria pública
+    forma alternativa: Ouvidoria pública federal
     definição: instância de controle e participação social responsável pelo tratamento das reclamações, solicitações, denúncias, sugestões e elogios relativos às políticas e aos serviços públicos, prestados sob qualquer forma ou regime, com vistas ao aprimoramento da gestão pública
      |--> Ouvidoria ativa
      |--> Ouvidoria passiva
@@ -35,18 +35,18 @@
 |--> Reserva de identidade
 |--> SAC (Sistema de Atendimento ao Cidadão)
    |--> Ouvidoria
-    forma alternativa: Ouvidoria pública federal
     forma alternativa: Ouvidoria federal
     forma alternativa: Ouvidoria pública
+    forma alternativa: Ouvidoria pública federal
     definição: instância de controle e participação social responsável pelo tratamento das reclamações, solicitações, denúncias, sugestões e elogios relativos às políticas e aos serviços públicos, prestados sob qualquer forma ou regime, com vistas ao aprimoramento da gestão pública
      |--> Ouvidoria ativa
      |--> Ouvidoria passiva
        termo relacionado: Ouvidoria ativa
 |--> Sistema Federal de Ouvidorias
    |--> Ouvidoria
-    forma alternativa: Ouvidoria pública federal
     forma alternativa: Ouvidoria federal
     forma alternativa: Ouvidoria pública
+    forma alternativa: Ouvidoria pública federal
     definição: instância de controle e participação social responsável pelo tratamento das reclamações, solicitações, denúncias, sugestões e elogios relativos às políticas e aos serviços públicos, prestados sob qualquer forma ou regime, com vistas ao aprimoramento da gestão pública
      |--> Ouvidoria ativa
      |--> Ouvidoria passiva

@@ -101,9 +101,11 @@ G(sp,skos.prefLabel,L(lsp,lang="pt"))
 G(sp,skos.definition,L(u"mecanismo participativo, a se realizar em prazo definido, de caráter consultivo, aberto a qualquer interessado, que visa a receber contribuições por escrito da sociedade civil sobre determinado assunto, na forma definida no seu ato de convocação (PNPS)",lang="pt"))
 
 sp=vbs.VirtualParticipationEnvironment
-lsp=u"Ambiente virtual de participação social" # SKOS TTM
+lsp=u"Ambiente virtual" # SKOS TTM
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
+lsp=u"Ambiente virtual de participação social" # SKOS TTM
+G(sp,skos.altLabel,L(lsp,lang="pt"))
 G(sp,skos.definition,L(u"mecanismo de interação social que utiliza tecnologias de informação e de comunicação, em especial a internet, para promover o diálogo entre administração pública federal e sociedade civil (PNPS)",lang="pt"))
 G(sp,skos.definition,L(u"mecanismo participativo, a se realizar em prazo definido, de caráter consultivo, aberto a qualquer interessado, que visa a receber contribuições por escrito da sociedade civil sobre determinado assunto, na forma definida no seu ato de convocação (PNPS)",lang="pt"))
 
@@ -336,6 +338,7 @@ foo=vbs.Monitoring
 lfoo=u"Monitoramento"
 G(foo,rdf.type,skos.Concept)
 G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(foo,skos.altLabel,L(u"Acompanhamento",lang="pt"))
 
 foo=vbs.Implementation
 lfoo=u"Implementação"
@@ -514,6 +517,687 @@ G(sp,skos.prefLabel,L(lsp,lang="pt"))
 sn=u"Uma etapa é um evento participativo e também é chamada de conferência, enquanto 'a' conferência é o processo todo"
 G(sp,skos.scopeNote,L(sn,lang="pt"))
 G(sp,skos.broader,vbs.Conference)
+
+
+sp=vbs.StateConference
+lsp=u"Conferência estadual"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+sn=u"Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo"
+G(sp,skos.scopeNote,L(sn,lang="pt"))
+G(sp,skos.broader,vbs.ConferenceStep)
+
+th=vbs.NationalConference
+lth=u"Conferência nacional"
+G(th,rdf.type,skos.Concept)
+G(th,skos.prefLabel,L(lth,lang="pt"))
+G(th,skos.scopeNote,L(sn,lang="pt"))
+G(th,skos.broader,vbs.ConferenceStep)
+
+
+th=vbs.RegionalConference
+lth=u"Conferência regional"
+G(th,rdf.type,skos.Concept)
+G(th,skos.prefLabel,L(lth,lang="pt"))
+G(th,skos.scopeNote,L(sn,lang="pt"))
+G(th,skos.broader,vbs.ConferenceStep)
+
+
+sp=vbs.IntercityConferente
+lsp=u"Conferência intermunicipal"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.scopeNote,L(sn,lang="pt"))
+G(sp,skos.broader,vbs.ConferenceStep)
+
+
+sp=vbs.MunicipalConference
+lsp=u"Conferência municipal"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.scopeNote,L(sn,lang="pt"))
+G(sp,skos.broader,vbs.ConferenceStep)
+
+
+sp=vbs.VirtualConference
+lsp=u"Conferência virtual"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.scopeNote,L(sn,lang="pt"))
+G(sp,skos.broader,vbs.ConferenceStep)
+
+
+sp=vbs.FreeConference
+lsp=u"Conferência livre"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.scopeNote,L(sn,lang="pt"))
+G(sp,skos.broader,vbs.ConferenceStep)
+
+sp=vbs.ExtraordinaryConference
+lsp=u"Conferência extraordinária"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.scopeNote,L(sn,lang="pt"))
+G(sp,skos.broader,vbs.ConferenceStep)
+
+
+sp=vbs.NationalConferenceReferenceDocuments
+lsp=u"Documentos de referência da conferência nacional"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.related,vbs.Conference)
+
+sp=vbs.Methodology
+lsp=u"Metodologia"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.altLabel,L(u"Procedimento de metodologia de conferência",lang="pt"))
+G(foo,skos.scopeNote,L(u"metodologia de conferência. O conceito pode ser útil em outros contextos",lang="pt"))
+G(sp,skos.related,vbs.Conference)
+
+foo=vbs.ResolutionTrackingModel
+lfoo=u"Modelo de acompanhamento de resolução"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Periodicity
+lfoo=u"Periodicidade"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+sp=vbs.ConferenceSchedule
+lsp=u"Calendário de conferência"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.altLabel,L(u"Calendário de processos conferenciais",lang="pt"))
+G(sp,skos.related,vbs.Conference)
+
+
+foo=vbs.OGU
+lfoo=u"OGU"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+lfoo=u"Ouvidoria-Geral da União"
+G(foo,skos.altLabel,L(lfoo,lang="pt"))
+
+
+foo=vbs.CGU
+lfoo=u"Controladoria-Geral da União"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+lfoo=u"Controladoria-Geral da União"
+G(foo,skos.altLabel,L(lfoo,lang="pt"))
+
+foo=vbs.AffectedPart
+lfoo=u"Parte afetada"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.InterestedPart
+lfoo=u"Parte interessada"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(foo,skos.related,L(vbs.AffectedPart,lang="pt"))
+
+foo=vbs.AffectedPerson
+lfoo=u"Pessoa afetada"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+foo2=vbs.AffectedPart
+G(foo,skos.broader,L(foo2,lang="pt"))
+
+foo=vbs.InterestedPerson
+lfoo=u"Pessoa interessada"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+foo2=vbs.InterestedPart
+G(foo,skos.broader,L(foo2,lang="pt"))
+G(foo,skos.related,L(vbs.AffectedPart,lang="pt"))
+
+foo=vbs.ParticipantPerson
+lfoo=u"Pessoa participante"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(foo,skos.broader,L(vbs.InterestedPart,lang="pt"))
+G(foo,skos.related,L(vbs.AffectedPart,lang="pt"))
+
+
+
+
+
+foo=vbs.ConflictSolution
+lfoo=u"Solução do conflito"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.OperationPeriod
+lfoo=u"Período de operação"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.VoluntaryObligation
+lfoo=u"Obrigação voluntaria"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+lfoo=u"Obrigação voluntariamente assumida"
+G(foo,skos.altLabel,L(lfoo,lang="pt"))
+
+foo=vbs.WorkConditionAndRelation
+lfoo=u"Condições e relações do trabalho"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Employee
+lfoo=u"Empregado"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Employer
+lfoo=u"Empregador"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Government
+lfoo=u"Governo"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Formulation
+lfoo=u"Formulação"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Execution
+lfoo=u"Execução"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+
+foo=vbs.Autonomy
+lfoo=u"Autonomia"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Recomendation
+lfoo=u"Recomendação"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(foo,skos.scopeNote,L(u"recomendação de fórum interconselhos. O conceito pode ser usado em outros contextos",lang="pt"))
+
+foo=vbs.Conclusion
+lfoo=u"Conclusão"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(foo,skos.scopeNote,L(u"conclusão de fórum interconselhos. O conceito pode ser usado em outros contextos",lang="pt"))
+
+foo=vbs.AudienceObject
+lfoo=u"Objeto de audiência"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(foo,skos.scopeNote,L(u"objeto de audiência pública.",lang="pt"))
+
+foo=vbs.Moment
+lfoo=u"Momento de realização"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(foo,skos.altLabel,L(u"Momento",lang="pt"))
+G(foo,skos.scopeNote,L(u"momento de realização de audiência pública. O conceito pode ser útil em outros contextos",lang="pt"))
+
+foo=vbs.ConferenceMoment
+lfoo=u"Momento"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(foo,skos.scopeNote,L(u"momento de conferência. O conceito pode ser útil em outros contextos",lang="pt"))
+G(foo,skos.related,L(vbs.Methodology,lang="pt"))
+
+foo=vbs.FreeAccess
+lfoo=u"Acesso livre"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Systematization
+lfoo=u"Sistematização"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Debate
+lfoo=u"Debate"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.ResponseCompromise
+lfoo=u"Compromisso de resposta"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Timely
+lfoo=u"Tempo hábil"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.ConsultationObject
+lfoo=u"Objeto de consulta"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(foo,skos.scopeNote,L(u"objeto de consulta pública.",lang="pt"))
+
+foo=vbs.Study
+lfoo=u"Estudo"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.TechnicalMaterial
+lfoo=u"Material técnico"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Basis
+lfoo=u"Fundamento"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(foo,skos.scopeNote,L(u"fundamento para proposta colocada em consulta pública. Conceito pode ser útil em outros contextos.",lang="pt"))
+
+foo=vbs.Proposal
+lfoo=u"Proposta"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(foo,skos.scopeNote,L(u"proposta colocada em consulta pública. Conceito pode ser útil em outros contextos.",lang="pt"))
+
+foo=vbs.RegulatoryImpactAnalysis
+lfoo=u"Análise de impacto regulatório"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Internet
+lfoo=u"Internet"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.TIC
+lfoo=u"TIC"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(foo,skos.altLabel,L(u"Tecnologias de informação e comunicação",lang="pt"))
+G(foo,skos.altLabel,L(u"Tecnologias de informação e comunicação (TIC)",lang="pt"))
+
+foo=vbs.Contribution
+lfoo=u"Contribuição"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.GovernmentDebate
+lfoo=u"Debate de governo"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.GovernmentDecision
+lfoo=u"Decisão de governo"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.DirectParticipation
+lfoo=u"Participação direta"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.PersonWithDisabilities
+lfoo=u"Pessoa com deficiência"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.TermsOfUse
+lfoo=u"Termos de uso"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Registration
+lfoo=u"Cadastro"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Product
+lfoo=u"Produto"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(foo,skos.scopeNote,L(u"Produto de ambiente online de participação social. Conceito pode ser usado em outros contextos.",lang="pt"))
+
+foo=vbs.DiversityAssurance
+lfoo=u"Garantia de diversidade"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(foo,skos.scopeNote,L(u"Garantia de diversidade de ambiente online de participação social. Conceito pode ser usado em outros contextos.",lang="pt"))
+
+foo=vbs.Definition
+lfoo=u"Definição"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.CommunicationStrategy
+lfoo=u"Estratégia de comunicação"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.MobilizationStrategy
+lfoo=u"Estratégia de mobilização"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.SocialNetwork
+lfoo=u"Rede social"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.SocialNetworkTool
+lfoo=u"Ferramenta de rede social"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.SocialNetworkEnvironment
+lfoo=u"Ambiente de rede social"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.OpenData
+lfoo=u"Dado aberto"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.MachineReadableData
+lfoo=u"Dado legível por máquina"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.FreeSoftware
+lfoo=u"Software livre"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.FreeLicense
+lfoo=u"Licença livre"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.SocialParticipationTechnologicalTool
+lfoo=u"Ferramenta tecnológica de participação social"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Integration
+lfoo=u"Integração"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Promotion
+lfoo=u"Promoção"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(foo,skos.altLabel,L(u"Fomento",lang="pt"))
+
+foo=vbs.RemoteParticipation
+lfoo=u"Participação remota"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(foo,skos.altLabel,L(u"Participação virtual",lang="pt"))
+
+foo=vbs.SocialDemandsMonitoringTable
+lfoo=u"Mesa de Monitoramento das Demandas Sociais"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.CollegialInstance
+lfoo=u"Instância colegiada"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.InterministerialCollegialInstance
+lfoo=u"Instância colegiada interministerial"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Agenda
+lfoo=u"Pauta"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.AgendaForwarding
+lfoo=u"Encaminhamento de pauta"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.SocialMovement
+lfoo=u"Movimento social"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Autonomy
+lfoo=u"Autonomia"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Guest
+lfoo=u"Convidado"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Meeting
+lfoo=u"Reunião"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.ExecutiveSecretary
+lfoo=u"Secretário executivo"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Ministry
+lfoo=u"Ministério"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.SGPRHeadStateMinister
+lfoo=u"Ministro de estado-chefe da Secretaria Geral da Presidência da República"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Subgroup
+lfoo=u"Subgrupo"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.RegulatoryAgency
+lfoo=u"Agência reguladora"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.CivilHouse
+lfoo=u"Casa Civil"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(foo,skos.altLabel,L(u"Casa Civil da Presidência da República",lang="pt"))
+
+foo=vbs.NormativeAct
+lfoo=u"Ato normativo"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.SpecialPoliticalMeaning
+lfoo=u"Especial significado político"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.SpecialSocialMeaning
+lfoo=u"Especial significado social"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(foo,skos.related,vbs.SpecialPoliticalMeaning)
+
+foo=vbs.EnterIntoForce
+lfoo=u"Entrar em vigor"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.DOU
+lfoo=u"DOU"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(foo,skos.altLabel,L(u"Diário Oficial da União",lang="pt"))
+
+foo=vbs.Presidency
+lfoo=u"Presidência da República"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(foo,skos.altLabel,L(u"Presidência",lang="pt"))
+
+foo=vbs.JuridicalSubject
+lfoo=u"Assunto jurídico"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Providence
+lfoo=u"Providência"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.RepublicPresident
+lfoo=u"Presidenta da República"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Caput
+lfoo=u"Caput"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+
+
+foo=vbs.Article
+lfoo=u"Artigo"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(foo,skos.scopeNote,L(u"Artigo de texto legal (ex. decreto). O conceito oode ser usado em outros contextos.",lang="pt"))
+
+foo=vbs.Paragraph
+lfoo=u"Parágrafo"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(foo,skos.scopeNote,L(u"Parágrafo de texto legal (ex. decreto). O conceito oode ser usado em outros contextos.",lang="pt"))
+
+foo=vbs.Item
+lfoo=u"Inciso"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(foo,skos.scopeNote,L(u"Inciso de texto legal (ex. decreto). O conceito oode ser usado em outros contextos.",lang="pt"))
+
+foo=vbs.Subparagraph
+lfoo=u"Alínea"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(foo,skos.scopeNote,L(u"Alínea de texto legal (ex. decreto). O conceito oode ser usado em outros contextos.",lang="pt"))
+
+foo=vbs.Constitution
+lfoo=u"Constituição"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Strengthen
+lfoo=u"Fortalecer"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Articulate
+lfoo=u"Articular"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Establish
+lfoo=u"Instituir"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+foo=vbs.Dialogue
+lfoo=u"Diálogo"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+f=open("../rdf/vbsPNPS.rdf","wb")
+f.write(g.serialize())
+f.close()
+f=open("../rdf/vbsPNPS.ttl","wb")
+f.write(g.serialize(format="turtle"))
+f.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

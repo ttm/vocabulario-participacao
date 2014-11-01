@@ -14,9 +14,9 @@ OGU (Ouvidoria Geral da União)
 Ouvidor
  termo relacionado: Ouvidoria
 Ouvidoria
- forma alternativa: Ouvidoria pública federal
  forma alternativa: Ouvidoria federal
  forma alternativa: Ouvidoria pública
+ forma alternativa: Ouvidoria pública federal
  definição: instância de controle e participação social responsável pelo tratamento das reclamações, solicitações, denúncias, sugestões e elogios relativos às políticas e aos serviços públicos, prestados sob qualquer forma ou regime, com vistas ao aprimoramento da gestão pública
 Ouvidoria ativa
 Ouvidoria passiva

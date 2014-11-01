@@ -357,7 +357,7 @@ G(sp,skos.prefLabel,L(lsp,lang="pt"))
 sp_=sp
 
 #############
-sp=vbs.ConferenceNationalOrganization
+sp=vbs.NationalConferenceOrganization
 lsp=u"Organização nacional de conferência"
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))

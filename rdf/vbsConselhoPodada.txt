@@ -1,23 +1,23 @@
 Área de política
- forma alternativa: Área temática
  forma alternativa: Área política
+ forma alternativa: Área temática
 assunto
 Ato normativo
 Comissão interna
  nota de escopo: Comissão interna de conselho
 Conferência
- forma alternativa: Conferência nacional
  forma alternativa: Conferência de políticas públicas
- definição: Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo
+ forma alternativa: Conferência nacional
  definição: Instância colegiada de temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas
+ definição: Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo
 Conselho
- forma alternativa: Conselho nacional de políticas públicas
- forma alternativa: Conselho gestor
  forma alternativa: voto de minerva
+ forma alternativa: Conselho gestor
+ forma alternativa: Conselho nacional de políticas públicas
  forma alternativa: voto de desempate
  forma alternativa: Conselho de políticas públicas
- definição: decisão a ser referenciada pelo grupo legitimado posteriormente
  definição: Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)
+ definição: decisão a ser referenciada pelo grupo legitimado posteriormente
  definição: voto de desempate de votação
  nota de escopo: espaço contínuo de participação social
  nota de escopo: Espaço participativo com a finalidade de incidir nas políticas públicas de determinado tema, nos quais é prevista certa permanência no tempo, composto por representantes do poder público e da sociedade civil, esta podendo ser dividida em diferentes segmentos.
@@ -27,8 +27,8 @@ Desenvolvimento econômico
  nota de escopo: arranjos produtivos locais, assistência técnica e extensão rural, desenvolvimento regional e desenvolvimento rural sustentável e solidário
 Estatuto
  definição: Conjunto de normas do ordenamento jurídico brasileiro usualmente instituído por lei.
- nota de escopo: Não é estatuto sinônimo de regimento interno
  nota de escopo: Estatuto que instaura política pública
+ nota de escopo: Não é estatuto sinônimo de regimento interno
 Garantia de direitos
  nota de escopo: criança e adolescente, educação, juventude, LGBT, mulheres e pessoa idosa
 Grupo de trabalho
@@ -37,8 +37,8 @@ Infraestrutura
 Instância consultiva
 Instância de participação social
  forma alternativa: Espaço participativo
- forma alternativa: Espaço de participação social
  forma alternativa: Instância participativa
+ forma alternativa: Espaço de participação social
  forma alternativa: Instituição participativa
  termo relacionado: Mecanismo de participação social
 Instância deliberativa
@@ -70,11 +70,11 @@ Reformulação
 Regimento interno
  forma alternativa: Estatuto
 Resolução
- forma alternativa: Tese
  forma alternativa: Deliberação
- forma alternativa: Decisão
  forma alternativa: Proposta
  forma alternativa: Diretriz
+ forma alternativa: Tese
+ forma alternativa: Decisão
 Secretaria
 Secretaria executiva
 Sistema nacional
