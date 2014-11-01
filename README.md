@@ -69,6 +69,8 @@ deste vocabulário podem ser os mais diversos, com potenciais novas versões,
  * Recomenda uma seleção de antemão destes termos?
  * Onde estão os termos de referência?
  * Como prefere conduzir o trabalho?
+* Adicionar provenance aos vocábulos skos para saber fonte do termo.
+* Fazer uso explícito de subgrafos para as ontologias e de concept schemes para os vocabulários skos. Ver voiD.
 
 ## Contato:
 

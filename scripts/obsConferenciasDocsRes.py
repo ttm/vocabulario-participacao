@@ -372,8 +372,6 @@ A.add_edge(lpm,lthfoo)
 e=A.get_edge(lpm,lthfoo)
 e.attr["label"]=ltafoo
 
-
-
 pm=obs.NormativeAct# SKOS
 lpm=u"Ato normativo"
 G(pm,rdf.type,owl.Class)
