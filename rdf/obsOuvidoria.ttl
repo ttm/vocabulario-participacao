@@ -5,6 +5,14 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+obs:CivilControl a owl:Class ;
+    rdfs:label "Controle civil"@pt ;
+    rdfs:subClassOf obs:Control .
+
+obs:Client a owl:Class ;
+    rdfs:label "Cliente"@pt ;
+    rdfs:subClassOf obs:Participant .
+
 obs:Complaint a owl:Class ;
     rdfs:label "Reclamação"@pt ;
     rdfs:subClassOf obs:Manifestation .
@@ -12,6 +20,10 @@ obs:Complaint a owl:Class ;
 obs:Compliment a owl:Class ;
     rdfs:label "Elogio"@pt ;
     rdfs:subClassOf obs:Manifestation .
+
+obs:Contributor a owl:Class ;
+    rdfs:label "Contribuidor"@pt ;
+    rdfs:subClassOf obs:Participant .
 
 obs:Course a owl:Class ;
     rdfs:label "Curso"@pt ;
@@ -45,6 +57,10 @@ obs:Ministry a owl:Class ;
     rdfs:label "Ministério"@pt ;
     rdfs:subClassOf obs:PublicAdministrationAgency .
 
+obs:NotOrganizedCivilSociety a owl:Class ;
+    rdfs:label "Sociedade civil não organizada"@pt ;
+    rdfs:subClassOf obs:Participant .
+
 obs:OGU a owl:Class ;
     rdfs:label "OGU (Ouvidoria Geral da União)"@pt .
 
@@ -54,6 +70,10 @@ obs:Report a owl:Class ;
 obs:Request a owl:Class ;
     rdfs:label "Solicitação"@pt ;
     rdfs:subClassOf obs:Manifestation .
+
+obs:Rioter a owl:Class ;
+    rdfs:label "Manifestante"@pt ;
+    rdfs:subClassOf obs:Participant .
 
 obs:Seminar a owl:Class ;
     rdfs:label "Seminário"@pt ;
@@ -66,6 +86,10 @@ obs:Suggestion a owl:Class ;
 obs:University a owl:Class ;
     rdfs:label "Universidade"@pt ;
     rdfs:subClassOf obs:PublicAgency .
+
+obs:Whistleblower a owl:Class ;
+    rdfs:label "Denunciante"@pt ;
+    rdfs:subClassOf obs:Participant .
 
 obs:accountable a owl:ObjectProperty ;
     rdfs:label "responsável"@pt ;
@@ -87,6 +111,10 @@ obs:ativa a owl:DatatypeProperty ;
     rdfs:label "ativa"@pt ;
     rdfs:comment "ouvidoria é ativa?"@pt ;
     rdfs:range xsd:boolean .
+
+obs:author a owl:ObjectProperty ;
+    rdfs:label "autor"@pt ;
+    rdfs:range obs:Participant .
 
 obs:delivers a owl:ObjectProperty ;
     rdfs:label "entrega"@pt ;
@@ -176,4 +204,7 @@ obs:PublicAgency a owl:Class ;
 
 obs:Manifestation a owl:Class ;
     rdfs:label "Manifestação"@pt .
+
+obs:Participant a owl:Class ;
+    rdfs:label "Participante"@pt .
 

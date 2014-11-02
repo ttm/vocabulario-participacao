@@ -104,6 +104,12 @@ G(ouv,rdf.type,skos.Concept)
 G(ouv,skos.prefLabel,L(louv,lang="pt"))
 G(ouv,skos.broader,ouv_)
 
+sp=vbs.CivilControl
+lsp=u"Controle civil" # entra no SKOS
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,ouv_)
+
 ouv=vbs.ExternalControl
 louv=u"Controle externo" # entra no SKOS
 G(ouv,rdf.type,skos.Concept)
@@ -170,18 +176,6 @@ lsp=u"Manifestação anônima" # SKOS
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
 
-
-
-f=open("../rdf/vbsOuvidoria.rdf","wb")
-f.write(g.serialize())
-f.close()
-
-f=open("../rdf/vbsOuvidoria.ttl","wb")
-f.write(g.serialize(format="turtle"))
-f.close()
-
-
-sys.exit()
 pm=vbs.ParticipationMechanism
 G(pm,rdf.type,skos.Concept)
 G(pm,skos.prefLabel,L("Mecanismo de participação social",lang="pt"))
@@ -194,7 +188,7 @@ G(pm,skos.altLabel,L(u"Instância participativa",lang="pt"))
 G(pm,skos.altLabel,L(u"Espaço participativo",lang="pt"))
 G(pm,skos.altLabel,L(u"Espaço de participação social",lang="pt"))
 G(pm,skos.altLabel,L(u"Instituição participativa",lang="pt"))
-G(cons,skos.broader,pm)
+G(ouv,skos.broader,vbs.OmbudsmanAgency)
 G(pm,skos.related,pm_)
 
 
@@ -228,4 +222,51 @@ G(oe,rdf.type,skos.Concept)
 G(oe,skos.prefLabel,L(loe,lang="pt"))
 G(oe,skos.broader,ac)
 
-d
+########
+
+sp=vbs.Participant # SKOS
+lsp=u"Participante" # SKOS
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+sp_=sp
+sp=vbs.Whistleblower
+lsp=u"Denunciante" # entra no SKOS
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,sp_)
+
+sp=vbs.Client
+lsp=u"Cliente" # entra no SKOS
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,sp_)
+
+sp=vbs.Contributor
+lsp=u"Contribuidor" # entra no SKOS
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,sp_)
+
+sp=vbs.Rioter
+lsp=u"Manifestante" # entra no SKOS
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,sp_)
+
+sp=vbs.NotOrganizedCivilSociety
+lsp=u"Sociedade civil não organizada" # entra no SKOS
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,sp_)
+
+f=open("../rdf/vbsOuvidoria.rdf","wb")
+f.write(g.serialize())
+f.close()
+
+f=open("../rdf/vbsOuvidoria.ttl","wb")
+f.write(g.serialize(format="turtle"))
+f.close()
+
+
+sys.exit()
+

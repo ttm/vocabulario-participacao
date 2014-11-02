@@ -290,9 +290,19 @@ e=A.get_edge(lsp,lOu)
 e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
 
-
 sp=obs.ExternalControl
 lsp=u"Controle externo" # entra no SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,Ou)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lOu)
+e=A.get_edge(lsp,lOu)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.CivilControl
+lsp=u"Controle civil" # entra no SKOS
 G(sp,rdf.type,owl.Class)
 G(sp,rdfs.label,L(lsp,lang="pt"))
 G(sp,rdfs.subClassOf,Ou)
@@ -344,6 +354,84 @@ A.add_node(lpm__,style="filled")
 A.add_edge(louv,lpm__)
 e=A.get_edge(louv,lpm__)
 e.attr["label"]=lsj
+
+sj=obs.author
+lsj=u"autor" # SKOS
+pm___=obs.Participant # SKOS
+lpm___=u"Participante" # SKOS
+G(sj,rdf.type,owl.ObjectProperty)
+G(sj,rdfs.label,L(lsj,lang="pt"))
+G(sj,rdfs.range,pm___)
+G(pm___,rdf.type,owl.Class)
+G(pm___,rdfs.label,L(lpm___,lang="pt"))
+A.add_node(lpm___,style="filled")
+A.add_edge(lpm__,lpm___)
+e=A.get_edge(lpm__,lpm___)
+e.attr["label"]=lsj
+
+sp=obs.Whistleblower
+lsp=u"Denunciante" # entra no SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,pm___)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lpm___)
+e=A.get_edge(lsp,lpm___)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.Client
+lsp=u"Cliente" # entra no SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,pm___)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lpm___)
+e=A.get_edge(lsp,lpm___)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.Contributor
+lsp=u"Contribuidor" # entra no SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,pm___)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lpm___)
+e=A.get_edge(lsp,lpm___)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.Rioter
+lsp=u"Manifestante" # entra no SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,pm___)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lpm___)
+e=A.get_edge(lsp,lpm___)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+sp=obs.NotOrganizedCivilSociety
+lsp=u"Sociedade civil não organizada" # entra no SKOS
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,pm___)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lpm___)
+e=A.get_edge(lsp,lpm___)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+
+
+
+
+
+
+
+
 
 sp=obs.Request
 lsp=u"Solicitação" # entra no SKOS

@@ -303,6 +303,14 @@ sn=u"Uma etapa é um evento participativo, também chamado de conferência, enqu
 G(sp,skos.scopeNote,L(sn,lang="pt"))
 G(sp,skos.broader,vbs.ConferenceStep)
 
+th=vbs.NationalConference
+lth=u"Conferência nacional"
+G(th,rdf.type,skos.Concept)
+G(th,skos.prefLabel,L(lth,lang="pt"))
+G(th,skos.scopeNote,L(sn,lang="pt"))
+G(th,skos.broader,vbs.ConferenceStep)
+
+
 th=vbs.RegionalConference
 lth=u"Conferência regional"
 G(th,rdf.type,skos.Concept)
