@@ -1,0 +1,16 @@
+digraph  {
+	node [label="\N"];
+	"Mesa de diálogo"	 [color="#A29999",
+		style=filled];
+	1	 [color="#A2F3D1",
+		label="xsd:gMonth",
+		style=filled];
+	"Mesa de diálogo" -> 1	 [label=periodicidade];
+	"Mecanismo de participação social"	 [style=filled];
+	"Mesa de diálogo" -> "Mecanismo de participação social"	 [arrowhead=empty,
+		arrowsize=2];
+	"Instância ou mecanismo de participação social"	 [style=filled];
+	"Mesa de diálogo" -> "Instância ou mecanismo de participação social"	 [label=itera];
+	"Mecanismo de participação social" -> "Instância ou mecanismo de participação social"	 [arrowhead=empty,
+		arrowsize=2];
+}
