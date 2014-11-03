@@ -1,0 +1,21 @@
+digraph  {
+	node [label="\N"];
+	"Consulta pública"	 [color="#A29999",
+		style=filled];
+	Tema	 [style=filled];
+	"Consulta pública" -> Tema	 [label=possui];
+	"Metodologia de consulta"	 [style=filled];
+	"Consulta pública" -> "Metodologia de consulta"	 [label=metodologia];
+	1	 [color="#A2F3D1",
+		label="xsd:string",
+		style=filled];
+	Tema -> 1	 [label="frase de referência"];
+	2	 [color="#A2F3D1",
+		label="xsd:string",
+		style=filled];
+	Tema -> 2	 [label="eixos temáticos"];
+	"Momento participativo"	 [style=filled];
+	"Metodologia de consulta" -> "Momento participativo"	 [label=evento];
+	"Zona de interação"	 [style=filled];
+	"Metodologia de consulta" -> "Zona de interação"	 [label=interface];
+}

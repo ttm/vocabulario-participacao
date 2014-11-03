@@ -109,6 +109,20 @@ sp=vbs.Participant
 lsp=u"Participante"
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
+sp25=sp
+
+sp=vbs.Observer
+lsp=u"Observador"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,sp25)
+
+sp=vbs.Guest
+lsp=u"Convidado"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,sp25)
+
 
 
 sp=vbs.PublicAgency
@@ -161,6 +175,7 @@ lsp=u"Convocação de conferência" # entra no SKOS
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
 G(sp,skos.broader,vbs.Conference)
+G(sp,skos.related,vbs.ConveningDocument)
 
 ac=vbs.Act
 lac=u"Ato normativo" # SKOS Ato Institucional
@@ -177,8 +192,27 @@ oe=vbs.MinisterialOrdinance
 loe=u"Portaria ministerial" # SKOS
 G(oe,rdf.type,skos.Concept)
 G(oe,skos.prefLabel,L(loe,lang="pt"))
-G(oe,skos.scopeNote,L(u"Portaria emitida por um ou mais ministérios",lang="pt"))
+G(oe,skos.scopeNote,L(u"Portaria emitida por um ministério",lang="pt"))
 G(oe,skos.broader,ac)
+
+
+oe=vbs.InterministerialOrdinance
+loe=u"Portaria interministerial" # SKOS
+G(oe,rdf.type,skos.Concept)
+G(oe,skos.prefLabel,L(loe,lang="pt"))
+G(oe,skos.scopeNote,L(u"Portaria emitida por mais de um ministério",lang="pt"))
+G(oe,skos.broader,ac)
+
+oe=vbs.ConveningDocument
+loe=u"Documento convocatório" # SKOS
+G(oe,rdf.type,skos.Concept)
+G(oe,skos.prefLabel,L(loe,lang="pt"))
+G(oe,skos.altLabel,L(u"Ato convocatório",lang="pt"))
+G(oe,skos.scopeNote,L(u"Documento convocatório de conferência. Conceito pode ser usado em outros contextos.",lang="pt"))
+G(oe,skos.altLabel,L(u"Documento convocatório da sociedade civil",lang="pt"))
+G(oe,skos.broader,ac)
+
+
 
 re=vbs.Resolution
 lre=u"Resolução" #SKOS
@@ -232,7 +266,8 @@ sp=vbs.NaturalResources ###
 lsp=u"Recursos naturais" # SKOS
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
-G(sp,skos.scopeNote,L(u"Recursos naturais",lang="pt"))
+G(sp,skos.scopeNote,L(u"meio ambiente",lang="pt"))
+G(sp,skos.scopeNote,L(u"recursos hídricos",lang="pt"))
 G(sp,skos.broader,ta)
 
 #####################
@@ -283,16 +318,46 @@ sp=vbs.Delegate
 lsp=u"Delegado"
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,sp25)
+
+sp=vbs.CivilSocietyDelegate
+lsp=u"Delegado da sociedade civil"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,sp25)
+
+sp=vbs.GovernmentDelegate
+lsp=u"Delegado governamental"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.broader,sp25)
+
+sp=vbs.Composition
+lsp=u"Composição"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.related,vbs.Position)
+G(sp,skos.related,vbs.Quota)
+G(sp,skos.related,vbs.DiversityAssurance)
+G(sp,skos.related,vbs.Delegate)
+G(sp,skos.related,vbs.Guest)
+G(sp,skos.related,vbs.Observer)
+
 
 sp=vbs.priorization
 lsp=u"priorização"
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
+sp_=sp
 
-sp=vbs.formulation
-lsp=u"formulação"
+sp=vbs.goal
+lsp=u"objetivo"
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.related,sp_)
+
+
+
 ##########
 
 sp=vbs.StateConference
@@ -317,6 +382,14 @@ G(th,rdf.type,skos.Concept)
 G(th,skos.prefLabel,L(lth,lang="pt"))
 G(th,skos.scopeNote,L(sn,lang="pt"))
 G(th,skos.broader,vbs.ConferenceStep)
+
+th=vbs.DistrictConference
+lth=u"Conferência distrital"
+G(th,rdf.type,skos.Concept)
+G(th,skos.prefLabel,L(lth,lang="pt"))
+G(th,skos.scopeNote,L(sn,lang="pt"))
+G(th,skos.broader,vbs.ConferenceStep)
+
 
 
 sp=vbs.IntercityConferente
@@ -364,6 +437,17 @@ G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
 sp_=sp
 
+sp=vbs.OrganizingCommittee
+lsp=u"Comitê da organização nacional"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.altLabel,L(u"Comissão organizadora",lang="pt"))
+G(sp,skos.altLabel,L(u"Comitê organizador",lang="pt"))
+G(sp,skos.altLabel,L(u"Comitê nacional",lang="pt"))
+G(sp,skos.altLabel,L(u"Comissão nacional",lang="pt"))
+G(sp,skos.broader,sp_)
+
+
 #############
 sp=vbs.NationalConferenceOrganization
 lsp=u"Organização nacional de conferência"
@@ -409,6 +493,7 @@ sp=vbs.ConferenceMethodology
 lsp=u"Metodologia de conferência"
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.altLabel,L(u"Procedimento metodológico",lang="pt"))
 G(sp,skos.broader,vbs.Conference)
 
 sp=vbs.ParticipativeMoment
@@ -464,12 +549,37 @@ G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
 G(sp,skos.related,vbs.Position)
 
+foo=vbs.DiversityAssurance
+lfoo=u"Garantia de diversidade"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+G(sp,skos.related,vbs.Position)
+G(sp,skos.related,vbs.Quota)
+
+
 sp=vbs.etnicGroup
 lsp=u"grupo étnico"
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
 G(sp,skos.related,vbs.Position)
 G(sp,skos.related,vbs.Quota)
+G(sp,skos.related,vbs.DiversityAssurance)
+
+sp=vbs.gender
+lsp=u"gênero"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.related,vbs.Position)
+G(sp,skos.related,vbs.Quota)
+G(sp,skos.related,vbs.DiversityAssurance)
+
+sp=vbs.age
+lsp=u"idade"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+G(sp,skos.related,vbs.Position)
+G(sp,skos.related,vbs.Quota)
+G(sp,skos.related,vbs.DiversityAssurance)
 
 
 

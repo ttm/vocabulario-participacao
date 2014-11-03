@@ -30,6 +30,7 @@ G(cons,skos.scopeNote,L(u"espaço contínuo de participação social",lang="pt")
 pm=vbs.ParticipationMechanism
 G(pm,rdf.type,skos.Concept)
 G(pm,skos.prefLabel,L("Mecanismo de participação social",lang="pt"))
+G(pm,skos.scopeNote,L(u"espaço efêmero de participação social. Caso o espaço seja contínuo, use 'Instância de participação social'",lang="pt"))
 pm_=pm
 
 pm=vbs.ParticipationInstance
@@ -39,6 +40,7 @@ G(pm,skos.altLabel,L(u"Instância participativa",lang="pt"))
 G(pm,skos.altLabel,L(u"Espaço participativo",lang="pt"))
 G(pm,skos.altLabel,L(u"Espaço de participação social",lang="pt"))
 G(pm,skos.altLabel,L(u"Instituição participativa",lang="pt"))
+G(pm,skos.scopeNote,L(u"espaço contínuo de participação social. Caso o espaço seja efêmero, use 'Mecanismo de participação social'",lang="pt"))
 G(cons,skos.broader,pm)
 G(pm,skos.related,pm_)
 
@@ -238,9 +240,9 @@ G(mc,skos.prefLabel,L(lmc,lang="pt"))
 mc=vbs.QualityVote
 lmc=u"Voto de qualidade"
 G(mc,rdf.type,skos.Concept)
-G(cons,skos.definition,L(u"voto de desempate de votação",lang="pt"))
-G(cons,skos.altLabel,L(u"voto de desempate",lang="pt"))
-G(cons,skos.altLabel,L(u"voto de minerva",lang="pt"))
+G(mc,skos.definition,L(u"voto de desempate de votação",lang="pt"))
+G(mc,skos.altLabel,L(u"voto de desempate",lang="pt"))
+G(mc,skos.altLabel,L(u"voto de minerva",lang="pt"))
 G(mc,skos.prefLabel,L(lmc,lang="pt"))
 
 mc=vbs.AdReferendum

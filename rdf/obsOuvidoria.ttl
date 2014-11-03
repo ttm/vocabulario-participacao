@@ -5,6 +5,16 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+obs:Audit a owl:Class ;
+    rdfs:label "Auditoria"@pt .
+
+obs:CGU a owl:Class ;
+    rdfs:label "Controladoria-Geral da União (CGU)"@pt ;
+    rdfs:subClassOf obs:PublicAgency .
+
+obs:CRG a owl:Class ;
+    rdfs:label "Corregedoria-Geral da União (CRG)"@pt .
+
 obs:CivilControl a owl:Class ;
     rdfs:label "Controle civil"@pt ;
     rdfs:subClassOf obs:Control .
@@ -17,6 +27,12 @@ obs:Complaint a owl:Class ;
     rdfs:label "Reclamação"@pt ;
     rdfs:subClassOf obs:Manifestation .
 
+obs:ComplaintForwarding a owl:Class ;
+    rdfs:label "Encaminhamento de denúncias"@pt .
+
+obs:ComplaintReception a owl:Class ;
+    rdfs:label "Recepção de denúncias"@pt .
+
 obs:Compliment a owl:Class ;
     rdfs:label "Elogio"@pt ;
     rdfs:subClassOf obs:Manifestation .
@@ -24,6 +40,9 @@ obs:Compliment a owl:Class ;
 obs:Contributor a owl:Class ;
     rdfs:label "Contribuidor"@pt ;
     rdfs:subClassOf obs:Participant .
+
+obs:Correction a owl:Class ;
+    rdfs:label "Correção"@pt .
 
 obs:Course a owl:Class ;
     rdfs:label "Curso"@pt ;
@@ -37,6 +56,9 @@ obs:ExternalControl a owl:Class ;
     rdfs:label "Controle externo"@pt ;
     rdfs:subClassOf obs:Control .
 
+obs:FederalOmbudsmanCoordination a owl:Class ;
+    rdfs:label "Coordenação de ouvidoria do poder executivo federal"@pt .
+
 obs:Foundation a owl:Class ;
     rdfs:label "Fundação"@pt ;
     rdfs:subClassOf obs:IndirectPublicAdministrationAgency .
@@ -45,6 +67,9 @@ obs:Hospital a owl:Class ;
     rdfs:label "Hospital"@pt ;
     rdfs:subClassOf obs:PublicAgency .
 
+obs:InformationAccessResponse a owl:Class ;
+    rdfs:label "Resposta a pedido de acesso à informação"@pt .
+
 obs:InternalControl a owl:Class ;
     rdfs:label "Controle interno"@pt ;
     rdfs:subClassOf obs:Control .
@@ -52,6 +77,15 @@ obs:InternalControl a owl:Class ;
 obs:Lecture a owl:Class ;
     rdfs:label "Palestra"@pt ;
     rdfs:subClassOf obs:FormationActivity .
+
+obs:ManifestationAnalysis a owl:Class ;
+    rdfs:label "Análise de manifestações referentes a serviços públicos"@pt .
+
+obs:ManifestationReception a owl:Class ;
+    rdfs:label "Recepção de manifestações referentes a serviços públicos"@pt .
+
+obs:MessageReception a owl:Class ;
+    rdfs:label "Recepção de mensagens"@pt .
 
 obs:Ministry a owl:Class ;
     rdfs:label "Ministério"@pt ;
@@ -64,6 +98,15 @@ obs:NotOrganizedCivilSociety a owl:Class ;
 obs:OGU a owl:Class ;
     rdfs:label "OGU (Ouvidoria Geral da União)"@pt .
 
+obs:Prevention a owl:Class ;
+    rdfs:label "Prevenção"@pt .
+
+obs:PublicPatrimonyDefense a owl:Class ;
+    rdfs:label "Defesa de patrimônio público"@pt .
+
+obs:Regulation a owl:Class ;
+    rdfs:label "Normatização"@pt .
+
 obs:Report a owl:Class ;
     rdfs:label "Relatório"@pt .
 
@@ -75,13 +118,25 @@ obs:Rioter a owl:Class ;
     rdfs:label "Manifestante"@pt ;
     rdfs:subClassOf obs:Participant .
 
+obs:SFC a owl:Class ;
+    rdfs:label "Secretaria Federal de Controle Interno (SFC)"@pt .
+
+obs:STPC a owl:Class ;
+    rdfs:label "Secretaria de Transparência e Prevenção à Corrupção (STPC)"@pt .
+
 obs:Seminar a owl:Class ;
     rdfs:label "Seminário"@pt ;
     rdfs:subClassOf obs:FormationActivity .
 
+obs:Standardization a owl:Class ;
+    rdfs:label "Padronização"@pt .
+
 obs:Suggestion a owl:Class ;
     rdfs:label "Sugestão"@pt ;
     rdfs:subClassOf obs:Manifestation .
+
+obs:Transparency a owl:Class ;
+    rdfs:label "Transparência"@pt .
 
 obs:University a owl:Class ;
     rdfs:label "Universidade"@pt ;
@@ -115,6 +170,9 @@ obs:ativa a owl:DatatypeProperty ;
 obs:author a owl:ObjectProperty ;
     rdfs:label "autor"@pt ;
     rdfs:range obs:Participant .
+
+obs:competence a owl:ObjectProperty ;
+    rdfs:label "competência"@pt .
 
 obs:delivers a owl:ObjectProperty ;
     rdfs:label "entrega"@pt ;
@@ -165,6 +223,9 @@ obs:telephone a owl:DatatypeProperty ;
     rdfs:label "telefone"@pt ;
     rdfs:range xsd:string .
 
+obs:unit a owl:ObjectProperty ;
+    rdfs:label "unidade"@pt .
+
 obs:IndirectPublicAdministrationAgency a owl:Class ;
     rdfs:label "Órgão da administração pública indireta"@pt ;
     rdfs:subClassOf obs:PublicAgency .
@@ -199,12 +260,12 @@ obs:OmbudsmanAgency a owl:Class ;
 obs:FormationActivity a owl:Class ;
     rdfs:label "Atividade de formação"@pt .
 
-obs:PublicAgency a owl:Class ;
-    rdfs:label "Órgão público"@pt .
-
 obs:Manifestation a owl:Class ;
     rdfs:label "Manifestação"@pt .
 
 obs:Participant a owl:Class ;
     rdfs:label "Participante"@pt .
+
+obs:PublicAgency a owl:Class ;
+    rdfs:label "Órgão público"@pt .
 

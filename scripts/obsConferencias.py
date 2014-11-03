@@ -317,6 +317,8 @@ ca=obs.convocation
 lca=u"convocação"
 ac=obs.Act
 lac=u"Ato normativo" # SKOS Ato Institucional
+ac2=obs.ConvocationDocument
+lac2=u"Documento convocatório" # SKOS Ato Institucional
 
 pu=obs.datePublished
 lpu=u"data de publicação"
@@ -336,13 +338,15 @@ lre=u"Resolução de conselho" #SKOS
 
 G(ca,rdf.type,owl.ObjectProperty)
 G(ca,rdfs.label,L(lca,lang="pt"))
-G(ca,rdfs.range,ac)
+G(ca,rdfs.range,ac2)
 G(oe,rdfs.subClassOf,ac)
 G(de,rdfs.subClassOf,ac)
 G(re,rdfs.subClassOf,ac)
 
 G(ac,rdf.type,owl.Class)
 G(ac,rdfs.label,L(lac,lang="pt"))
+G(ac2,rdf.type,owl.Class)
+G(ac2,rdfs.label,L(lac,lang="pt"))
 G(oe,rdf.type,owl.Class)
 G(oe,rdfs.label,L(loe,lang="pt"))
 G(de,rdf.type,owl.Class)
@@ -358,10 +362,17 @@ G(nr,rdfs.label,L(lnr,lang="pt"))
 G(nr,rdfs.range,xsd.string)
 
 # desenhar isso
-A.add_node(lac,style="filled")
-A.add_edge(lconf,lac)
-e=A.get_edge(lconf,lac)
+A.add_node(lac2,style="filled")
+A.add_edge(lconf,lac2)
+e=A.get_edge(lconf,lac2)
 e.attr["label"]=lca
+
+A.add_node(lac,style="filled")
+A.add_edge(lac2,lac)
+e=A.get_edge(lac2,lac)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
 A.add_node(loe,style="filled") ###
 A.add_edge(loe,lac)
 e=A.get_edge(loe,lac)
@@ -704,7 +715,7 @@ th=obs.StateConference
 lth=u"Conferência estadual"
 G(th,rdf.type,owl.Class)
 G(th,rdfs.label,L(lth,lang="pt"))
-G(th,rdfs.comment,L(u"Uma fase é um evento participativo, enquanto a conferência em si é o processo todo",lang="pt"))
+G(th,rdfs.comment,L(u"Uma etapa é um evento participativo, enquanto a conferência em si é o processo todo",lang="pt"))
 A.add_node(lth,style="filled")
 A.add_edge(lth,lth_)
 e=A.get_edge(lth,lth_)
@@ -715,18 +726,31 @@ th=obs.RegionalConference
 lth=u"Conferência regional"
 G(th,rdf.type,owl.Class)
 G(th,rdfs.label,L(lth,lang="pt"))
-G(th,rdfs.comment,L(u"Uma fase é um evento participativo, enquanto a conferência em si é o processo todo",lang="pt"))
+G(th,rdfs.comment,L(u"Uma etapa é um evento participativo, enquanto a conferência em si é o processo todo",lang="pt"))
 A.add_node(lth,style="filled")
 A.add_edge(lth,lth_)
 e=A.get_edge(lth,lth_)
 e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
 
+th=obs.DistrictConference
+lth=u"Conferência distrital"
+G(th,rdf.type,owl.Class)
+G(th,rdfs.label,L(lth,lang="pt"))
+G(th,rdfs.comment,L(u"Uma etapa é um evento participativo, enquanto a conferência em si é o processo todo",lang="pt"))
+A.add_node(lth,style="filled")
+A.add_edge(lth,lth_)
+e=A.get_edge(lth,lth_)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+
+
 th=obs.IntercityConferente
 lth=u"Conferência intermunicipal"
 G(th,rdf.type,owl.Class)
 G(th,rdfs.label,L(lth,lang="pt"))
-G(th,rdfs.comment,L(u"Uma fase é um evento participativo, enquanto a conferência em si é o processo todo",lang="pt"))
+G(th,rdfs.comment,L(u"Uma etapa é um evento participativo, enquanto a conferência em si é o processo todo",lang="pt"))
 A.add_node(lth,style="filled")
 A.add_edge(lth,lth_)
 e=A.get_edge(lth,lth_)
@@ -737,7 +761,7 @@ th=obs.MunicipalConference
 lth=u"Conferência municipal"
 G(th,rdf.type,owl.Class)
 G(th,rdfs.label,L(lth,lang="pt"))
-G(th,rdfs.comment,L(u"Uma fase é um evento participativo, enquanto a conferência em si é o processo todo",lang="pt"))
+G(th,rdfs.comment,L(u"Uma etapa é um evento participativo, enquanto a conferência em si é o processo todo",lang="pt"))
 A.add_node(lth,style="filled")
 A.add_edge(lth,lth_)
 e=A.get_edge(lth,lth_)
@@ -748,7 +772,7 @@ th=obs.VirtualConference
 lth=u"Conferência virtual"
 G(th,rdf.type,owl.Class)
 G(th,rdfs.label,L(lth,lang="pt"))
-G(th,rdfs.comment,L(u"Uma fase é um evento participativo, enquanto a conferência em si é o processo todo",lang="pt"))
+G(th,rdfs.comment,L(u"Uma etapa é um evento participativo, enquanto a conferência em si é o processo todo",lang="pt"))
 A.add_node(lth,style="filled")
 A.add_edge(lth,lth_)
 e=A.get_edge(lth,lth_)
@@ -759,7 +783,7 @@ th=obs.FreeConference
 lth=u"Conferência livre"
 G(th,rdf.type,owl.Class)
 G(th,rdfs.label,L(lth,lang="pt"))
-G(th,rdfs.comment,L(u"Uma fase é um evento participativo, enquanto a conferência em si é o processo todo",lang="pt"))
+G(th,rdfs.comment,L(u"Uma etapa é um evento participativo, enquanto a conferência em si é o processo todo",lang="pt"))
 A.add_node(lth,style="filled")
 A.add_edge(lth,lth_)
 e=A.get_edge(lth,lth_)
@@ -830,7 +854,7 @@ e=A.get_edge(lconf,lbo)
 e.attr["label"]=lco
 
 co_=obs.commission
-lco_=u"commissão"
+lco_=u"comissão"
 bo_=obs.NationalOrganizationCommission
 lbo_=u"Comissão da organização nacional"
 G(co_,rdf.type,owl.ObjectProperty)
@@ -941,7 +965,6 @@ bo_=obs.ConferenceMethodology
 lbo_=u"Metodologia de conferência"
 G(co_,rdf.type,owl.ObjectProperty)
 G(co_,rdfs.label,L(lco_,lang="pt"))
-G(co_,rdfs.range,bo_)
 G(bo_,rdf.type,owl.Class)
 G(bo_,rdfs.label,L(lbo_,lang="pt"))
 A.add_node(lbo_,style="filled")

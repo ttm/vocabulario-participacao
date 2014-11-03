@@ -39,6 +39,10 @@ obs:DialogueTable a owl:Class ;
     rdfs:label "Mesa de diálogo"@pt ;
     rdfs:subClassOf obs:ParticipationMechanism .
 
+obs:DistrictConference a owl:Class ;
+    rdfs:label "Conferência distrital"@pt ;
+    rdfs:comment "Uma etapa é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
+
 obs:EconomicDevelopment a owl:Class ;
     rdfs:label "Desenvolvimento econômico"@pt ;
     rdfs:comment "arranjos produtivos locais, assistência técnica e extensão rural, desenvolvimento regional e desenvolvimento rural sustentável e solidário"@pt ;
@@ -50,7 +54,7 @@ obs:ExtraordinaryConference a owl:Class ;
 
 obs:FreeConference a owl:Class ;
     rdfs:label "Conferência livre"@pt ;
-    rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
+    rdfs:comment "Uma etapa é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
 
 obs:Goals a owl:Class ;
     rdfs:label "Objetivos"@pt .
@@ -74,7 +78,7 @@ obs:InterCouncilForum a owl:Class ;
 
 obs:IntercityConferente a owl:Class ;
     rdfs:label "Conferência intermunicipal"@pt ;
-    rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
+    rdfs:comment "Uma etapa é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
 
 obs:Lecture a owl:Class ;
     rdfs:label "Palestra"@pt ;
@@ -86,7 +90,7 @@ obs:Ministry a owl:Class ;
 
 obs:MunicipalConference a owl:Class ;
     rdfs:label "Conferência municipal"@pt ;
-    rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
+    rdfs:comment "Uma etapa é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
 
 obs:NationalConference a owl:Class ;
     rdfs:label "Conferência nacional"@pt ;
@@ -134,7 +138,7 @@ obs:Rapporteur a owl:Class ;
 
 obs:RegionalConference a owl:Class ;
     rdfs:label "Conferência regional"@pt ;
-    rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
+    rdfs:comment "Uma etapa é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
 
 obs:Resolution a owl:Class ;
     rdfs:label "Resolução de conselho"@pt ;
@@ -155,7 +159,7 @@ obs:SocialPolicies a owl:Class ;
 
 obs:StateConference a owl:Class ;
     rdfs:label "Conferência estadual"@pt ;
-    rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
+    rdfs:comment "Uma etapa é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
 
 obs:Subcommittee a owl:Class ;
     rdfs:label "Comissão da organização nacional"@pt .
@@ -170,7 +174,7 @@ obs:Theme a owl:Class ;
 
 obs:VirtualConference a owl:Class ;
     rdfs:label "Conferência virtual"@pt ;
-    rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
+    rdfs:comment "Uma etapa é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
 
 obs:VirtualParticipationEnvironment a owl:Class ;
     rdfs:label "Ambente virtual de participação social"@pt ;
@@ -189,7 +193,7 @@ obs:area a owl:ObjectProperty ;
     rdfs:range obs:PolicyArea .
 
 obs:commission a owl:ObjectProperty ;
-    rdfs:label "commissão"@pt ;
+    rdfs:label "comissão"@pt ;
     rdfs:range obs:NationalOrganizationCommission .
 
 obs:composition a owl:ObjectProperty ;
@@ -201,7 +205,7 @@ obs:conselho rdfs:label "conselho"@pt ;
 
 obs:convocation a owl:ObjectProperty ;
     rdfs:label "convocação"@pt ;
-    rdfs:range obs:Act .
+    rdfs:range obs:ConvocationDocument .
 
 obs:councilPositions a owl:DatatypeProperty ;
     rdfs:label "vagas para membros do conselho"@pt ;
@@ -410,6 +414,9 @@ obs:ConferenceMethodology a owl:Class ;
 obs:ConferenceStep a owl:Class ;
     rdfs:label "Etapa de conferência"@pt ;
     rdfs:comment "Uma etapa é um evento participativo e também é chamada de conferência, enquanto 'a' conferência é o processo todo"@pt .
+
+obs:ConvocationDocument a owl:Class ;
+    rdfs:label "Ato normativo"@pt .
 
 obs:Council a owl:Class ;
     rdfs:label "Conselho"@pt ;

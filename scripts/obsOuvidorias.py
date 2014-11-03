@@ -29,6 +29,197 @@ G(ouv,rdf.type,owl.Class)
 G(ouv,rdfs.label,L(louv,lang="pt"))
 G(ouv,rdfs.comment,L(u"Ouvidoria federal",lang="pt"))
 
+####
+
+cgu=obs.CGU
+lcgu=u"Controladoria-Geral da União (CGU)" # entra no SKOS
+G(cgu,rdf.type,owl.Class)
+G(cgu,rdfs.label,L(lcgu,lang="pt"))
+A.add_node(lcgu,style="filled") ###
+
+uni=obs.unit
+luni=u"unidade"
+Uni=obs.SFC
+lUni=u"Secretaria Federal de Controle Interno (SFC)"
+G(uni,rdf.type,owl.ObjectProperty)
+G(uni,rdfs.label,L(luni,lang="pt"))
+G(Uni,rdf.type,owl.Class)
+G(Uni,rdfs.label,L(lUni,lang="pt"))
+A.add_node(lUni,style="filled")
+A.add_edge(lcgu,lUni)
+e=A.get_edge(lcgu,lUni)
+e.attr["label"]=luni
+
+uni2=obs.competence
+luni2=u"competência"
+Uni2=obs.Audit
+lUni2=u"Auditoria"
+G(uni2,rdf.type,owl.ObjectProperty)
+G(uni2,rdfs.label,L(luni2,lang="pt"))
+G(Uni2,rdf.type,owl.Class)
+G(Uni2,rdfs.label,L(lUni2,lang="pt"))
+A.add_node(lUni2,style="filled")
+A.add_edge(lUni,lUni2)
+e=A.get_edge(lUni,lUni2)
+e.attr["label"]=luni2
+
+Uni2=obs.Regulation
+lUni2=u"Normatização"
+G(Uni2,rdf.type,owl.Class)
+G(Uni2,rdfs.label,L(lUni2,lang="pt"))
+A.add_node(lUni2,style="filled")
+A.add_edge(lUni,lUni2)
+e=A.get_edge(lUni,lUni2)
+e.attr["label"]=luni2
+
+Uni2=obs.Standardization
+lUni2=u"Padronização"
+G(Uni2,rdf.type,owl.Class)
+G(Uni2,rdfs.label,L(lUni2,lang="pt"))
+A.add_node(lUni2,style="filled")
+A.add_edge(lUni,lUni2)
+e=A.get_edge(lUni,lUni2)
+e.attr["label"]=luni2
+
+Uni2=obs.PublicPatrimonyDefense
+lUni2=u"Defesa de patrimônio público"
+G(Uni2,rdf.type,owl.Class)
+G(Uni2,rdfs.label,L(lUni2,lang="pt"))
+A.add_node(lUni2,style="filled")
+A.add_edge(lUni,lUni2)
+e=A.get_edge(lUni,lUni2)
+e.attr["label"]=luni2
+
+
+
+Uni=obs.CRG
+lUni=u"Corregedoria-Geral da União (CRG)"
+G(Uni,rdf.type,owl.Class)
+G(Uni,rdfs.label,L(lUni,lang="pt"))
+A.add_node(lUni,style="filled")
+A.add_edge(lcgu,lUni)
+e=A.get_edge(lcgu,lUni)
+e.attr["label"]=luni
+
+Uni2=obs.Correction
+lUni2=u"Correção"
+G(Uni2,rdf.type,owl.Class)
+G(Uni2,rdfs.label,L(lUni2,lang="pt"))
+A.add_node(lUni2,style="filled")
+A.add_edge(lUni,lUni2)
+e=A.get_edge(lUni,lUni2)
+e.attr["label"]=luni2
+
+
+
+Uni=obs.STPC
+lUni=u"Secretaria de Transparência e Prevenção à Corrupção (STPC)"
+G(Uni,rdf.type,owl.Class)
+G(Uni,rdfs.label,L(lUni,lang="pt"))
+A.add_node(lUni,style="filled")
+A.add_edge(lcgu,lUni)
+e=A.get_edge(lcgu,lUni)
+e.attr["label"]=luni
+
+Uni2=obs.Transparency
+lUni2=u"Transparência"
+G(Uni2,rdf.type,owl.Class)
+G(Uni2,rdfs.label,L(lUni2,lang="pt"))
+A.add_node(lUni2,style="filled")
+A.add_edge(lUni,lUni2)
+e=A.get_edge(lUni,lUni2)
+e.attr["label"]=luni2
+
+Uni2=obs.Prevention
+lUni2=u"Prevenção"
+G(Uni2,rdf.type,owl.Class)
+G(Uni2,rdfs.label,L(lUni2,lang="pt"))
+A.add_node(lUni2,style="filled")
+A.add_edge(lUni,lUni2)
+e=A.get_edge(lUni,lUni2)
+e.attr["label"]=luni2
+
+
+
+
+
+A.add_edge(lcgu,louv)
+e=A.get_edge(lcgu,louv)
+e.attr["label"]=luni
+
+lUni=louv
+Uni2=obs.FederalOmbudsmanCoordination
+lUni2=u"Coordenação de ouvidoria do poder executivo federal"
+G(Uni2,rdf.type,owl.Class)
+G(Uni2,rdfs.label,L(lUni2,lang="pt"))
+A.add_node(lUni2,style="filled")
+A.add_edge(lUni,lUni2)
+e=A.get_edge(lUni,lUni2)
+e.attr["label"]=luni2
+
+Uni2=obs.MessageReception
+lUni2=u"Recepção de mensagens"
+G(Uni2,rdf.type,owl.Class)
+G(Uni2,rdfs.label,L(lUni2,lang="pt"))
+A.add_node(lUni2,style="filled")
+A.add_edge(lUni,lUni2)
+e=A.get_edge(lUni,lUni2)
+e.attr["label"]=luni2
+
+Uni2=obs.ComplaintReception
+lUni2=u"Recepção de denúncias"
+G(Uni2,rdf.type,owl.Class)
+G(Uni2,rdfs.label,L(lUni2,lang="pt"))
+A.add_node(lUni2,style="filled")
+A.add_edge(lUni,lUni2)
+e=A.get_edge(lUni,lUni2)
+e.attr["label"]=luni2
+
+Uni2=obs.ComplaintForwarding
+lUni2=u"Encaminhamento de denúncias"
+G(Uni2,rdf.type,owl.Class)
+G(Uni2,rdfs.label,L(lUni2,lang="pt"))
+A.add_node(lUni2,style="filled")
+A.add_edge(lUni,lUni2)
+e=A.get_edge(lUni,lUni2)
+e.attr["label"]=luni2
+
+Uni2=obs.ManifestationReception
+lUni2=u"Recepção de manifestações referentes a serviços públicos"
+G(Uni2,rdf.type,owl.Class)
+G(Uni2,rdfs.label,L(lUni2,lang="pt"))
+A.add_node(lUni2,style="filled")
+A.add_edge(lUni,lUni2)
+e=A.get_edge(lUni,lUni2)
+e.attr["label"]=luni2
+
+Uni2=obs.ManifestationAnalysis
+lUni2=u"Análise de manifestações referentes a serviços públicos"
+G(Uni2,rdf.type,owl.Class)
+G(Uni2,rdfs.label,L(lUni2,lang="pt"))
+A.add_node(lUni2,style="filled")
+A.add_edge(lUni,lUni2)
+e=A.get_edge(lUni,lUni2)
+e.attr["label"]=luni2
+
+Uni2=obs.InformationAccessResponse
+lUni2=u"Resposta a pedido de acesso à informação"
+G(Uni2,rdf.type,owl.Class)
+G(Uni2,rdfs.label,L(lUni2,lang="pt"))
+A.add_node(lUni2,style="filled")
+A.add_edge(lUni,lUni2)
+e=A.get_edge(lUni,lUni2)
+e.attr["label"]=luni2
+
+
+
+
+
+
+
+
+####
+
 ativa=obs.ativa # SKOS
 lativa=u"ativa"
 G(ativa,rdf.type,owl.DatatypeProperty)
@@ -168,6 +359,11 @@ e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
 
 
+G(cgu,rdfs.subClassOf,OrgaoPub)
+A.add_edge(lcgu,lOrgaoPub)
+e=A.get_edge(lcgu,lOrgaoPub)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
 
 
 sp=obs.IndirectPublicAdministrationAgency
@@ -561,7 +757,6 @@ A.add_edge(lsp  ,lOu)
 e=A.get_edge(lsp,lOu)
 e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
-
 
 
 nome=("../figs/obsOuvidoria.png")
