@@ -440,6 +440,43 @@ A.add_edge(lcons,lde)
 e=A.get_edge(lcons,lde)
 e.attr["label"]=lti
 
+ti=obs.competence
+lti=u"competência"
+de=obs.Propose
+lde=u"Propor" # SKOS
+co=obs.Evaluate
+lco=u"Avaliar" # SKOS
+no=obs.Manage
+lno=u"Gerir" # SKOS
+oo=obs.Assist
+loo=u"Auxiliar" # SKOS
+G(de,rdf.type,owl.Class)
+G(de,rdfs.label,L(lde,lang="pt"))
+G(co,rdf.type,owl.Class)
+G(co,rdfs.label,L(lco,lang="pt"))
+
+G(no,rdf.type,owl.Class)
+G(no,rdfs.label,L(lno,lang="pt"))
+G(oo,rdf.type,owl.Class)
+G(oo,rdfs.label,L(loo,lang="pt"))
+
+G(ti,rdf.type,owl.ObjectProperty)
+G(ti,rdfs.label,L(lti,lang="pt"))
+B=r.BNode()
+G(B, owl.unionOf,de)
+G(B, owl.unionOf,co)
+G(B, owl.unionOf,no)
+G(B, owl.unionOf,oo)
+G(ca,rdfs.range,B)
+A.add_node(lde,style="filled")
+nd=A.get_node(lde)
+nd.attr["label"]=(u"<%s<br />%s<br />%s<br />%s>")%(lde,lco,lno,loo)
+A.add_edge(lcons,lde)
+e=A.get_edge(lcons,lde)
+e.attr["label"]=lti
+
+
+
 #####
 
 mi=obs.meetingsInterval
@@ -1107,6 +1144,25 @@ G(mc,rdfs.comment,L(u"O método de escolha do presidente é observado pelo <obje
 G(mc,rdfs.range,gb)
 A.add_edge(lbo,lgb)
 e=A.get_edge(lbo,lgb)
+e.attr["label"]=lmc
+
+sp=obs.Minutes
+lsp=u"Ata" # SKOS TTM
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+A.add_node(lsp,style="filled") ###
+
+mc=obs.provides
+lmc=u"disponibiliza"
+G(mc,rdf.type,owl.ObjectProperty)
+G(mc,rdfs.label,L(lmc,lang="pt"))
+A.add_edge(  lcons,lsp)
+e=A.get_edge(lcons,lsp)
+e.attr["label"]=lmc
+
+lre=u"Resolução" #SKOS
+A.add_edge(  lcons,lsp)
+e=A.get_edge(lcons,lsp)
 e.attr["label"]=lmc
 
 

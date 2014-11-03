@@ -232,10 +232,11 @@ lmc=u"Método de seleção de participantes"
 G(mc,rdf.type,skos.Concept)
 G(mc,skos.prefLabel,L(lmc,lang="pt"))
 
-mc=vbs.agenda
-lmc=u"pauta"
+mc=vbs.Agenda
+lmc=u"Pauta"
 G(mc,rdf.type,skos.Concept)
 G(mc,skos.prefLabel,L(lmc,lang="pt"))
+G(mc,skos.altLabel,L(u"Agenda",lang="pt"))
 
 mc=vbs.QualityVote
 lmc=u"Voto de qualidade"
@@ -305,6 +306,18 @@ lsp=u"presidência"
 G(sp,rdf.type,skos.Concept)
 G(sp,skos.prefLabel,L(lsp,lang="pt"))
 G(sp,skos.scopeNote,L(u"presidência de conselho.",lang="pt"))
+
+sp=vbs.Mandate
+lsp=u"Mandato"
+G(sp,rdf.type,skos.Concept)
+G(sp,skos.prefLabel,L(lsp,lang="pt"))
+
+foo=vbs.Competence
+lfoo=u"Competência"
+G(foo,rdf.type,skos.Concept)
+G(foo,skos.prefLabel,L(lfoo,lang="pt"))
+
+
 
 f=open("../rdf/vbsConselho.rdf","wb")
 f.write(g.serialize())
