@@ -1,4 +1,4 @@
-# Vocabulário Controlado para Biblioteca Digital de Participação Social
+# Vocabulário da Biblioteca (semântica de participação) Social
 
 ## Perguntas novas:
 * Quando levantamos o nome de cada conferência e conselho? Somente os nacionais? De órgãos federais, como ministérios? (pegar referência na thread puxada pela Carmen)
