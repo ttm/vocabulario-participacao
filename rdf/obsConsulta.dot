@@ -2,10 +2,10 @@ digraph  {
 	node [label="\N"];
 	"Consulta pública"	 [color="#A29999",
 		style=filled];
-	Tema	 [style=filled];
-	"Consulta pública" -> Tema	 [label=possui];
 	"Metodologia de consulta"	 [style=filled];
 	"Consulta pública" -> "Metodologia de consulta"	 [label=metodologia];
+	Tema	 [style=filled];
+	"Consulta pública" -> Tema	 [label=possui];
 	1	 [color="#A2F3D1",
 		label="xsd:string",
 		style=filled];
