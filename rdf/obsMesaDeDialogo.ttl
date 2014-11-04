@@ -9,6 +9,23 @@ obs:DialogueTable a owl:Class ;
     rdfs:label "Mesa de diálogo"@pt ;
     rdfs:subClassOf obs:ParticipationMechanism .
 
+obs:FederalProgram a owl:Class ;
+    rdfs:label "Programa federal"@pt .
+
+obs:PublicPolicy a owl:Class ;
+    rdfs:label "Política pública"@pt .
+
+obs:defines a owl:ObjectProperty ;
+    rdfs:label "define"@pt ;
+    rdfs:range obs:ConsensualCompromise .
+
+obs:delivers a owl:ObjectProperty ;
+    rdfs:label "entrega"@pt .
+
+obs:directs a owl:ObjectProperty ;
+    rdfs:label "orienta"@pt ;
+    rdfs:range obs:PublicAgency .
+
 obs:iterate a owl:ObjectProperty ;
     rdfs:label "itera"@pt ;
     rdfs:range obs:ParticipationInstanceOrMechanism .
@@ -16,9 +33,29 @@ obs:iterate a owl:ObjectProperty ;
 obs:periodicity a owl:DatatypeProperty ;
     rdfs:label "periodicidade"@pt .
 
+obs:permeates a owl:ObjectProperty ;
+    rdfs:label "permeia"@pt .
+
+obs:type a owl:ObjectProperty ;
+    rdfs:label "tipo"@pt ;
+    rdfs:range obs:GuidingMechanism .
+
+obs:ConsensualCompromise a owl:Class ;
+    rdfs:label "Compromisso consensual"@pt ;
+    rdfs:subClassOf obs:NormativeAct .
+
+obs:GuidingMechanism a owl:Class ;
+    rdfs:label "Mecanismo orientador"@pt .
+
+obs:NormativeAct a owl:Class ;
+    rdfs:label "Ato normativo"@pt .
+
 obs:ParticipationMechanism a owl:Class ;
     rdfs:label "Mecanismo de participação social"@pt ;
     rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
+
+obs:PublicAgency a owl:Class ;
+    rdfs:label "Órgão público"@pt .
 
 obs:ParticipationInstanceOrMechanism a owl:Class ;
     rdfs:label "Instância ou mecanismo de participação social"@pt .

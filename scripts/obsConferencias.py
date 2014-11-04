@@ -315,7 +315,7 @@ e.attr["arrowsize"]=2
 #### TTM
 ca=obs.convocation
 lca=u"convocação"
-ac=obs.Act
+ac=obs.NormativeAct
 lac=u"Ato normativo" # SKOS Ato Institucional
 ac2=obs.ConvocationDocument
 lac2=u"Documento convocatório" # SKOS Ato Institucional

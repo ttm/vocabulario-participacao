@@ -3,27 +3,75 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/iterate">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/ParticipationInstanceOrMechanism"/>
-    <rdfs:label xml:lang="pt">itera</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/ParticipationInstanceOrMechanism">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="pt">Instância ou mecanismo de participação social</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/periodicity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="pt">periodicidade</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/DialogueTable">
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/ParticipationMechanism"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Mesa de diálogo</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/ParticipationMechanism">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="pt">Mecanismo de participação social</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/ParticipationInstanceOrMechanism"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/periodicity">
+    <rdfs:label xml:lang="pt">periodicidade</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/ConsensualCompromise">
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/NormativeAct"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Compromisso consensual</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/defines">
+    <rdfs:label xml:lang="pt">define</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/ConsensualCompromise"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/type">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="pt">tipo</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/GuidingMechanism"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/delivers">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="pt">entrega</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/directs">
+    <rdfs:label xml:lang="pt">orienta</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/PublicAgency"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/DialogueTable">
+    <rdfs:label xml:lang="pt">Mesa de diálogo</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/ParticipationMechanism"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/permeates">
+    <rdfs:label xml:lang="pt">permeia</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/iterate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="pt">itera</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.org/socialparticipation/obs/ParticipationInstanceOrMechanism"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/PublicAgency">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Órgão público</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/FederalProgram">
+    <rdfs:label xml:lang="pt">Programa federal</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/PublicPolicy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Política pública</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/GuidingMechanism">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Mecanismo orientador</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/NormativeAct">
+    <rdfs:label xml:lang="pt">Ato normativo</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>

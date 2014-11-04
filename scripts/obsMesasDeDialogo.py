@@ -30,7 +30,6 @@ nd=A.get_node(lsp)
 nd.attr['color']="#A29999"
 lmesa=lsp
 
-
 nome=obs.periodicity
 lnome=u"periodicidade"
 G(nome,rdf.type,owl.DatatypeProperty)
@@ -48,7 +47,6 @@ orgao=obs.iterate
 lorgao=u"itera"
 pm__=obs.ParticipationInstanceOrMechanism # SKOS
 lpm__=u"Instância ou mecanismo de participação social"
-A.add_node(lpm__,style="filled")
 G(pm__,rdf.type,owl.Class)
 G(pm__,rdfs.label,L(lpm__,lang="pt"))
 G(orgao,rdf.type,owl.ObjectProperty)
@@ -75,6 +73,107 @@ A.add_edge(lmesa,lpm_)
 e=A.get_edge(lmesa,lpm_)
 e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
+
+orgao=obs.type
+lorgao=u"tipo"
+pm__=obs.GuidingMechanism # SKOS
+lpm__=u"Mecanismo orientador"
+G(pm__,rdf.type,owl.Class)
+G(pm__,rdfs.label,L(lpm__,lang="pt"))
+G(orgao,rdf.type,owl.ObjectProperty)
+G(orgao,rdfs.label,L(lorgao,lang="pt"))
+G(orgao,rdfs.range,pm__)
+A.add_node(lpm__,style="filled")
+A.add_edge(lmesa,lpm__)
+e=A.get_edge(lmesa,lpm__)
+e.attr["label"]=lorgao
+lpm__2=lpm__
+
+orgao=obs.defines
+lorgao=u"define"
+pm__=obs.ConsensualCompromise # SKOS
+lpm__=u"Compromisso consensual"
+G(pm__,rdf.type,owl.Class)
+G(pm__,rdfs.label,L(lpm__,lang="pt"))
+G(orgao,rdf.type,owl.ObjectProperty)
+G(orgao,rdfs.label,L(lorgao,lang="pt"))
+G(orgao,rdfs.range,pm__)
+A.add_node(lpm__,style="filled")
+A.add_edge(lmesa,lpm__)
+e=A.get_edge(lmesa,lpm__)
+e.attr["label"]=lorgao
+lpm__3=lpm__
+pm__3=pm__
+
+orgao=obs.delivers
+lorgao=u"entrega"
+G(orgao,rdf.type,owl.ObjectProperty)
+G(orgao,rdfs.label,L(lorgao,lang="pt"))
+A.add_edge(  lpm__2,lpm__)
+e=A.get_edge(lpm__2,lpm__)
+e.attr["label"]=lorgao
+
+
+orgao=obs.permeates
+lorgao=u"permeia"
+pm__=obs.FederalProgram # SKOS
+lpm__=u"Programa federal"
+G(pm__,rdf.type,owl.Class)
+G(pm__,rdfs.label,L(lpm__,lang="pt"))
+G(orgao,rdf.type,owl.ObjectProperty)
+G(orgao,rdfs.label,L(lorgao,lang="pt"))
+A.add_node(lpm__,style="filled")
+A.add_edge(lpm__3,lpm__)
+e=A.get_edge(lpm__3,lpm__)
+e.attr["label"]=lorgao
+lpm__4=lpm__
+
+pm__=obs.PublicPolicy # SKOS
+lpm__=u"Política pública"
+G(pm__,rdf.type,owl.Class)
+G(pm__,rdfs.label,L(lpm__,lang="pt"))
+A.add_node(lpm__,style="filled")
+A.add_edge(lpm__3,lpm__)
+e=A.get_edge(lpm__3,lpm__)
+e.attr["label"]=lorgao
+lpm__5=lpm__
+
+pm_=obs.NormativeAct # SKOS
+lpm_=u"Ato normativo"
+G(pm_,rdf.type,owl.Class)
+G(pm_,rdfs.label,L(lpm_,lang="pt"))
+G(pm__3,rdfs.subClassOf,pm_)
+A.add_node(lpm_,style="filled")
+A.add_edge(lpm__3,lpm_)
+e=A.get_edge(lpm__3,lpm_)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+
+orgao=obs.directs
+lorgao=u"orienta"
+pm__=obs.PublicAgency # SKOS
+lpm__=u"Órgão público"
+G(pm__,rdf.type,owl.Class)
+G(pm__,rdfs.label,L(lpm__,lang="pt"))
+G(orgao,rdf.type,owl.ObjectProperty)
+G(orgao,rdfs.label,L(lorgao,lang="pt"))
+G(orgao,rdfs.range,pm__)
+A.add_node(lpm__,style="filled")
+
+A.add_edge(lpm_,lpm__)
+e=A.get_edge(lpm_,lpm__)
+e.attr["label"]=lorgao
+
+A.add_edge(  lpm__4,lpm__)
+e=A.get_edge(lpm__4,lpm__)
+e.attr["label"]=lorgao
+
+
+A.add_edge(  lpm__5,lpm__)
+e=A.get_edge(lpm__5,lpm__)
+e.attr["label"]=lorgao
+
 
 
 nome=("../figs/obsMesaDeDialogo.png")
