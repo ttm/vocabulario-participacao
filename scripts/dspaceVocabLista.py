@@ -16,10 +16,14 @@ store="../rdf/vbsConferencia.rdf"
 store2="../rdf/vbsConselho.rdf"
 store3="../rdf/vbsOuvidoria.rdf"
 store3="../rdf/vbsConferenciaDocsRes.rdf"
+store4="../rdf/vbsConsulta.rdf"
+store5="../rdf/vbsMesaDeDialogo.rdf"
 g = r.Graph()
 g.load(store)
 g.load(store2)
 g.load(store3)
+g.load(store4)
+g.load(store5)
 
 PREFIX="""PREFIX skos: <http://www.w3.org/2004/02/skos/core#>"""
 
