@@ -1019,7 +1019,7 @@ e=A.get_edge(lsp,lgb)
 e.attr["label"]=lmc
 
 yc=obs.created
-lyc=u"criação"
+lyc=u"criado"
 G(yc,rdf.type,owl.DatatypeProperty)
 G(nm,rdfs.label,L(lyc,lang="pt"))
 G(nm,rdfs.range,xsd.dateTime)

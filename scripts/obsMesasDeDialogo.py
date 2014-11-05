@@ -309,6 +309,8 @@ e.attr["label"]=lco
 
 pm__=obs.Letter # SKOS
 lpm__=u"Carta"
+G(pm__,rdf.type,owl.Class)
+G(pm__,rdfs.label,L(lpm__,lang="pt"))
 G(pm__,rdfs.subClassOf,sp)
 A.add_node(lpm__,style="filled") ###
 A.add_edge(lpm__,lsp)
@@ -318,6 +320,8 @@ e.attr["arrowsize"]=2
 
 pm__=obs.Petition # SKOS
 lpm__=u"Requerimento"
+G(pm__,rdf.type,owl.Class)
+G(pm__,rdfs.label,L(lpm__,lang="pt"))
 G(pm__,rdfs.subClassOf,sp)
 A.add_node(lpm__,style="filled") ###
 A.add_edge(lpm__,lsp)
@@ -327,6 +331,8 @@ e.attr["arrowsize"]=2
 
 pm__=obs.AuditReport # SKOS
 lpm__=u"Relatório de auditoria"
+G(pm__,rdf.type,owl.Class)
+G(pm__,rdfs.label,L(lpm__,lang="pt"))
 G(pm__,rdfs.subClassOf,sp)
 A.add_node(lpm__,style="filled") ###
 A.add_edge(lpm__,lsp)
@@ -345,6 +351,8 @@ e.attr["arrowsize"]=2
 
 pm__=obs.NormativeOrdinance # SKOS
 lpm__=u"Portaria normativa"
+G(pm__,rdf.type,owl.Class)
+G(pm__,rdfs.label,L(lpm__,lang="pt"))
 G(pm__,rdfs.subClassOf,sp)
 A.add_node(lpm__,style="filled") ###
 A.add_edge(lpm__,lsp)
@@ -365,18 +373,113 @@ e.attr["arrowsize"]=2
 
 pm__=obs.CreationOrdinance# SKOS
 lpm__=u"Portaria de criação"
+G(pm__,rdf.type,owl.Class)
+G(pm__,rdfs.label,L(lpm__,lang="pt"))
 G(pm__,rdfs.subClassOf,pm__2)
 A.add_node(lpm__,style="filled") ###
 A.add_edge(  lpm__,lpm__2)
 e=A.get_edge(lpm__,lpm__2)
 e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
+lpm__jj=lpm__
 
+orgao=obs.includes
+lorgao=u"inclui"
+pm__=obs.CouncilMinute # SKOS
+lpm__=u"Ata de conselho"
+G(pm__,rdf.type,owl.Class)
+G(pm__,rdfs.label,L(lpm__,lang="pt"))
+G(orgao,rdf.type,owl.ObjectProperty)
+G(orgao,rdfs.label,L(lorgao,lang="pt"))
+A.add_node(lpm__,style="filled")
+A.add_edge(  lpm__jj,lpm__)
+e=A.get_edge(lpm__jj,lpm__)
+e.attr["label"]=lorgao
 
+pm__=obs.SocialMovementOffice# SKOS
+lpm__=u"Ofício de movimento social"
+G(pm__,rdf.type,owl.Class)
+G(pm__,rdfs.label,L(lpm__,lang="pt"))
+A.add_node(lpm__,style="filled")
+A.add_edge(  lpm__jj,lpm__)
+e=A.get_edge(lpm__jj,lpm__)
+e.attr["label"]=lorgao
 
+orgao=obs.reason
+lorgao=u"motivo"
+pm__=obs.Demand # SKOS
+lpm__=u"Demanda"
+G(pm__,rdf.type,owl.Class)
+G(pm__,rdfs.label,L(lpm__,lang="pt"))
+G(orgao,rdf.type,owl.ObjectProperty)
+G(orgao,rdfs.label,L(lorgao,lang="pt"))
+A.add_node(lpm__,style="filled")
+A.add_edge(  lpm__jj,lpm__)
+e=A.get_edge(lpm__jj,lpm__)
+e.attr["label"]=lorgao
 
+pm__=obs.Complaint # SKOS
+lpm__=u"Denúncia"
+G(pm__,rdf.type,owl.Class)
+G(pm__,rdfs.label,L(lpm__,lang="pt"))
+A.add_node(lpm__,style="filled")
+A.add_edge(  lpm__jj,lpm__)
+e=A.get_edge(lpm__jj,lpm__)
+e.attr["label"]=lorgao
 
+nome=obs.problem
+lnome=u"problema"
+G(nome,rdf.type,owl.DatatypeProperty)
+G(nome,rdfs.label,L(lnome,lang="pt"))
+G(nome,rdfs.range,xsd.string)
+A.add_node(COUNT,style="filled")
+nd=A.get_node(COUNT)
+nd.attr["label"]="xsd:string"
+nd.attr['color']="#A2F3D1"
+A.add_edge(  lpm__jj,COUNT)
+e=A.get_edge(lpm__jj,COUNT); COUNT+=1
+e.attr["label"]=lnome
 
+orgao=obs.creation
+lorgao=u"criação"
+G(orgao,rdf.type,owl.ObjectProperty)
+G(orgao,rdfs.label,L(lorgao,lang="pt"))
+pm__=obs.CreationOrdinance# SKOS
+lpm__=u"Portaria de criação"
+G(orgao,rdfs.range,pm__)
+A.add_edge(  lmesa,lpm__)
+e=A.get_edge(lmesa,lpm__)
+e.attr["label"]=lorgao
+
+sp=obs.ExecutiveOffice
+lsp=u"Secretaria executiva" # SKOS TTM
+sp_=obs.PublicAgency # SKOS
+lsp_=u"Órgão público"
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+G(sp,rdfs.subClassOf,sp_)
+A.add_node(lsp,style="filled") ###
+A.add_edge(lsp,lsp_)
+e=A.get_edge(lsp,lsp_)
+e.attr["arrowhead"]="empty"
+e.attr["arrowsize"]=2
+
+orgao=obs.organization
+lorgao=u"organização"
+G(orgao,rdf.type,owl.ObjectProperty)
+G(orgao,rdfs.label,L(lorgao,lang="pt"))
+A.add_edge(  lmesa,lsp)
+e=A.get_edge(lmesa,lsp)
+e.attr["label"]=lorgao
+
+sp=obs.Coordinate
+lsp=u"Coordenação" # SKOS TTM
+G(sp,rdf.type,owl.Class)
+G(sp,rdfs.label,L(lsp,lang="pt"))
+A.add_node(lsp,style="filled") ###
+A.add_edge(  lmesa,lsp)
+e=A.get_edge(lmesa,lsp)
+e.attr["label"]=lorgao
 
 
 
