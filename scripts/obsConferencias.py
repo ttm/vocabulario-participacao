@@ -317,7 +317,7 @@ ca=obs.convocation
 lca=u"convocação"
 ac=obs.NormativeAct
 lac=u"Ato normativo" # SKOS Ato Institucional
-ac2=obs.ConvocationDocument
+ac2=obs.ConveningDocument
 lac2=u"Documento convocatório" # SKOS Ato Institucional
 
 pu=obs.datePublished

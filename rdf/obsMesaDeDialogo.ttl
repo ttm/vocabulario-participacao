@@ -5,6 +5,10 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+obs:AuditReport rdfs:subClassOf obs:ReferenceDocument .
+
+obs:CreationOrdinance rdfs:subClassOf obs:NormativeOrdinance .
+
 obs:DialogueTable a owl:Class ;
     rdfs:label "Mesa de diálogo"@pt ;
     rdfs:subClassOf obs:ParticipationMechanism .
@@ -12,8 +16,35 @@ obs:DialogueTable a owl:Class ;
 obs:FederalProgram a owl:Class ;
     rdfs:label "Programa federal"@pt .
 
+obs:Letter rdfs:subClassOf obs:ReferenceDocument .
+
+obs:Petition rdfs:subClassOf obs:ReferenceDocument .
+
 obs:PublicPolicy a owl:Class ;
     rdfs:label "Política pública"@pt .
+
+obs:Regiment rdfs:subClassOf obs:ReferenceDocument .
+
+obs:WorkGroup a owl:Class ;
+    rdfs:label "Grupo de trabalho"@pt ;
+    rdfs:subClassOf obs:PublicAgency .
+
+obs:articulates a owl:ObjectProperty ;
+    rdfs:label "articula"@pt ;
+    rdfs:range obs:SGPR .
+
+obs:composition a owl:ObjectProperty ;
+    rdfs:label "composição"@pt,
+        "possui"@pt ;
+    rdfs:range obs:ManagementBody .
+
+obs:convenes a owl:ObjectProperty ;
+    rdfs:label "convoca"@pt ;
+    rdfs:range obs:SGPR .
+
+obs:coordinates a owl:ObjectProperty ;
+    rdfs:label "coordena"@pt ;
+    rdfs:range obs:SGPR .
 
 obs:defines a owl:ObjectProperty ;
     rdfs:label "define"@pt ;
@@ -26,15 +57,31 @@ obs:directs a owl:ObjectProperty ;
     rdfs:label "orienta"@pt ;
     rdfs:range obs:PublicAgency .
 
+obs:divulges a owl:ObjectProperty ;
+    rdfs:label "divulga"@pt ;
+    rdfs:range obs:SGPR .
+
 obs:iterate a owl:ObjectProperty ;
     rdfs:label "itera"@pt ;
     rdfs:range obs:ParticipationInstanceOrMechanism .
+
+obs:member a owl:ObjectProperty ;
+    rdfs:label "membro"@pt ;
+    rdfs:range obs:Participant .
+
+obs:membersChoiceMethod a owl:DatatypeProperty ;
+    rdfs:label "método de escolha dos membros"@pt ;
+    rdfs:range xsd:string .
 
 obs:periodicity a owl:DatatypeProperty ;
     rdfs:label "periodicidade"@pt .
 
 obs:permeates a owl:ObjectProperty ;
     rdfs:label "permeia"@pt .
+
+obs:purpose a owl:DatatypeProperty ;
+    rdfs:label "propósito"@pt ;
+    rdfs:range xsd:string .
 
 obs:type a owl:ObjectProperty ;
     rdfs:label "tipo"@pt ;
@@ -47,16 +94,32 @@ obs:ConsensualCompromise a owl:Class ;
 obs:GuidingMechanism a owl:Class ;
     rdfs:label "Mecanismo orientador"@pt .
 
-obs:NormativeAct a owl:Class ;
-    rdfs:label "Ato normativo"@pt .
+obs:ManagementBody a owl:Class ;
+    rdfs:label "Corpo gestor"@pt .
+
+obs:NormativeOrdinance rdfs:subClassOf obs:NormativeAct,
+        obs:ReferenceDocument .
+
+obs:Participant a owl:Class ;
+    rdfs:label "Participante"@pt .
 
 obs:ParticipationMechanism a owl:Class ;
     rdfs:label "Mecanismo de participação social"@pt ;
     rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
 
-obs:PublicAgency a owl:Class ;
-    rdfs:label "Órgão público"@pt .
+obs:NormativeAct a owl:Class ;
+    rdfs:label "Ato normativo"@pt .
 
 obs:ParticipationInstanceOrMechanism a owl:Class ;
     rdfs:label "Instância ou mecanismo de participação social"@pt .
+
+obs:PublicAgency a owl:Class ;
+    rdfs:label "Órgão público"@pt .
+
+obs:SGPR a owl:Class ;
+    rdfs:label "SGPR"@pt ;
+    rdfs:comment "Secretaria-Geral da Presidência da República"@pt .
+
+obs:ReferenceDocument a owl:Class ;
+    rdfs:label "Documento de referência"@pt .
 
