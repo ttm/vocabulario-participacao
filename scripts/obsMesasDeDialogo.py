@@ -1,6 +1,8 @@
 #-*- coding: utf-8 -*-
 import rdflib as r, pygraphviz as gv
 def G(S,P,O):
+    if type(O)==type("astring"):
+        O=L(O)
     g.add((S,P,O))
 L=r.Literal
 COUNT=1

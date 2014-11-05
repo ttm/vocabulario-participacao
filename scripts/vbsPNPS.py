@@ -941,7 +941,7 @@ G(foo,skos.prefLabel,L(lfoo,lang="pt"))
 G(foo,skos.altLabel,L(u"Participação virtual",lang="pt"))
 
 foo=vbs.SocialDemandsMonitoringTable
-lfoo=u"Mesa de Monitoramento das Demandas Sociais"
+lfoo=u"Mesa de monitoramento das demandas sociais"
 G(foo,rdf.type,skos.Concept)
 G(foo,skos.prefLabel,L(lfoo,lang="pt"))
 
