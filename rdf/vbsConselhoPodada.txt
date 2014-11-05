@@ -6,21 +6,18 @@ Ato normativo
 Comissão interna
  nota de escopo: Comissão interna de conselho
 Conferência
- forma alternativa: Conferência de políticas públicas
  forma alternativa: Conferência nacional
- definição: Instância colegiada de temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas
+ forma alternativa: Conferência de políticas públicas
  definição: Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo
+ definição: Instância colegiada de temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas
 Conselho
- forma alternativa: voto de minerva
+ forma alternativa: Conselho de políticas públicas
  forma alternativa: Conselho gestor
  forma alternativa: Conselho nacional de políticas públicas
- forma alternativa: voto de desempate
- forma alternativa: Conselho de políticas públicas
- definição: Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)
  definição: decisão a ser referenciada pelo grupo legitimado posteriormente
- definição: voto de desempate de votação
- nota de escopo: espaço contínuo de participação social
+ definição: Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)
  nota de escopo: Espaço participativo com a finalidade de incidir nas políticas públicas de determinado tema, nos quais é prevista certa permanência no tempo, composto por representantes do poder público e da sociedade civil, esta podendo ser dividida em diferentes segmentos.
+ nota de escopo: espaço contínuo de participação social
 Decisão ad referendum
 Decreto
 Desenvolvimento econômico
@@ -38,8 +35,8 @@ Instância consultiva
 Instância de participação social
  forma alternativa: Espaço participativo
  forma alternativa: Instância participativa
- forma alternativa: Espaço de participação social
  forma alternativa: Instituição participativa
+ forma alternativa: Espaço de participação social
  termo relacionado: Mecanismo de participação social
 Instância deliberativa
 Lei
@@ -70,13 +67,16 @@ Reformulação
 Regimento interno
  forma alternativa: Estatuto
 Resolução
- forma alternativa: Deliberação
  forma alternativa: Proposta
- forma alternativa: Diretriz
- forma alternativa: Tese
+ forma alternativa: Deliberação
  forma alternativa: Decisão
+ forma alternativa: Tese
+ forma alternativa: Diretriz
 Secretaria
 Secretaria executiva
 Sistema nacional
 tema
 Voto de qualidade
+ forma alternativa: voto de desempate
+ forma alternativa: voto de minerva
+ definição: voto de desempate de votação

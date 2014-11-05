@@ -1,6 +1,6 @@
 |--> Área de política
- forma alternativa: Área política
  forma alternativa: Área temática
+ forma alternativa: Área política
    |--> Desenvolvimento econômico
     nota de escopo: arranjos produtivos locais, assistência técnica e extensão rural, desenvolvimento regional e desenvolvimento rural sustentável e solidário
    |--> Garantia de direitos
@@ -16,9 +16,9 @@
    |--> Portaria ministerial
     nota de escopo: Portaria emitida por um ou mais ministérios
    |--> Resolução
-    forma alternativa: Decisão
     forma alternativa: Deliberação
     forma alternativa: Tese
+    forma alternativa: Decisão
     forma alternativa: Diretriz
     forma alternativa: Proposta
 |--> Corpo gestor de conferência
@@ -28,16 +28,16 @@
 |--> formulação
 |--> Governo
 |--> grupo étnico
- termo relacionado: Cota
  termo relacionado: Vaga
+ termo relacionado: Cota
 |--> Instância de participação social
  termo relacionado: Mecanismo de participação social
    |--> Comissão
    |--> Conferência
-    forma alternativa: Conferência de políticas públicas
     forma alternativa: Conferência nacional
-    definição: Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo
+    forma alternativa: Conferência de políticas públicas
     definição: Instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas
+    definição: Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo
      |--> Convocação de conferência
      |--> Edição de conferência
      |--> Etapa de conferência

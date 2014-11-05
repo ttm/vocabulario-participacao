@@ -1,12 +1,27 @@
+Ato normativo
+Cliente
+Contribuidor
 Controle
+Controle civil
 Controle externo
 Controle interno
+Denunciante
 Denúncia
 Elogio
+Instância de participação social
+ forma alternativa: Instância participativa
+ forma alternativa: Instituição participativa
+ forma alternativa: Espaço de participação social
+ forma alternativa: Espaço participativo
+ termo relacionado: Mecanismo de participação social
 Instância ou mecanismo de participação social
 LAI (Lei de Acesso à Informação)
+Lei
+Manifestante
 Manifestação
 Manifestação anônima
+Mecanismo de participação social
+Ministério
 OGU (Ouvidoria Geral da União)
 Órgão da administração pública
 Órgão da administração pública indireta
@@ -14,16 +29,20 @@ OGU (Ouvidoria Geral da União)
 Ouvidor
  termo relacionado: Ouvidoria
 Ouvidoria
+ forma alternativa: Ouvidoria pública federal
  forma alternativa: Ouvidoria federal
  forma alternativa: Ouvidoria pública
- forma alternativa: Ouvidoria pública federal
  definição: instância de controle e participação social responsável pelo tratamento das reclamações, solicitações, denúncias, sugestões e elogios relativos às políticas e aos serviços públicos, prestados sob qualquer forma ou regime, com vistas ao aprimoramento da gestão pública
 Ouvidoria ativa
 Ouvidoria passiva
  termo relacionado: Ouvidoria ativa
+Participante
+Portaria
 Reclamação
 Reserva de identidade
 SAC (Sistema de Atendimento ao Cidadão)
+Secretaria
 Sistema Federal de Ouvidorias
+Sociedade civil não organizada
 Solicitação
 Sugestão
