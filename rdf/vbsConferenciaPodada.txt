@@ -99,10 +99,10 @@ regimento
 Relator
 Resolução
  forma alternativa: Deliberação
- forma alternativa: Tese
- forma alternativa: Decisão
- forma alternativa: Diretriz
  forma alternativa: Proposta
+ forma alternativa: Decisão
+ forma alternativa: Tese
+ forma alternativa: Diretriz
 Secretaria
 Secretaria com status de ministério
 Secretário

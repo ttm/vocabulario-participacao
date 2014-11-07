@@ -33,7 +33,7 @@ G(ouv,rdf.type,skos.Concept)
 
 def C(uriref,labels,broaders=[]):
     G(uriref,rdf.type,skos.Concept)
-    if type(labels)==type("astring"):
+    if type(labels)==type(u"astring"):
         G(uriref,skos.prefLabel,L(labels,lang="pt"))
     else:
         G(uriref,skos.prefLabel,L(labels[0],lang="pt"))

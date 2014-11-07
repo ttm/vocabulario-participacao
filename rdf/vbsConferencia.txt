@@ -17,10 +17,10 @@
     nota de escopo: Portaria emitida por um ou mais ministérios
    |--> Resolução
     forma alternativa: Deliberação
-    forma alternativa: Tese
-    forma alternativa: Decisão
-    forma alternativa: Diretriz
     forma alternativa: Proposta
+    forma alternativa: Decisão
+    forma alternativa: Tese
+    forma alternativa: Diretriz
 |--> Corpo gestor de conferência
 |--> Cota
  termo relacionado: Vaga
