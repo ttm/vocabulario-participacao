@@ -31,7 +31,7 @@ ouv=vbs.SocialLibraryManagementCommittee# SKOS
 louv =u"Comitê gestor da bibliteca social"
 G(ouv,rdf.type,skos.Concept)
 
-def C(uriref,labels):
+def C(uriref,labels,broaders=[]):
     G(uriref,rdf.type,skos.Concept)
     if type(labels)==type("astring"):
         G(uriref,skos.prefLabel,L(labels,lang="pt"))
@@ -39,6 +39,13 @@ def C(uriref,labels):
         G(uriref,skos.prefLabel,L(labels[0],lang="pt"))
         for label in labels[1:]:
             G(uriref,skos.altLabel,L(label,lang="pt"))
+    if broaders:
+        if type(broaders) in [type(range(5)),type((3,4,5))]:
+            for broader in broaders:
+                G(uriref,skos.broader,broader)
+        else:
+            G(uriref,skos.broader,broaders)
+
 louv =u"Caderno de respostas"
 ouv=vbs.ResponsesNotebook# SKOS
 C(ouv,louv)
@@ -53,14 +60,14 @@ C(vbs.Deal,[u"Acordo",u"Parceria"])
 C(vbs.Partnership,u"Parceria")
 C(vbs.ConferenceProceedings,u"Anais de conferência")
 C(vbs.Presentation,u"Apresentação")
-C(vbs.JournalArticle,[u"Artigo em periódico",u"Artigo de periódico"])
+C(vbs.JournalArticle,[u"Artigo em periódico",u"Artigo de periódico"],vbs.AcademicWork)
 C(vbs.MeetingMinute,u"Ata de reunião")
 
 C(vbs.Act,u"Ato")
-C(vbs.ExplanatoryMemorandum,u"Exposição de motivos")
-C(vbs.Resolution,[u"Resolução",u"Deliberação"])
-C(vbs.Motion,u"Moção")
-C(vbs.Recommendation,u"Recomendação")
+C(vbs.ExplanatoryMemorandum,u"Exposição de motivos",vbs.Act)
+C(vbs.Resolution,[u"Resolução",u"Deliberação"],vbs.Act)
+C(vbs.Motion,u"Moção",vbs.Act)
+C(vbs.Recommendation,u"Recomendação",vbs.Act)
 
 C(vbs.NormativeAct,u"Ato normativo")
 C(vbs.Audiovisual,u"Audiovisual")
@@ -94,15 +101,15 @@ C(vbs.MembershipTerm,u"Termo de adesão")
 C(vbs.CNPS,u"Compromisso Nacional de Participação Social")
 
 C(vbs.AcademicWork,u"Trabalho acadêmico")
-C(vbs.Thesis,u"Tese")
-C(vbs.Dissertation,u"Dissertação")
-C(vbs.Monography,u"Monografia")
+C(vbs.Thesis,u"Tese",vbs.AcademicWork)
+C(vbs.Dissertation,u"Dissertação",vbs.AcademicWork)
+C(vbs.Monography,u"Monografia",vbs.AcademicWork)
 
 C(vbs.EventPresentedWork,u"Trabalho apresentados em evento")
 C(vbs.Video,u"Vídeo")
 C(vbs.Guidance,u"Diretriz")
 C(vbs.Community,u"Comunidade")
-C(vbs.Subcommunity,u"Subcomunidade")
+C(vbs.Subcommunity,u"Subcomunidade",vbs.Community)
 C(vbs.Collection,u"Coleção")
 C(vbs.FinalReport,u"Relatório final")
 C(vbs.SNAS,[u"SNAS",u"Secretaria Nacional de Articulação Social"])
@@ -123,11 +130,11 @@ C(vbs.Citizenship,u"Cidadania")
 C(vbs.CorruptionFighting,u"Combate à corrupção")
 C(vbs.SocialControl,u"Controle social")
 C(vbs.Democracy,u"Democracia")
-C(vbs.DirectDemocracy,u"Democracia Direta")
-C(vbs.ParticipativeDemocracy,u"Democracia Participativa")
+C(vbs.DirectDemocracy,u"Democracia Direta",vbs.Democracy)
+C(vbs.ParticipativeDemocracy,u"Democracia Participativa",vbs.Democracy)
 C(vbs.Inequality,u"Desigualdade")
-C(vbs.PopularSolidarityEconomy,u"Economia popular solidária")
 C(vbs.SolidarityEconomy,u"Economia solidária")
+C(vbs.PopularSolidarityEconomy,u"Economia popular solidária",vbs.SolidarityEconomy)
 C(vbs.PopularForum,u"Fórum popular")
 C(vbs.GuaranteeOfRights,u"Garantia de direitos")
 C(vbs.DemocraticManagement,u"Gestão democrática")
@@ -254,6 +261,51 @@ C(vbs.Text,u"Texto")
 C(vbs.Thinking,u"Reflexões")
 C(vbs.Evaluation,u"Avaliação")
 C(vbs.Architecture,u"Arquitetura")
+
+ta=vbs.PolicyArea
+lta=u"Área de política" # SKOS
+C(ta,lta)
+
+sp=vbs.SocialPolicies
+lsp=u"Políticas sociais" # SKOS TTM
+C(sp,lsp,ta)
+
+C(vbs.SocialCare,u"assistência social",sp)
+C(vbs.Culture,u"cultura",sp)
+C(vbs.Health,u"saúde",sp)
+C(vbs.FoodAndNutritionSecurity,u"segurança alimentar e nutricional",sp)
+
+sp=vbs.EconomicDevelopment ###
+lsp=u"Desenvolvimento econômico" # SKOS
+C(sp,lsp,ta)
+
+C(vbs.LocalProductiveArrangements,u"Arranjos produtivos locais",sp)
+C(vbs.TechnicalAssitanceAndRuralExtension,u"assistência técnica e extensão rural",sp)
+C(vbs.RegionalDevelopment,u"desenvolvimento regional",sp)
+C(vbs.SustainableAndSolidaryRuralDevelopment,u"desenvolvimento rural sustentável e solidário",sp)
+
+sp=vbs.GuaranteeOfRights ###
+lsp=u"Garantia de direitos" # SKOS
+C(sp,lsp,ta)
+
+C(vbs.ChildrenAndAdolescents,u"criança e adolescente",sp)
+C(vbs.Education,u"educação",sp)
+C(vbs.Youth,u"juventude",sp)
+C(vbs.LGBT,[u"LGBT",u"Lésbicas, Gays, Bissexuais e Transgêneros"],sp)
+
+#- Garantias de Direitos (criança e adolescente, Educação,juventude, LGBT, mulheres e pessoa idosa)
+sp=vbs.Infrastructure ###
+lsp=u"Infraestrutura" # SKOS
+C(sp,lsp,ta)
+C(vbs.Cities,u"cidades",sp)
+
+sp=vbs.NaturalResources ###
+lsp=u"Recursos naturais" # SKOS
+C(sp,lsp,ta)
+C(vbs.Environment,u"meio ambiente",sp)
+C(vbs.WaterResources,u"recursos hídricos",sp)
+
+C(vbs.RecommendationsAndPropositionsReport,u"Relatório de recomendações e proposições")
 
 f=open("../rdf/vbsDocumentacaoVBS.rdf","wb")
 f.write(g.serialize())

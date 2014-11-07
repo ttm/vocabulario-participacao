@@ -5,21 +5,6 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-vbs:AcademicWork a skos:Concept ;
-    skos:altLabel " "@pt,
-        "a"@pt,
-        "b"@pt,
-        "c"@pt,
-        "d"@pt,
-        "h"@pt,
-        "i"@pt,
-        "l"@pt,
-        "m"@pt,
-        "o"@pt,
-        "r"@pt,
-        "ê"@pt ;
-    skos:prefLabel "T"@pt .
-
 vbs:Accountability a skos:Concept ;
     skos:altLabel " "@pt,
         "a"@pt,
@@ -34,11 +19,6 @@ vbs:Accountability a skos:Concept ;
         "ã"@pt,
         "ç"@pt ;
     skos:prefLabel "P"@pt .
-
-vbs:Act a skos:Concept ;
-    skos:altLabel "o"@pt,
-        "t"@pt ;
-    skos:prefLabel "A"@pt .
 
 vbs:ActionPlan a skos:Concept ;
     skos:altLabel " "@pt,
@@ -215,6 +195,32 @@ vbs:Changes a skos:Concept ;
         "õ"@pt ;
     skos:prefLabel "A"@pt .
 
+vbs:ChildrenAndAdolescents a skos:Concept ;
+    skos:altLabel " "@pt,
+        "a"@pt,
+        "c"@pt,
+        "d"@pt,
+        "e"@pt,
+        "i"@pt,
+        "l"@pt,
+        "n"@pt,
+        "o"@pt,
+        "r"@pt,
+        "s"@pt,
+        "t"@pt,
+        "ç"@pt ;
+    skos:broader vbs:GuaranteeOfRights ;
+    skos:prefLabel "c"@pt .
+
+vbs:Cities a skos:Concept ;
+    skos:altLabel "a"@pt,
+        "d"@pt,
+        "e"@pt,
+        "i"@pt,
+        "s"@pt ;
+    skos:broader vbs:Infrastructure ;
+    skos:prefLabel "c"@pt .
+
 vbs:Citizenship a skos:Concept ;
     skos:altLabel "a"@pt,
         "d"@pt,
@@ -265,17 +271,6 @@ vbs:Colloquium a skos:Concept ;
         "q"@pt,
         "u"@pt,
         "ó"@pt ;
-    skos:prefLabel "C"@pt .
-
-vbs:Community a skos:Concept ;
-    skos:altLabel "a"@pt,
-        "d"@pt,
-        "e"@pt,
-        "i"@pt,
-        "m"@pt,
-        "n"@pt,
-        "o"@pt,
-        "u"@pt ;
     skos:prefLabel "C"@pt .
 
 vbs:Composition a skos:Concept ;
@@ -379,6 +374,15 @@ vbs:CoveragePlan a skos:Concept ;
         "u"@pt ;
     skos:prefLabel "P"@pt .
 
+vbs:Culture a skos:Concept ;
+    skos:altLabel "a"@pt,
+        "l"@pt,
+        "r"@pt,
+        "t"@pt,
+        "u"@pt ;
+    skos:broader vbs:SocialPolicies ;
+    skos:prefLabel "c"@pt .
+
 vbs:DOU a skos:Concept ;
     skos:altLabel "Diário Oficial da União"@pt ;
     skos:prefLabel "DOU"@pt .
@@ -400,16 +404,6 @@ vbs:Decree a skos:Concept ;
         "o"@pt,
         "r"@pt,
         "t"@pt ;
-    skos:prefLabel "D"@pt .
-
-vbs:Democracy a skos:Concept ;
-    skos:altLabel "a"@pt,
-        "c"@pt,
-        "e"@pt,
-        "i"@pt,
-        "m"@pt,
-        "o"@pt,
-        "r"@pt ;
     skos:prefLabel "D"@pt .
 
 vbs:DemocraticManagement a skos:Concept ;
@@ -474,6 +468,7 @@ vbs:DirectDemocracy a skos:Concept ;
         "o"@pt,
         "r"@pt,
         "t"@pt ;
+    skos:broader vbs:Democracy ;
     skos:prefLabel "D"@pt .
 
 vbs:DisseminationArticle a skos:Concept ;
@@ -503,7 +498,19 @@ vbs:Dissertation a skos:Concept ;
         "t"@pt,
         "ã"@pt,
         "ç"@pt ;
+    skos:broader vbs:AcademicWork ;
     skos:prefLabel "D"@pt .
+
+vbs:Education a skos:Concept ;
+    skos:altLabel "a"@pt,
+        "c"@pt,
+        "d"@pt,
+        "o"@pt,
+        "u"@pt,
+        "ã"@pt,
+        "ç"@pt ;
+    skos:broader vbs:GuaranteeOfRights ;
+    skos:prefLabel "e"@pt .
 
 vbs:EducationalAndTrainingProcesses a skos:Concept ;
     skos:altLabel " "@pt,
@@ -551,6 +558,19 @@ vbs:EndUser a skos:Concept ;
         "u"@pt,
         "á"@pt ;
     skos:prefLabel "U"@pt .
+
+vbs:Environment a skos:Concept ;
+    skos:altLabel " "@pt,
+        "a"@pt,
+        "b"@pt,
+        "e"@pt,
+        "i"@pt,
+        "m"@pt,
+        "n"@pt,
+        "o"@pt,
+        "t"@pt ;
+    skos:broader vbs:NaturalResources ;
+    skos:prefLabel "m"@pt .
 
 vbs:Evaluation a skos:Concept ;
     skos:altLabel "a"@pt,
@@ -604,6 +624,7 @@ vbs:ExplanatoryMemorandum a skos:Concept ;
         "x"@pt,
         "ã"@pt,
         "ç"@pt ;
+    skos:broader vbs:Act ;
     skos:prefLabel "E"@pt .
 
 vbs:FGPS a skos:Concept ;
@@ -646,6 +667,24 @@ vbs:Folder a skos:Concept ;
         "o"@pt,
         "r"@pt ;
     skos:prefLabel "F"@pt .
+
+vbs:FoodAndNutritionSecurity a skos:Concept ;
+    skos:altLabel " "@pt,
+        "a"@pt,
+        "c"@pt,
+        "e"@pt,
+        "g"@pt,
+        "i"@pt,
+        "l"@pt,
+        "m"@pt,
+        "n"@pt,
+        "o"@pt,
+        "r"@pt,
+        "t"@pt,
+        "u"@pt,
+        "ç"@pt ;
+    skos:broader vbs:SocialPolicies ;
+    skos:prefLabel "s"@pt .
 
 vbs:FormativeProcess a skos:Concept ;
     skos:altLabel " "@pt,
@@ -703,19 +742,6 @@ vbs:GovernmentProgramWithSocialParticipation a skos:Concept ;
         "ç"@pt ;
     skos:prefLabel "P"@pt .
 
-vbs:GuaranteeOfRights a skos:Concept ;
-    skos:altLabel " "@pt,
-        "a"@pt,
-        "d"@pt,
-        "e"@pt,
-        "i"@pt,
-        "n"@pt,
-        "o"@pt,
-        "r"@pt,
-        "s"@pt,
-        "t"@pt ;
-    skos:prefLabel "G"@pt .
-
 vbs:Guidance a skos:Concept ;
     skos:altLabel "e"@pt,
         "i"@pt,
@@ -751,6 +777,14 @@ vbs:Handout a skos:Concept ;
         "s"@pt,
         "t"@pt ;
     skos:prefLabel "A"@pt .
+
+vbs:Health a skos:Concept ;
+    skos:altLabel "a"@pt,
+        "d"@pt,
+        "e"@pt,
+        "ú"@pt ;
+    skos:broader vbs:SocialPolicies ;
+    skos:prefLabel "s"@pt .
 
 vbs:IBICT a skos:Concept ;
     skos:altLabel "Instituto Brasileiro de Informação em Ciência e Tecnologia"@pt ;
@@ -828,6 +862,7 @@ vbs:Journal a skos:Concept ;
 
 vbs:JournalArticle a skos:Concept ;
     skos:altLabel "Artigo de periódico"@pt ;
+    skos:broader vbs:AcademicWork ;
     skos:prefLabel "Artigo em periódico"@pt .
 
 vbs:JudicialDecision a skos:Concept ;
@@ -848,6 +883,11 @@ vbs:JudicialDecision a skos:Concept ;
 vbs:LAI a skos:Concept ;
     skos:altLabel "Lei de Acesso à Informação"@pt ;
     skos:prefLabel "LAI"@pt .
+
+vbs:LGBT a skos:Concept ;
+    skos:altLabel "Lésbicas, Gays, Bissexuais e Transgêneros"@pt ;
+    skos:broader vbs:GuaranteeOfRights ;
+    skos:prefLabel "LGBT"@pt .
 
 vbs:Law a skos:Concept ;
     skos:altLabel "e"@pt,
@@ -894,6 +934,25 @@ vbs:LocalParticipation a skos:Concept ;
         "ã"@pt,
         "ç"@pt ;
     skos:prefLabel "P"@pt .
+
+vbs:LocalProductiveArrangements a skos:Concept ;
+    skos:altLabel " "@pt,
+        "a"@pt,
+        "c"@pt,
+        "d"@pt,
+        "i"@pt,
+        "j"@pt,
+        "l"@pt,
+        "n"@pt,
+        "o"@pt,
+        "p"@pt,
+        "r"@pt,
+        "s"@pt,
+        "t"@pt,
+        "u"@pt,
+        "v"@pt ;
+    skos:broader vbs:EconomicDevelopment ;
+    skos:prefLabel "A"@pt .
 
 vbs:Manual a skos:Concept ;
     skos:altLabel "a"@pt,
@@ -952,12 +1011,14 @@ vbs:Monography a skos:Concept ;
         "n"@pt,
         "o"@pt,
         "r"@pt ;
+    skos:broader vbs:AcademicWork ;
     skos:prefLabel "M"@pt .
 
 vbs:Motion a skos:Concept ;
     skos:altLabel "o"@pt,
         "ã"@pt,
         "ç"@pt ;
+    skos:broader vbs:Act ;
     skos:prefLabel "M"@pt .
 
 vbs:NamesList a skos:Concept ;
@@ -1184,6 +1245,7 @@ vbs:ParticipativeDemocracy a skos:Concept ;
         "r"@pt,
         "t"@pt,
         "v"@pt ;
+    skos:broader vbs:Democracy ;
     skos:prefLabel "D"@pt .
 
 vbs:ParticipativeManagement a skos:Concept ;
@@ -1350,6 +1412,7 @@ vbs:PopularSolidarityEconomy a skos:Concept ;
         "s"@pt,
         "u"@pt,
         "á"@pt ;
+    skos:broader vbs:SolidarityEconomy ;
     skos:prefLabel "E"@pt .
 
 vbs:Presentation a skos:Concept ;
@@ -1472,12 +1535,50 @@ vbs:Recommendation a skos:Concept ;
         "o"@pt,
         "ã"@pt,
         "ç"@pt ;
+    skos:broader vbs:Act ;
+    skos:prefLabel "R"@pt .
+
+vbs:RecommendationsAndPropositionsReport a skos:Concept ;
+    skos:altLabel " "@pt,
+        "a"@pt,
+        "c"@pt,
+        "d"@pt,
+        "e"@pt,
+        "i"@pt,
+        "l"@pt,
+        "m"@pt,
+        "n"@pt,
+        "o"@pt,
+        "p"@pt,
+        "r"@pt,
+        "s"@pt,
+        "t"@pt,
+        "ç"@pt,
+        "ó"@pt,
+        "õ"@pt ;
     skos:prefLabel "R"@pt .
 
 vbs:ReferenceDocuments a skos:Concept ;
     skos:altLabel "Documento-base"@pt,
         "Documentos de referência"@pt ;
     skos:prefLabel "Texto-base"@pt .
+
+vbs:RegionalDevelopment a skos:Concept ;
+    skos:altLabel " "@pt,
+        "a"@pt,
+        "e"@pt,
+        "g"@pt,
+        "i"@pt,
+        "l"@pt,
+        "m"@pt,
+        "n"@pt,
+        "o"@pt,
+        "r"@pt,
+        "s"@pt,
+        "t"@pt,
+        "v"@pt ;
+    skos:broader vbs:EconomicDevelopment ;
+    skos:prefLabel "d"@pt .
 
 vbs:RegularMeeting a skos:Concept ;
     skos:altLabel " "@pt,
@@ -1574,6 +1675,7 @@ vbs:ResearchReport a skos:Concept ;
 
 vbs:Resolution a skos:Concept ;
     skos:altLabel "Deliberação"@pt ;
+    skos:broader vbs:Act ;
     skos:prefLabel "Resolução"@pt .
 
 vbs:Response a skos:Concept ;
@@ -1661,6 +1763,20 @@ vbs:Slides a skos:Concept ;
         "l"@pt,
         "s"@pt ;
     skos:prefLabel "S"@pt .
+
+vbs:SocialCare a skos:Concept ;
+    skos:altLabel " "@pt,
+        "a"@pt,
+        "c"@pt,
+        "i"@pt,
+        "l"@pt,
+        "n"@pt,
+        "o"@pt,
+        "s"@pt,
+        "t"@pt,
+        "ê"@pt ;
+    skos:broader vbs:SocialPolicies ;
+    skos:prefLabel "a"@pt .
 
 vbs:SocialControl a skos:Concept ;
     skos:altLabel " "@pt,
@@ -1847,21 +1963,6 @@ vbs:SocialResponsibility a skos:Concept ;
         "s"@pt ;
     skos:prefLabel "R"@pt .
 
-vbs:SolidarityEconomy a skos:Concept ;
-    skos:altLabel " "@pt,
-        "a"@pt,
-        "c"@pt,
-        "d"@pt,
-        "i"@pt,
-        "l"@pt,
-        "m"@pt,
-        "n"@pt,
-        "o"@pt,
-        "r"@pt,
-        "s"@pt,
-        "á"@pt ;
-    skos:prefLabel "E"@pt .
-
 vbs:Speech a skos:Concept ;
     skos:altLabel "c"@pt,
         "i"@pt,
@@ -1905,6 +2006,7 @@ vbs:Subcommunity a skos:Concept ;
         "n"@pt,
         "o"@pt,
         "u"@pt ;
+    skos:broader vbs:Community ;
     skos:prefLabel "S"@pt .
 
 vbs:SubjectDiscussed a skos:Concept ;
@@ -1928,6 +2030,25 @@ vbs:Summary a skos:Concept ;
         "í"@pt ;
     skos:prefLabel "S"@pt .
 
+vbs:SustainableAndSolidaryRuralDevelopment a skos:Concept ;
+    skos:altLabel " "@pt,
+        "a"@pt,
+        "d"@pt,
+        "e"@pt,
+        "i"@pt,
+        "l"@pt,
+        "m"@pt,
+        "n"@pt,
+        "o"@pt,
+        "r"@pt,
+        "s"@pt,
+        "t"@pt,
+        "u"@pt,
+        "v"@pt,
+        "á"@pt ;
+    skos:broader vbs:EconomicDevelopment ;
+    skos:prefLabel "d"@pt .
+
 vbs:Systematization a skos:Concept ;
     skos:altLabel "a"@pt,
         "e"@pt,
@@ -1947,6 +2068,26 @@ vbs:Table a skos:Concept ;
         "e"@pt,
         "l"@pt ;
     skos:prefLabel "T"@pt .
+
+vbs:TechnicalAssitanceAndRuralExtension a skos:Concept ;
+    skos:altLabel " "@pt,
+        "a"@pt,
+        "c"@pt,
+        "e"@pt,
+        "i"@pt,
+        "l"@pt,
+        "n"@pt,
+        "o"@pt,
+        "r"@pt,
+        "s"@pt,
+        "t"@pt,
+        "u"@pt,
+        "x"@pt,
+        "ã"@pt,
+        "é"@pt,
+        "ê"@pt ;
+    skos:broader vbs:EconomicDevelopment ;
+    skos:prefLabel "a"@pt .
 
 vbs:TechnicalMaterial a skos:Concept ;
     skos:altLabel " "@pt,
@@ -1987,6 +2128,7 @@ vbs:Text a skos:Concept ;
 vbs:Thesis a skos:Concept ;
     skos:altLabel "e"@pt,
         "s"@pt ;
+    skos:broader vbs:AcademicWork ;
     skos:prefLabel "T"@pt .
 
 vbs:Thinking a skos:Concept ;
@@ -2024,6 +2166,21 @@ vbs:Video a skos:Concept ;
         "í"@pt ;
     skos:prefLabel "V"@pt .
 
+vbs:WaterResources a skos:Concept ;
+    skos:altLabel " "@pt,
+        "c"@pt,
+        "d"@pt,
+        "e"@pt,
+        "h"@pt,
+        "i"@pt,
+        "o"@pt,
+        "r"@pt,
+        "s"@pt,
+        "u"@pt,
+        "í"@pt ;
+    skos:broader vbs:NaturalResources ;
+    skos:prefLabel "r"@pt .
+
 vbs:Web30 a skos:Concept ;
     skos:altLabel " "@pt,
         "."@pt,
@@ -2046,6 +2203,16 @@ vbs:WorkPlan a skos:Concept ;
         "r"@pt,
         "t"@pt ;
     skos:prefLabel "P"@pt .
+
+vbs:Youth a skos:Concept ;
+    skos:altLabel "d"@pt,
+        "e"@pt,
+        "n"@pt,
+        "t"@pt,
+        "u"@pt,
+        "v"@pt ;
+    skos:broader vbs:GuaranteeOfRights ;
+    skos:prefLabel "j"@pt .
 
 vbs:annual a skos:Concept ;
     skos:altLabel "a"@pt,
@@ -2195,4 +2362,145 @@ vbs:results a skos:Concept ;
         "t"@pt,
         "u"@pt ;
     skos:prefLabel "d"@pt .
+
+vbs:Community a skos:Concept ;
+    skos:altLabel "a"@pt,
+        "d"@pt,
+        "e"@pt,
+        "i"@pt,
+        "m"@pt,
+        "n"@pt,
+        "o"@pt,
+        "u"@pt ;
+    skos:prefLabel "C"@pt .
+
+vbs:Infrastructure a skos:Concept ;
+    skos:altLabel "a"@pt,
+        "e"@pt,
+        "f"@pt,
+        "n"@pt,
+        "r"@pt,
+        "s"@pt,
+        "t"@pt,
+        "u"@pt ;
+    skos:broader vbs:PolicyArea ;
+    skos:prefLabel "I"@pt .
+
+vbs:SolidarityEconomy a skos:Concept ;
+    skos:altLabel " "@pt,
+        "a"@pt,
+        "c"@pt,
+        "d"@pt,
+        "i"@pt,
+        "l"@pt,
+        "m"@pt,
+        "n"@pt,
+        "o"@pt,
+        "r"@pt,
+        "s"@pt,
+        "á"@pt ;
+    skos:prefLabel "E"@pt .
+
+vbs:Democracy a skos:Concept ;
+    skos:altLabel "a"@pt,
+        "c"@pt,
+        "e"@pt,
+        "i"@pt,
+        "m"@pt,
+        "o"@pt,
+        "r"@pt ;
+    skos:prefLabel "D"@pt .
+
+vbs:NaturalResources a skos:Concept ;
+    skos:altLabel " "@pt,
+        "a"@pt,
+        "c"@pt,
+        "e"@pt,
+        "i"@pt,
+        "n"@pt,
+        "o"@pt,
+        "r"@pt,
+        "s"@pt,
+        "t"@pt,
+        "u"@pt ;
+    skos:broader vbs:PolicyArea ;
+    skos:prefLabel "R"@pt .
+
+vbs:AcademicWork a skos:Concept ;
+    skos:altLabel " "@pt,
+        "a"@pt,
+        "b"@pt,
+        "c"@pt,
+        "d"@pt,
+        "h"@pt,
+        "i"@pt,
+        "l"@pt,
+        "m"@pt,
+        "o"@pt,
+        "r"@pt,
+        "ê"@pt ;
+    skos:prefLabel "T"@pt .
+
+vbs:Act a skos:Concept ;
+    skos:altLabel "o"@pt,
+        "t"@pt ;
+    skos:prefLabel "A"@pt .
+
+vbs:EconomicDevelopment a skos:Concept ;
+    skos:altLabel " "@pt,
+        "c"@pt,
+        "e"@pt,
+        "i"@pt,
+        "l"@pt,
+        "m"@pt,
+        "n"@pt,
+        "o"@pt,
+        "s"@pt,
+        "t"@pt,
+        "v"@pt,
+        "ô"@pt ;
+    skos:broader vbs:PolicyArea ;
+    skos:prefLabel "D"@pt .
+
+vbs:GuaranteeOfRights a skos:Concept ;
+    skos:altLabel " "@pt,
+        "a"@pt,
+        "d"@pt,
+        "e"@pt,
+        "i"@pt,
+        "n"@pt,
+        "o"@pt,
+        "r"@pt,
+        "s"@pt,
+        "t"@pt ;
+    skos:broader vbs:PolicyArea ;
+    skos:prefLabel "G"@pt .
+
+vbs:SocialPolicies a skos:Concept ;
+    skos:altLabel " "@pt,
+        "a"@pt,
+        "c"@pt,
+        "i"@pt,
+        "l"@pt,
+        "o"@pt,
+        "s"@pt,
+        "t"@pt,
+        "í"@pt ;
+    skos:broader vbs:PolicyArea ;
+    skos:prefLabel "P"@pt .
+
+vbs:PolicyArea a skos:Concept ;
+    skos:altLabel " "@pt,
+        "a"@pt,
+        "c"@pt,
+        "d"@pt,
+        "e"@pt,
+        "i"@pt,
+        "l"@pt,
+        "o"@pt,
+        "p"@pt,
+        "r"@pt,
+        "t"@pt,
+        "í"@pt ;
+    skos:prefLabel "Á"@pt .
 
