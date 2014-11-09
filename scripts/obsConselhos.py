@@ -629,7 +629,6 @@ ca=obs.establishes
 lca=u"institui"
 G(ca,rdf.type,owl.ObjectProperty)
 G(ca,rdfs.label,L(lca,lang="pt"))
-G(ca,rdfs.range,obs.PublicPolicy)
 
 A.add_edge(  u"Ato normativo",u"Política pública")
 e=A.get_edge(u"Ato normativo",u"Política pública")

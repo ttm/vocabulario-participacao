@@ -1,0 +1,282 @@
+@prefix obs: <http://purl.org/socialparticipation/obs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+obs:Citizen a owl:Class ;
+    rdfs:label "Cidadão"@pt ;
+    rdfs:subClassOf obs:CivilSociety .
+
+obs:CivilSocietyRepresentant a owl:Class ;
+    rdfs:label "Representante da sociedade civil"@pt ;
+    rdfs:subClassOf obs:Participant .
+
+obs:Collective a owl:Class ;
+    rdfs:label "Coletivo"@pt ;
+    rdfs:subClassOf obs:CivilSociety .
+
+obs:Commision a owl:Class ;
+    rdfs:label "Comissão"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
+
+obs:Complaint a owl:Class ;
+    rdfs:label "Reclamação"@pt ;
+    rdfs:subClassOf obs:IndividualCitizenCommunication .
+
+obs:Compliment a owl:Class ;
+    rdfs:label "Elogio"@pt ;
+    rdfs:subClassOf obs:IndividualCitizenCommunication .
+
+obs:Conference a owl:Class ;
+    rdfs:label "Conferência"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
+
+obs:Council a owl:Class ;
+    rdfs:label "Conselho"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
+
+obs:DecisionMakingProcess a owl:Class ;
+    rdfs:label "Processo decisório"@pt .
+
+obs:Decree8243 a owl:Class ;
+    rdfs:label "Decreto 8.243"@pt .
+
+obs:Denunciation a owl:Class ;
+    rdfs:label "Denúncia"@pt ;
+    rdfs:subClassOf obs:IndividualCitizenCommunication .
+
+obs:Dialogue a owl:Class ;
+    rdfs:label "Diálogo"@pt .
+
+obs:DialogueTable a owl:Class ;
+    rdfs:label "Mesa de diálogo"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
+
+obs:Directive a owl:Class ;
+    rdfs:label "Diretriz"@pt .
+
+obs:DirectlyInvolvedBody a owl:Class ;
+    rdfs:label "Corpo diretamente envolvido"@pt ;
+    rdfs:subClassOf obs:ManagementBody .
+
+obs:DistrictConference a owl:Class ;
+    rdfs:label "Conferência distrital"@pt ;
+    rdfs:subClassOf obs:ConferenceStep .
+
+obs:Evaluation a owl:Class ;
+    rdfs:label "Avaliação"@pt .
+
+obs:Execution a owl:Class ;
+    rdfs:label "Execução"@pt .
+
+obs:Formulation a owl:Class ;
+    rdfs:label "Formulação"@pt .
+
+obs:Government a owl:Class ;
+    rdfs:label "Governo"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
+
+obs:GovernmentRepresentant a owl:Class ;
+    rdfs:label "Representante do governo"@pt ;
+    rdfs:subClassOf obs:Participant .
+
+obs:Improvement a owl:Class ;
+    rdfs:label "Aprimoramento"@pt,
+        "Debate"@pt,
+        "Negociação"@pt .
+
+obs:InstitutedSocialMovement a owl:Class ;
+    rdfs:label "Movimento social instituído"@pt ;
+    rdfs:subClassOf obs:CivilSociety .
+
+obs:Monitoring a owl:Class ;
+    rdfs:label "Monitoramento"@pt .
+
+obs:MunicipalConference a owl:Class ;
+    rdfs:label "Conferência municipal"@pt ;
+    rdfs:subClassOf obs:ConferenceStep .
+
+obs:Network a owl:Class ;
+    rdfs:label "Rede"@pt ;
+    rdfs:subClassOf obs:CivilSociety .
+
+obs:NormativeAct a owl:Class ;
+    rdfs:label "Ato normativo"@pt .
+
+obs:NotOrganizedSocialMovement a owl:Class ;
+    rdfs:label "Movimento social não organizado"@pt ;
+    rdfs:subClassOf obs:CivilSociety .
+
+obs:Objective a owl:Class ;
+    rdfs:label "Objetivo"@pt .
+
+obs:OmbudsmanAgency a owl:Class ;
+    rdfs:label "Ouvidoria"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
+
+obs:PNPS a owl:Class ;
+    rdfs:label "Política Nacional de Participação Social (PNPS)"@pt .
+
+obs:PolicyManagement a owl:Class ;
+    rdfs:label "Gestão de política"@pt .
+
+obs:PublicManagement a owl:Class ;
+    rdfs:label "Gestão pública"@pt .
+
+obs:PublicPolicy a owl:Class ;
+    rdfs:label "Política pública"@pt .
+
+obs:PublicProgram a owl:Class ;
+    rdfs:label "Programa público"@pt .
+
+obs:PublicService a owl:Class ;
+    rdfs:label "Serviço público"@pt .
+
+obs:RegionalConference a owl:Class ;
+    rdfs:label "Conferência regional"@pt ;
+    rdfs:subClassOf obs:ConferenceStep .
+
+obs:Request a owl:Class ;
+    rdfs:label "Solicitação"@pt ;
+    rdfs:subClassOf obs:IndividualCitizenCommunication .
+
+obs:SNPS a owl:Class ;
+    rdfs:label "Sistema Nacional de Participação Social (SNPS)"@pt .
+
+obs:SocialConflict a owl:Class ;
+    rdfs:label "Conflito social"@pt .
+
+obs:SocialControl a owl:Class ;
+    rdfs:label "Controle social"@pt .
+
+obs:SocialOrganization a owl:Class ;
+    rdfs:label "Organização social"@pt ;
+    rdfs:subClassOf obs:CivilSociety .
+
+obs:SocialParticipation a owl:Class ;
+    rdfs:label "Participação social"@pt .
+
+obs:StateConference a owl:Class ;
+    rdfs:label "Conferência estadual"@pt ;
+    rdfs:subClassOf obs:ConferenceStep .
+
+obs:Suggestion a owl:Class ;
+    rdfs:label "Sugestão"@pt ;
+    rdfs:subClassOf obs:IndividualCitizenCommunication .
+
+obs:Theme a owl:Class ;
+    rdfs:label "Tema"@pt .
+
+obs:about a owl:ObjectProperty ;
+    rdfs:label "sobre"@pt .
+
+obs:activity a owl:ObjectProperty ;
+    rdfs:label "atividade"@pt .
+
+obs:articulates a owl:ObjectProperty ;
+    rdfs:label "articula"@pt .
+
+obs:bond a owl:ObjectProperty ;
+    rdfs:label "vínculo"@pt .
+
+obs:composition a owl:ObjectProperty ;
+    rdfs:label "composição"@pt .
+
+obs:considers a owl:ObjectProperty ;
+    rdfs:label "considera"@pt .
+
+obs:continuity a owl:DatatypeProperty ;
+    rdfs:label "continuidade"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:establishes a owl:ObjectProperty ;
+    rdfs:label "institui"@pt .
+
+obs:handles a owl:ObjectProperty ;
+    rdfs:label "trata"@pt .
+
+obs:mediates a owl:ObjectProperty ;
+    rdfs:label "media"@pt .
+
+obs:member a owl:ObjectProperty ;
+    rdfs:label "membro"@pt .
+
+obs:nature a owl:ObjectProperty ;
+    rdfs:label "natureza"@pt .
+
+obs:operationPeriod a owl:DatatypeProperty ;
+    rdfs:label "período de funcionamento"@pt ;
+    rdfs:range xsd:duration .
+
+obs:orientation a owl:ObjectProperty ;
+    rdfs:label "orientação"@pt .
+
+obs:part a owl:ObjectProperty ;
+    rdfs:label "parte"@pt .
+
+obs:periodicity a owl:DatatypeProperty ;
+    rdfs:label "periodicidade"@pt ;
+    rdfs:range xsd:gYear .
+
+obs:prevents a owl:ObjectProperty ;
+    rdfs:label "previne"@pt .
+
+obs:promotes a owl:ObjectProperty ;
+    rdfs:label "promove"@pt .
+
+obs:proposes a owl:ObjectProperty ;
+    rdfs:label "propõe"@pt .
+
+obs:publicInterest a owl:DatatypeProperty ;
+    rdfs:label "interesse público"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:purpose a owl:ObjectProperty ;
+    rdfs:label "propósito"@pt .
+
+obs:reflects a owl:ObjectProperty ;
+    rdfs:label "reflete"@pt .
+
+obs:responsability a owl:ObjectProperty ;
+    rdfs:label "responsabilidade"@pt .
+
+obs:solves a owl:ObjectProperty ;
+    rdfs:label "soluciona"@pt .
+
+obs:specificObject a owl:DatatypeProperty ;
+    rdfs:label "objetivo específico"@pt ;
+    rdfs:range xsd:string .
+
+obs:startDate a owl:DatatypeProperty ;
+    rdfs:label "início"@pt ;
+    rdfs:range xsd:dateTime .
+
+obs:step a owl:ObjectProperty ;
+    rdfs:label "etapa"@pt .
+
+obs:strengthens a owl:ObjectProperty ;
+    rdfs:label "fortalece"@pt .
+
+obs:thematic a owl:ObjectProperty ;
+    rdfs:label "temática"@pt .
+
+obs:ManagementBody a owl:Class ;
+    rdfs:label "Corpo gestor"@pt .
+
+obs:Participant a owl:Class ;
+    rdfs:label "Participante"@pt .
+
+obs:ConferenceStep a owl:Class ;
+    rdfs:label "Etapa de conferência"@pt .
+
+obs:IndividualCitizenCommunication a owl:Class ;
+    rdfs:label "Comunicação individual de cidadãos"@pt .
+
+obs:CivilSociety a owl:Class ;
+    rdfs:label "Sociedade civil"@pt .
+
+obs:ParticipationInstanceOrMechanism a owl:Class ;
+    rdfs:label "Instância ou mecanismo de participação social"@pt .
+
