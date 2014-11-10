@@ -19,7 +19,7 @@ g.namespace_manager.bind("rdfs", r.namespace.RDFS)
 g.namespace_manager.bind("xsd", r.namespace.XSD)    
 g.namespace_manager.bind("owl", r.namespace.OWL)    
 
-def C(uri,label,superclass=False,comment=False):
+def C(uri,label,superclass=None,comment=None,color=None):
     G(uri,rdf.type,owl.Class)
     G(uri,rdfs.label,L(label,lang="pt"))
     A.add_node(label,style="filled")
@@ -33,6 +33,8 @@ def C(uri,label,superclass=False,comment=False):
         e.attr["arrowsize"]=2
     if comment:
         G(uri,rdfs.comment,L(comment,lang="pt"))
+    if color:
+        nd.attr['color']="#F29999"
     return nd
 nd=C(obs.Decree8243,u"Decreto 8.243")
 nd.attr['color']="#A29999"
@@ -87,10 +89,12 @@ nd.attr['color']="#F29999"
 nd=C(obs.PublicAudience,u"Audiência pública",obs.ParticipationMechanism)
 nd.attr['color']="#F29999"
 
+nd=C(obs.PublicConsultation,u"Consulta pública",obs.ParticipationMechanism,color="#F29999")
+
 C(obs.ManagementBody,u"Corpo gestor")
 C(obs.DirectlyInvolvedBody,u"Corpo diretamente envolvido",obs.ManagementBody)
 C(obs.Participant,u"Participante")
-C(obs.Interested,u"Interessado",obs.Participant)
+C(obs.InterestedPerson,u"Pessoa interessada",obs.Participant)
 C(obs.CouncilRepresentant,u"Representante de conselho",obs.Participant)
 C(obs.CommissionRepresentant,u"Representante de comissão",obs.Participant)
 C(obs.GovernmentRepresentant,u"Representante do governo",obs.Participant)
@@ -113,6 +117,9 @@ C(obs.Transversality,u"Transversalidade")
 C(obs.Presential,u"Presencial")
 C(obs.Consultative,u"Consultiva")
 C(obs.GovernmentDecisionSubsidizing,u"Subsídio para decisão governamental")
+C(obs.WrittenContribution,u"Contribuição escrita")
+C(obs.ConvocationAct,u"Ato de convocação",obs.NormativeAct)
+C(obs.Topic,u"Assunto",comment=u"assunto é mais específico que tema")
 def P(uri,label):
     G(uri,rdf.type,owl.ObjectProperty)
     G(uri,rdfs.label,L(label,lang="pt"))
@@ -142,6 +149,9 @@ P(obs.mediates,u"media")
 P(obs.scope,u"escopo")
 P(obs.formulates,u"formula")
 P(obs.oralManifestation,u"manifestação oral")
+P(obs.receives,u"recebe")
+P(obs.form,u"forma")
+P(obs.source,u"fonte")
 def D(uri,label,dtype):
     G(uri,rdf.type,owl.DatatypeProperty)
     G(uri,rdfs.label,L(label,lang="pt"))
@@ -152,6 +162,8 @@ D(obs.operationPeriod,u"período de funcionamento",xsd.duration)
 D(obs.startDate,u"início",xsd.dateTime)
 D(obs.periodicity,u"periodicidade",xsd.gYear)
 D(obs.publicInterest,u"interesse público",xsd.boolean)
+D(obs.Deadline,u"prazo",xsd.dateTime)
+D(obs.description,u"descrição",xsd.string)
 def L(olabel,llabel,dlabel):
     # origin, link, destination
     A.add_edge(  olabel,dlabel)
@@ -274,6 +286,18 @@ L(u"Audiência pública",u"natureza",u"Presencial")
 L(u"Audiência pública",u"natureza",u"Consultiva")
 L(u"Audiência pública",u"manifestação oral",u"Participante")
 L(u"Audiência pública",u"propósito",u"Subsídio para decisão governamental")
+
+# Consulta pública
+L(u"Decreto 8.243",u"considera",u"Consulta pública")
+L(u"Consulta pública",u"natureza",u"Consultiva")
+LD(u"Consulta pública",u"prazo",u"xsd:dateTime")
+L(u"Consulta pública",u"recebe",u"Contribuição escrita")
+L(u"Contribuição escrita",u"forma",u"Ato de convocação")
+L(u"Contribuição escrita",u"fonte",u"Sociedade civil")
+L(u"Consulta pública",u"membro",u"Pessoa interessada")
+L(u"Consulta pública",u"sobre",u"Assunto")
+LD(u"Assunto",u"descrição",u"xsd:string")
+
 
 nome=("../figs/obsPNPS.png")
 A.draw(nome,prog="dot") # draw to png using circo

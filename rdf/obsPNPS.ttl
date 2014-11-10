@@ -40,6 +40,10 @@ obs:Conference a owl:Class ;
 obs:Consultative a owl:Class ;
     rdfs:label "Consultiva"@pt .
 
+obs:ConvocationAct a owl:Class ;
+    rdfs:label "Ato de convocação"@pt ;
+    rdfs:subClassOf obs:NormativeAct .
+
 obs:Council a owl:Class ;
     rdfs:label "Conselho"@pt ;
     rdfs:subClassOf obs:ParticipationInstance .
@@ -47,6 +51,10 @@ obs:Council a owl:Class ;
 obs:CouncilRepresentant a owl:Class ;
     rdfs:label "Representante de conselho"@pt ;
     rdfs:subClassOf obs:Participant .
+
+obs:Deadline a owl:DatatypeProperty ;
+    rdfs:label "prazo"@pt ;
+    rdfs:range xsd:dateTime .
 
 obs:DecisionMakingProcess a owl:Class ;
     rdfs:label "Processo decisório"@pt .
@@ -111,8 +119,8 @@ obs:InterCouncilForum a owl:Class ;
     rdfs:label "Fórum interconselhos"@pt ;
     rdfs:subClassOf obs:ParticipationMechanism .
 
-obs:Interested a owl:Class ;
-    rdfs:label "Interessado"@pt ;
+obs:InterestedPerson a owl:Class ;
+    rdfs:label "Pessoa interessada"@pt ;
     rdfs:subClassOf obs:Participant .
 
 obs:Intersectoriality a owl:Class ;
@@ -129,9 +137,6 @@ obs:MunicipalConference a owl:Class ;
 obs:Network a owl:Class ;
     rdfs:label "Rede"@pt ;
     rdfs:subClassOf obs:CivilSociety .
-
-obs:NormativeAct a owl:Class ;
-    rdfs:label "Ato normativo"@pt .
 
 obs:NotOrganizedSocialMovement a owl:Class ;
     rdfs:label "Movimento social não organizado"@pt ;
@@ -155,6 +160,10 @@ obs:Presential a owl:Class ;
 
 obs:PublicAudience a owl:Class ;
     rdfs:label "Audiência pública"@pt ;
+    rdfs:subClassOf obs:ParticipationMechanism .
+
+obs:PublicConsultation a owl:Class ;
+    rdfs:label "Consulta pública"@pt ;
     rdfs:subClassOf obs:ParticipationMechanism .
 
 obs:PublicManagement a owl:Class ;
@@ -204,8 +213,15 @@ obs:Suggestion a owl:Class ;
 obs:Theme a owl:Class ;
     rdfs:label "Tema"@pt .
 
+obs:Topic a owl:Class ;
+    rdfs:label "Assunto"@pt ;
+    rdfs:comment "assunto é mais específico que tema"@pt .
+
 obs:Transversality a owl:Class ;
     rdfs:label "Transversalidade"@pt .
+
+obs:WrittenContribution a owl:Class ;
+    rdfs:label "Contribuição escrita"@pt .
 
 obs:about a owl:ObjectProperty ;
     rdfs:label "sobre"@pt .
@@ -229,8 +245,15 @@ obs:continuity a owl:DatatypeProperty ;
     rdfs:label "continuidade"@pt ;
     rdfs:range xsd:boolean .
 
+obs:description a owl:DatatypeProperty ;
+    rdfs:label "descrição"@pt ;
+    rdfs:range xsd:string .
+
 obs:establishes a owl:ObjectProperty ;
     rdfs:label "institui"@pt .
+
+obs:form a owl:ObjectProperty ;
+    rdfs:label "forma"@pt .
 
 obs:formulates a owl:ObjectProperty ;
     rdfs:label "formula"@pt .
@@ -280,6 +303,9 @@ obs:publicInterest a owl:DatatypeProperty ;
 obs:purpose a owl:ObjectProperty ;
     rdfs:label "propósito"@pt .
 
+obs:receives a owl:ObjectProperty ;
+    rdfs:label "recebe"@pt .
+
 obs:reflects a owl:ObjectProperty ;
     rdfs:label "reflete"@pt .
 
@@ -291,6 +317,9 @@ obs:scope a owl:ObjectProperty ;
 
 obs:solves a owl:ObjectProperty ;
     rdfs:label "soluciona"@pt .
+
+obs:source a owl:ObjectProperty ;
+    rdfs:label "fonte"@pt .
 
 obs:specificObject a owl:DatatypeProperty ;
     rdfs:label "objetivo específico"@pt ;
@@ -312,18 +341,21 @@ obs:thematic a owl:ObjectProperty ;
 obs:ManagementBody a owl:Class ;
     rdfs:label "Corpo gestor"@pt .
 
+obs:NormativeAct a owl:Class ;
+    rdfs:label "Ato normativo"@pt .
+
 obs:ParticipationInstanceOrMechanism a owl:Class ;
     rdfs:label "Instância ou mecanismo de participação social"@pt .
-
-obs:ParticipationMechanism a owl:Class ;
-    rdfs:label "Mecanismo de participação social"@pt ;
-    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
 
 obs:ConferenceStep a owl:Class ;
     rdfs:label "Etapa de conferência"@pt .
 
 obs:ParticipationInstance a owl:Class ;
     rdfs:label "Instância de participação social"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
+
+obs:ParticipationMechanism a owl:Class ;
+    rdfs:label "Mecanismo de participação social"@pt ;
     rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
 
 obs:IndividualCitizenCommunication a owl:Class ;
