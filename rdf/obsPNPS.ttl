@@ -90,6 +90,9 @@ obs:Evaluation a owl:Class ;
 obs:Execution a owl:Class ;
     rdfs:label "Execução"@pt .
 
+obs:FederalPublicAdministration a owl:Class ;
+    rdfs:label "Administração pública federal"@pt .
+
 obs:Formulation a owl:Class ;
     rdfs:label "Formulação"@pt .
 
@@ -122,6 +125,10 @@ obs:InterCouncilForum a owl:Class ;
 obs:InterestedPerson a owl:Class ;
     rdfs:label "Pessoa interessada"@pt ;
     rdfs:subClassOf obs:Participant .
+
+obs:Internet a owl:Class ;
+    rdfs:label "Internet"@pt ;
+    rdfs:subClassOf obs:ICT .
 
 obs:Intersectoriality a owl:Class ;
     rdfs:label "Intersetorialidade"@pt .
@@ -202,6 +209,10 @@ obs:SocialOrganization a owl:Class ;
 obs:SocialParticipation a owl:Class ;
     rdfs:label "Participação social"@pt .
 
+obs:SocialParticipationVirtualEnvironment a owl:Class ;
+    rdfs:label "Ambiente virtual de participação social"@pt ;
+    rdfs:subClassOf obs:ParticipationMechanism .
+
 obs:StateConference a owl:Class ;
     rdfs:label "Conferência estadual"@pt ;
     rdfs:subClassOf obs:ConferenceStep .
@@ -248,6 +259,9 @@ obs:continuity a owl:DatatypeProperty ;
 obs:description a owl:DatatypeProperty ;
     rdfs:label "descrição"@pt ;
     rdfs:range xsd:string .
+
+obs:emphasis a owl:ObjectProperty ;
+    rdfs:label "ênfase"@pt .
 
 obs:establishes a owl:ObjectProperty ;
     rdfs:label "institui"@pt .
@@ -338,6 +352,13 @@ obs:strengthens a owl:ObjectProperty ;
 obs:thematic a owl:ObjectProperty ;
     rdfs:label "temática"@pt .
 
+obs:uses a owl:ObjectProperty ;
+    rdfs:label "utiliza"@pt .
+
+obs:ICT a owl:Class ;
+    rdfs:label "TIC"@pt ;
+    rdfs:comment "Tecnologias de Informação e Comunicação"@pt .
+
 obs:ManagementBody a owl:Class ;
     rdfs:label "Corpo gestor"@pt .
 
@@ -354,15 +375,15 @@ obs:ParticipationInstance a owl:Class ;
     rdfs:label "Instância de participação social"@pt ;
     rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
 
-obs:ParticipationMechanism a owl:Class ;
-    rdfs:label "Mecanismo de participação social"@pt ;
-    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
-
 obs:IndividualCitizenCommunication a owl:Class ;
     rdfs:label "Comunicação individual de cidadãos"@pt .
 
 obs:Participant a owl:Class ;
     rdfs:label "Participante"@pt .
+
+obs:ParticipationMechanism a owl:Class ;
+    rdfs:label "Mecanismo de participação social"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
 
 obs:CivilSociety a owl:Class ;
     rdfs:label "Sociedade civil"@pt .

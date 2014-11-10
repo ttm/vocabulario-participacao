@@ -139,7 +139,7 @@ e=A.get_edge(lsp,lpm_)
 e.attr["arrowhead"]="empty"
 e.attr["arrowsize"]=2
 
-sp=obs.VirtualParticipationEnvironment
+sp=obs.SocialParticipationVirtualEnvironment
 lsp=u"Ambiente virtual de participação social" # SKOS TTM
 G(sp,rdf.type,owl.Class)
 G(sp,rdfs.label,L(lsp,lang="pt"))

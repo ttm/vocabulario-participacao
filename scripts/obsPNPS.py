@@ -90,6 +90,7 @@ nd=C(obs.PublicAudience,u"Audiência pública",obs.ParticipationMechanism)
 nd.attr['color']="#F29999"
 
 nd=C(obs.PublicConsultation,u"Consulta pública",obs.ParticipationMechanism,color="#F29999")
+nd=C(obs.SocialParticipationVirtualEnvironment,u"Ambiente virtual de participação social",obs.ParticipationMechanism,color="#F29999")
 
 C(obs.ManagementBody,u"Corpo gestor")
 C(obs.DirectlyInvolvedBody,u"Corpo diretamente envolvido",obs.ManagementBody)
@@ -120,6 +121,9 @@ C(obs.GovernmentDecisionSubsidizing,u"Subsídio para decisão governamental")
 C(obs.WrittenContribution,u"Contribuição escrita")
 C(obs.ConvocationAct,u"Ato de convocação",obs.NormativeAct)
 C(obs.Topic,u"Assunto",comment=u"assunto é mais específico que tema")
+C(obs.ICT,u"TIC",comment=u"Tecnologias de Informação e Comunicação")
+C(obs.Internet,u"Internet",obs.ICT)
+C(obs.FederalPublicAdministration,u"Administração pública federal")
 def P(uri,label):
     G(uri,rdf.type,owl.ObjectProperty)
     G(uri,rdfs.label,L(label,lang="pt"))
@@ -152,6 +156,8 @@ P(obs.oralManifestation,u"manifestação oral")
 P(obs.receives,u"recebe")
 P(obs.form,u"forma")
 P(obs.source,u"fonte")
+P(obs.uses,u"utiliza")
+P(obs.emphasis,u"ênfase")
 def D(uri,label,dtype):
     G(uri,rdf.type,owl.DatatypeProperty)
     G(uri,rdfs.label,L(label,lang="pt"))
@@ -297,6 +303,14 @@ L(u"Contribuição escrita",u"fonte",u"Sociedade civil")
 L(u"Consulta pública",u"membro",u"Pessoa interessada")
 L(u"Consulta pública",u"sobre",u"Assunto")
 LD(u"Assunto",u"descrição",u"xsd:string")
+
+# Ambiete virtual
+L(u"Decreto 8.243",u"considera",u"Ambiente virtual de participação social")
+L(u"Ambiente virtual de participação social",u"utiliza",u"TIC")
+L(u"Ambiente virtual de participação social",u"ênfase",u"Internet")
+L(u"Ambiente virtual de participação social",u"promove",u"Diálogo")
+L(u"Diálogo",u"parte",u"Sociedade civil")
+L(u"Diálogo",u"parte",u"Administração pública federal")
 
 
 nome=("../figs/obsPNPS.png")
