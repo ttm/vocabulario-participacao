@@ -19,7 +19,7 @@ g.namespace_manager.bind("rdfs", r.namespace.RDFS)
 g.namespace_manager.bind("xsd", r.namespace.XSD)    
 g.namespace_manager.bind("owl", r.namespace.OWL)    
 
-def C(uri,label,superclass=False):
+def C(uri,label,superclass=False,comment=False):
     G(uri,rdf.type,owl.Class)
     G(uri,rdfs.label,L(label,lang="pt"))
     A.add_node(label,style="filled")
@@ -31,6 +31,8 @@ def C(uri,label,superclass=False):
         e=A.get_edge(label, lsuperclass)
         e.attr["arrowhead"]="empty"
         e.attr["arrowsize"]=2
+    if comment:
+        G(uri,rdfs.comment,L(comment,lang="pt"))
     return nd
 nd=C(obs.Decree8243,u"Decreto 8.243")
 nd.attr['color']="#A29999"
@@ -38,15 +40,17 @@ C(obs.Theme,u"Tema")
 C(obs.PNPS,u"Política Nacional de Participação Social (PNPS)")
 C(obs.SNPS,u"Sistema Nacional de Participação Social (SNPS)")
 C(obs.ParticipationInstanceOrMechanism,u"Instância ou mecanismo de participação social")
+C(obs.ParticipationMechanism,u"Mecanismo de participação social",obs.ParticipationInstanceOrMechanism) # SKOS
+C(obs.ParticipationInstance,u"Instância de participação social",obs.ParticipationInstanceOrMechanism) # SKOS
 C(obs.Directive,u"Diretriz")
 C(obs.Objective,u"Objetivo")
 C(obs.PublicManagement,u"Gestão pública")
 C(obs.PublicPolicy,u"Política pública")
-C(obs.PublicProgram,u"Programa público")
+C(obs.GovernmentProgram,u"Programa governamental")
 C(obs.PublicService,u"Serviço público")
 C(obs.Formulation,u"Formulação")
 C(obs.Execution,u"Execução")
-C(obs.Monitoring,u"Monitoramento")
+C(obs.Monitoring,u"Monitoramento",False,u"usado também como sinônimo de acompanhamento")
 C(obs.Evaluation,u"Avaliação")
 C(obs.Improvement,u"Aprimoramento")
 C(obs.Improvement,u"Debate")
@@ -64,21 +68,31 @@ C(obs.SocialParticipation,u"Participação social")
 C(obs.SocialControl,u"Controle social")
 C(obs.DecisionMakingProcess,u"Processo decisório")
 C(obs.PolicyManagement,u"Gestão de política")
-nd=C(obs.Commision,u"Comissão",obs.ParticipationInstanceOrMechanism)
+nd=C(obs.Commission,u"Comissão",obs.ParticipationInstance)
 nd.attr['color']="#F29999"
-nd=C(obs.Council,u"Conselho",obs.ParticipationInstanceOrMechanism)
+nd=C(obs.Council,u"Conselho",obs.ParticipationInstance)
 nd.attr['color']="#F29999"
-C(obs.Government,u"Governo",obs.ParticipationInstanceOrMechanism)
-nd=C(obs.Conference,u"Conferência",obs.ParticipationInstanceOrMechanism)
+C(obs.Government,u"Governo")
+nd=C(obs.Conference,u"Conferência",obs.ParticipationInstance)
 nd.attr['color']="#F29999"
-nd=C(obs.OmbudsmanAgency,u"Ouvidoria",obs.ParticipationInstanceOrMechanism)
+nd=C(obs.OmbudsmanAgency,u"Ouvidoria",obs.ParticipationInstance)
 nd.attr['color']="#F29999"
 
-nd=C(obs.DialogueTable, u"Mesa de diálogo",obs.ParticipationInstanceOrMechanism)
+nd=C(obs.DialogueTable, u"Mesa de diálogo",obs.ParticipationMechanism)
 nd.attr['color']="#F29999"
+
+nd=C(obs.InterCouncilForum,u"Fórum interconselhos",obs.ParticipationMechanism)
+nd.attr['color']="#F29999"
+
+nd=C(obs.PublicAudience,u"Audiência pública",obs.ParticipationMechanism)
+nd.attr['color']="#F29999"
+
 C(obs.ManagementBody,u"Corpo gestor")
 C(obs.DirectlyInvolvedBody,u"Corpo diretamente envolvido",obs.ManagementBody)
 C(obs.Participant,u"Participante")
+C(obs.Interested,u"Interessado",obs.Participant)
+C(obs.CouncilRepresentant,u"Representante de conselho",obs.Participant)
+C(obs.CommissionRepresentant,u"Representante de comissão",obs.Participant)
 C(obs.GovernmentRepresentant,u"Representante do governo",obs.Participant)
 C(obs.CivilSocietyRepresentant,u"Representante da sociedade civil",obs.Participant)
 C(obs.ConferenceStep,u"Etapa de conferência")
@@ -93,6 +107,12 @@ C(obs.Compliment,u"Elogio",obs.IndividualCitizenCommunication)
 C(obs.Suggestion,u"Sugestão",obs.IndividualCitizenCommunication)
 C(obs.Denunciation,u"Denúncia",obs.IndividualCitizenCommunication)
 C(obs.SocialConflict,u"Conflito social")
+C(obs.Recommendation,u"Recomendação")
+C(obs.Intersectoriality,u"Intersetorialidade")
+C(obs.Transversality,u"Transversalidade")
+C(obs.Presential,u"Presencial")
+C(obs.Consultative,u"Consultiva")
+C(obs.GovernmentDecisionSubsidizing,u"Subsídio para decisão governamental")
 def P(uri,label):
     G(uri,rdf.type,owl.ObjectProperty)
     G(uri,rdfs.label,L(label,lang="pt"))
@@ -119,6 +139,9 @@ P(obs.handles,u"trata")
 P(obs.prevents,u"previne")
 P(obs.solves,u"soluciona")
 P(obs.mediates,u"media")
+P(obs.scope,u"escopo")
+P(obs.formulates,u"formula")
+P(obs.oralManifestation,u"manifestação oral")
 def D(uri,label,dtype):
     G(uri,rdf.type,owl.DatatypeProperty)
     G(uri,rdfs.label,L(label,lang="pt"))
@@ -158,10 +181,10 @@ L(u"Política pública",u"atividade",u"Formulação")
 L(u"Política pública",u"atividade",u"Execução")
 L(u"Política pública",u"atividade",u"Monitoramento")
 L(u"Política pública",u"atividade",u"Avaliação")
-L(u"Programa público",u"atividade",u"Formulação")
-L(u"Programa público",u"atividade",u"Execução")
-L(u"Programa público",u"atividade",u"Monitoramento")
-L(u"Programa público",u"atividade",u"Avaliação")
+L(u"Programa governamental",u"atividade",u"Formulação")
+L(u"Programa governamental",u"atividade",u"Execução")
+L(u"Programa governamental",u"atividade",u"Monitoramento")
+L(u"Programa governamental",u"atividade",u"Avaliação")
 L
 L(u"Formulação"   ,u"reflete",u"Objetivo")
 L(u"Execução"     ,u"reflete",u"Objetivo")
@@ -232,6 +255,25 @@ L(u"Mesa de diálogo",u"soluciona",u"Conflito social")
 # criar as classes e propriedades automaticamente
 # aceitar vários subjects, properties e objects
 
+# Mesa de diálogo
+L(u"Decreto 8.243",u"considera",u"Fórum interconselhos")
+L(u"Fórum interconselhos",u"natureza",u"Debate")
+L(u"Fórum interconselhos",u"membro",u"Representante de conselho")
+L(u"Fórum interconselhos",u"membro",u"Representante de comissão")
+L(u"Fórum interconselhos",u"propósito",u"Monitoramento")
+L(u"Monitoramento",u"escopo",u"Política pública")
+L(u"Monitoramento",u"escopo",u"Programa governamental")
+L(u"Fórum interconselhos",u"formula",u"Recomendação")
+L(u"Recomendação",u"propósito",u"Aprimoramento")
+L(u"Aprimoramento",u"escopo",u"Intersetorialidade")
+L(u"Aprimoramento",u"escopo",u"Transversalidade")
+
+# Audiência pública
+L(u"Decreto 8.243",u"considera",u"Audiência pública")
+L(u"Audiência pública",u"natureza",u"Presencial")
+L(u"Audiência pública",u"natureza",u"Consultiva")
+L(u"Audiência pública",u"manifestação oral",u"Participante")
+L(u"Audiência pública",u"propósito",u"Subsídio para decisão governamental")
 
 nome=("../figs/obsPNPS.png")
 A.draw(nome,prog="dot") # draw to png using circo
