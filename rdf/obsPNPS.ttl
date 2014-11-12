@@ -288,8 +288,9 @@ obs:mediates a owl:ObjectProperty ;
 obs:member a owl:ObjectProperty ;
     rdfs:label "membro"@pt .
 
-obs:nature a owl:ObjectProperty ;
-    rdfs:label "natureza"@pt .
+obs:nature a owl:DatatypeProperty ;
+    rdfs:label "natureza"@pt ;
+    rdfs:range xsd:string .
 
 obs:operationPeriod a owl:DatatypeProperty ;
     rdfs:label "período de funcionamento"@pt ;
@@ -358,6 +359,9 @@ obs:strengthens a owl:ObjectProperty ;
 
 obs:thematic a owl:ObjectProperty ;
     rdfs:label "temática"@pt .
+
+obs:trait a owl:ObjectProperty ;
+    rdfs:label "traço"@pt .
 
 obs:uses a owl:ObjectProperty ;
     rdfs:label "utiliza"@pt .
