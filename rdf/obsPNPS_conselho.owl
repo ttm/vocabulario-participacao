@@ -3,54 +3,54 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/SocialParticipation">
-    <rdfs:label xml:lang="pt">Participação social</rdfs:label>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council">
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/ParticipationInstance"/>
+    <rdfs:label xml:lang="pt">Conselho</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Decree8243">
     <rdfs:label xml:lang="pt">Decreto 8.243</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Government">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Governo</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Theme">
     <rdfs:label xml:lang="pt">Tema</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/CivilSociety">
-    <rdfs:label xml:lang="pt">Sociedade civil</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council">
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/ParticipationInstance"/>
-    <rdfs:label xml:lang="pt">Conselho</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/ParticipationInstance">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/ParticipationInstanceOrMechanism"/>
     <rdfs:label xml:lang="pt">Instância de participação social</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Government">
-    <rdfs:label xml:lang="pt">Governo</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/ParticipationInstanceOrMechanism"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Dialogue">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Diálogo</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/ParticipationInstanceOrMechanism">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="pt">Instância ou mecanismo de participação social</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/PolicyManagement">
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Dialogue">
+    <rdfs:label xml:lang="pt">Diálogo</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Gestão de política</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/DecisionMakingProcess">
-    <rdfs:label xml:lang="pt">Processo decisório</rdfs:label>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/CivilSociety">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Sociedade civil</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/NormativeAct">
-    <rdfs:label xml:lang="pt">Ato normativo</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Ato normativo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/PolicyManagement">
+    <rdfs:label xml:lang="pt">Gestão de política</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/SocialParticipation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Participação social</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/DecisionMakingProcess">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Processo decisório</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

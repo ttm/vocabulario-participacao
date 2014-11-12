@@ -25,14 +25,8 @@ obs:Council a owl:Class ;
     rdfs:label "Conselho"@pt ;
     rdfs:subClassOf obs:ParticipationInstance .
 
-obs:DecisionMakingProcess a owl:Class ;
-    rdfs:label "Processo decisório"@pt .
-
 obs:Decree8243 a owl:Class ;
     rdfs:label "Decreto 8.243"@pt .
-
-obs:Dialogue a owl:Class ;
-    rdfs:label "Diálogo"@pt .
 
 obs:DialogueTable a owl:Class ;
     rdfs:label "Mesa de diálogo"@pt ;
@@ -49,9 +43,6 @@ obs:Execution a owl:Class ;
 
 obs:Formulation a owl:Class ;
     rdfs:label "Formulação"@pt .
-
-obs:Government a owl:Class ;
-    rdfs:label "Governo"@pt .
 
 obs:GovernmentProgram a owl:Class ;
     rdfs:label "Programa governamental"@pt .
@@ -92,9 +83,6 @@ obs:OmbudsmanAgency a owl:Class ;
 obs:PNPS a owl:Class ;
     rdfs:label "Política Nacional de Participação Social (PNPS)"@pt .
 
-obs:PolicyManagement a owl:Class ;
-    rdfs:label "Gestão de política"@pt .
-
 obs:PublicAudience a owl:Class ;
     rdfs:label "Audiência pública"@pt ;
     rdfs:subClassOf obs:ParticipationMechanism .
@@ -116,15 +104,9 @@ obs:SocialOrganization a owl:Class ;
     rdfs:label "Organização social"@pt ;
     rdfs:subClassOf obs:CivilSociety .
 
-obs:SocialParticipation a owl:Class ;
-    rdfs:label "Participação social"@pt .
-
 obs:SocialParticipationVirtualEnvironment a owl:Class ;
     rdfs:label "Ambiente virtual de participação social"@pt ;
     rdfs:subClassOf obs:ParticipationMechanism .
-
-obs:Theme a owl:Class ;
-    rdfs:label "Tema"@pt .
 
 obs:ParticipationInstanceOrMechanism a owl:Class ;
     rdfs:label "Instância ou mecanismo de participação social"@pt .

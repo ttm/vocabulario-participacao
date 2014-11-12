@@ -3,43 +3,43 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/DialogueTable">
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/ParticipationMechanism">
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/ParticipationInstanceOrMechanism"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Mesa de diálogo</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/ParticipationMechanism"/>
+    <rdfs:label xml:lang="pt">Mecanismo de participação social</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/DirectlyInvolvedParticipant">
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Participant"/>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Negotiation">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Participante diretamente envolvido</rdfs:label>
+    <rdfs:label xml:lang="pt">Negociação</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Participant">
-    <rdfs:label xml:lang="pt">Participante</rdfs:label>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/ParticipationInstanceOrMechanism">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Instância ou mecanismo de participação social</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Debate">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="pt">Debate</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Negotiation">
-    <rdfs:label xml:lang="pt">Negociação</rdfs:label>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Decree8243">
+    <rdfs:label xml:lang="pt">Decreto 8.243</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/DialogueTable">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Mesa de diálogo</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/ParticipationMechanism"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/SocialConflict">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="pt">Conflito social</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Decree8243">
-    <rdfs:label xml:lang="pt">Decreto 8.243</rdfs:label>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Participant">
+    <rdfs:label xml:lang="pt">Participante</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/ParticipationInstanceOrMechanism">
-    <rdfs:label xml:lang="pt">Instância ou mecanismo de participação social</rdfs:label>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/DirectlyInvolvedParticipant">
+    <rdfs:label xml:lang="pt">Participante diretamente envolvido</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/Participant"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/ParticipationMechanism">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="pt">Mecanismo de participação social</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/obs/ParticipationInstanceOrMechanism"/>
   </rdf:Description>
 </rdf:RDF>
