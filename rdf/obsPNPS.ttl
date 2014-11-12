@@ -56,6 +56,9 @@ obs:Deadline a owl:DatatypeProperty ;
     rdfs:label "prazo"@pt ;
     rdfs:range xsd:dateTime .
 
+obs:Debate a owl:Class ;
+    rdfs:label "Debate"@pt .
+
 obs:DecisionMakingProcess a owl:Class ;
     rdfs:label "Processo decisório"@pt .
 
@@ -76,9 +79,9 @@ obs:DialogueTable a owl:Class ;
 obs:Directive a owl:Class ;
     rdfs:label "Diretriz"@pt .
 
-obs:DirectlyInvolvedBody a owl:Class ;
-    rdfs:label "Corpo diretamente envolvido"@pt ;
-    rdfs:subClassOf obs:ManagementBody .
+obs:DirectlyInvolvedParticipant a owl:Class ;
+    rdfs:label "Participante diretamente envolvido"@pt ;
+    rdfs:subClassOf obs:Participant .
 
 obs:DistrictConference a owl:Class ;
     rdfs:label "Conferência distrital"@pt ;
@@ -110,9 +113,7 @@ obs:GovernmentRepresentant a owl:Class ;
     rdfs:subClassOf obs:Participant .
 
 obs:Improvement a owl:Class ;
-    rdfs:label "Aprimoramento"@pt,
-        "Debate"@pt,
-        "Negociação"@pt .
+    rdfs:label "Aprimoramento"@pt .
 
 obs:InstitutedSocialMovement a owl:Class ;
     rdfs:label "Movimento social instituído"@pt ;
@@ -133,6 +134,9 @@ obs:Internet a owl:Class ;
 obs:Intersectoriality a owl:Class ;
     rdfs:label "Intersetorialidade"@pt .
 
+obs:ManagementBody a owl:Class ;
+    rdfs:label "Corpo gestor"@pt .
+
 obs:Monitoring a owl:Class ;
     rdfs:label "Monitoramento"@pt ;
     rdfs:comment "usado também como sinônimo de acompanhamento"@pt .
@@ -140,6 +144,9 @@ obs:Monitoring a owl:Class ;
 obs:MunicipalConference a owl:Class ;
     rdfs:label "Conferência municipal"@pt ;
     rdfs:subClassOf obs:ConferenceStep .
+
+obs:Negotiation a owl:Class ;
+    rdfs:label "Negociação"@pt .
 
 obs:Network a owl:Class ;
     rdfs:label "Rede"@pt ;
@@ -359,9 +366,6 @@ obs:ICT a owl:Class ;
     rdfs:label "TIC"@pt ;
     rdfs:comment "Tecnologias de Informação e Comunicação"@pt .
 
-obs:ManagementBody a owl:Class ;
-    rdfs:label "Corpo gestor"@pt .
-
 obs:NormativeAct a owl:Class ;
     rdfs:label "Ato normativo"@pt .
 
@@ -378,13 +382,13 @@ obs:ParticipationInstance a owl:Class ;
 obs:IndividualCitizenCommunication a owl:Class ;
     rdfs:label "Comunicação individual de cidadãos"@pt .
 
-obs:Participant a owl:Class ;
-    rdfs:label "Participante"@pt .
-
 obs:ParticipationMechanism a owl:Class ;
     rdfs:label "Mecanismo de participação social"@pt ;
     rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
 
 obs:CivilSociety a owl:Class ;
     rdfs:label "Sociedade civil"@pt .
+
+obs:Participant a owl:Class ;
+    rdfs:label "Participante"@pt .
 
