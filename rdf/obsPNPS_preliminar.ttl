@@ -1,0 +1,142 @@
+@prefix obs: <http://purl.org/socialparticipation/obs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+obs:Citizen a owl:Class ;
+    rdfs:label "Cidadão"@pt ;
+    rdfs:subClassOf obs:CivilSociety .
+
+obs:Collective a owl:Class ;
+    rdfs:label "Coletivo"@pt ;
+    rdfs:subClassOf obs:CivilSociety .
+
+obs:Commission a owl:Class ;
+    rdfs:label "Comissão"@pt ;
+    rdfs:subClassOf obs:ParticipationInstance .
+
+obs:Conference a owl:Class ;
+    rdfs:label "Conferência"@pt ;
+    rdfs:subClassOf obs:ParticipationInstance .
+
+obs:Council a owl:Class ;
+    rdfs:label "Conselho"@pt ;
+    rdfs:subClassOf obs:ParticipationInstance .
+
+obs:DecisionMakingProcess a owl:Class ;
+    rdfs:label "Processo decisório"@pt .
+
+obs:Decree8243 a owl:Class ;
+    rdfs:label "Decreto 8.243"@pt .
+
+obs:Dialogue a owl:Class ;
+    rdfs:label "Diálogo"@pt .
+
+obs:DialogueTable a owl:Class ;
+    rdfs:label "Mesa de diálogo"@pt ;
+    rdfs:subClassOf obs:ParticipationMechanism .
+
+obs:Directive a owl:Class ;
+    rdfs:label "Diretriz"@pt .
+
+obs:Evaluation a owl:Class ;
+    rdfs:label "Avaliação"@pt .
+
+obs:Execution a owl:Class ;
+    rdfs:label "Execução"@pt .
+
+obs:Formulation a owl:Class ;
+    rdfs:label "Formulação"@pt .
+
+obs:Government a owl:Class ;
+    rdfs:label "Governo"@pt .
+
+obs:GovernmentProgram a owl:Class ;
+    rdfs:label "Programa governamental"@pt .
+
+obs:Improvement a owl:Class ;
+    rdfs:label "Aprimoramento"@pt .
+
+obs:InstitutedSocialMovement a owl:Class ;
+    rdfs:label "Movimento social instituído"@pt ;
+    rdfs:subClassOf obs:CivilSociety .
+
+obs:InterCouncilForum a owl:Class ;
+    rdfs:label "Fórum interconselhos"@pt ;
+    rdfs:subClassOf obs:ParticipationMechanism .
+
+obs:Monitoring a owl:Class ;
+    rdfs:label "Monitoramento"@pt ;
+    rdfs:comment "usado também como sinônimo de acompanhamento"@pt .
+
+obs:Network a owl:Class ;
+    rdfs:label "Rede"@pt ;
+    rdfs:subClassOf obs:CivilSociety .
+
+obs:NormativeAct a owl:Class ;
+    rdfs:label "Ato normativo"@pt .
+
+obs:NotOrganizedSocialMovement a owl:Class ;
+    rdfs:label "Movimento social não organizado"@pt ;
+    rdfs:subClassOf obs:CivilSociety .
+
+obs:Objective a owl:Class ;
+    rdfs:label "Objetivo"@pt .
+
+obs:OmbudsmanAgency a owl:Class ;
+    rdfs:label "Ouvidoria"@pt ;
+    rdfs:subClassOf obs:ParticipationInstance .
+
+obs:PNPS a owl:Class ;
+    rdfs:label "Política Nacional de Participação Social (PNPS)"@pt .
+
+obs:PolicyManagement a owl:Class ;
+    rdfs:label "Gestão de política"@pt .
+
+obs:PublicAudience a owl:Class ;
+    rdfs:label "Audiência pública"@pt ;
+    rdfs:subClassOf obs:ParticipationMechanism .
+
+obs:PublicConsultation a owl:Class ;
+    rdfs:label "Consulta pública"@pt ;
+    rdfs:subClassOf obs:ParticipationMechanism .
+
+obs:PublicManagement a owl:Class ;
+    rdfs:label "Gestão pública"@pt .
+
+obs:PublicPolicy a owl:Class ;
+    rdfs:label "Política pública"@pt .
+
+obs:SNPS a owl:Class ;
+    rdfs:label "Sistema Nacional de Participação Social (SNPS)"@pt .
+
+obs:SocialOrganization a owl:Class ;
+    rdfs:label "Organização social"@pt ;
+    rdfs:subClassOf obs:CivilSociety .
+
+obs:SocialParticipation a owl:Class ;
+    rdfs:label "Participação social"@pt .
+
+obs:SocialParticipationVirtualEnvironment a owl:Class ;
+    rdfs:label "Ambiente virtual de participação social"@pt ;
+    rdfs:subClassOf obs:ParticipationMechanism .
+
+obs:Theme a owl:Class ;
+    rdfs:label "Tema"@pt .
+
+obs:ParticipationInstanceOrMechanism a owl:Class ;
+    rdfs:label "Instância ou mecanismo de participação social"@pt .
+
+obs:ParticipationInstance a owl:Class ;
+    rdfs:label "Instância de participação social"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
+
+obs:ParticipationMechanism a owl:Class ;
+    rdfs:label "Mecanismo de participação social"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
+
+obs:CivilSociety a owl:Class ;
+    rdfs:label "Sociedade civil"@pt .
+
