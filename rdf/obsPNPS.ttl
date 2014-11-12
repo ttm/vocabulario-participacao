@@ -166,6 +166,9 @@ obs:OmbudsmanAgency a owl:Class ;
 obs:PNPS a owl:Class ;
     rdfs:label "Política Nacional de Participação Social (PNPS)"@pt .
 
+obs:PerformedActivity a owl:Class ;
+    rdfs:label "Atividade desempenhada"@pt .
+
 obs:PolicyManagement a owl:Class ;
     rdfs:label "Gestão de política"@pt .
 
@@ -238,6 +241,10 @@ obs:Topic a owl:Class ;
 obs:Transversality a owl:Class ;
     rdfs:label "Transversalidade"@pt .
 
+obs:UnpaidParticipant a owl:Class ;
+    rdfs:label "Participante não remunerado"@pt ;
+    rdfs:subClassOf obs:Participant .
+
 obs:WrittenContribution a owl:Class ;
     rdfs:label "Contribuição escrita"@pt .
 
@@ -250,8 +257,16 @@ obs:activity a owl:ObjectProperty ;
 obs:articulates a owl:ObjectProperty ;
     rdfs:label "articula"@pt .
 
+obs:assignment a owl:DatatypeProperty ;
+    rdfs:label "atribuição"@pt ;
+    rdfs:range xsd:string .
+
 obs:bond a owl:ObjectProperty ;
     rdfs:label "vínculo"@pt .
+
+obs:competence a owl:DatatypeProperty ;
+    rdfs:label "competência"@pt ;
+    rdfs:range xsd:string .
 
 obs:composition a owl:ObjectProperty ;
     rdfs:label "composição"@pt .
@@ -287,6 +302,10 @@ obs:mediates a owl:ObjectProperty ;
 
 obs:member a owl:ObjectProperty ;
     rdfs:label "membro"@pt .
+
+obs:memberChoiceCriteria a owl:DatatypeProperty ;
+    rdfs:label "critério de escolha de membros"@pt ;
+    rdfs:range xsd:string .
 
 obs:nature a owl:DatatypeProperty ;
     rdfs:label "natureza"@pt ;
@@ -359,6 +378,9 @@ obs:strengthens a owl:ObjectProperty ;
 
 obs:thematic a owl:ObjectProperty ;
     rdfs:label "temática"@pt .
+
+obs:tracks a owl:ObjectProperty ;
+    rdfs:label "acompanha"@pt .
 
 obs:trait a owl:ObjectProperty ;
     rdfs:label "traço"@pt .

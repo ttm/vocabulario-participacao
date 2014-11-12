@@ -62,14 +62,14 @@ def C(ag=[ags["geral"]],uri="foo",label="bar",superclass=None,comment=None,color
             nd.attr['color']=color
 
 C([ags[i] for i in ("geral","preliminar","conferencia","ouvidoria","mesa","forumInterconselhos","audiencia","consulta","ambientev","conselho","comissao")],obs.Decree8243,u"Decreto 8.243",color="#A29999")
-C([ags[i] for i in ("geral","conferencia","conselho")],obs.Theme,u"Tema")
+C([ags[i] for i in ("geral","conferencia","conselho","comissao")],obs.Theme,u"Tema")
 C([ags[i] for i in ("geral","preliminar")],obs.PNPS,u"Política Nacional de Participação Social (PNPS)")
 C([ags["geral"],ags["preliminar"]],obs.SNPS,u"Sistema Nacional de Participação Social (SNPS)")
 C([ags[i] for i in ("geral","preliminar","conferencia","ouvidoria","mesa","forumInterconselhos","audiencia","consulta","ambientev","conselho","comissao")],obs.ParticipationInstanceOrMechanism,u"Instância ou mecanismo de participação social")
 C([ags[i] for i in ("geral","preliminar","mesa","forumInterconselhos","audiencia","consulta","ambientev")],obs.ParticipationMechanism,u"Mecanismo de participação social",obs.ParticipationInstanceOrMechanism) # SKOS
 C([ags[i] for i in ("geral","preliminar","conferencia","ouvidoria","conselho","comissao")],obs.ParticipationInstance,u"Instância de participação social",obs.ParticipationInstanceOrMechanism) # SKOS
 C([ags[i] for i in ("geral","preliminar","conferencia")],obs.Directive,u"Diretriz")
-C([ags["geral"],ags["preliminar"]],obs.Objective,u"Objetivo")
+C([ags[i] for i in ("geral","preliminar","comissao")],obs.Objective,u"Objetivo")
 C([ags["geral"],ags["preliminar"]],obs.PublicManagement,u"Gestão pública")
 C([ags[i] for i in ("geral","preliminar","ouvidoria","forumInterconselhos")],obs.PublicPolicy,u"Política pública")
 C([ags[i] for i in ("geral","preliminar","forumInterconselhos")],obs.GovernmentProgram,u"Programa governamental")
@@ -97,7 +97,7 @@ C([ags[i] for i in ("geral","conselho")],obs.PolicyManagement,u"Gestão de polí
 C([ags[i] for i in ("geral","preliminar","comissao")],obs.Commission,u"Comissão",obs.ParticipationInstance,color="#F29999")
 C([ags[i] for i in ("geral","preliminar","conselho")],obs.Council,u"Conselho",obs.ParticipationInstance,color="#F29999")
 C([ags[i] for i in ("geral","conselho")],obs.Government,u"Governo")
-C([ags[i] for i in ("geral","preliminar","conferencia")],obs.Conference,u"Conferência",obs.ParticipationInstance,color="#F29999")
+C([ags[i] for i in ("geral","preliminar","conferencia","conselho")],obs.Conference,u"Conferência",obs.ParticipationInstance,color="#F29999")
 C([ags[i] for i in ("geral","preliminar","ouvidoria")],obs.OmbudsmanAgency,u"Ouvidoria",obs.ParticipationInstance,color="#F29999")
 C([ags[i] for i in ("geral","preliminar","mesa")],obs.DialogueTable, u"Mesa de diálogo",obs.ParticipationMechanism,color="#F29999")
 C([ags[i] for i in ("geral","preliminar","forumInterconselhos")],obs.InterCouncilForum,u"Fórum interconselhos",obs.ParticipationMechanism,color="#F29999")
@@ -107,7 +107,8 @@ C([ags[i] for i in ("geral","preliminar","consulta")],obs.PublicConsultation,u"C
 C([ags[i] for i in ("geral","preliminar","ambientev")],obs.SocialParticipationVirtualEnvironment,u"Ambiente virtual de participação social",obs.ParticipationMechanism,color="#F29999")
 
 C([ags[i] for i in ("geral","conferencia")],obs.ManagementBody,u"Corpo gestor")
-C([ags[i] for i in ("geral","conferencia","mesa","forumInterconselhos","audiencia","consulta")],obs.Participant,u"Participante")
+C([ags[i] for i in ("geral","conferencia","mesa","forumInterconselhos","audiencia","consulta","conselho")],obs.Participant,u"Participante")
+C([ags[i] for i in ("geral","conselho")],obs.UnpaidParticipant,u"Participante não remunerado",obs.Participant)
 C([ags[i] for i in ("geral","mesa")],obs.DirectlyInvolvedParticipant,u"Participante diretamente envolvido",obs.Participant)
 C([ags[i] for i in ("geral","consulta")],obs.InterestedPerson,u"Pessoa interessada",obs.Participant)
 C([ags[i] for i in ("geral","forumInterconselhos")],obs.CouncilRepresentant,u"Representante de conselho",obs.Participant)
@@ -138,6 +139,7 @@ C([ags[i] for i in ("geral","consulta")],obs.Topic,u"Assunto",comment=u"assunto 
 C([ags[i] for i in ("geral","ambientev")],obs.ICT,u"TIC",comment=u"Tecnologias de Informação e Comunicação")
 C([ags[i] for i in ("geral","ambientev")],obs.Internet,u"Internet",obs.ICT)
 C([ags[i] for i in ("geral","ambientev")],obs.FederalPublicAdministration,u"Administração pública federal")
+C([ags[i] for i in ("geral","conselho")],obs.PerformedActivity,u"Atividade desempenhada")
 def P(ag=[ags["geral"]],uri="foo",label="bar"):
     for gg in ag:
         g=gg[0]
@@ -175,6 +177,8 @@ P([ags["geral"]],obs.form,u"forma")
 P([ags["geral"]],obs.source,u"fonte")
 P([ags["geral"]],obs.uses,u"utiliza")
 P([ags["geral"]],obs.emphasis,u"ênfase")
+P([ags["geral"]],obs.tracks,u"acompanha")
+P([ags["geral"]],obs.integrates,u"integra")
 def D(ag=[ags["geral"]],uri="foo",label="bar",dtype="baz"):
     for gg in ag:
         g=gg[0]
@@ -189,7 +193,10 @@ D([ags["geral"]],obs.periodicity,u"periodicidade",xsd.gYear)
 D([ags["geral"]],obs.publicInterest,u"interesse público",xsd.boolean)
 D([ags["geral"]],obs.Deadline,u"prazo",xsd.dateTime)
 D([ags["geral"]],obs.description,u"descrição",xsd.string)
-D([ags["geral"]],obs.nature,u"natureza",xsd.string)
+D([ags["geral"],ags["conselho"]],obs.nature,u"natureza",xsd.string)
+D([ags["geral"],ags["conselho"]],obs.assignment,u"atribuição",xsd.string)
+D([ags["geral"],ags["conselho"]],obs.competence,u"competência",xsd.string)
+D([ags["geral"],ags["comissao"]],obs.memberChoiceCriteria,u"critério de escolha de membros",xsd.string)
 def L(ag=[ags["geral"]],olabel="foo",llabel="bar",dlabel="baz"):
     # origin, link, destination
     for gg in ag:
@@ -249,13 +256,20 @@ L([ags["geral"],ags["preliminar"],ags["conselho"]],u"Ato normativo",u"institui",
 L([ags["geral"], ags["conselho"]],u"Conselho",u"promove",u"Participação social")
 L([ags["geral"], ags["conselho"]],u"Participação social",u"para",u"Processo decisório")
 L([ags["geral"], ags["conselho"]],u"Participação social",u"para",u"Gestão de política")
-
 L([ags["geral"], ags["conselho"]],u"Conselho",u"temática",u"Tema")
 LD([ags["geral"],ags["conselho"]],u"Conselho",u"continuidade",u"True")
 L([ags["geral"], ags["conselho"]],u"Conselho",u"traço",u"Diálogo")
 L( [ags["geral"],ags["conselho"]],u"Diálogo",u"parte",u"Sociedade civil")
 L( [ags["geral"],ags["conselho"]],u"Diálogo",u"parte",u"Governo")
 LD([ags["geral"],ags["conselho"]],u"Diálogo",u"objetivo específico",u"xsd:string")
+LD([ags["geral"],ags["conselho"]],u"Conselho",u"natureza",u"xsd:string")
+LD([ags["geral"],ags["conselho"]],u"Conselho",u"atribuição",u"xsd:string")
+LD([ags["geral"],ags["conselho"]],u"Conselho",u"competência",u"xsd:string")
+
+L([ags["geral"], ags["conselho"]],u"Conselho",u"acompanha",u"Conferência")
+L([ags["geral"], ags["conselho"]],u"Conselho",u"membro",u"Participante não remunerado")
+L([ags["geral"], ags["conselho"]],u"Conselho",u"publica",u"Atividade desempenhada")
+
 
 # Comissão
 L([ags["geral"],ags["comissao"]],u"Decreto 8.243",u"considera",u"Comissão")
@@ -263,6 +277,11 @@ L([ags["geral"],ags["preliminar"],ags["comissao"]],u"Ato normativo",u"institui",
 L( [ags["geral"],ags["comissao"]],u"Comissão",u"traço",u"Diálogo")
 LD([ags["geral"],ags["comissao"]],u"Comissão",u"período de funcionamento",u"xsd:duration")
 LD([ags["geral"],ags["comissao"]],u"Comissão",u"início",u"xsd:dateTime")
+LD([ags["geral"],ags["comissao"]],u"Comissão",u"prazo",u"xsd:dateTime")
+L([ags["geral"], ags["comissao"]],u"Comissão",u"publica",u"Atividade desempenhada")
+L([ags["geral"], ags["comissao"]],u"Comissao",u"temática",u"Tema")
+L([ags["geral"],ags["comissao"]],u"Comissao" ,u"reflete",u"Objetivo")
+L([ags["geral"],ags["comissao"]],u"Comissao" ,u"critério de escolha de membros",u"xsd:string")
 
 # Conferências
 L( [ags["geral"],ags["conferencia"]],u"Decreto 8.243",u"considera",u"Conferência")
@@ -275,8 +294,9 @@ LD([ags["geral"],ags["conferencia"]],u"Tema",u"interesse público",u"xsd:boolean
 L( [ags["geral"],ags["conferencia"]],u"Conferência",u"composição",u"Corpo gestor")
 L( [ags["geral"],ags["conferencia"]],u"Corpo gestor",u"membro",u"Representante do governo")
 L( [ags["geral"],ags["conferencia"]],u"Corpo gestor",u"membro",u"Representante da sociedade civil")
-L( [ags["geral"],ags["conferencia"]],u"Conferência",u"etapa",u"Etapa de conferência")
+L( [ags["geral"],ags["conferencia"]],u"Conferência",u"integra",u"Etapa de conferência")
 L( [ags["geral"],ags["conferencia"]],u"Etapa de conferência",u"propõe",u"Diretriz")
+L([ags["geral"], ags["conferencia"]],u"Conferência",u"publica",u"Atividade desempenhada")
 
 #  Ouvidorias
 L( [ags["geral"],ags["ouvidoria"]],u"Decreto 8.243",u"considera",u"Ouvidoria")

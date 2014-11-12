@@ -8,6 +8,10 @@
 obs:CivilSociety a owl:Class ;
     rdfs:label "Sociedade civil"@pt .
 
+obs:Conference a owl:Class ;
+    rdfs:label "Conferência"@pt ;
+    rdfs:subClassOf obs:ParticipationInstance .
+
 obs:Council a owl:Class ;
     rdfs:label "Conselho"@pt ;
     rdfs:subClassOf obs:ParticipationInstance .
@@ -27,6 +31,9 @@ obs:Government a owl:Class ;
 obs:NormativeAct a owl:Class ;
     rdfs:label "Ato normativo"@pt .
 
+obs:PerformedActivity a owl:Class ;
+    rdfs:label "Atividade desempenhada"@pt .
+
 obs:PolicyManagement a owl:Class ;
     rdfs:label "Gestão de política"@pt .
 
@@ -36,10 +43,29 @@ obs:SocialParticipation a owl:Class ;
 obs:Theme a owl:Class ;
     rdfs:label "Tema"@pt .
 
-obs:ParticipationInstance a owl:Class ;
-    rdfs:label "Instância de participação social"@pt ;
-    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
+obs:UnpaidParticipant a owl:Class ;
+    rdfs:label "Participante não remunerado"@pt ;
+    rdfs:subClassOf obs:Participant .
+
+obs:assignment a owl:DatatypeProperty ;
+    rdfs:label "atribuição"@pt ;
+    rdfs:range xsd:string .
+
+obs:competence a owl:DatatypeProperty ;
+    rdfs:label "competência"@pt ;
+    rdfs:range xsd:string .
+
+obs:nature a owl:DatatypeProperty ;
+    rdfs:label "natureza"@pt ;
+    rdfs:range xsd:string .
+
+obs:Participant a owl:Class ;
+    rdfs:label "Participante"@pt .
 
 obs:ParticipationInstanceOrMechanism a owl:Class ;
     rdfs:label "Instância ou mecanismo de participação social"@pt .
+
+obs:ParticipationInstance a owl:Class ;
+    rdfs:label "Instância de participação social"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
 

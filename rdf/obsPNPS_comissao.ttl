@@ -18,6 +18,16 @@ obs:Dialogue a owl:Class ;
 obs:NormativeAct a owl:Class ;
     rdfs:label "Ato normativo"@pt .
 
+obs:Objective a owl:Class ;
+    rdfs:label "Objetivo"@pt .
+
+obs:Theme a owl:Class ;
+    rdfs:label "Tema"@pt .
+
+obs:memberChoiceCriteria a owl:DatatypeProperty ;
+    rdfs:label "critério de escolha de membros"@pt ;
+    rdfs:range xsd:string .
+
 obs:ParticipationInstance a owl:Class ;
     rdfs:label "Instância de participação social"@pt ;
     rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
