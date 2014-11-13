@@ -53,6 +53,9 @@ obs:SocialControl a owl:Class ;
 obs:StateMinister a owl:Class ;
     rdfs:label "Ministro de estado"@pt .
 
+obs:GovernanceMethod a owl:Class ;
+    rdfs:label "Método de governo"@pt .
+
 obs:ParticipationInstance a owl:Class ;
     rdfs:label "Instância de participação social"@pt ;
     rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
@@ -61,7 +64,8 @@ obs:ParticipationInstanceOrMechanism a owl:Class ;
     rdfs:label "Instância ou mecanismo de participação social"@pt .
 
 obs:SocialParticipation a owl:Class ;
-    rdfs:label "Participação social"@pt .
+    rdfs:label "Participação social"@pt ;
+    rdfs:subClassOf obs:GovernanceMethod .
 
 obs:IndividualManifestation a owl:Class ;
     rdfs:label "Manifestação individual"@pt .
