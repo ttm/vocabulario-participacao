@@ -119,14 +119,12 @@ C([ags[i] for i in ("geral","preliminar","consulta")],obs.PublicConsultation,u"C
 C([ags[i] for i in ("geral","preliminar","ambientev")],obs.SocialParticipationVirtualEnvironment,u"Ambiente virtual de participação social",obs.ParticipationMechanism,color="#F29999")
 C([ags[i] for i in ("geral","conferencia")],obs.ManagementBody,u"Corpo gestor")
 C([ags[i] for i in ("geral","conferencia","mesa","forumInterconselhos","audiencia","consulta","conselho","preliminar")],obs.Participant,u"Participante")
-
 C([ags[i] for i in ("geral","preliminar")],obs.IndividualFromHistoricallyExcludedGroup,u"Indivíduo de grupo historicamente excluído",obs.Participant)
 C([ags[i] for i in ("geral","preliminar")],obs.IndividualFromVunerableGroup,u"Indivíduo de grupo vulnerável",obs.Participant)
 C([ags[i] for i in ("geral","preliminar","mesam")],obs.SGPR,u"Secretaria-Geral da Presidência da República (SGPR)")
 C([ags[i] for i in ("geral","preliminar")],obs.AnnualReport,u"Relatório anual")
 C([ags[i] for i in ("geral","preliminar")],obs.ImplementationReport,u"Relatório de implementação")
 C([ags[i] for i in ("geral","preliminar")],obs.MemberCompositionAndList,u"Lista e composição de integrantes")
-
 C([ags[i] for i in ("geral","conselho")],obs.UnpaidParticipant,u"Participante não remunerado",obs.Participant)
 C([ags[i] for i in ("geral","mesa")],obs.DirectlyInvolvedParticipant,u"Participante diretamente envolvido",obs.Participant)
 C([ags[i] for i in ("geral","consulta")],obs.InterestedPerson,u"Pessoa interessada",obs.Participant)
@@ -214,6 +212,9 @@ C([ags[i] for i in ("geral","mesam")],obs.ExecutiveSecretary, u"Secretário exec
 C([ags[i] for i in ("geral","mesam")],obs.Competence, u"Competência")
 C([ags[i] for i in ("geral","mesam")],obs.Functioning, u"Funcionamento")
 C([ags[i] for i in ("geral","mesam")],obs.Subgroup, u"Subgrupo")
+C([ags[i] for i in ("geral","preliminar")],obs.RegulatoryAgency, u"Agência reguladora")
+C([ags[i] for i in ("geral","preliminar")],obs.CivilHouse, u"Casa Civil")
+C([ags[i] for i in ("geral","preliminar")],obs.NormativeActProject, u"Projeto de ato normativo")
 
 def P(ag=[ags["geral"]],uri="foo",label="bar"):
     for gg in ag:
@@ -273,6 +274,10 @@ P([ags["geral"]],obs.coordinates,u"coordena")
 P([ags["geral"]],obs.convenes,u"convoca")
 P([ags["geral"]],obs.chief,u"chefe")
 P([ags["geral"]],obs.has,u"possui")
+P([ags["geral"]],obs.observes,u"observa")
+P([ags["geral"]],obs.performs,u"realiza")
+P([ags["geral"]],obs.disseminates,u"divulga")
+P([ags["geral"]],obs.precedes,u"antecede")
 
 def D(ag=[ags["geral"]],uri="foo",label="bar",dtype="baz"):
     for gg in ag:
@@ -374,6 +379,13 @@ L([ags["geral"],ags["preliminar"]],u"Aprimoramento"    ,u"reflete",u"Objetivo")
 L([ags[i] for i in ("geral","preliminar","ambientev")],u"Decreto 8.243",u"considera",u"Sociedade civil")
 
 L([ags["geral"],ags["preliminar"]],u"Ato normativo",u"institui",u"Instância ou mecanismo de participação social")
+
+L([ags["geral"],ags["preliminar"]],u"Agência reguladora",u"observa",u"Decreto 8.243")
+L([ags["geral"],ags["preliminar"]],u"Agência reguladora",u"realiza",u"Audiência pública")
+L([ags["geral"],ags["preliminar"]],u"Agência reguladora",u"realiza",u"Consulta pública")
+
+L([ags["geral"],ags["preliminar"]],u"Casa Civil",u"divulga",u"Projeto de ato normativo")
+L([ags["geral"],ags["preliminar"]],u"Projeto de ato normativo",u"antecede",u"Ato normativo")
 
 # Mesa de monitoramento
 L([ags["geral"],ags["mesam"]],u"Mesa de monitoramento",u"monitora",u"Resposta")

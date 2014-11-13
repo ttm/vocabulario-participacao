@@ -26,6 +26,9 @@ obs:Citizen a owl:Class ;
     rdfs:label "Cidadão"@pt ;
     rdfs:subClassOf obs:CivilSociety .
 
+obs:CivilHouse a owl:Class ;
+    rdfs:label "Casa Civil"@pt .
+
 obs:CivilSocietyOrganization a owl:Class ;
     rdfs:label "Organização da sociedade civil"@pt ;
     rdfs:subClassOf obs:CivilSociety .
@@ -268,6 +271,9 @@ obs:Network a owl:Class ;
     rdfs:label "Rede"@pt ;
     rdfs:subClassOf obs:CivilSociety .
 
+obs:NormativeActProject a owl:Class ;
+    rdfs:label "Projeto de ato normativo"@pt .
+
 obs:NotOrganizedSocialMovement a owl:Class ;
     rdfs:label "Movimento social não organizado"@pt ;
     rdfs:subClassOf obs:CivilSociety .
@@ -337,6 +343,9 @@ obs:ReferenceDocument a owl:Class ;
 obs:RegionalConference a owl:Class ;
     rdfs:label "Conferência regional"@pt ;
     rdfs:subClassOf obs:ConferenceStep .
+
+obs:RegulatoryAgency a owl:Class ;
+    rdfs:label "Agência reguladora"@pt .
 
 obs:RegulatoryImpactAnalysis a owl:Class ;
     rdfs:label "Análise de impacto regulatório"@pt .
@@ -486,6 +495,9 @@ obs:description a owl:DatatypeProperty ;
     rdfs:label "descrição"@pt ;
     rdfs:range xsd:string .
 
+obs:disseminates a owl:ObjectProperty ;
+    rdfs:label "divulga"@pt .
+
 obs:diversifies a owl:ObjectProperty ;
     rdfs:label "diversifica"@pt .
 
@@ -539,6 +551,9 @@ obs:nature a owl:DatatypeProperty ;
     rdfs:label "natureza"@pt ;
     rdfs:range xsd:string .
 
+obs:observes a owl:ObjectProperty ;
+    rdfs:label "observa"@pt .
+
 obs:operationPeriod a owl:DatatypeProperty ;
     rdfs:label "período de funcionamento"@pt ;
     rdfs:range xsd:duration .
@@ -555,9 +570,15 @@ obs:oversees a owl:ObjectProperty ;
 obs:part a owl:ObjectProperty ;
     rdfs:label "parte"@pt .
 
+obs:performs a owl:ObjectProperty ;
+    rdfs:label "realiza"@pt .
+
 obs:periodicity a owl:DatatypeProperty ;
     rdfs:label "periodicidade"@pt ;
     rdfs:range xsd:gYear .
+
+obs:precedes a owl:ObjectProperty ;
+    rdfs:label "antecede"@pt .
 
 obs:prevents a owl:ObjectProperty ;
     rdfs:label "previne"@pt .

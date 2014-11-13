@@ -15,6 +15,9 @@ obs:Citizen a owl:Class ;
     rdfs:label "Cidadão"@pt ;
     rdfs:subClassOf obs:CivilSociety .
 
+obs:CivilHouse a owl:Class ;
+    rdfs:label "Casa Civil"@pt .
+
 obs:Collective a owl:Class ;
     rdfs:label "Coletivo"@pt ;
     rdfs:subClassOf obs:CivilSociety .
@@ -98,6 +101,9 @@ obs:Network a owl:Class ;
 obs:NormativeAct a owl:Class ;
     rdfs:label "Ato normativo"@pt .
 
+obs:NormativeActProject a owl:Class ;
+    rdfs:label "Projeto de ato normativo"@pt .
+
 obs:NotOrganizedSocialMovement a owl:Class ;
     rdfs:label "Movimento social não organizado"@pt ;
     rdfs:subClassOf obs:CivilSociety .
@@ -132,6 +138,9 @@ obs:PublicManagement a owl:Class ;
 
 obs:PublicPolicy a owl:Class ;
     rdfs:label "Política pública"@pt .
+
+obs:RegulatoryAgency a owl:Class ;
+    rdfs:label "Agência reguladora"@pt .
 
 obs:SGPR a owl:Class ;
     rdfs:label "Secretaria-Geral da Presidência da República (SGPR)"@pt .
