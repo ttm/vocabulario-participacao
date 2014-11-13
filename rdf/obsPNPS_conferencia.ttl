@@ -13,6 +13,9 @@ obs:Conference a owl:Class ;
     rdfs:label "Conferência"@pt ;
     rdfs:subClassOf obs:ParticipationInstance .
 
+obs:ConveningDocument a owl:Class ;
+    rdfs:label "Documento convocatório"@pt .
+
 obs:Decree8243 a owl:Class ;
     rdfs:label "Decreto 8.243"@pt .
 
@@ -36,13 +39,28 @@ obs:GovernmentRepresentant a owl:Class ;
 obs:ManagementBody a owl:Class ;
     rdfs:label "Corpo gestor"@pt .
 
+obs:Methodology a owl:Class ;
+    rdfs:label "Metodologia"@pt .
+
 obs:MunicipalConference a owl:Class ;
     rdfs:label "Conferência municipal"@pt ;
     rdfs:subClassOf obs:ConferenceStep .
 
+obs:Objective a owl:Class ;
+    rdfs:label "Objetivo"@pt .
+
+obs:PerformedActivity a owl:Class ;
+    rdfs:label "Atividade desempenhada"@pt .
+
+obs:ReferenceDocument a owl:Class ;
+    rdfs:label "Documento de referência"@pt .
+
 obs:RegionalConference a owl:Class ;
     rdfs:label "Conferência regional"@pt ;
     rdfs:subClassOf obs:ConferenceStep .
+
+obs:Resolution a owl:Class ;
+    rdfs:label "Resolução"@pt .
 
 obs:StateConference a owl:Class ;
     rdfs:label "Conferência estadual"@pt ;
@@ -50,6 +68,9 @@ obs:StateConference a owl:Class ;
 
 obs:Theme a owl:Class ;
     rdfs:label "Tema"@pt .
+
+obs:TrackingModel a owl:Class ;
+    rdfs:label "Modelo de acompanhamento"@pt .
 
 obs:ParticipationInstance a owl:Class ;
     rdfs:label "Instância de participação social"@pt ;
