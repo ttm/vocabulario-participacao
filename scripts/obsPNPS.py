@@ -114,7 +114,7 @@ C([ags[i] for i in ("geral","consulta")],obs.InterestedPerson,u"Pessoa interessa
 C([ags[i] for i in ("geral","forumInterconselhos")],obs.CouncilRepresentant,u"Representante de conselho",obs.Participant)
 C([ags[i] for i in ("geral","forumInterconselhos")],obs.CommissionRepresentant,u"Representante de comissão",obs.Participant)
 C([ags[i] for i in ("geral","conferencia")],obs.GovernmentRepresentant,u"Representante do governo",obs.Participant)
-C([ags[i] for i in ("geral","conferencia")],obs.CivilSocietyRepresentant,u"Representante da sociedade civil",obs.Participant)
+C([ags[i] for i in ("geral","conferencia","mesa")],obs.CivilSocietyRepresentant,u"Representante da sociedade civil",obs.Participant)
 C([ags[i] for i in ("geral","conferencia")],obs.ConferenceStep,u"Etapa de conferência")
 C([ags[i] for i in ("geral","conferencia")],obs.StateConference,u"Conferência estadual",obs.ConferenceStep)
 C([ags[i] for i in ("geral","conferencia")],obs.RegionalConference,u"Conferência regional",obs.ConferenceStep)
@@ -139,7 +139,7 @@ C([ags[i] for i in ("geral","consulta")],obs.Topic,u"Assunto",comment=u"assunto 
 C([ags[i] for i in ("geral","ambientev")],obs.ICT,u"TIC",comment=u"Tecnologias de Informação e Comunicação")
 C([ags[i] for i in ("geral","ambientev")],obs.Internet,u"Internet",obs.ICT)
 C([ags[i] for i in ("geral","ambientev")],obs.FederalPublicAdministration,u"Administração pública federal")
-C([ags[i] for i in ("geral","conselho","conferencia","ouvidoria")],obs.PerformedActivity,u"Atividade desempenhada")
+C([ags[i] for i in ("geral","conselho","conferencia","ouvidoria","comissao")],obs.PerformedActivity,u"Atividade desempenhada")
 C([ags[i] for i in ("geral","conferencia")],obs.ReferenceDocument,u"Documento de referência")
 C([ags[i] for i in ("geral","conferencia")],obs.ConveningDocument,u"Documento convocatório")
 C([ags[i] for i in ("geral","conferencia")],obs.TrackingModel,u"Modelo de acompanhamento")
@@ -153,6 +153,9 @@ C([ags[i] for i in ("geral","ouvidoria")],obs.CGUAimedDenunciation,u"Denúncia d
 C([ags[i] for i in ("geral","ouvidoria")],obs.CGUAimedDenunciation,u"Denúncia direcinada à CGU",obs.IndividualManifestation)
 C([ags[i] for i in ("geral","ouvidoria")],obs.FederalServiceRelatedCommunication,u"Manifestação sobre serviço público prestado por órgão ou entidade federal",obs.IndividualManifestation)
 C([ags[i] for i in ("geral","ouvidoria")],obs.PopularParticipation,u"Participação popular",obs.SocialParticipation)
+C([ags[i] for i in ("geral","mesa")],obs.AgreedSolution,u"Solução pactuada")
+C([ags[i] for i in ("geral","mesa")],obs.Employer,u"Empregador",obs.Participant)
+C([ags[i] for i in ("geral","mesa")],obs.Employee,u"Empregado",obs.Participant)
 def P(ag=[ags["geral"]],uri="foo",label="bar"):
     for gg in ag:
         g=gg[0]
@@ -199,6 +202,7 @@ P([ags["geral"]],obs.responds,u"responde")
 P([ags["geral"]],obs.forwards,u"encaminha")
 P([ags["geral"]],obs.analyses,u"analisa")
 P([ags["geral"]],obs.oversees,u"fiscaliza")
+P([ags["geral"]],obs.produces,u"produz")
 def D(ag=[ags["geral"]],uri="foo",label="bar",dtype="baz"):
     for gg in ag:
         g=gg[0]
@@ -299,9 +303,9 @@ LD([ags["geral"],ags["comissao"]],u"Comissão",u"período de funcionamento",u"xs
 LD([ags["geral"],ags["comissao"]],u"Comissão",u"início",u"xsd:dateTime")
 LD([ags["geral"],ags["comissao"]],u"Comissão",u"prazo",u"xsd:dateTime")
 L([ags["geral"], ags["comissao"]],u"Comissão",u"publica",u"Atividade desempenhada")
-L([ags["geral"], ags["comissao"]],u"Comissao",u"temática",u"Tema")
-L([ags["geral"],ags["comissao"]],u"Comissao" ,u"reflete",u"Objetivo")
-L([ags["geral"],ags["comissao"]],u"Comissao" ,u"critério de escolha de membros",u"xsd:string")
+L([ags["geral"], ags["comissao"]],u"Comissão",u"temática",u"Tema")
+L([ags["geral"],ags["comissao"]],u"Comissão" ,u"reflete",u"Objetivo")
+LD([ags["geral"],ags["comissao"]],u"Comissão" ,u"critério de escolha de membros",u"xsd:string")
 
 # Conferências
 L( [ags["geral"],ags["conferencia"]],u"Decreto 8.243",u"considera",u"Conferência")
@@ -355,6 +359,12 @@ L([ags["geral"],ags["mesa"]],u"Mesa de diálogo",u"membro",u"Participante direta
 L([ags["geral"],ags["mesa"]],u"Mesa de diálogo",u"previne",u"Conflito social")
 L([ags["geral"],ags["mesa"]],u"Mesa de diálogo",u"media",u"Conflito social")
 L([ags["geral"],ags["mesa"]],u"Mesa de diálogo",u"soluciona",u"Conflito social")
+
+L([ags["geral"],ags["mesa"]],u"Mesa de diálogo",u"produz",u"Solução pactuada")
+L([ags["geral"],ags["mesa"]],u"Mesa de diálogo",u"acompanha",u"Solução pactuada")
+L([ags["geral"],ags["mesa"]],u"Mesa de diálogo",u"membro",u"Representante da sociedade civil")
+L([ags["geral"],ags["mesa"]],u"Mesa de diálogo",u"membro",u"Empregador")
+L([ags["geral"],ags["mesa"]],u"Mesa de diálogo",u"membro",u"Empregado")
 
 # criar as classes e propriedades automaticamente
 # aceitar vários subjects, properties e objects

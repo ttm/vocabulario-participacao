@@ -21,6 +21,9 @@ obs:NormativeAct a owl:Class ;
 obs:Objective a owl:Class ;
     rdfs:label "Objetivo"@pt .
 
+obs:PerformedActivity a owl:Class ;
+    rdfs:label "Atividade desempenhada"@pt .
+
 obs:Theme a owl:Class ;
     rdfs:label "Tema"@pt .
 

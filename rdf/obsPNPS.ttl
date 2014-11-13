@@ -5,6 +5,9 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+obs:AgreedSolution a owl:Class ;
+    rdfs:label "Solução pactuada"@pt .
+
 obs:CGUAimedDenunciation a owl:Class ;
     rdfs:label "Denúncia direcinada à CGU"@pt,
         "Denúncia direcionada à CGU"@pt ;
@@ -94,6 +97,14 @@ obs:DirectlyInvolvedParticipant a owl:Class ;
 obs:DistrictConference a owl:Class ;
     rdfs:label "Conferência distrital"@pt ;
     rdfs:subClassOf obs:ConferenceStep .
+
+obs:Employee a owl:Class ;
+    rdfs:label "Empregado"@pt ;
+    rdfs:subClassOf obs:Participant .
+
+obs:Employer a owl:Class ;
+    rdfs:label "Empregador"@pt ;
+    rdfs:subClassOf obs:Participant .
 
 obs:Evaluation a owl:Class ;
     rdfs:label "Avaliação"@pt .
@@ -391,6 +402,9 @@ obs:periodicity a owl:DatatypeProperty ;
 obs:prevents a owl:ObjectProperty ;
     rdfs:label "previne"@pt .
 
+obs:produces a owl:ObjectProperty ;
+    rdfs:label "produz"@pt .
+
 obs:promotes a owl:ObjectProperty ;
     rdfs:label "promove"@pt .
 
@@ -478,9 +492,9 @@ obs:ParticipationMechanism a owl:Class ;
 obs:CivilSociety a owl:Class ;
     rdfs:label "Sociedade civil"@pt .
 
-obs:Participant a owl:Class ;
-    rdfs:label "Participante"@pt .
-
 obs:IndividualManifestation a owl:Class ;
     rdfs:label "Manifestação individual"@pt .
+
+obs:Participant a owl:Class ;
+    rdfs:label "Participante"@pt .
 
