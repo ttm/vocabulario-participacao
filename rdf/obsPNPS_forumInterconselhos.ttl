@@ -5,9 +5,20 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+obs:CivilSocietyOrganization a owl:Class ;
+    rdfs:label "Organização da sociedade civil"@pt ;
+    rdfs:subClassOf obs:CivilSociety .
+
 obs:CommissionRepresentant a owl:Class ;
     rdfs:label "Representante de comissão"@pt ;
     rdfs:subClassOf obs:Participant .
+
+obs:Conclusion a owl:Class ;
+    rdfs:label "Conclusão"@pt .
+
+obs:Council a owl:Class ;
+    rdfs:label "Conselho"@pt ;
+    rdfs:subClassOf obs:ParticipationInstance .
 
 obs:CouncilRepresentant a owl:Class ;
     rdfs:label "Representante de conselho"@pt ;
@@ -48,8 +59,12 @@ obs:Recommendation a owl:Class ;
 obs:Transversality a owl:Class ;
     rdfs:label "Transversalidade"@pt .
 
-obs:ParticipationInstanceOrMechanism a owl:Class ;
-    rdfs:label "Instância ou mecanismo de participação social"@pt .
+obs:CivilSociety a owl:Class ;
+    rdfs:label "Sociedade civil"@pt .
+
+obs:ParticipationInstance a owl:Class ;
+    rdfs:label "Instância de participação social"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
 
 obs:ParticipationMechanism a owl:Class ;
     rdfs:label "Mecanismo de participação social"@pt ;
@@ -57,4 +72,7 @@ obs:ParticipationMechanism a owl:Class ;
 
 obs:Participant a owl:Class ;
     rdfs:label "Participante"@pt .
+
+obs:ParticipationInstanceOrMechanism a owl:Class ;
+    rdfs:label "Instância ou mecanismo de participação social"@pt .
 

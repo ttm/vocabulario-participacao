@@ -5,6 +5,9 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+obs:Accessibility a owl:Class ;
+    rdfs:label "Acessibilidade"@pt .
+
 obs:AgreedSolution a owl:Class ;
     rdfs:label "Solução pactuada"@pt .
 
@@ -15,6 +18,10 @@ obs:CGUAimedDenunciation a owl:Class ;
 
 obs:Citizen a owl:Class ;
     rdfs:label "Cidadão"@pt ;
+    rdfs:subClassOf obs:CivilSociety .
+
+obs:CivilSocietyOrganization a owl:Class ;
+    rdfs:label "Organização da sociedade civil"@pt ;
     rdfs:subClassOf obs:CivilSociety .
 
 obs:CivilSocietyRepresentant a owl:Class ;
@@ -33,6 +40,9 @@ obs:CommissionRepresentant a owl:Class ;
     rdfs:label "Representante de comissão"@pt ;
     rdfs:subClassOf obs:Participant .
 
+obs:Communication a owl:Class ;
+    rdfs:label "Comunicação"@pt .
+
 obs:Complaint a owl:Class ;
     rdfs:label "Reclamação"@pt ;
     rdfs:subClassOf obs:IndividualManifestation .
@@ -40,6 +50,9 @@ obs:Complaint a owl:Class ;
 obs:Compliment a owl:Class ;
     rdfs:label "Elogio"@pt ;
     rdfs:subClassOf obs:IndividualManifestation .
+
+obs:Conclusion a owl:Class ;
+    rdfs:label "Conclusão"@pt .
 
 obs:Conference a owl:Class ;
     rdfs:label "Conferência"@pt ;
@@ -70,6 +83,9 @@ obs:Deadline a owl:DatatypeProperty ;
 obs:Debate a owl:Class ;
     rdfs:label "Debate"@pt .
 
+obs:DebateContent a owl:Class ;
+    rdfs:label "Conteúdo dos debates"@pt .
+
 obs:DecisionMakingProcess a owl:Class ;
     rdfs:label "Processo decisório"@pt .
 
@@ -87,6 +103,9 @@ obs:DialogueTable a owl:Class ;
     rdfs:label "Mesa de diálogo"@pt ;
     rdfs:subClassOf obs:ParticipationMechanism .
 
+obs:DirectDemocracy a owl:Class ;
+    rdfs:label "Democracia direta"@pt .
+
 obs:Directive a owl:Class ;
     rdfs:label "Diretriz"@pt .
 
@@ -97,6 +116,9 @@ obs:DirectlyInvolvedParticipant a owl:Class ;
 obs:DistrictConference a owl:Class ;
     rdfs:label "Conferência distrital"@pt ;
     rdfs:subClassOf obs:ConferenceStep .
+
+obs:Diversity a owl:Class ;
+    rdfs:label "Diversidade"@pt .
 
 obs:Employee a owl:Class ;
     rdfs:label "Empregado"@pt ;
@@ -109,8 +131,18 @@ obs:Employer a owl:Class ;
 obs:Evaluation a owl:Class ;
     rdfs:label "Avaliação"@pt .
 
+obs:EventMoment a owl:Class ;
+    rdfs:label "Documento objeto da consulta"@pt,
+        "Momento de realização"@pt .
+
+obs:EventTransmission a owl:Class ;
+    rdfs:label "Transmissão de evento"@pt .
+
 obs:Execution a owl:Class ;
     rdfs:label "Execução"@pt .
+
+obs:ExpectedProduct a owl:Class ;
+    rdfs:label "Produto esperado"@pt .
 
 obs:FederalPublicAdministration a owl:Class ;
     rdfs:label "Administração pública federal"@pt .
@@ -121,6 +153,9 @@ obs:FederalServiceRelatedCommunication a owl:Class ;
 
 obs:Formulation a owl:Class ;
     rdfs:label "Formulação"@pt .
+
+obs:FreeSoftware a owl:Class ;
+    rdfs:label "Software livre"@pt .
 
 obs:Government a owl:Class ;
     rdfs:label "Governo"@pt .
@@ -146,6 +181,10 @@ obs:InterCouncilForum a owl:Class ;
     rdfs:label "Fórum interconselhos"@pt ;
     rdfs:subClassOf obs:ParticipationMechanism .
 
+obs:InterestedParticipant a owl:Class ;
+    rdfs:label "Interessado"@pt ;
+    rdfs:subClassOf obs:Participant .
+
 obs:InterestedPerson a owl:Class ;
     rdfs:label "Pessoa interessada"@pt ;
     rdfs:subClassOf obs:Participant .
@@ -166,6 +205,9 @@ obs:ManagementBody a owl:Class ;
 
 obs:Methodology a owl:Class ;
     rdfs:label "Metodologia"@pt .
+
+obs:Mobilization a owl:Class ;
+    rdfs:label "Mobilização"@pt .
 
 obs:Monitoring a owl:Class ;
     rdfs:label "Monitoramento"@pt ;
@@ -189,12 +231,18 @@ obs:NotOrganizedSocialMovement a owl:Class ;
 obs:OGU a owl:Class ;
     rdfs:label "OGU (Ouvidoria Geral da União)"@pt .
 
+obs:Object a owl:Class ;
+    rdfs:label "Objeto"@pt .
+
 obs:Objective a owl:Class ;
     rdfs:label "Objetivo"@pt .
 
 obs:OmbudsmanAgency a owl:Class ;
     rdfs:label "Ouvidoria"@pt ;
     rdfs:subClassOf obs:ParticipationInstance .
+
+obs:OpenData a owl:Class ;
+    rdfs:label "Dados abertos"@pt .
 
 obs:PNPS a owl:Class ;
     rdfs:label "Política Nacional de Participação Social (PNPS)"@pt .
@@ -239,12 +287,22 @@ obs:RegionalConference a owl:Class ;
     rdfs:label "Conferência regional"@pt ;
     rdfs:subClassOf obs:ConferenceStep .
 
+obs:RegulatoryImpactAnalysis a owl:Class ;
+    rdfs:label "Análise de impacto regulatório"@pt .
+
+obs:RemoteParticipation a owl:Class ;
+    rdfs:label "Participação remota"@pt ;
+    rdfs:subClassOf obs:SocialParticipation .
+
 obs:Request a owl:Class ;
     rdfs:label "Solicitação"@pt ;
     rdfs:subClassOf obs:IndividualManifestation .
 
 obs:Resolution a owl:Class ;
     rdfs:label "Resolução"@pt .
+
+obs:Result a owl:Class ;
+    rdfs:label "Resultado"@pt .
 
 obs:SNPS a owl:Class ;
     rdfs:label "Sistema Nacional de Participação Social (SNPS)"@pt .
@@ -257,6 +315,9 @@ obs:SocialConflict a owl:Class ;
 
 obs:SocialControl a owl:Class ;
     rdfs:label "Controle social"@pt .
+
+obs:SocialNetwork a owl:Class ;
+    rdfs:label "Rede social"@pt .
 
 obs:SocialOrganization a owl:Class ;
     rdfs:label "Organização social"@pt ;
@@ -273,9 +334,18 @@ obs:StateConference a owl:Class ;
 obs:StateMinister a owl:Class ;
     rdfs:label "Ministro de estado"@pt .
 
+obs:Study a owl:Class ;
+    rdfs:label "Estudo"@pt .
+
 obs:Suggestion a owl:Class ;
     rdfs:label "Sugestão"@pt ;
     rdfs:subClassOf obs:IndividualManifestation .
+
+obs:TechnicalMaterial a owl:Class ;
+    rdfs:label "Material técnico"@pt .
+
+obs:TermsOfUse a owl:Class ;
+    rdfs:label "Termos de uso"@pt .
 
 obs:Theme a owl:Class ;
     rdfs:label "Tema"@pt .
@@ -295,7 +365,8 @@ obs:UnpaidParticipant a owl:Class ;
     rdfs:subClassOf obs:Participant .
 
 obs:WrittenContribution a owl:Class ;
-    rdfs:label "Contribuição escrita"@pt .
+    rdfs:label "Contribuição escrita"@pt ;
+    rdfs:subClassOf obs:Contribution .
 
 obs:about a owl:ObjectProperty ;
     rdfs:label "sobre"@pt .
@@ -332,6 +403,9 @@ obs:composition a owl:ObjectProperty ;
 obs:considers a owl:ObjectProperty ;
     rdfs:label "considera"@pt .
 
+obs:contemplates a owl:ObjectProperty ;
+    rdfs:label "contempla"@pt .
+
 obs:continuity a owl:DatatypeProperty ;
     rdfs:label "continuidade"@pt ;
     rdfs:range xsd:boolean .
@@ -364,6 +438,9 @@ obs:handles a owl:ObjectProperty ;
 
 obs:integrates a owl:ObjectProperty ;
     rdfs:label "integra"@pt .
+
+obs:invites a owl:ObjectProperty ;
+    rdfs:label "convida"@pt .
 
 obs:mediates a owl:ObjectProperty ;
     rdfs:label "media"@pt .
@@ -453,6 +530,12 @@ obs:step a owl:ObjectProperty ;
 obs:strengthens a owl:ObjectProperty ;
     rdfs:label "fortalece"@pt .
 
+obs:subsidizes a owl:ObjectProperty ;
+    rdfs:label "subsidia"@pt .
+
+obs:systematizes a owl:ObjectProperty ;
+    rdfs:label "sistematiza"@pt .
+
 obs:thematic a owl:ObjectProperty ;
     rdfs:label "temática"@pt .
 
@@ -465,6 +548,9 @@ obs:trait a owl:ObjectProperty ;
 obs:uses a owl:ObjectProperty ;
     rdfs:label "utiliza"@pt .
 
+obs:Contribution a owl:Class ;
+    rdfs:label "Contribuição"@pt .
+
 obs:ICT a owl:Class ;
     rdfs:label "TIC"@pt ;
     rdfs:comment "Tecnologias de Informação e Comunicação"@pt .
@@ -472,11 +558,11 @@ obs:ICT a owl:Class ;
 obs:NormativeAct a owl:Class ;
     rdfs:label "Ato normativo"@pt .
 
-obs:SocialParticipation a owl:Class ;
-    rdfs:label "Participação social"@pt .
-
 obs:ParticipationInstanceOrMechanism a owl:Class ;
     rdfs:label "Instância ou mecanismo de participação social"@pt .
+
+obs:SocialParticipation a owl:Class ;
+    rdfs:label "Participação social"@pt .
 
 obs:ConferenceStep a owl:Class ;
     rdfs:label "Etapa de conferência"@pt .

@@ -8,14 +8,33 @@
 obs:Consultative a owl:Class ;
     rdfs:label "Consultiva"@pt .
 
+obs:Contribution a owl:Class ;
+    rdfs:label "Contribuição"@pt .
+
+obs:ConveningDocument a owl:Class ;
+    rdfs:label "Documento convocatório"@pt .
+
+obs:DebateContent a owl:Class ;
+    rdfs:label "Conteúdo dos debates"@pt .
+
 obs:Decree8243 a owl:Class ;
     rdfs:label "Decreto 8.243"@pt .
+
+obs:EventMoment a owl:Class ;
+    rdfs:label "Momento de realização"@pt .
 
 obs:GovernmentDecisionSubsidizing a owl:Class ;
     rdfs:label "Subsídio para decisão governamental"@pt .
 
-obs:Participant a owl:Class ;
-    rdfs:label "Participante"@pt .
+obs:InterestedParticipant a owl:Class ;
+    rdfs:label "Interessado"@pt ;
+    rdfs:subClassOf obs:Participant .
+
+obs:Methodology a owl:Class ;
+    rdfs:label "Metodologia"@pt .
+
+obs:Object a owl:Class ;
+    rdfs:label "Objeto"@pt .
 
 obs:Presential a owl:Class ;
     rdfs:label "Presencial"@pt .
@@ -23,6 +42,12 @@ obs:Presential a owl:Class ;
 obs:PublicAudience a owl:Class ;
     rdfs:label "Audiência pública"@pt ;
     rdfs:subClassOf obs:ParticipationMechanism .
+
+obs:Result a owl:Class ;
+    rdfs:label "Resultado"@pt .
+
+obs:Participant a owl:Class ;
+    rdfs:label "Participante"@pt .
 
 obs:ParticipationInstanceOrMechanism a owl:Class ;
     rdfs:label "Instância ou mecanismo de participação social"@pt .
