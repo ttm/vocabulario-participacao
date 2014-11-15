@@ -331,8 +331,8 @@ cgps=vbs.CGPS
 G(cgps,rdf.type,skos.Concept)
 G(cgps,skos.prefLabel,L(u"CGPS",lang="pt"))
 G(cgps,skos.altLabel,L(u"Comitê Governamental de Participação Social",lang="pt"))
-G(cgps,skos.altLabel,L(u"Comitê Governamental de Participação Social (SNPS)",lang="pt"))
-G(cgps,skos.altLabel,L(u"Comitê Governamental de Participação Social - SNPS",lang="pt"))
+G(cgps,skos.altLabel,L(u"Comitê Governamental de Participação Social (CNPS)",lang="pt"))
+G(cgps,skos.altLabel,L(u"Comitê Governamental de Participação Social - CNPS",lang="pt"))
 
 foo=vbs.Monitoring
 lfoo=u"Monitoramento"
