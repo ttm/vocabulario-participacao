@@ -13,11 +13,11 @@ owl = r.namespace.OWL
 xsd = r.namespace.XSD
 
 g = r.Graph()
-g.namespace_manager.bind("obs", "http://purl.org/socialparticipation/obs/")    
+g.namespace_manager.bind("obs", obs )
 g.namespace_manager.bind("rdf", r.namespace.RDF)    
 g.namespace_manager.bind("rdfs", r.namespace.RDFS)    
 g.namespace_manager.bind("xsd", r.namespace.XSD)    
-g.namespace_manager.bind("owl", r.namespace.OWL)    
+g.namespace_manager.bind("owl", owl)    
 
 conf=obs.Conference # SKOS
 lconf=u"Conferência"
