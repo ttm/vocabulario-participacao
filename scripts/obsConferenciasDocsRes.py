@@ -505,7 +505,7 @@ nome=("../figs/obsConferenciaDocsRes2.png")
 A.draw(nome,prog="circo") # draw to png using circo
 nome=("../figs/obsConferenciaDocsRes3.png")
 A.draw(nome,prog="fdp") # draw to png using circo
-A.write("../rdf/obsConferenciaDocsRes.dot")
+A.write("../dot/obsConferenciaDocsRes.dot")
 
 f=open("../rdf/obsConferenciaDocsRes.owl","wb")
 f.write(g.serialize())
