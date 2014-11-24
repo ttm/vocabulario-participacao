@@ -1,0 +1,110 @@
+|--> Ato normativo
+   |--> Lei
+   |--> Portaria
+|--> Controle
+   |--> Controle civil
+   |--> Controle externo
+   |--> Controle interno
+|--> Instância de participação social
+ forma alternativa: Instituição participativa
+ forma alternativa: Espaço de participação social
+ forma alternativa: Espaço participativo
+ forma alternativa: Instância participativa
+ termo relacionado: Mecanismo de participação social
+|--> Instância ou mecanismo de participação social
+   |--> Ouvidoria
+    forma alternativa: Ouvidoria pública federal
+    forma alternativa: Ouvidoria pública
+    forma alternativa: Ouvidoria federal
+    definição: instância de controle e participação social responsável pelo tratamento das reclamações, solicitações, denúncias, sugestões e elogios relativos às políticas e aos serviços públicos, prestados sob qualquer forma ou regime, com vistas ao aprimoramento da gestão pública
+     |--> Manifestação
+         |--> Denúncia
+boo []
+         |--> Elogio
+boo []
+         |--> Reclamação
+boo []
+         |--> Solicitação
+boo []
+         |--> Sugestão
+boo []
+     |--> Ouvidoria ativa
+     |--> Ouvidoria passiva
+       termo relacionado: Ouvidoria ativa
+|--> LAI (Lei de Acesso à Informação)
+|--> Manifestação anônima
+|--> Mecanismo de participação social
+|--> Ministério
+   |--> Secretaria
+|--> OGU (Ouvidoria Geral da União)
+   |--> Ouvidoria
+    forma alternativa: Ouvidoria pública federal
+    forma alternativa: Ouvidoria pública
+    forma alternativa: Ouvidoria federal
+    definição: instância de controle e participação social responsável pelo tratamento das reclamações, solicitações, denúncias, sugestões e elogios relativos às políticas e aos serviços públicos, prestados sob qualquer forma ou regime, com vistas ao aprimoramento da gestão pública
+     |--> Manifestação
+         |--> Denúncia
+boo []
+         |--> Elogio
+boo []
+         |--> Reclamação
+boo []
+         |--> Solicitação
+boo []
+         |--> Sugestão
+boo []
+     |--> Ouvidoria ativa
+     |--> Ouvidoria passiva
+       termo relacionado: Ouvidoria ativa
+|--> Órgão público
+   |--> Órgão da administração pública
+   |--> Órgão da administração pública indireta
+|--> Ouvidor
+ termo relacionado: Ouvidoria
+|--> Participante
+   |--> Cliente
+   |--> Contribuidor
+   |--> Denunciante
+   |--> Manifestante
+   |--> Sociedade civil não organizada
+|--> Reserva de identidade
+|--> SAC (Sistema de Atendimento ao Cidadão)
+   |--> Ouvidoria
+    forma alternativa: Ouvidoria pública federal
+    forma alternativa: Ouvidoria pública
+    forma alternativa: Ouvidoria federal
+    definição: instância de controle e participação social responsável pelo tratamento das reclamações, solicitações, denúncias, sugestões e elogios relativos às políticas e aos serviços públicos, prestados sob qualquer forma ou regime, com vistas ao aprimoramento da gestão pública
+     |--> Manifestação
+         |--> Denúncia
+boo []
+         |--> Elogio
+boo []
+         |--> Reclamação
+boo []
+         |--> Solicitação
+boo []
+         |--> Sugestão
+boo []
+     |--> Ouvidoria ativa
+     |--> Ouvidoria passiva
+       termo relacionado: Ouvidoria ativa
+|--> Sistema Federal de Ouvidorias
+   |--> Ouvidoria
+    forma alternativa: Ouvidoria pública federal
+    forma alternativa: Ouvidoria pública
+    forma alternativa: Ouvidoria federal
+    definição: instância de controle e participação social responsável pelo tratamento das reclamações, solicitações, denúncias, sugestões e elogios relativos às políticas e aos serviços públicos, prestados sob qualquer forma ou regime, com vistas ao aprimoramento da gestão pública
+     |--> Manifestação
+         |--> Denúncia
+boo []
+         |--> Elogio
+boo []
+         |--> Reclamação
+boo []
+         |--> Solicitação
+boo []
+         |--> Sugestão
+boo []
+     |--> Ouvidoria ativa
+     |--> Ouvidoria passiva
+       termo relacionado: Ouvidoria ativa

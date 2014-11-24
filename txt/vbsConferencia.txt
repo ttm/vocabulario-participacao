@@ -1,6 +1,6 @@
 |--> Área de política
- forma alternativa: Área temática
  forma alternativa: Área política
+ forma alternativa: Área temática
    |--> Desenvolvimento econômico
     nota de escopo: arranjos produtivos locais, assistência técnica e extensão rural, desenvolvimento regional e desenvolvimento rural sustentável e solidário
    |--> Garantia de direitos
@@ -16,10 +16,10 @@
    |--> Portaria ministerial
     nota de escopo: Portaria emitida por um ou mais ministérios
    |--> Resolução
-    forma alternativa: Deliberação
-    forma alternativa: Proposta
     forma alternativa: Decisão
     forma alternativa: Tese
+    forma alternativa: Deliberação
+    forma alternativa: Proposta
     forma alternativa: Diretriz
 |--> Corpo gestor de conferência
 |--> Cota
@@ -77,8 +77,8 @@
 |--> Mulher
 |--> Município
 |--> Organização nacional de conferência
- termo relacionado: Conselho
  termo relacionado: Corpo gestor de conferência
+ termo relacionado: Conselho
    |--> Assessoria
    |--> Comissão
    |--> Comitê

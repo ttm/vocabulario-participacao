@@ -1,0 +1,283 @@
+|--> Acesso livre
+|--> Administração pública federal
+|--> Administração pública federal direta
+|--> Administração pública federal indireta
+|--> Agente público
+|--> Agência reguladora
+|--> Alínea
+ nota de escopo: Alínea de texto legal (ex. decreto). O conceito oode ser usado em outros contextos.
+|--> Ambiente de rede social
+|--> Ambiente virtual
+ forma alternativa: Ambiente virtual de participação social
+ definição: mecanismo de interação social que utiliza tecnologias de informação e de comunicação, em especial a internet, para promover o diálogo entre administração pública federal e sociedade civil (PNPS)
+ definição: mecanismo participativo, a se realizar em prazo definido, de caráter consultivo, aberto a qualquer interessado, que visa a receber contribuições por escrito da sociedade civil sobre determinado assunto, na forma definida no seu ato de convocação (PNPS)
+|--> Análise de impacto regulatório
+|--> Apoio institucional
+|--> Articular
+|--> Artigo
+ nota de escopo: Artigo de texto legal (ex. decreto). O conceito oode ser usado em outros contextos.
+|--> Assunto jurídico
+|--> Ato do ministro
+|--> Ato normativo
+|--> Atribuição
+|--> Audiência pública
+ definição: mecanismo participativo de caráter presencial, consultivo, aberto a qualquer interessado, com a possibilidade de manifestação oral dos participantes, cujo objetivo é subsidiar decisões governamentais (PNPS)
+|--> Autonomia
+|--> Avaliação
+|--> Ação pública
+|--> Cadastro
+|--> Calendário de conferência
+ forma alternativa: Calendário de processos conferenciais
+ termo relacionado: Conferência
+|--> Caput
+|--> Casa Civil
+ forma alternativa: Casa Civil da Presidência da República
+|--> Celebração de parceria com a administração pública
+|--> CGPS
+ forma alternativa: Comitê Governamental de Participação Social - SNPS
+ forma alternativa: Comitê Governamental de Participação Social (SNPS)
+ forma alternativa: Comitê Governamental de Participação Social
+|--> Ciclo de planejamento e orçamento
+|--> Cidadania
+|--> Cidadania ativa
+|--> Código fonte
+|--> Comissão
+ forma alternativa: Comissão de políticas públicas
+ definição: instância colegiada temática, instituída por ato normativo, criada para o diálogo entre a sociedade civil e o governo em torno de objetivo específico, com prazo de funcionamento vinculado ao cumprimento de suas finalidades
+|--> Competência
+|--> Compromisso de resposta
+|--> Conclusão
+ nota de escopo: conclusão de fórum interconselhos. O conceito pode ser usado em outros contextos
+|--> Condições e relações do trabalho
+|--> Conselheiro
+|--> Conselho
+ forma alternativa: Conselho nacional de políticas públicas
+ forma alternativa: Conselho gestor
+ forma alternativa: Conselho de políticas públicas
+ definição: Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)
+ definição: instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas (PNPS)
+ nota de escopo: espaço contínuo de participação social
+ nota de escopo: Espaço participativo com a finalidade de incidir nas políticas públicas de determinado tema, nos quais é prevista certa permanência no tempo, composto por representantes do poder público e da sociedade civil, esta podendo ser dividida em diferentes segmentos.
+|--> Constituição
+|--> Consulta pública
+ definição: mecanismo participativo, a se realizar em prazo definido, de caráter consultivo, aberto a qualquer interessado, que visa a receber contribuições por escrito da sociedade civil sobre determinado assunto, na forma definida no seu ato de convocação (PNPS)
+|--> Contribuição
+|--> Controladoria-Geral da União
+ forma alternativa: Controladoria-Geral da União
+|--> Controle social
+|--> Convidado
+|--> Coordenação
+|--> Critério transparente de escolha
+|--> Dado aberto
+|--> Dado legível por máquina
+|--> Debate
+|--> Debate de governo
+|--> Decisão de governo
+|--> Decreto
+|--> Definição
+|--> Delegado
+ nota de escopo: metodologia de conferência. O conceito pode ser útil em outros contextos
+|--> Democracia direta
+|--> Democracia participativa
+|--> Democracia representativa
+|--> Diálogo
+|--> Direito do cidadão
+|--> Diretriz
+|--> Diversidade
+|--> Documento convocatório
+|--> Documentos de referência da conferência nacional
+ termo relacionado: Conferência
+|--> Dotações consignadas
+|--> DOU
+ forma alternativa: Diário Oficial da União
+|--> Empregado
+|--> Empregador
+|--> Encaminhamento de pauta
+|--> Ente federado
+|--> Entidade
+|--> Entrar em vigor
+|--> Especial significado político
+|--> Especial significado social
+ termo relacionado: Especial significado político
+|--> Estratégia de comunicação
+|--> Estratégia de mobilização
+|--> Estudo
+|--> Execução
+|--> Expressão de autonomia
+|--> Ferramenta de rede social
+|--> Ferramenta tecnológica de participação social
+|--> Formulação
+|--> Fortalecer
+|--> Fórum interconselhos
+ definição: mecanismo para o diálogo entre representantes dos conselhos e comissões de políticas públicas, no intuito de acompanhar as políticas públicas e os programas governamentais, formulando recomendações para aprimorar sua intersetorialidade e transversalidade (PNPS)
+|--> Fundamento
+ nota de escopo: fundamento para proposta colocada em consulta pública. Conceito pode ser útil em outros contextos.
+|--> Fundo do conselho
+|--> Garantia de diversidade
+ nota de escopo: Garantia de diversidade de ambiente online de participação social. Conceito pode ser usado em outros contextos.
+|--> Governo
+|--> Grupo historicamente excluído
+|--> Grupo vulnerável
+|--> Implementação
+|--> Inciso
+ nota de escopo: Inciso de texto legal (ex. decreto). O conceito oode ser usado em outros contextos.
+|--> Independência
+|--> Instituir
+|--> Instância colegiada
+|--> Instância colegiada interministerial
+|--> Instância democrática de diálogo
+|--> Instância ou mecanismo de participação social
+   |--> Instância de participação social
+    termo relacionado: Mecanismo de participação social
+     |--> Conferência
+       forma alternativa: Conferência nacional
+       forma alternativa: Conferência de políticas públicas
+       definição: instância periódica de debate, de formulação e de avaliação sobre temas específicos e de interesse público, com a participação de representantes do governo e da sociedade civil, podendo contemplar etapas estaduais, distrital, municipais ou regionais, para propor diretrizes e ações acerca do tema tratado (PNPS)
+       definição: Instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas
+       definição: Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo
+         |--> Etapa de conferência
+          nota de escopo: Uma etapa é um evento participativo e também é chamada de conferência, enquanto 'a' conferência é o processo todo
+boo [rdflib.term.Literal(u'Confer\xeancia estadual', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia extraordin\xe1ria', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia intermunicipal', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia livre', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia municipal', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia nacional', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia regional', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia virtual', lang=u'pt')]
+         |--> Conferência estadual
+          nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
+boo [rdflib.term.Literal(u'Confer\xeancia estadual', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia extraordin\xe1ria', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia intermunicipal', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia livre', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia municipal', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia nacional', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia regional', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia virtual', lang=u'pt')]
+         |--> Conferência extraordinária
+          nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
+boo [rdflib.term.Literal(u'Confer\xeancia estadual', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia extraordin\xe1ria', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia intermunicipal', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia livre', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia municipal', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia nacional', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia regional', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia virtual', lang=u'pt')]
+         |--> Conferência intermunicipal
+          nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
+boo [rdflib.term.Literal(u'Confer\xeancia estadual', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia extraordin\xe1ria', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia intermunicipal', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia livre', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia municipal', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia nacional', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia regional', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia virtual', lang=u'pt')]
+         |--> Conferência livre
+          nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
+boo [rdflib.term.Literal(u'Confer\xeancia estadual', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia extraordin\xe1ria', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia intermunicipal', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia livre', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia municipal', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia nacional', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia regional', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia virtual', lang=u'pt')]
+         |--> Conferência municipal
+          nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
+boo [rdflib.term.Literal(u'Confer\xeancia estadual', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia extraordin\xe1ria', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia intermunicipal', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia livre', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia municipal', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia nacional', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia regional', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia virtual', lang=u'pt')]
+         |--> Conferência nacional
+          nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
+boo [rdflib.term.Literal(u'Confer\xeancia estadual', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia extraordin\xe1ria', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia intermunicipal', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia livre', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia municipal', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia nacional', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia regional', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia virtual', lang=u'pt')]
+         |--> Conferência regional
+          nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
+boo [rdflib.term.Literal(u'Confer\xeancia estadual', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia extraordin\xe1ria', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia intermunicipal', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia livre', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia municipal', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia nacional', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia regional', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia virtual', lang=u'pt')]
+         |--> Conferência virtual
+          nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
+boo [rdflib.term.Literal(u'Confer\xeancia estadual', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia extraordin\xe1ria', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia intermunicipal', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia livre', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia municipal', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia nacional', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia regional', lang=u'pt'), rdflib.term.Literal(u'Confer\xeancia virtual', lang=u'pt')]
+   |--> Mecanismo de participação social
+|--> Integração
+|--> Internet
+|--> Licença livre
+|--> Livre funcionamento
+|--> Material técnico
+|--> Membro
+|--> Mesa de diálogo
+ definição: mecanismo de debate e de negociação com a participação dos setores da sociedade civil e do governo diretamente envolvidos no intuito de prevenir, mediar e solucionar conflitos sociais (PNPS)
+|--> Mesa de Monitoramento das Demandas Sociais
+|--> Metodologia
+ forma alternativa: Procedimento de metodologia de conferência
+ termo relacionado: Conferência
+|--> Ministro de estado-chefe da Secretaria Geral da Presidência da República
+|--> Ministério
+|--> Modelo de acompanhamento de resolução
+|--> Momento
+ nota de escopo: momento de conferência. O conceito pode ser útil em outros contextos
+|--> Momento de realização
+ forma alternativa: Momento
+ nota de escopo: momento de realização de audiência pública. O conceito pode ser útil em outros contextos
+|--> Monitoramento
+ forma alternativa: Acompanhamento
+|--> Movimento social
+|--> Método de governo
+|--> Natureza
+|--> Natureza consultiva
+|--> Natureza deliberativa
+|--> Objeto de audiência
+ nota de escopo: objeto de audiência pública.
+|--> Objeto de consulta
+ nota de escopo: objeto de consulta pública.
+|--> Obrigação voluntaria
+ forma alternativa: Obrigação voluntariamente assumida
+|--> OGU
+ forma alternativa: Ouvidoria-Geral da União
+|--> Organização da sociedade civil
+|--> Ouvidoria
+ forma alternativa: Ouvidoria pública
+ forma alternativa: Ouvidoria federal
+ forma alternativa: Ouvidoria pública federal
+ definição: instância de controle e participação social responsável pelo tratamento das reclamações, solicitações, denúncias, sugestões e elogios relativos às políticas e aos serviços públicos, prestados sob qualquer forma ou regime, com vistas ao aprimoramento da gestão pública (PNPS)
+|--> Parágrafo
+ nota de escopo: Parágrafo de texto legal (ex. decreto). O conceito oode ser usado em outros contextos.
+|--> Paridade
+ nota de escopo: paridade é um conceito local, podendo por exemplo, ser considerada proporção igual de membros do governo e da sociedade ou proporção igual entre dois segmentos ou setores que são considerados prioritários pelo Conselho
+|--> Parte afetada
+|--> Parte interessada
+|--> Participação direta
+|--> Participação remota
+ forma alternativa: Participação virtual
+|--> Participação social
+|--> Pauta
+|--> Periodicidade
+|--> Período de operação
+|--> Pessoa com deficiência
+|--> PNPS
+ forma alternativa: Política Nacional de Participação Social (PNPS)
+ forma alternativa: Política Nacional de Participação Social
+ forma alternativa: Política Nacional de Participação Social - PNPS
+|--> Política do governo federal
+|--> Política pública
+|--> Política setorial
+|--> Portal do Software Público Brasileiro
+ forma alternativa: Portal do Software Público Brasileiro (PSPB)
+ forma alternativa: PSPB
+|--> Presidenta da República
+|--> Presidência da República
+ forma alternativa: Presidência
+|--> Produto
+ nota de escopo: Produto de ambiente online de participação social. Conceito pode ser usado em outros contextos.
+|--> Programa do governo federal
+|--> Programa setorial
+|--> Promoção
+ forma alternativa: Fomento
+|--> Proposta
+ nota de escopo: proposta colocada em consulta pública. Conceito pode ser útil em outros contextos.
+|--> Providência
+|--> Provisão de serviço público relevante
+|--> Publicidade do ato
+|--> Recomendação
+ nota de escopo: recomendação de fórum interconselhos. O conceito pode ser usado em outros contextos
+|--> Recondução
+ nota de escopo: Quando há 'limite de mandato', há limite para recondução.
+ nota de escopo: Este conceito foi trazido do campo dos conselhos, pode ser aplicável em outros contextos.
+|--> Rede social
+|--> Regimento interno
+ forma alternativa: Estatuto
+|--> Representante
+|--> Representante eleito pela sociedade civil
+|--> Representante indicado pela sociedade civil
+|--> Resolução normativa
+ forma alternativa: Resolução de caráter normativo
+|--> Reunião
+|--> Rotatividade
+|--> Secretário executivo
+|--> Seleção
+|--> SGPR
+ forma alternativa: Secretaria-Geral da Presidência da República (SGPR)
+ forma alternativa: Secretaria-Geral da Presidência da República
+|--> Sistematização
+|--> SNPS
+ forma alternativa: Sistema Nacional de Participação Social - SNPS
+ forma alternativa: Sistema Nacional de Participação Social
+ forma alternativa: Sistema Nacional de Participação Social (SNPS)
+|--> Sociedade civil
+ definição: o cidadão, os coletivos, os movimentos sociais institucionalizados ou não institucionalizados, suas redes e suas organizações (PNPS)
+|--> Software livre
+|--> Solução do conflito
+|--> Subgrupo
+|--> Suporte técnico-administrativo
+|--> Tecnologia livre
+|--> Tema
+|--> Tempo hábil
+|--> Termos de uso
+|--> TIC
+ forma alternativa: Tecnologias de informação e comunicação (TIC)
+ forma alternativa: Tecnologias de informação e comunicação
+|--> Transparência

@@ -49,11 +49,11 @@
 |--> Balanço
  forma alternativa: Balanço geral
 |--> Bibioteca social
- forma alternativa: Biblioteca de participação social
- forma alternativa: Biblioteca de participação
- forma alternativa: Biblioteca Digital de Participação Social
  forma alternativa: Biblioteca digital
+ forma alternativa: Biblioteca Digital de Participação Social
+ forma alternativa: Biblioteca de participação
  forma alternativa: Biblioteca semântica de participação social
+ forma alternativa: Biblioteca de participação social
 |--> bienal
 |--> Boletim
 |--> Boletim informativo
@@ -155,8 +155,8 @@
 |--> Movimento social
 |--> nacional
 |--> Objeto de consulta
- forma alternativa: Proposta de consulta
  forma alternativa: Proposta colocada em consulta
+ forma alternativa: Proposta de consulta
 |--> ONG
  forma alternativa: Organização não governamental
 |--> Ordem do dia
@@ -171,8 +171,8 @@
 |--> Parceria
 |--> Parecer
 |--> Participa.br
- forma alternativa: Portal participa.br
  forma alternativa: participabr
+ forma alternativa: Portal participa.br
 |--> Participação local
 |--> Participação política
 |--> Participação popular
@@ -224,8 +224,8 @@
 |--> Reunião ordinária
 |--> Revista
  forma alternativa: Periódico
-|--> Revista de participação social
 |--> Revista de Participação Social
+|--> Revista de participação social
 |--> Roteiro
 |--> SGPR
  forma alternativa: Secretaria-Geral da Presidência da República
