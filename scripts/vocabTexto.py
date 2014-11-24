@@ -38,7 +38,7 @@ conceitosPai=[rr[0] for rr in res]
 cp=sorted(conceitosPai,key=lambda s: s.replace(u"á",u"a").replace(u"Á",u"a").replace(u"Ó",u"o").replace(u"ó",u"o").encode("utf8").lower())
 
 import sys
-f=open("../rdf/vbsConferencia.txt", "wb")
+f=open("../txt/vbsConferencia.txt", "wb")
 foobar=sys.stdout
 sys.stdout = f
 
@@ -188,7 +188,7 @@ res=g.query(PREFIX+q)
 conceitos=[rr[0] for rr in res]
 conceitos=sorted(conceitos,key=lambda s: s.replace(u"á",u"a").replace(u"Á",u"a").replace(u"Ó",u"o").replace(u"ó",u"o").encode("utf8").lower())
 
-f=open("../rdf/vbsConferenciaPodada.txt", "wb")
+f=open("../txt/vbsConferenciaPodada.txt", "wb")
 sys.stdout = f
 
 
@@ -220,7 +220,7 @@ for cc in conceitos:
 
 f.close()
 
-f=open("../rdf/vbsConferenciaPalavras.txt", "wb")
+f=open("../txt/vbsConferenciaPalavras.txt", "wb")
 sys.stdout = f
 for cc in conceitos:
     print (u"%s"%(cc,)).encode("utf8")
@@ -251,7 +251,7 @@ conceitosPai=[rr[0] for rr in res]
 cp=sorted(conceitosPai,key=lambda s: s.replace(u"á",u"a").replace(u"Á",u"a").replace(u"Ó",u"o").replace(u"ó",u"o").encode("utf8").lower())
 
 import sys
-f=open("../rdf/vbsConselho.txt", "wb")
+f=open("../txt/vbsConselho.txt", "wb")
 sys.stdout = f
 
 for cc in cp:
@@ -400,7 +400,7 @@ res=g.query(PREFIX+q)
 conceitos=[rr[0] for rr in res]
 conceitos=sorted(conceitos,key=lambda s: s.replace(u"á",u"a").replace(u"Á",u"a").replace(u"Ó",u"o").replace(u"ó",u"o").encode("utf8").lower())
 
-f=open("../rdf/vbsConselhoPodada.txt", "wb")
+f=open("../txt/vbsConselhoPodada.txt", "wb")
 sys.stdout = f
 
 
@@ -432,7 +432,7 @@ for cc in conceitos:
 
 f.close()
 
-f=open("../rdf/vbsConselhoPalavras.txt", "wb")
+f=open("../txt/vbsConselhoPalavras.txt", "wb")
 sys.stdout = f
 for cc in conceitos:
     print (u"%s"%(cc,)).encode("utf8")
@@ -461,7 +461,7 @@ conceitosPai=[rr[0] for rr in res]
 cp=sorted(conceitosPai,key=lambda s: s.replace(u"á",u"a").replace(u"Á",u"a").replace(u"Ó",u"o").replace(u"ó",u"o").encode("utf8").lower())
 
 import sys
-f=open("../rdf/vbsOuvidoria.txt", "wb")
+f=open("../txt/vbsOuvidoria.txt", "wb")
 sys.stdout = f
 
 for cc in cp:
@@ -611,7 +611,7 @@ res=g.query(PREFIX+q)
 conceitos=[rr[0] for rr in res]
 conceitos=sorted(conceitos,key=lambda s: s.replace(u"á",u"a").replace(u"Á",u"a").replace(u"Ó",u"o").replace(u"ó",u"o").encode("utf8").lower())
 
-f=open("../rdf/vbsOuvidoriaPodada.txt", "wb")
+f=open("../txt/vbsOuvidoriaPodada.txt", "wb")
 sys.stdout = f
 
 
@@ -643,7 +643,7 @@ for cc in conceitos:
 
 f.close()
 
-f=open("../rdf/vbsOuvidoriaPalavras.txt", "wb")
+f=open("../txt/vbsOuvidoriaPalavras.txt", "wb")
 sys.stdout = f
 for cc in conceitos:
     print (u"%s"%(cc,)).encode("utf8")
@@ -672,7 +672,7 @@ conceitosPai=[rr[0] for rr in res]
 cp=sorted(conceitosPai,key=lambda s: s.replace(u"á",u"a").replace(u"Á",u"a").replace(u"Ó",u"o").replace(u"ó",u"o").encode("utf8").lower())
 
 import sys
-f=open("../rdf/vbsPNPS.txt", "wb")
+f=open("../txt/vbsPNPS.txt", "wb")
 #sys.stdout = foobar
 sys.stdout = f
 
@@ -861,7 +861,7 @@ res=g.query(PREFIX+q)
 conceitos=[rr[0] for rr in res]
 conceitos=sorted(conceitos,key=lambda s: s.replace(u"á",u"a").replace(u"Á",u"a").replace(u"Ó",u"o").replace(u"ó",u"o").encode("utf8").lower())
 
-f=open("../rdf/vbsPNPSPodada.txt", "wb")
+f=open("../txt/vbsPNPSPodada.txt", "wb")
 sys.stdout = f
 
 
@@ -893,7 +893,7 @@ for cc in conceitos:
 
 f.close()
 
-f=open("../rdf/vbsPNPSPalavras.txt", "wb")
+f=open("../txt/vbsPNPSPalavras.txt", "wb")
 sys.stdout = f
 for cc in conceitos:
     print (u"%s"%(cc,)).encode("utf8")
@@ -924,7 +924,7 @@ conceitosPai=[rr[0] for rr in res]
 cp=sorted(conceitosPai,key=lambda s: s.replace(u"á",u"a").replace(u"Á",u"a").replace(u"Ó",u"o").replace(u"ó",u"o").encode("utf8").lower())
 
 import sys
-f=open("../rdf/vbsMesaDeDialogo.txt", "wb")
+f=open("../txt/vbsMesaDeDialogo.txt", "wb")
 #sys.stdout = foobar
 sys.stdout = f
 
@@ -1113,7 +1113,7 @@ res=g.query(PREFIX+q)
 conceitos=[rr[0] for rr in res]
 conceitos=sorted(conceitos,key=lambda s: s.replace(u"á",u"a").replace(u"Á",u"a").replace(u"Ó",u"o").replace(u"ó",u"o").encode("utf8").lower())
 
-f=open("../rdf/vbsMesaDeDialogoPodada.txt", "wb")
+f=open("../txt/vbsMesaDeDialogoPodada.txt", "wb")
 sys.stdout = f
 
 
@@ -1145,7 +1145,7 @@ for cc in conceitos:
 
 f.close()
 
-f=open("../rdf/vbsMesaDeDialogoPalavras.txt", "wb")
+f=open("../txt/vbsMesaDeDialogoPalavras.txt", "wb")
 sys.stdout = f
 for cc in conceitos:
     print (u"%s"%(cc,)).encode("utf8")
