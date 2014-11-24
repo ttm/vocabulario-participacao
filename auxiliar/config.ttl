@@ -1,0 +1,76 @@
+# (my personal FOAF file) and re-publishes them. 
+# Assumes Pubby is running at http://localhost:8080/
+
+@prefix conf: <http://richard.cyganiak.de/2007/pubby/config.rdf#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix obs: <http://purl.org/socialparticipation/obs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<> a conf:Configuration;
+    conf:projectName "Ontologias de participação social";
+    conf:projectHomepage <http://participa.br/>;
+#    conf:webBase <http://localhost:8844/>;
+#    conf:webBase <http://200.144.255.210:8081/tpubby/>;
+    conf:webBase <http://purl.org/socialparticipation/>;
+    conf:usePrefixesFrom </disco/vocabulario-participacao/rdf/obsConferencia.ttl>;
+
+    conf:dataset [
+#       conf:datasetBase <http://richard.cyganiak.de/>;
+        conf:addSameAsStatements "true";
+        conf:datasetBase <http://purl.org/socialparticipation/>;
+#
+#        conf:sparqlEndpoint <http://localhost:82/participacao/query>;
+        conf:loadRDF </disco/vocabulario-participacao/rdf/obsConferencia.ttl>;
+        conf:loadRDF </disco/vocabulario-participacao/rdf/obsConferenciaDocsRes.owl>;
+        conf:loadRDF </disco/vocabulario-participacao/rdf/obsConselho.owl>;
+        conf:loadRDF </disco/vocabulario-participacao/rdf/obsConsulta.owl>;
+        conf:loadRDF </disco/vocabulario-participacao/rdf/obsMesaDeDialogo.owl>;
+        conf:loadRDF </disco/vocabulario-participacao/rdf/obsOuvidoria.owl>;
+        conf:loadRDF </disco/vocabulario-participacao/rdf/obsPNPS.owl>;
+
+        conf:loadRDF </disco/vocabulario-participacao/rdf/vbsConferencia.rdf>;
+        conf:loadRDF </disco/vocabulario-participacao/rdf/vbsConferenciaDocsRes.rdf>;
+        conf:loadRDF </disco/vocabulario-participacao/rdf/vbsConselho.rdf>;
+        conf:loadRDF </disco/vocabulario-participacao/rdf/vbsConsulta.rdf>;
+        conf:loadRDF </disco/vocabulario-participacao/rdf/vbsMesaDeDialogo.rdf>;
+        conf:loadRDF </disco/vocabulario-participacao/rdf/vbsOuvidoria.rdf>;
+        conf:loadRDF </disco/vocabulario-participacao/rdf/vbsPNPS.rdf>;
+
+        conf:loadRDF </disco/vocabulario-participacao/rdf/vbsDocumentacaoVBS.rdf>;
+        conf:loadRDF </disco/vocabulario-participacao/rdf/vbsIPEA.rdf>;
+
+        # AA
+        conf:loadRDF </disco/aa01/rdf/aaTriplestore.rdf>;
+        conf:loadRDF </disco/aa01/rdf/ontologiaa.ttl>;
+        #conf:loadRDF </disco/aa01/rdf/ontologiaa.owl>;
+
+        # CD
+        conf:loadRDF </disco/ocd/cdTriplestore.rdf>;
+
+        # Participabr
+        conf:loadRDF </disco/triplas/storeOpaPopulada.rdf>;
+        conf:loadRDF </disco/triplas/opa.ttl>;
+        conf:loadRDF </disco/triplas/ops.ttl>;
+    ];
+    
+#    conf:usePrefixesFrom <http://richard.cyganiak.de/foaf.rdf>;
+#    conf:usePrefixesFrom <http://richard.cyganiak.de/cygri.rdf>;
+#    conf:usePrefixesFrom </disco/vocabulario-participacao/rdf/obsConferenciaDocsRes.owl>;
+#    conf:usePrefixesFrom </disco/vocabulario-participacao/rdf/obsConferencia.ttl>;
+#    conf:usePrefixesFrom </disco/vocabulario-participacao/rdf/prefixes.rdf>;
+    conf:usePrefixesFrom </disco/vocabulario-participacao/rdf/prefixes.rdf>;
+#    conf:usePrefixesFrom </disco/vocabulario-participacao/rdf/obsConselho.owl>;
+#    conf:usePrefixesFrom </disco/vocabulario-participacao/rdf/obsConsulta.owl>;
+#    conf:usePrefixesFrom </disco/vocabulario-participacao/rdf/vbsConsulta.rdf>;
+#    conf:usePrefixesFrom </disco/aa01/rdf/ontologiaa.owl>;
+#    conf:usePrefixesFrom </disco/aa01/rdf/aaTriplestore.rdf>;
+
+
+    conf:indexResource <http://purl.org/socialparticipation/obs/PublicConsultation>;
+    .
+#    conf:indexResource <http://richard.cyganiak.de/foaf.rdf#cygri>;

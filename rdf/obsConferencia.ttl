@@ -22,6 +22,9 @@ obs:Conference a owl:Class ;
     rdfs:comment "Conferências são processos nacionais de promoção do diálogo entre governo e sociedade"@pt ;
     rdfs:subClassOf obs:ParticipationInstance .
 
+obs:ConferenceMethodology a owl:Class ;
+    rdfs:label "Metodologia de conferência"@pt .
+
 obs:Coordination a owl:Class ;
     rdfs:label "Comissão da organização nacional"@pt .
 
@@ -33,7 +36,7 @@ obs:Counsel a owl:Class ;
 
 obs:Decree a owl:Class ;
     rdfs:label "Decreto presidencial"@pt ;
-    rdfs:subClassOf obs:Act .
+    rdfs:subClassOf obs:NormativeAct .
 
 obs:DialogueTable a owl:Class ;
     rdfs:label "Mesa de diálogo"@pt ;
@@ -114,7 +117,7 @@ obs:Ombusdmen a owl:Class ;
 
 obs:Ordinance a owl:Class ;
     rdfs:label "Portaria ministerial ou interministerial"@pt ;
-    rdfs:subClassOf obs:Act .
+    rdfs:subClassOf obs:NormativeAct .
 
 obs:Positions a owl:Class ;
     rdfs:label "Vagas"@pt .
@@ -142,7 +145,7 @@ obs:RegionalConference a owl:Class ;
 
 obs:Resolution a owl:Class ;
     rdfs:label "Resolução de conselho"@pt ;
-    rdfs:subClassOf obs:Act .
+    rdfs:subClassOf obs:NormativeAct .
 
 obs:Secretariat a owl:Class ;
     rdfs:label "Secretaria"@pt ;
@@ -205,7 +208,7 @@ obs:conselho rdfs:label "conselho"@pt ;
 
 obs:convocation a owl:ObjectProperty ;
     rdfs:label "convocação"@pt ;
-    rdfs:range obs:ConvocationDocument .
+    rdfs:range obs:ConveningDocument .
 
 obs:councilPositions a owl:DatatypeProperty ;
     rdfs:label "vagas para membros do conselho"@pt ;
@@ -289,8 +292,7 @@ obs:incorporates a owl:ObjectProperty ;
     rdfs:range obs:ParticipativeMoment .
 
 obs:methodology a owl:ObjectProperty ;
-    rdfs:label "metodologia"@pt ;
-    rdfs:range obs:ConferenceMethodology .
+    rdfs:label "metodologia"@pt .
 
 obs:municipalities a owl:DatatypeProperty ;
     rdfs:label "municípios"@pt ;
@@ -408,14 +410,11 @@ obs:year a owl:DatatypeProperty ;
     rdfs:label "ano"@pt ;
     rdfs:range xsd:gYear .
 
-obs:ConferenceMethodology a owl:Class ;
-    rdfs:label "Metodologia de conferência"@pt .
-
 obs:ConferenceStep a owl:Class ;
     rdfs:label "Etapa de conferência"@pt ;
     rdfs:comment "Uma etapa é um evento participativo e também é chamada de conferência, enquanto 'a' conferência é o processo todo"@pt .
 
-obs:ConvocationDocument a owl:Class ;
+obs:ConveningDocument a owl:Class ;
     rdfs:label "Ato normativo"@pt .
 
 obs:Council a owl:Class ;
@@ -442,7 +441,7 @@ obs:ManagementBody a owl:Class ;
 obs:ParticipationInstanceOrMechanism a owl:Class ;
     rdfs:label "Instância ou mecanismo de participação social"@pt .
 
-obs:Act a owl:Class ;
+obs:NormativeAct a owl:Class ;
     rdfs:label "Ato normativo"@pt .
 
 obs:ParticipationInstance a owl:Class ;

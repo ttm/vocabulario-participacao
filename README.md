@@ -42,6 +42,8 @@ sem as relações de árvore e somente os termos.
 
 ## Pastas e arquivos:
 
+* Pasta auxiliar/ estão arquivos auxiliares.
+    * config.ttl do pubby que sobe a OBS, VBS e outros.
 * Na pasta fontes/, algumas fontes dos trabalhos.
 * Na pasta vocabulario/, versões do vocabulario para DSPACE.
 * Na pasta rdf/, versões do vocabulario e ontologia em RDF (SKOS e OWL).
