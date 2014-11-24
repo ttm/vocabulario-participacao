@@ -1177,6 +1177,8 @@ nome=("../figs/obsConselho2.png")
 A.draw(nome,prog="circo") # draw to png using circo
 nome=("../figs/obsConselho3.png")
 A.draw(nome,prog="fdp") # draw to png using circo
+A.write("../dot/obsConselho.dot")
+
 f=open("../rdf/obsConselho.owl","wb")
 f.write(g.serialize())
 f.close()

@@ -67,6 +67,9 @@ obs:Law a owl:Class ;
 obs:Ministry a owl:Class ;
     rdfs:label "Ministério"@pt .
 
+obs:Minutes a owl:Class ;
+    rdfs:label "Ata"@pt .
+
 obs:NationalPlan a owl:Class ;
     rdfs:label "Plano nacional"@pt ;
     rdfs:comment "revisar com equipe para verificar se pode ser feita a retirada do termo 'política' (já feita, era Política ou plano nacional)"@pt ;
@@ -105,6 +108,9 @@ obs:Resolution a owl:Class ;
 obs:Secretariat a owl:Class ;
     rdfs:label "Secretaria"@pt .
 
+obs:SocialParticipationVirtualEnvironment a owl:Class ;
+    rdfs:label "Ambiente virtual de participação social"@pt .
+
 obs:SocialPolicies a owl:Class ;
     rdfs:label "Políticas sociais"@pt ;
     rdfs:comment "assistência social, cultura, saúde, segurança alimentar e nutricional"@pt ;
@@ -113,9 +119,6 @@ obs:SocialPolicies a owl:Class ;
 obs:Statute a owl:Class ;
     rdfs:label "Estatuto"@pt ;
     rdfs:subClassOf obs:NormativeAct .
-
-obs:VirtualParticipationEnvironment a owl:Class ;
-    rdfs:label "Ambiente virtual de participação social"@pt .
 
 obs:WorkGroup a owl:Class ;
     rdfs:label "Grupo de trabalho"@pt ;
@@ -184,8 +187,7 @@ obs:datePublished a owl:DatatypeProperty ;
     rdfs:range xsd:dateTime .
 
 obs:establishes a owl:ObjectProperty ;
-    rdfs:label "institui"@pt ;
-    rdfs:range obs:PublicPolicy .
+    rdfs:label "institui"@pt .
 
 obs:executiveSecretariat a owl:DatatypeProperty ;
     rdfs:label "possui secretaria executiva"@pt ;
@@ -270,6 +272,9 @@ obs:presidentialQualityVote a owl:DatatypeProperty ;
     rdfs:label "voto de qualidade do presidente"@pt ;
     rdfs:range xsd:boolean .
 
+obs:provides a owl:ObjectProperty ;
+    rdfs:label "disponibiliza"@pt .
+
 obs:reformulation a owl:ObjectProperty ;
     rdfs:label "reformulação"@pt ;
     rdfs:range obs:NormativeAct .
@@ -279,7 +284,7 @@ obs:telephone a owl:DatatypeProperty ;
     rdfs:range xsd:string .
 
 obs:theme a owl:DatatypeProperty ;
-    rdfs:label "criação"@pt,
+    rdfs:label "criado"@pt,
         "tema"@pt ;
     rdfs:range xsd:dateTime,
         xsd:string .
