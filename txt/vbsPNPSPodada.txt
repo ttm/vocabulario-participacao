@@ -34,8 +34,8 @@ Casa Civil
  forma alternativa: Casa Civil da Presidência da República
 Celebração de parceria com a administração pública
 CGPS
- forma alternativa: Comitê Governamental de Participação Social - SNPS
  forma alternativa: Comitê Governamental de Participação Social (SNPS)
+ forma alternativa: Comitê Governamental de Participação Social - SNPS
  forma alternativa: Comitê Governamental de Participação Social
 Ciclo de planejamento e orçamento
 Cidadania
@@ -50,8 +50,8 @@ Conclusão
  nota de escopo: conclusão de fórum interconselhos. O conceito pode ser usado em outros contextos
 Condições e relações do trabalho
 Conferência
- forma alternativa: Conferência nacional
  forma alternativa: Conferência de políticas públicas
+ forma alternativa: Conferência nacional
  definição: instância periódica de debate, de formulação e de avaliação sobre temas específicos e de interesse público, com a participação de representantes do governo e da sociedade civil, podendo contemplar etapas estaduais, distrital, municipais ou regionais, para propor diretrizes e ações acerca do tema tratado (PNPS)
  definição: Instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas
  definição: Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo
@@ -73,11 +73,11 @@ Conferência virtual
  nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
 Conselheiro
 Conselho
- forma alternativa: Conselho nacional de políticas públicas
  forma alternativa: Conselho gestor
+ forma alternativa: Conselho nacional de políticas públicas
  forma alternativa: Conselho de políticas públicas
- definição: Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)
  definição: instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas (PNPS)
+ definição: Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)
  nota de escopo: espaço contínuo de participação social
  nota de escopo: Espaço participativo com a finalidade de incidir nas políticas públicas de determinado tema, nos quais é prevista certa permanência no tempo, composto por representantes do poder público e da sociedade civil, esta podendo ser dividida em diferentes segmentos.
 Constituição
@@ -191,9 +191,9 @@ OGU
  forma alternativa: Ouvidoria-Geral da União
 Organização da sociedade civil
 Ouvidoria
- forma alternativa: Ouvidoria pública
  forma alternativa: Ouvidoria federal
  forma alternativa: Ouvidoria pública federal
+ forma alternativa: Ouvidoria pública
  definição: instância de controle e participação social responsável pelo tratamento das reclamações, solicitações, denúncias, sugestões e elogios relativos às políticas e aos serviços públicos, prestados sob qualquer forma ou regime, com vistas ao aprimoramento da gestão pública (PNPS)
 Parágrafo
  nota de escopo: Parágrafo de texto legal (ex. decreto). O conceito oode ser usado em outros contextos.
@@ -213,8 +213,8 @@ Pessoa com deficiência
 Pessoa interessada
 Pessoa participante
 PNPS
- forma alternativa: Política Nacional de Participação Social (PNPS)
  forma alternativa: Política Nacional de Participação Social
+ forma alternativa: Política Nacional de Participação Social (PNPS)
  forma alternativa: Política Nacional de Participação Social - PNPS
 Política do governo federal
 Política pública
@@ -239,8 +239,8 @@ Publicidade do ato
 Recomendação
  nota de escopo: recomendação de fórum interconselhos. O conceito pode ser usado em outros contextos
 Recondução
- nota de escopo: Quando há 'limite de mandato', há limite para recondução.
  nota de escopo: Este conceito foi trazido do campo dos conselhos, pode ser aplicável em outros contextos.
+ nota de escopo: Quando há 'limite de mandato', há limite para recondução.
 Rede social
 Regimento interno
  forma alternativa: Estatuto
@@ -254,8 +254,8 @@ Rotatividade
 Secretário executivo
 Seleção
 SGPR
- forma alternativa: Secretaria-Geral da Presidência da República (SGPR)
  forma alternativa: Secretaria-Geral da Presidência da República
+ forma alternativa: Secretaria-Geral da Presidência da República (SGPR)
 Sistematização
 SNPS
  forma alternativa: Sistema Nacional de Participação Social - SNPS

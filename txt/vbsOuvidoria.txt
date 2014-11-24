@@ -7,15 +7,15 @@
    |--> Controle interno
 |--> Instância de participação social
  forma alternativa: Instituição participativa
- forma alternativa: Espaço de participação social
- forma alternativa: Espaço participativo
  forma alternativa: Instância participativa
+ forma alternativa: Espaço participativo
+ forma alternativa: Espaço de participação social
  termo relacionado: Mecanismo de participação social
 |--> Instância ou mecanismo de participação social
    |--> Ouvidoria
-    forma alternativa: Ouvidoria pública federal
     forma alternativa: Ouvidoria pública
     forma alternativa: Ouvidoria federal
+    forma alternativa: Ouvidoria pública federal
     definição: instância de controle e participação social responsável pelo tratamento das reclamações, solicitações, denúncias, sugestões e elogios relativos às políticas e aos serviços públicos, prestados sob qualquer forma ou regime, com vistas ao aprimoramento da gestão pública
      |--> Manifestação
          |--> Denúncia
@@ -38,9 +38,9 @@ boo []
    |--> Secretaria
 |--> OGU (Ouvidoria Geral da União)
    |--> Ouvidoria
-    forma alternativa: Ouvidoria pública federal
     forma alternativa: Ouvidoria pública
     forma alternativa: Ouvidoria federal
+    forma alternativa: Ouvidoria pública federal
     definição: instância de controle e participação social responsável pelo tratamento das reclamações, solicitações, denúncias, sugestões e elogios relativos às políticas e aos serviços públicos, prestados sob qualquer forma ou regime, com vistas ao aprimoramento da gestão pública
      |--> Manifestação
          |--> Denúncia
@@ -70,9 +70,9 @@ boo []
 |--> Reserva de identidade
 |--> SAC (Sistema de Atendimento ao Cidadão)
    |--> Ouvidoria
-    forma alternativa: Ouvidoria pública federal
     forma alternativa: Ouvidoria pública
     forma alternativa: Ouvidoria federal
+    forma alternativa: Ouvidoria pública federal
     definição: instância de controle e participação social responsável pelo tratamento das reclamações, solicitações, denúncias, sugestões e elogios relativos às políticas e aos serviços públicos, prestados sob qualquer forma ou regime, com vistas ao aprimoramento da gestão pública
      |--> Manifestação
          |--> Denúncia
@@ -90,9 +90,9 @@ boo []
        termo relacionado: Ouvidoria ativa
 |--> Sistema Federal de Ouvidorias
    |--> Ouvidoria
-    forma alternativa: Ouvidoria pública federal
     forma alternativa: Ouvidoria pública
     forma alternativa: Ouvidoria federal
+    forma alternativa: Ouvidoria pública federal
     definição: instância de controle e participação social responsável pelo tratamento das reclamações, solicitações, denúncias, sugestões e elogios relativos às políticas e aos serviços públicos, prestados sob qualquer forma ou regime, com vistas ao aprimoramento da gestão pública
      |--> Manifestação
          |--> Denúncia

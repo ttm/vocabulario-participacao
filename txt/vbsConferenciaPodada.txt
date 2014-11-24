@@ -9,10 +9,10 @@ Audiência pública
 Comissão
 Comitê
 Conferência
- forma alternativa: Conferência nacional
  forma alternativa: Conferência de políticas públicas
- definição: Instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas
+ forma alternativa: Conferência nacional
  definição: Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo
+ definição: Instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas
 Conferência estadual
  nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
 Conferência extraordinária
@@ -28,8 +28,8 @@ Conferência regional
 Conferência virtual
  nota de escopo: Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo
 Conselho
- forma alternativa: Conselho nacional de políticas públicas
  forma alternativa: Conselho de políticas públicas
+ forma alternativa: Conselho nacional de políticas públicas
  definição: Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)
 Consulta pública
 Convocação de conferência
@@ -61,8 +61,8 @@ geral
 Governo
 Grupo de trabalho
 grupo étnico
- termo relacionado: Vaga
  termo relacionado: Cota
+ termo relacionado: Vaga
 Infraestrutura
  nota de escopo: cidades
 Instância de participação social
@@ -98,11 +98,11 @@ Recursos naturais
 regimento
 Relator
 Resolução
- forma alternativa: Decisão
  forma alternativa: Tese
+ forma alternativa: Decisão
  forma alternativa: Deliberação
- forma alternativa: Proposta
  forma alternativa: Diretriz
+ forma alternativa: Proposta
 Secretaria
 Secretaria com status de ministério
 Secretário

@@ -40,6 +40,6 @@ Relatório de auditoria
 Requerimento
 Secretaria executiva
 SGPR
- forma alternativa: Secretaria-Geral da Presidência da República - SGPR
  forma alternativa: Secretaria-Geral da Presidência da República (SGPR)
  forma alternativa: Secretaria-Geral da Presidência da República
+ forma alternativa: Secretaria-Geral da Presidência da República - SGPR

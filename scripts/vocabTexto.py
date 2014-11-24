@@ -1910,4 +1910,35 @@ f.close()
 sys.stdout = foobar
 print "feito arquivos com vocabulario da consulta publica"
 
+##################
+## IPEA TTM
+
+store="../rdf/vbsConsulta.rdf"
+g = r.Graph()
+g.load(store)
+
+PREFIX="""PREFIX skos: <http://www.w3.org/2004/02/skos/core#>"""
+
+q="SELECT ?l WHERE {?s a skos:Concept. ?s skos:prefLabel ?l . }"
+res=g.query(PREFIX+q)
+conceitos=[rr[0] for rr in res]
+
+
+
+q="SELECT ?l WHERE {?s a skos:Concept. ?s skos:prefLabel ?l . FILTER NOT EXISTS { ?s skos:broader ?o  }  }"
+res=g.query(PREFIX+q)
+conceitosPai=[rr[0] for rr in res]
+
+cp=sorted(conceitosPai,key=lambda s: s.replace(u"á",u"a").replace(u"Á",u"a").replace(u"Ó",u"o").replace(u"ó",u"o").encode("utf8").lower())
+
+
+f=open("../txt/vbsIPEAPalavras.txt", "wb")
+sys.stdout = f
+for cc in conceitos:
+    print (u"%s"%(cc,)).encode("utf8")
+
+f.close()
+sys.stdout = foobar
+print "feito arquivo com vocabulario do IPEA"
+
 

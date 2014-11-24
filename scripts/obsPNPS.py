@@ -591,6 +591,7 @@ A.draw(nome,prog="dot") # draw to png using circo
 #A.draw(nome,prog="circo") # draw to png using circo
 nome=("../figs/obsPNPS3.png")
 A.draw(nome,prog="fdp") # draw to png using circo
+A.write("../dot/obsPNPS.dot")
 g=ags["geral"][0]
 f=open("../rdf/obsPNPS.owl","wb")
 f.write(g.serialize())
@@ -611,12 +612,12 @@ nome=("../figs/obsPNPS_%s2.png"%(nome_,))
 A.draw(nome,prog="circo") # draw to png using circo
 nome=("../figs/obsPNPS_%s3.png"%(nome_,))
 A.draw(nome,prog="fdp") # draw to png using circo
-f=open("../rdf/obsPNPS_%s.owl"%(nome_,),"wb")
-f.write(g.serialize())
-f.close()
-f=open("../rdf/obsPNPS_%s.ttl"%(nome_,),"wb")
-f.write(g.serialize(format="turtle"))
-f.close()
+#f=open("../rdf/obsPNPS_%s.owl"%(nome_,),"wb")
+#f.write(g.serialize())
+#f.close()
+#f=open("../rdf/obsPNPS_%s.ttl"%(nome_,),"wb")
+#f.write(g.serialize(format="turtle"))
+#f.close()
 
 
 nome_="conferencia"
@@ -628,12 +629,12 @@ nome=("../figs/obsPNPS_%s2.png"%(nome_,))
 A.draw(nome,prog="circo") # draw to png using circo
 nome=("../figs/obsPNPS_%s3.png"%(nome_,))
 A.draw(nome,prog="fdp") # draw to png using circo
-f=open("../rdf/obsPNPS_%s.owl"%(nome_,),"wb")
-f.write(g.serialize())
-f.close()
-f=open("../rdf/obsPNPS_%s.ttl"%(nome_,),"wb")
-f.write(g.serialize(format="turtle"))
-f.close()
+#f=open("../rdf/obsPNPS_%s.owl"%(nome_,),"wb")
+#f.write(g.serialize())
+#f.close()
+#f=open("../rdf/obsPNPS_%s.ttl"%(nome_,),"wb")
+#f.write(g.serialize(format="turtle"))
+#f.close()
 
 nome_="ouvidoria"
 A=ags[nome_][1]
@@ -644,12 +645,12 @@ nome=("../figs/obsPNPS_%s2.png"%(nome_,))
 A.draw(nome,prog="circo") # draw to png using circo
 nome=("../figs/obsPNPS_%s3.png"%(nome_,))
 A.draw(nome,prog="fdp") # draw to png using circo
-f=open("../rdf/obsPNPS_%s.owl"%(nome_,),"wb")
-f.write(g.serialize())
-f.close()
-f=open("../rdf/obsPNPS_%s.ttl"%(nome_,),"wb")
-f.write(g.serialize(format="turtle"))
-f.close()
+#f=open("../rdf/obsPNPS_%s.owl"%(nome_,),"wb")
+#f.write(g.serialize())
+#f.close()
+#f=open("../rdf/obsPNPS_%s.ttl"%(nome_,),"wb")
+#f.write(g.serialize(format="turtle"))
+#f.close()
 
 nome_="mesa"
 A=ags[nome_][1]
@@ -660,12 +661,12 @@ nome=("../figs/obsPNPS_%s2.png"%(nome_,))
 A.draw(nome,prog="circo") # draw to png using circo
 nome=("../figs/obsPNPS_%s3.png"%(nome_,))
 A.draw(nome,prog="fdp") # draw to png using circo
-f=open("../rdf/obsPNPS_%s.owl"%(nome_,),"wb")
-f.write(g.serialize())
-f.close()
-f=open("../rdf/obsPNPS_%s.ttl"%(nome_,),"wb")
-f.write(g.serialize(format="turtle"))
-f.close()
+#f=open("../rdf/obsPNPS_%s.owl"%(nome_,),"wb")
+#f.write(g.serialize())
+#f.close()
+#f=open("../rdf/obsPNPS_%s.ttl"%(nome_,),"wb")
+#f.write(g.serialize(format="turtle"))
+#f.close()
 
 nome_="forumInterconselhos"
 A=ags[nome_][1]
@@ -676,12 +677,12 @@ nome=("../figs/obsPNPS_%s2.png"%(nome_,))
 A.draw(nome,prog="circo") # draw to png using circo
 nome=("../figs/obsPNPS_%s3.png"%(nome_,))
 A.draw(nome,prog="fdp") # draw to png using circo
-f=open("../rdf/obsPNPS_%s.owl"%(nome_,),"wb")
-f.write(g.serialize())
-f.close()
-f=open("../rdf/obsPNPS_%s.ttl"%(nome_,),"wb")
-f.write(g.serialize(format="turtle"))
-f.close()
+#f=open("../rdf/obsPNPS_%s.owl"%(nome_,),"wb")
+#f.write(g.serialize())
+#f.close()
+#f=open("../rdf/obsPNPS_%s.ttl"%(nome_,),"wb")
+#f.write(g.serialize(format="turtle"))
+#f.close()
 
 nome_="audiencia"
 A=ags[nome_][1]
@@ -692,12 +693,12 @@ nome=("../figs/obsPNPS_%s2.png"%(nome_,))
 A.draw(nome,prog="circo") # draw to png using circo
 nome=("../figs/obsPNPS_%s3.png"%(nome_,))
 A.draw(nome,prog="fdp") # draw to png using circo
-f=open("../rdf/obsPNPS_%s.owl"%(nome_,),"wb")
-f.write(g.serialize())
-f.close()
-f=open("../rdf/obsPNPS_%s.ttl"%(nome_,),"wb")
-f.write(g.serialize(format="turtle"))
-f.close()
+#f=open("../rdf/obsPNPS_%s.owl"%(nome_,),"wb")
+#f.write(g.serialize())
+#f.close()
+#f=open("../rdf/obsPNPS_%s.ttl"%(nome_,),"wb")
+#f.write(g.serialize(format="turtle"))
+#f.close()
 
 nome_="consulta"
 A=ags[nome_][1]
@@ -708,12 +709,12 @@ nome=("../figs/obsPNPS_%s2.png"%(nome_,))
 A.draw(nome,prog="circo") # draw to png using circo
 nome=("../figs/obsPNPS_%s3.png"%(nome_,))
 A.draw(nome,prog="fdp") # draw to png using circo
-f=open("../rdf/obsPNPS_%s.owl"%(nome_,),"wb")
-f.write(g.serialize())
-f.close()
-f=open("../rdf/obsPNPS_%s.ttl"%(nome_,),"wb")
-f.write(g.serialize(format="turtle"))
-f.close()
+#f=open("../rdf/obsPNPS_%s.owl"%(nome_,),"wb")
+#f.write(g.serialize())
+#f.close()
+#f=open("../rdf/obsPNPS_%s.ttl"%(nome_,),"wb")
+#f.write(g.serialize(format="turtle"))
+#f.close()
 
 nome_="ambientev"
 A=ags[nome_][1]
@@ -724,12 +725,12 @@ nome=("../figs/obsPNPS_%s2.png"%(nome_,))
 A.draw(nome,prog="circo") # draw to png using circo
 nome=("../figs/obsPNPS_%s3.png"%(nome_,))
 A.draw(nome,prog="fdp") # draw to png using circo
-f=open("../rdf/obsPNPS_%s.owl"%(nome_,),"wb")
-f.write(g.serialize())
-f.close()
-f=open("../rdf/obsPNPS_%s.ttl"%(nome_,),"wb")
-f.write(g.serialize(format="turtle"))
-f.close()
+#f=open("../rdf/obsPNPS_%s.owl"%(nome_,),"wb")
+#f.write(g.serialize())
+#f.close()
+#f=open("../rdf/obsPNPS_%s.ttl"%(nome_,),"wb")
+#f.write(g.serialize(format="turtle"))
+#f.close()
 
 nome_="conselho"
 A=ags[nome_][1]
@@ -740,12 +741,12 @@ nome=("../figs/obsPNPS_%s2.png"%(nome_,))
 A.draw(nome,prog="circo") # draw to png using circo
 nome=("../figs/obsPNPS_%s3.png"%(nome_,))
 A.draw(nome,prog="fdp") # draw to png using circo
-f=open("../rdf/obsPNPS_%s.owl"%(nome_,),"wb")
-f.write(g.serialize())
-f.close()
-f=open("../rdf/obsPNPS_%s.ttl"%(nome_,),"wb")
-f.write(g.serialize(format="turtle"))
-f.close()
+#f=open("../rdf/obsPNPS_%s.owl"%(nome_,),"wb")
+#f.write(g.serialize())
+#f.close()
+#f=open("../rdf/obsPNPS_%s.ttl"%(nome_,),"wb")
+#f.write(g.serialize(format="turtle"))
+#f.close()
 
 nome_="comissao"
 A=ags[nome_][1]
@@ -756,12 +757,12 @@ nome=("../figs/obsPNPS_%s2.png"%(nome_,))
 A.draw(nome,prog="circo") # draw to png using circo
 nome=("../figs/obsPNPS_%s3.png"%(nome_,))
 A.draw(nome,prog="fdp") # draw to png using circo
-f=open("../rdf/obsPNPS_%s.owl"%(nome_,),"wb")
-f.write(g.serialize())
-f.close()
-f=open("../rdf/obsPNPS_%s.ttl"%(nome_,),"wb")
-f.write(g.serialize(format="turtle"))
-f.close()
+#f=open("../rdf/obsPNPS_%s.owl"%(nome_,),"wb")
+#f.write(g.serialize())
+#f.close()
+#f=open("../rdf/obsPNPS_%s.ttl"%(nome_,),"wb")
+#f.write(g.serialize(format="turtle"))
+#f.close()
 
 nome_="mesam"
 A=ags[nome_][1]
@@ -772,11 +773,12 @@ nome=("../figs/obsPNPS_%s2.png"%(nome_,))
 A.draw(nome,prog="circo") # draw to png using circo
 nome=("../figs/obsPNPS_%s3.png"%(nome_,))
 A.draw(nome,prog="fdp") # draw to png using circo
-f=open("../rdf/obsPNPS_%s.owl"%(nome_,),"wb")
-f.write(g.serialize())
-f.close()
-f=open("../rdf/obsPNPS_%s.ttl"%(nome_,),"wb")
-f.write(g.serialize(format="turtle"))
-f.close()
+A.write("../dot/obsPNPS.dot")
+#f=open("../rdf/obsPNPS_%s.owl"%(nome_,),"wb")
+#f.write(g.serialize())
+#f.close()
+#f=open("../rdf/obsPNPS_%s.ttl"%(nome_,),"wb")
+#f.write(g.serialize(format="turtle"))
+#f.close()
 
 

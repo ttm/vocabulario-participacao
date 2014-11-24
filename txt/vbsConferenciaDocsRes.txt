@@ -3,10 +3,10 @@
 |--> Carta
 |--> Carta convite
 |--> Conferência
- forma alternativa: Conferência nacional
  forma alternativa: Conferência de políticas públicas
- definição: Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo
+ forma alternativa: Conferência nacional
  definição: Instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas
+ definição: Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo
 |--> Cultura participativa
 |--> Etapa de conferência
 |--> Manual

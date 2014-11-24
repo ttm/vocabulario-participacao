@@ -28,11 +28,11 @@ Avaliação
 Balanço
  forma alternativa: Balanço geral
 Bibioteca social
- forma alternativa: Biblioteca digital
- forma alternativa: Biblioteca Digital de Participação Social
- forma alternativa: Biblioteca de participação
- forma alternativa: Biblioteca semântica de participação social
  forma alternativa: Biblioteca de participação social
+ forma alternativa: Biblioteca digital
+ forma alternativa: Biblioteca semântica de participação social
+ forma alternativa: Biblioteca de participação
+ forma alternativa: Biblioteca Digital de Participação Social
 bienal
 Boletim
 Boletim informativo
@@ -246,8 +246,8 @@ Termo de adesão
 Tese
 Texto
 Texto-base
- forma alternativa: Documento-base
  forma alternativa: Documentos de referência
+ forma alternativa: Documento-base
 Trabalho acadêmico
 Trabalho apresentados em evento
 Tratado

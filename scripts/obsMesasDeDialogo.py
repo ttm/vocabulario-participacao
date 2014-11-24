@@ -493,7 +493,7 @@ nome=("../figs/obsMesaDeDialogo2.png")
 A.draw(nome,prog="circo") # draw to png using circo
 nome=("../figs/obsMesaDeDialogo3.png")
 A.draw(nome,prog="fdp") # draw to png using circo
-A.write("../rdf/obsMesaDeDialogo.dot")
+A.write("../dot/obsMesaDeDialogo.dot")
 
 f=open("../rdf/obsMesaDeDialogo.owl","wb")
 f.write(g.serialize())
